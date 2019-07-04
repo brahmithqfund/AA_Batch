@@ -2140,3 +2140,7 @@
 2019-07-04 15:30:34,396 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AA_ILP/src/main/java
 2019-07-04 15:30:34,397 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AA_ILP/src/test/java
 2019-07-04 15:30:34,721 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 11 sec
+2019-07-04 15:30:38,520 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-04 15:30:38,521 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-04 15:30:38,523 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-04 15:30:38,523 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
