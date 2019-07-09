@@ -88,9 +88,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileReader;
 
-public class AA_CO_ILP {
+public class AA_CO_ILP extends AA_ILP{
 
-	public static String AdminURL;
+	/*public static String AdminURL;
 	public static String AppURL;
 	public static Properties prop;
 	String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
@@ -103,7 +103,7 @@ public class AA_CO_ILP {
 	public static String Password;
 	public static String StoreId;
 	public static ExtentTest test;
-	public static Excel TestData;
+	public static Excel TestData;*/
 
 	@Test(priority = 59, groups="kiran_CO_ILP") // Leela - Completed//59
 
@@ -114,7 +114,7 @@ public class AA_CO_ILP {
 				+ ".xls";
 
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
@@ -127,10 +127,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -175,7 +175,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -187,10 +187,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -237,7 +237,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DFLT_WO_WORecPartPmt_VoidNextDay_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -249,10 +249,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -300,8 +300,7 @@ public class AA_CO_ILP {
 
 		// Start test. Mention test script name
 		String FileName = "AA_DFLTLoan_EPPConvert_PpayAllInst_TestData.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -313,10 +312,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -363,7 +362,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_DFLTLoan_EPPConvert_DepositAll_ClearAll_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -375,10 +374,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -447,7 +446,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -459,10 +458,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -508,7 +507,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -524,10 +523,10 @@ public class AA_CO_ILP {
 
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -599,7 +598,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -615,11 +614,11 @@ public class AA_CO_ILP {
 
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-				String AppURL = TestData.getCellData(sheetName, "AppURL_kiran", row);
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				String AppURL = TestData.getCellData(sheetName, "AppURL_CO_ILP_kiran", row);
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -662,7 +661,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -673,10 +672,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -717,7 +716,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Bankrupt_Void_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -729,10 +728,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -765,8 +764,7 @@ public class AA_CO_ILP {
 
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_first_payment_BNK_Second_deposit_Testdata.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -776,10 +774,10 @@ public class AA_CO_ILP {
 
 			if (RunFlag.equals("Y")) {
 
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -817,8 +815,7 @@ public class AA_CO_ILP {
 
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_Bnkrupt_Dismissed_Txn_TestData.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -829,10 +826,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -866,7 +863,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_Bnkrupt_Deceased_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -877,10 +874,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -914,7 +911,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_Bnkrupt_Discharge_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -925,10 +922,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -960,7 +957,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_Deceased_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -971,10 +968,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1004,7 +1001,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "LonI_DFLT_PPN_BNK_1InstDeposit.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -1015,10 +1012,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1059,7 +1056,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stpayment_activemilitary_2ndpayment_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1071,10 +1068,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1109,7 +1106,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1121,10 +1118,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1155,7 +1152,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -1166,10 +1163,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1211,7 +1208,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_kiran") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -1222,10 +1219,10 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_kiran");
-				UserName = prop.getProperty("UserName_kiran");
-				Password = prop.getProperty("Password_kiran");
-				StoreId = prop.getProperty("StoreID_kiran");
+				AppURL = prop.getProperty("AppURL_CO_ILP_kiran");
+				UserName = prop.getProperty("UserName_CO_ILP_kiran");
+				Password = prop.getProperty("Password_CO_ILP_kiran");
+				StoreId = prop.getProperty("StoreID_CO_ILP_kiran");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1266,7 +1263,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_PmtAllExceptLast_DepLast_Clear_Return_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1278,11 +1275,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1336,7 +1333,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stdeposit_clr_payoff_clear_return_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1348,11 +1345,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1396,7 +1393,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_Default_Txn_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1408,15 +1405,15 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-			//	StoreId = prop.getProperty("StoreID_venkat");
+			//	StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1447,7 +1444,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforecureendDateDefault_Txn_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1459,15 +1456,15 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				//StoreId = prop.getProperty("StoreID_venkat");
+				//StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1520,7 +1517,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_PmtAllInstExceptLast_DFLTLastInst_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1532,11 +1529,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1575,7 +1572,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1587,15 +1584,15 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				//StoreId = prop.getProperty("StoreID_venkat");
+				//StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1651,7 +1648,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_void_CureEndDateEODbatchProcess_Txn_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1663,15 +1660,15 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				//StoreId = prop.getProperty("StoreID_venkat");
+				//StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1728,7 +1725,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllLessPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1740,15 +1737,15 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				//StoreId = prop.getProperty("StoreID_venkat");
+				//StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1802,7 +1799,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_DefaultPayment_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -1812,10 +1809,10 @@ public class AA_CO_ILP {
 
 			if (RunFlag.equals("Y")) {
 
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
-				StoreId = prop.getProperty("StoreID_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1850,7 +1847,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_DefaultPartialPayment_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -1861,10 +1858,10 @@ public class AA_CO_ILP {
 
 			if (RunFlag.equals("Y")) {
 
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
-				StoreId = prop.getProperty("StoreID_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1900,7 +1897,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_DefaultPayment_Void_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -1910,10 +1907,10 @@ public class AA_CO_ILP {
 
 			if (RunFlag.equals("Y")) {
 
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
-				StoreId = prop.getProperty("StoreID_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -1949,7 +1946,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_DefaultPartialPayment_Encryption_Testdata.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -1960,10 +1957,10 @@ public class AA_CO_ILP {
 
 			if (RunFlag.equals("Y")) {
 
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
-				StoreId = prop.getProperty("StoreID_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2003,7 +2000,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_LonI_DFLT_EODbatchprocess_DFLTPLUS60_Txn_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -2014,11 +2011,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2052,7 +2049,7 @@ public class AA_CO_ILP {
 
 		// Start test. Mention test script name
 		String FileName = "LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -2063,11 +2060,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2102,7 +2099,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		System.out.println(lastrow);
@@ -2113,11 +2110,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2151,7 +2148,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2163,11 +2160,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2210,7 +2207,7 @@ public class AA_CO_ILP {
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DFLT_WO_WORecFullWithAllTenderTypes_TestData.xls";
 		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_leela") + FileName);
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2222,11 +2219,11 @@ public class AA_CO_ILP {
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_leela");
-				UserName = prop.getProperty("UserName_leela");
-				Password = prop.getProperty("Password_leela");
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_leela");
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -2285,11 +2282,11 @@ public class AA_CO_ILP {
 				//driver.get(appUrl);
 				//test.log(LogStatus.INFO, "Application is launched");
 				//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2332,11 +2329,11 @@ public class AA_CO_ILP {
 				//driver.get(appUrl);
 				//test.log(LogStatus.INFO, "Application is launched");
 				//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2382,11 +2379,11 @@ public class AA_CO_ILP {
 				//driver.get(appUrl);
 				//test.log(LogStatus.INFO, "Application is launched");
 				//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2430,11 +2427,11 @@ public class AA_CO_ILP {
 				//driver.get(appUrl);
 				//test.log(LogStatus.INFO, "Application is launched");
 				//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2479,11 +2476,11 @@ public class AA_CO_ILP {
 	 		//driver.get(appUrl);
 	 		//test.log(LogStatus.INFO, "Application is launched");
 	 		//driver.manage().window().maximize();
-	 			AppURL = prop.getProperty("AppURL_venkat");
-	 			UserName = prop.getProperty("UserName_venkat");
-	 			Password = prop.getProperty("Password_venkat");
+	 			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	 			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	 			Password = prop.getProperty("Password_CO_ILP_venkat");
 	 	       // System.out.println(Password);
-	 	        StoreId = prop.getProperty("StoreID_venkat");
+	 	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2526,11 +2523,11 @@ public class AA_CO_ILP {
 	 		//driver.get(appUrl);
 	 		//test.log(LogStatus.INFO, "Application is launched");
 	 		//driver.manage().window().maximize();
-	 			AppURL = prop.getProperty("AppURL_venkat");
-	 			UserName = prop.getProperty("UserName_venkat");
-	 			Password = prop.getProperty("Password_venkat");
+	 			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	 			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	 			Password = prop.getProperty("Password_CO_ILP_venkat");
 	 	       // System.out.println(Password);
-	 	        StoreId = prop.getProperty("StoreID_venkat");
+	 	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2573,11 +2570,11 @@ public class AA_CO_ILP {
 	    		//driver.get(appUrl);
 	    		//test.log(LogStatus.INFO, "Application is launched");
 	    		//driver.manage().window().maximize();
-	    			AppURL = prop.getProperty("AppURL_venkat");
-	    			UserName = prop.getProperty("UserName_venkat");
-	    			Password = prop.getProperty("Password_venkat");
+	    			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	    			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	    			Password = prop.getProperty("Password_CO_ILP_venkat");
 	    	       // System.out.println(Password);
-	    	        StoreId = prop.getProperty("StoreID_venkat");
+	    	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	    	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	    	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	    	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2608,7 +2605,7 @@ public class AA_CO_ILP {
 		
 			// Start test. Mention test script name
 			String FileName= "AA_COILP_NewLoan_Void_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName); 
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName); 
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			
@@ -2620,10 +2617,10 @@ public class AA_CO_ILP {
 			if(RunFlag.equals("Y"))
 			{	
 
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
-			        StoreId = prop.getProperty("StoreID_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2651,7 +2648,7 @@ public class AA_CO_ILP {
 		
 		// Start test. Mention test script name
 		String FileName= "AA_loan_VoidEncryption_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -2670,11 +2667,11 @@ public class AA_CO_ILP {
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2701,7 +2698,7 @@ public class AA_CO_ILP {
 		
 			// Start test. Mention test script name
 			String FileName= "AA_COILP_NewLoan_Rescind_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName); 
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName); 
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			//int lastrow=TestData.getLastRow("Borrower");
@@ -2715,11 +2712,11 @@ public class AA_CO_ILP {
 				//driver.get(appUrl);
 				//test.log(LogStatus.INFO, "Application is launched");
 				//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2751,7 +2748,7 @@ public class AA_CO_ILP {
 		
 			// Start test. Mention test script name
 			String FileName= "AA_COILP_MultipleDisb_Void_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName); 
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName); 
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -2763,10 +2760,10 @@ public class AA_CO_ILP {
 				
 			{	
 				
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");		       
-			        StoreId = prop.getProperty("StoreID_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");		       
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -2800,7 +2797,7 @@ public class AA_CO_ILP {
 
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint_Txn_TestData.xls";		 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -2813,11 +2810,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -2847,7 +2844,7 @@ public class AA_CO_ILP {
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_Txn_TestData.xls";	
 			                 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -2860,11 +2857,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -2896,7 +2893,7 @@ public class AA_CO_ILP {
 
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_Pymtamt_Txn_TestData.xls";		 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -2909,11 +2906,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -2948,7 +2945,7 @@ public class AA_CO_ILP {
 
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint_VoidPymt_Txn_TestData.xls";		 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -2961,11 +2958,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -2998,7 +2995,7 @@ public class AA_CO_ILP {
 
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt_Txn_TestData.xls";		 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -3011,11 +3008,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -3053,7 +3050,7 @@ public class AA_CO_ILP {
 
 			// Start test. Mention test script name
 			String FileName= "AA_LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void_Txn_TestData.xls";		 
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -3066,11 +3063,11 @@ public class AA_CO_ILP {
 					//driver.get(appUrl);
 					//test.log(LogStatus.INFO, "Application is launched");
 					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String StateID = TestData.getCellData(sheetName,"StateID",row);
 					String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -3108,7 +3105,7 @@ public class AA_CO_ILP {
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Loan_Deposit_Rtn_paymentLessthanLoanAmount_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3127,11 +3124,11 @@ public class AA_CO_ILP {
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3168,7 +3165,7 @@ public class AA_CO_ILP {
 		
 		// Start test. Mention test script name
 		String FileName= "Loan_Deposit_Rtn_paymentGreaterthanLoanAmount.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3187,11 +3184,11 @@ public class AA_CO_ILP {
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3244,11 +3241,11 @@ if(RunFlag.equals("Y"))
 	//driver.get(appUrl);
 	//test.log(LogStatus.INFO, "Application is launched");
 	//driver.manage().window().maximize();
-		AppURL = prop.getProperty("AppURL_venkat");
-		UserName = prop.getProperty("UserName_venkat");
-		Password = prop.getProperty("Password_venkat");
+		AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+		UserName = prop.getProperty("UserName_CO_ILP_venkat");
+		Password = prop.getProperty("Password_CO_ILP_venkat");
       // System.out.println(Password);
-       StoreId = prop.getProperty("StoreID_venkat");
+       StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
        String StateID = TestData.getCellData(sheetName,"StateID",row);
        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3302,7 +3299,7 @@ public void LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment
 
 	// Start test. Mention test script name
 	String FileName= "AA_LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);
+	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 	int lastrow=TestData.getLastRow("NewLoan");
 	String sheetName="NewLoan";
 	System.out.println(lastrow);
@@ -3315,11 +3312,11 @@ public void LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment
 			//driver.get(appUrl);
 			//test.log(LogStatus.INFO, "Application is launched");
 			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_venkat");
-			UserName = prop.getProperty("UserName_venkat");
-			Password = prop.getProperty("Password_venkat");
+			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+			Password = prop.getProperty("Password_CO_ILP_venkat");
 			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_venkat");
+			StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			String StateID = TestData.getCellData(sheetName,"StateID",row);
 			String SSN = TestData.getCellData(sheetName,"SSN",row);
@@ -3359,7 +3356,7 @@ public void LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3378,11 +3375,11 @@ public void LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3434,11 +3431,11 @@ if(RunFlag.equals("Y"))
 	//driver.get(appUrl);
 	//test.log(LogStatus.INFO, "Application is launched");
 	//driver.manage().window().maximize();
-		AppURL = prop.getProperty("AppURL_venkat");
-		UserName = prop.getProperty("UserName_venkat");
-		Password = prop.getProperty("Password_venkat");
+		AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+		UserName = prop.getProperty("UserName_CO_ILP_venkat");
+		Password = prop.getProperty("Password_CO_ILP_venkat");
       // System.out.println(Password);
-       StoreId = prop.getProperty("StoreID_venkat");
+       StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
        String StateID = TestData.getCellData(sheetName,"StateID",row);
        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3490,7 +3487,7 @@ if(RunFlag.equals("Y"))
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Payments_Txn_Testdata.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -3502,13 +3499,13 @@ if(RunFlag.equals("Y"))
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_venkat");
+				StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -3537,7 +3534,7 @@ if(RunFlag.equals("Y"))
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stInstallmentPayments_Txn_Testdata.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -3549,13 +3546,13 @@ if(RunFlag.equals("Y"))
 				// driver.get(appUrl);
 				// test.log(LogStatus.INFO, "Application is launched");
 				// driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				// System.out.println(Password);
-				StoreId = prop.getProperty("StoreID_venkat");
+				StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String StateID = TestData.getCellData(sheetName, "StateID", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -3582,7 +3579,7 @@ if(RunFlag.equals("Y"))
 
 			// Start test. Mention test script name
 			String FileName = "AA_Loan_Payment_Void_Txn_Testdata.xls";
-			Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow = TestData.getLastRow("NewLoan");
 			String sheetName = "NewLoan";
 			// int lastrow=TestData.getLastRow("Borrower");
@@ -3594,13 +3591,13 @@ if(RunFlag.equals("Y"))
 					// driver.get(appUrl);
 					// test.log(LogStatus.INFO, "Application is launched");
 					// driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 					String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 					String StateID = TestData.getCellData(sheetName, "StateID", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -3629,7 +3626,7 @@ if(RunFlag.equals("Y"))
 
 			// Start test. Mention test script name
 			String FileName = "AA_Loan_1stInstallmentPayments_Void_Txn_Testdata.xls";
-			Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 			int lastrow = TestData.getLastRow("NewLoan");
 			String sheetName = "NewLoan";
 			// int lastrow=TestData.getLastRow("Borrower");
@@ -3641,13 +3638,13 @@ if(RunFlag.equals("Y"))
 					// driver.get(appUrl);
 					// test.log(LogStatus.INFO, "Application is launched");
 					// driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 					String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 					String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_venkat");
+					StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 					String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 					String StateID = TestData.getCellData(sheetName, "StateID", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -3689,11 +3686,11 @@ if(RunFlag.equals("Y"))
 			//driver.get(appUrl);
 			//test.log(LogStatus.INFO, "Application is launched");
 			//driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3732,7 +3729,7 @@ if(RunFlag.equals("Y"))
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Loan1stInsatallmentDeposit_Return_Payoff_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3751,11 +3748,11 @@ if(RunFlag.equals("Y"))
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3791,7 +3788,7 @@ if(RunFlag.equals("Y"))
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Loan1stInsatallmentDeposit_2ndInstDeposit_Return_EodBatch_3rdInst_Payoff_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3810,11 +3807,11 @@ if(RunFlag.equals("Y"))
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3866,7 +3863,7 @@ if(RunFlag.equals("Y"))
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Loan1stInsatallmentDeposit_Return_Payoff_void_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 
@@ -3885,11 +3882,11 @@ if(RunFlag.equals("Y"))
 			
 			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				AppURL = prop.getProperty("AppURL_venkat");
-				UserName = prop.getProperty("UserName_venkat");
-				Password = prop.getProperty("Password_venkat");
+				AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+				UserName = prop.getProperty("UserName_CO_ILP_venkat");
+				Password = prop.getProperty("Password_CO_ILP_venkat");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_venkat");
+		        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3938,11 +3935,11 @@ if(RunFlag.equals("Y"))
 	  		//driver.get(appUrl);
 	  		//test.log(LogStatus.INFO, "Application is launched");
 	  		//driver.manage().window().maximize();
-	  			AppURL = prop.getProperty("AppURL_venkat");
-	  			UserName = prop.getProperty("UserName_venkat");
-	  			Password = prop.getProperty("Password_venkat");
+	  			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	  			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	  			Password = prop.getProperty("Password_CO_ILP_venkat");
 	  	       // System.out.println(Password);
-	  	        StoreId = prop.getProperty("StoreID_venkat");
+	  	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	  	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	  	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	  	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -3992,11 +3989,11 @@ if(RunFlag.equals("Y"))
 	  		//driver.get(appUrl);
 	  		//test.log(LogStatus.INFO, "Application is launched");
 	  		//driver.manage().window().maximize();
-	  			AppURL = prop.getProperty("AppURL_venkat");
-	  			UserName = prop.getProperty("UserName_venkat");
-	  			Password = prop.getProperty("Password_venkat");
+	  			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	  			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	  			Password = prop.getProperty("Password_CO_ILP_venkat");
 	  	       // System.out.println(Password);
-	  	        StoreId = prop.getProperty("StoreID_venkat");
+	  	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	  	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	  	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	  	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4050,11 +4047,11 @@ if(RunFlag.equals("Y"))
 	  		//driver.get(appUrl);
 	  		//test.log(LogStatus.INFO, "Application is launched");
 	  		//driver.manage().window().maximize();
-	  			AppURL = prop.getProperty("AppURL_venkat");
-	  			UserName = prop.getProperty("UserName_venkat");
-	  			Password = prop.getProperty("Password_venkat");
+	  			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+	  			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+	  			Password = prop.getProperty("Password_CO_ILP_venkat");
 	  	       // System.out.println(Password);
-	  	        StoreId = prop.getProperty("StoreID_venkat");
+	  	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 	  	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 	  	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 	  	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4093,7 +4090,7 @@ if(RunFlag.equals("Y"))
 
 					// Start test. Mention test script name
 					String FileName = "AA_Loan_ACHRevoke__1stInsatllmentDeposit_Txn_Testdata.xls";
-					Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 					int lastrow = TestData.getLastRow("NewLoan");
 					String sheetName = "NewLoan";
 					// int lastrow=TestData.getLastRow("Borrower");
@@ -4105,13 +4102,13 @@ if(RunFlag.equals("Y"))
 							// driver.get(appUrl);
 							// test.log(LogStatus.INFO, "Application is launched");
 							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_venkat");
-							UserName = prop.getProperty("UserName_venkat");
-							Password = prop.getProperty("Password_venkat");
+							AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+							UserName = prop.getProperty("UserName_CO_ILP_venkat");
+							Password = prop.getProperty("Password_CO_ILP_venkat");
 							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_venkat");
+							StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 							String StateID = TestData.getCellData(sheetName, "StateID", row);
 							String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -4145,7 +4142,7 @@ if(RunFlag.equals("Y"))
 
 					// Start test. Mention test script name
 					String FileName = "AA_Loan_ACHRevoke__1stInsatllmentPayment_ACHAuthorigation_ACHDeposit_Txn_Testdata.xls";
-					Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 					int lastrow = TestData.getLastRow("NewLoan");
 					String sheetName = "NewLoan";
 					// int lastrow=TestData.getLastRow("Borrower");
@@ -4157,13 +4154,13 @@ if(RunFlag.equals("Y"))
 							// driver.get(appUrl);
 							// test.log(LogStatus.INFO, "Application is launched");
 							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_venkat");
-							UserName = prop.getProperty("UserName_venkat");
-							Password = prop.getProperty("Password_venkat");
+							AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+							UserName = prop.getProperty("UserName_CO_ILP_venkat");
+							Password = prop.getProperty("Password_CO_ILP_venkat");
 							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_venkat");
+							StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 							String StateID = TestData.getCellData(sheetName, "StateID", row);
 							String SSN = TestData.getCellData(sheetName, "SSN", row);
@@ -4201,7 +4198,7 @@ if(RunFlag.equals("Y"))
 					
 						// Start test. Mention test script name
 						String FileName= "AA_CO_ILP_Loan_Instwisepayment_LastInst_deposit_Testdata.xls";
-						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName); 
+						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName); 
 						int lastrow=TestData.getLastRow("NewLoan");
 						String sheetName="NewLoan";
 						
@@ -4213,10 +4210,10 @@ if(RunFlag.equals("Y"))
 						if(RunFlag.equals("Y"))
 						{	
 
-								AppURL = prop.getProperty("AppURL_venkat");
-								UserName = prop.getProperty("UserName_venkat");
-								Password = prop.getProperty("Password_venkat");
-						        StoreId = prop.getProperty("StoreID_venkat");
+								AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+								UserName = prop.getProperty("UserName_CO_ILP_venkat");
+								Password = prop.getProperty("Password_CO_ILP_venkat");
+						        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 						        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 						        String StateID = TestData.getCellData(sheetName,"StateID",row);
 						        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4257,7 +4254,7 @@ if(RunFlag.equals("Y"))
 			
 			// Start test. Mention test script name
 			String FileName= "AA_Loan_1stInsatallmentDeposit_Return_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 
@@ -4276,11 +4273,11 @@ if(RunFlag.equals("Y"))
 				
 				    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					AppURL = prop.getProperty("AppURL_venkat");
-					UserName = prop.getProperty("UserName_venkat");
-					Password = prop.getProperty("Password_venkat");
+					AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+					UserName = prop.getProperty("UserName_CO_ILP_venkat");
+					Password = prop.getProperty("Password_CO_ILP_venkat");
 			       // System.out.println(Password);
-			        StoreId = prop.getProperty("StoreID_venkat");
+			        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4328,11 +4325,11 @@ if(RunFlag.equals("Y"))
 		  		//driver.get(appUrl);
 		  		//test.log(LogStatus.INFO, "Application is launched");
 		  		//driver.manage().window().maximize();
-		  			AppURL = prop.getProperty("AppURL_venkat");
-		  			UserName = prop.getProperty("UserName_venkat");
-		  			Password = prop.getProperty("Password_venkat");
+		  			AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+		  			UserName = prop.getProperty("UserName_CO_ILP_venkat");
+		  			Password = prop.getProperty("Password_CO_ILP_venkat");
 		  	       // System.out.println(Password);
-		  	        StoreId = prop.getProperty("StoreID_venkat");
+		  	        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 		  	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		  	        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		  	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4375,7 +4372,7 @@ if(RunFlag.equals("Y"))
 				
 				// Start test. Mention test script name
 				String FileName= "AA_Loan_PaymentallInstOnduedate_ExceptLastInst_LastDeposit_Return_Testdata.xls";
-				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_path_venkat") + FileName);  	
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);  	
 				int lastrow=TestData.getLastRow("NewLoan");
 				String sheetName="NewLoan";
 
@@ -4394,11 +4391,11 @@ if(RunFlag.equals("Y"))
 					
 					    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
 						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-						AppURL = prop.getProperty("AppURL_venkat");
-						UserName = prop.getProperty("UserName_venkat");
-						Password = prop.getProperty("Password_venkat");
+						AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+						UserName = prop.getProperty("UserName_CO_ILP_venkat");
+						Password = prop.getProperty("Password_CO_ILP_venkat");
 				       // System.out.println(Password);
-				        StoreId = prop.getProperty("StoreID_venkat");
+				        StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 				        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 				        String StateID = TestData.getCellData(sheetName,"StateID",row);
 				        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -4442,7 +4439,7 @@ if(RunFlag.equals("Y"))
 
 					// Start test. Mention test script name
 					String FileName = "AA_Loan_ACHRevoke__1stInsatllmentDeposit_Clear_Txn_Testdata.xls";
-					Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_venkat") + FileName);
 					int lastrow = TestData.getLastRow("NewLoan");
 	String sheetName = "NewLoan";
 	// int lastrow=TestData.getLastRow("Borrower");
@@ -4454,13 +4451,13 @@ if(RunFlag.equals("Y"))
 							// driver.get(appUrl);
 							// test.log(LogStatus.INFO, "Application is launched");
 							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_venkat");
-							UserName = prop.getProperty("UserName_venkat");
-							Password = prop.getProperty("Password_venkat");
+							AppURL = prop.getProperty("AppURL_CO_ILP_venkat");
+							UserName = prop.getProperty("UserName_CO_ILP_venkat");
+							Password = prop.getProperty("Password_CO_ILP_venkat");
 							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_venkat");
+							StoreId = prop.getProperty("StoreID_CO_ILP_venkat");
 							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 							String StateID = TestData.getCellData(sheetName, "StateID", row);
 							String SSN = TestData.getCellData(sheetName, "SSN", row);

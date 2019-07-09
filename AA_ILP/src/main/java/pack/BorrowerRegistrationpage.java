@@ -5152,7 +5152,7 @@ jse.executeScript("document.getElementById('elementid').focus();");*/
 
 
 
-public void RegistrationPage_NewLoan_FL_ILP(WebDriver driver,ExtentTest test,String AppURL,String SSN,String FileName) throws Exception{
+public static void RegistrationPage_NewLoan_FL_ILP(WebDriver driver,ExtentTest test,String AppURL,String SSN,String FileName) throws Exception{
 
 	
 	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/"+FileName);//RegressionCOILP

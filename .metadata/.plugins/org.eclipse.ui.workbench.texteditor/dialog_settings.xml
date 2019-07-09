@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="StoreId = prop.getProperty(&quot;StoreID_venkat&quot;);" key="selection"/>
+		<item value="PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="PayAnyAmt_Installments.PayAnyAmt_Installments"/>
+			<item value="ACH_Deposit.ACH_Deposit"/>
 			<item value="String StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
+			<item value="tring StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
 			<item value="String Password = TestData.getCellData(sheetName, &quot;Password&quot;, row);"/>
 			<item value="String UserName = TestData.getCellData(sheetName, &quot;UserName&quot;, row);"/>
-			<item value="String AppURL = TestData.getCellData(sheetName, &quot;AppURL&quot;, row);"/>
-			<item value="String StoreId = TestData.getCellData(sheetName,&quot;StoreID&quot;,row);"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_leela&quot;);"/>
-			<item value="String Password = TestData.getCellData(sheetName,&quot;Password&quot;,row);"/>
-			<item value="String UserName = TestData.getCellData(sheetName,&quot;UserName&quot;,row);"/>
+			<item value="(this.)([a-zA-Z_]*)(.*)"/>
+			<item value="v"/>
 		</list>
 		<list key="replacehistory">
-			<item value="StoreId = prop.getProperty(&quot;StoreID_venkat&quot;);"/>
-			<item value="Password = prop.getProperty(&quot;Password_venkat&quot;);"/>
-			<item value="UserName = prop.getProperty(&quot;UserName_venkat&quot;);"/>
-			<item value="AppURL = prop.getProperty(&quot;AppURL_venkat&quot;);"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_leela&quot;);"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_path_venkat&quot;) + FileName);"/>
-			<item value="Payliance_OriginationFile_Venkat.Payliance_OriginationFile_Venkat"/>
-			<item value="Loan_Balance_Status.Loan_Balance_Status"/>
+			<item value="PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat"/>
+			<item value="ACH_Deposit1.ACH_Deposit1"/>
+			<item value="StoreId = prop.getProperty(&quot;StoreID_OH_ILP_venkat&quot;);"/>
+			<item value="Password = prop.getProperty(&quot;Password_OH_ILP_venkat&quot;);"/>
+			<item value="UserName = prop.getProperty(&quot;UserName_OH_ILP_venkat&quot;);"/>
+			<item value="$2.$2$3"/>
+			<item value="StoreId = prop.getProperty(&quot;StoreID_FL_ILP_kiran&quot;);"/>
+			<item value="AppURL = prop.getProperty(&quot;AppURL_OH_ILP_venkat&quot;);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="760" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="974" key="DIALOG_X_ORIGIN"/>
-		<item value="230" key="DIALOG_Y_ORIGIN"/>
+		<item value="373" key="DIALOG_HEIGHT"/>
+		<item value="517" key="DIALOG_X_ORIGIN"/>
+		<item value="131" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
