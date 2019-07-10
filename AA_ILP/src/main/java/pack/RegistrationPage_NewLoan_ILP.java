@@ -27,7 +27,7 @@ public class RegistrationPage_NewLoan_ILP extends AA_CO_ILP{
 		// Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/"+FileName);
 		// Excel TestData = new
 		// Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/"+FileName);
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/" + FileName);
+		//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/" + FileName);
 
 		int lastrow = TestData.getLastRow("Borrower_Registration");
 

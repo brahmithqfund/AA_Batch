@@ -13,7 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ACH_Deposit extends AA_CO_ILP{
 
-	public void ACH_Deposit(String SSN, String FileName, int Days, int InstNum) throws Exception {
+	public static void ACH_Deposit(String SSN, String FileName, int Days, int InstNum) throws Exception {
 
 		//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/" + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");

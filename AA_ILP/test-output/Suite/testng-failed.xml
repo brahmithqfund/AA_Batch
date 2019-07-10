@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="pack.AnnotationTransformer"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="kiran_CO_ILP1"/>
+=======
+        <include name="leela_OH_ILP"/>
+>>>>>>> 103f8675e12064f21603070e60e2cd21b9708e81
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_CO_ILP">
+      <class name="pack.AA_OH_ILP">
         <methods>
+<<<<<<< HEAD
           <include name="setup_Grid"/>
           <include name="quit"/>
           <include name="getResult"/>
           <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
+=======
+          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
+          <include name="Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_"/>
+          <include name="Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void"/>
+          <include name="DFLTLoan_EPPConvert_PpayAllInst_"/>
+          <include name="LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
+          <include name="LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
+          <include name="setup_Grid"/>
+          <include name="LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120"/>
+          <include name="CO_ILP_Loan_DefaultPayment"/>
+          <include name="LonI_DFLT_EODbatchprocess_DFLTPLUS60"/>
+          <include name="Loan_Bankrupt_"/>
+          <include name="DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_"/>
+          <include name="CO_ILP_Loan_DefaultPayment_Void"/>
+          <include name="Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate"/>
+          <include name="CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid"/>
+          <include name="Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes"/>
+          <include name="CO_ILP_Loan_BNK_Void"/>
+          <include name="Loan_Bankrupt_Void_"/>
+          <include name="Loan_DFLT_WO_WORecPartPmt_VoidNextDay"/>
+          <include name="getResult"/>
+          <include name="CO_ILP_Loan_DefaulPartialPayment_Void"/>
+          <include name="Loan_DFLT_WO_WORecFullWithAllTenderTypes_"/>
+          <include name="LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60"/>
+          <include name="Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear"/>
+          <include name="Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_"/>
+          <include name="quit"/>
+>>>>>>> 103f8675e12064f21603070e60e2cd21b9708e81
           <include name="initialize"/>
         </methods>
-      </class> <!-- pack.AA_CO_ILP -->
+      </class> <!-- pack.AA_OH_ILP -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
