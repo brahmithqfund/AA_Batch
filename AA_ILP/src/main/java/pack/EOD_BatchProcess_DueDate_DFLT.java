@@ -49,7 +49,7 @@ public class EOD_BatchProcess_DueDate_DFLT extends AA_CO_ILP{
 
 				//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 
-				//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 
 				System.out.println(AdminURL);
 

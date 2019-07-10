@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="32" total="32" passed="0">
+<testng-results skipped="0" failed="0" ignored="68" total="69" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6751" started-at="2019-07-03T13:18:27Z" finished-at="2019-07-03T13:18:34Z">
+  <suite name="Suite" duration-ms="1102033" started-at="2019-07-04T12:54:14Z" finished-at="2019-07-04T13:12:36Z">
     <groups>
+      <group name="kiran_CO_ILP1">
+        <method signature="AA_CO_ILP.DFLTLoan_EPPConvert_DepositAll_ClearAll_()[pri:84, instance:pack.AA_CO_ILP@3e9b1010]" name="DFLTLoan_EPPConvert_DepositAll_ClearAll_" class="pack.AA_CO_ILP"/>
+      </group> <!-- kiran_CO_ILP1 -->
     </groups>
-    <test name="Test" duration-ms="6751" started-at="2019-07-03T13:18:27Z" finished-at="2019-07-03T13:18:34Z">
+    <test name="Test" duration-ms="1102033" started-at="2019-07-04T12:54:14Z" finished-at="2019-07-04T13:12:36Z">
       <class name="pack.AA_CO_ILP">
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@3e9b1010]" name="setup_Grid" is-config="true" duration-ms="6745" started-at="2019-07-03T13:18:27Z" finished-at="2019-07-03T13:18:34Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@3e9b1010]" name="setup_Grid" is-config="true" duration-ms="7589" started-at="2019-07-04T12:54:14Z" finished-at="2019-07-04T12:54:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_CO_ILP@3e9b1010]" name="initialize" is-config="true" duration-ms="59" started-at="2019-07-04T12:54:22Z" finished-at="2019-07-04T12:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="DFLTLoan_EPPConvert_DepositAll_ClearAll_()[pri:84, instance:pack.AA_CO_ILP@3e9b1010]" name="DFLTLoan_EPPConvert_DepositAll_ClearAll_" duration-ms="1093613" started-at="2019-07-04T12:54:22Z" finished-at="2019-07-04T13:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DFLTLoan_EPPConvert_DepositAll_ClearAll_ -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_CO_ILP@3e9b1010]" name="getResult" is-config="true" duration-ms="188" started-at="2019-07-04T13:12:36Z" finished-at="2019-07-04T13:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DFLTLoan_EPPConvert_DepositAll_ClearAll_ status=SUCCESS method=AA_CO_ILP.DFLTLoan_EPPConvert_DepositAll_ClearAll_()[pri:84, instance:pack.AA_CO_ILP@3e9b1010] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_CO_ILP@3e9b1010]" name="quit" is-config="true" duration-ms="568" started-at="2019-07-04T13:12:36Z" finished-at="2019-07-04T13:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- pack.AA_CO_ILP -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

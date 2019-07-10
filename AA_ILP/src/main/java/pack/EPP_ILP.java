@@ -39,7 +39,7 @@ public class EPP_ILP extends AA_CO_ILP{
 
 				System.out.println(ProductID);	
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-				//appUrl = AppURL;
+				appUrl = AppURL;
 				Login.Login(UserName, Password, StoreId);
 				 test.log(LogStatus.PASS,"<FONT color=green style=Arial> ----------- RPP ILP -----------");
 

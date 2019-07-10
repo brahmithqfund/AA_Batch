@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="pack.AA_CO_ILP" hash-for-method="DFLTLoan_EPPConvert_DepositAll_ClearAll_">DFLTLoan_EPPConvert_DepositAll_ClearAll_</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,6 +117,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pack.AA_CO_ILP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DFLTLoan_EPPConvert_DepositAll_ClearAll_">
+                  </a> <!-- DFLTLoan_EPPConvert_DepositAll_ClearAll_ -->
+                  <span class="method-name">DFLTLoan_EPPConvert_DepositAll_ClearAll_</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -116,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Kiran_CO_ILP&quot;/&gt;
+        &lt;include name=&quot;kiran_CO_ILP1&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -144,6 +173,14 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">kiran_CO_ILP1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DFLTLoan_EPPConvert_DepositAll_ClearAll_</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -160,11 +197,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'DFLTLoan_EPPConvert_DepositAll_ClearAll_')
+data.setCell(0, 2, 'pack.AA_CO_ILP')
+data.setCell(0, 3, 1093613);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -179,7 +221,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">32 ignored methods</span>
+            <span class="header-content">68 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -187,67 +229,139 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">Loan_DFLT_WO_WORecPartPmt_VoidNextDay</span>
                 <br/>
-                <span class="ignored-method-name">LonI_Bnkrupt_Dismissed</span>
-                <br/>
                 <span class="ignored-method-name">AA_Loan1stInsatallmentEODbatchprocess_Cure_Less1stInsatllPayment_CureenddateDefault</span>
-                <br/>
-                <span class="ignored-method-name">Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes</span>
                 <br/>
                 <span class="ignored-method-name">LonI_Deceased</span>
                 <br/>
-                <span class="ignored-method-name">CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid</span>
-                <br/>
                 <span class="ignored-method-name">DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_</span>
-                <br/>
-                <span class="ignored-method-name">LonI_Bnkrupt_Discharge</span>
                 <br/>
                 <span class="ignored-method-name">LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60</span>
                 <br/>
-                <span class="ignored-method-name">Loan_Bankrupt_Void_</span>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_verify_</span>
                 <br/>
                 <span class="ignored-method-name">Loan_DFLT_WO_WORecFullWithAllTenderTypes_</span>
                 <br/>
                 <span class="ignored-method-name">AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_CureenddateDefault</span>
                 <br/>
-                <span class="ignored-method-name">DFLTLoan_EPPConvert_DepositAll_ClearAll_</span>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_Payoff_Void</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__</span>
                 <br/>
                 <span class="ignored-method-name">Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear</span>
                 <br/>
                 <span class="ignored-method-name">LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record</span>
                 <br/>
-                <span class="ignored-method-name">Loan_PmtAllInstExceptLast_DFLTLastInst_</span>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_payoff</span>
+                <br/>
+                <span class="ignored-method-name">loan_VoidEncryption</span>
                 <br/>
                 <span class="ignored-method-name">CO_ILP_Loan_first_payment_BNK_Second_deposit</span>
                 <br/>
-                <span class="ignored-method-name">Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_</span>
-                <br/>
                 <span class="ignored-method-name">DFLTLoan_EPPConvert_PpayAllInst_</span>
-                <br/>
-                <span class="ignored-method-name">Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void</span>
                 <br/>
                 <span class="ignored-method-name">LonI_DFLT_PPN_BNK_1InstDeposit</span>
                 <br/>
-                <span class="ignored-method-name">Loan_PmtAllExceptLast_DepLast_Clear_Return_</span>
+                <span class="ignored-method-name">CO_ILP_MultipleDisbNewLoan_Void</span>
+                <br/>
+                <span class="ignored-method-name">LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_</span>
                 <br/>
                 <span class="ignored-method-name">Loan_1stdeposit_clr_payoff_clear_return_</span>
                 <br/>
-                <span class="ignored-method-name">AA_Loan1stInsatallmentEODbatchprocess_Cure_Default</span>
-                <br/>
                 <span class="ignored-method-name">LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate</span>
-                <br/>
-                <span class="ignored-method-name">BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_</span>
                 <br/>
                 <span class="ignored-method-name">LonI_Bnkrupt_Deceased</span>
                 <br/>
                 <span class="ignored-method-name">AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault</span>
                 <br/>
+                <span class="ignored-method-name">Loan_1stParPmt_1stDep_Ret_</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_Monthly</span>
+                <br/>
                 <span class="ignored-method-name">Loan_1stpayment_activemilitary_2ndpayment_</span>
                 <br/>
-                <span class="ignored-method-name">LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record</span>
+                <span class="ignored-method-name">LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint</span>
+                <br/>
+                <span class="ignored-method-name">AA_Loan_ACHRevoke_1stInsatallmentDeposit</span>
+                <br/>
+                <span class="ignored-method-name">CO_ILP_NewLoanVoid</span>
+                <br/>
+                <span class="ignored-method-name">LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt</span>
+                <br/>
+                <span class="ignored-method-name">AA_Loan_ACHRevoke_1stInsatallmentDeposit_Clear</span>
                 <br/>
                 <span class="ignored-method-name">LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120</span>
                 <br/>
+                <span class="ignored-method-name">AA_Loan_1stInstallmentPayments</span>
+                <br/>
                 <span class="ignored-method-name">CO_ILP_Loan_DefaulPayment_Void</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_Weekly_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_</span>
+                <br/>
+                <span class="ignored-method-name">LonI_Bnkrupt_Dismissed</span>
+                <br/>
+                <span class="ignored-method-name">Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes</span>
+                <br/>
+                <span class="ignored-method-name">CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid</span>
+                <br/>
+                <span class="ignored-method-name">LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount</span>
+                <br/>
+                <span class="ignored-method-name">CO_ILP_NewLoanRescind</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void</span>
+                <br/>
+                <span class="ignored-method-name">Loan_1stInstpartialpayment_1stInstdeposit_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_PaymentinCSRPortel</span>
+                <br/>
+                <span class="ignored-method-name">LonI_Bnkrupt_Discharge</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Bankrupt_Void_</span>
+                <br/>
+                <span class="ignored-method-name">LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint_VoidPymt</span>
+                <br/>
+                <span class="ignored-method-name">AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatallmentDeposit</span>
+                <br/>
+                <span class="ignored-method-name">LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment</span>
+                <br/>
+                <span class="ignored-method-name">Loan_PmtAllInstExceptLast_DFLTLastInst_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_PaymentinCSRPortel_Void</span>
+                <br/>
+                <span class="ignored-method-name">LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void</span>
+                <br/>
+                <span class="ignored-method-name">Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_1stInstDeposit_Rtn</span>
+                <br/>
+                <span class="ignored-method-name">Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void</span>
+                <br/>
+                <span class="ignored-method-name">Loan_PmtAllExceptLast_DepLast_Clear_Return_</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_</span>
+                <br/>
+                <span class="ignored-method-name">AA_Loan1stInsatallmentEODbatchprocess_Cure_Default</span>
+                <br/>
+                <span class="ignored-method-name">BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_paymentGreaterthanLoanAmount</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly</span>
+                <br/>
+                <span class="ignored-method-name">Loan_DepositACH_</span>
+                <br/>
+                <span class="ignored-method-name">LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record</span>
+                <br/>
+                <span class="ignored-method-name">Login_Homescreen_Borrower_Registration_NewLoan_ACH_</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_paymentLessthanLoanAmount</span>
+                <br/>
+                <span class="ignored-method-name">Loan_Deposit_Rtn_clear_2InstDeposit_Return_EODBatchprocess_payoff</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -264,6 +378,22 @@ return data;
                 <span class="method-name">setup_Grid</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">7593 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">DFLTLoan_EPPConvert_DepositAll_ClearAll_</span>
+                <span class="method-start">7656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=DFLTLoan_EPPConvert_DepositAll_ClearAll_ status=SUCCESS method=AA_CO_ILP.DFLTLoan_E...)</span>
+                <span class="method-start">1101273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1101461 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

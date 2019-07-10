@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="StoreId = prop.getProperty(&quot;StoreID_venkat&quot;);" key="selection"/>
+		<item value="appUrl" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="appUrl"/>
+			<item value="priority = 59"/>
+			<item value="priority =59"/>
+			<item value="priority = 0"/>
 			<item value="String StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
 			<item value="String Password = TestData.getCellData(sheetName, &quot;Password&quot;, row);"/>
 			<item value="String UserName = TestData.getCellData(sheetName, &quot;UserName&quot;, row);"/>
 			<item value="String AppURL = TestData.getCellData(sheetName, &quot;AppURL&quot;, row);"/>
-			<item value="String StoreId = TestData.getCellData(sheetName,&quot;StoreID&quot;,row);"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_leela&quot;);"/>
-			<item value="String Password = TestData.getCellData(sheetName,&quot;Password&quot;,row);"/>
-			<item value="String UserName = TestData.getCellData(sheetName,&quot;UserName&quot;,row);"/>
 		</list>
 		<list key="replacehistory">
 			<item value="StoreId = prop.getProperty(&quot;StoreID_venkat&quot;);"/>

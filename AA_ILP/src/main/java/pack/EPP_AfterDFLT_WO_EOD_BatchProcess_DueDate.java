@@ -50,7 +50,7 @@ public class EPP_AfterDFLT_WO_EOD_BatchProcess_DueDate extends AA_CO_ILP{
 
 				//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 
-				//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 
 				System.out.println(AdminURL);
 
@@ -58,7 +58,7 @@ public class EPP_AfterDFLT_WO_EOD_BatchProcess_DueDate extends AA_CO_ILP{
 
 				System.out.println(ProductID);
 
-				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
+				//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 
 				appUrl = AppURL;
 

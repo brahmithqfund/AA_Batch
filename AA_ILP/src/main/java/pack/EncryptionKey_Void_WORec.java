@@ -30,7 +30,7 @@ public class EncryptionKey_Void_WORec extends AA_CO_ILP{
 				String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				//String Password = TestData.getCellData(sheetName, "Password", row);
-				//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 				//String UserName = TestData.getCellData(sheetName, "UserName", row);
 				//String StoreId = TestData.getCellData(sheetName, "StoreID", row);
 				Login.Login(UserName, Password, StoreId);

@@ -48,7 +48,7 @@ public class Login extends AA_CO_ILP{
  		// JavascriptExecutor js = (JavascriptExecutor)driver;
 
  		// Launch URL
- 		driver.get(appUrl);
+ 		driver.get(AppURL);
  		test.log(LogStatus.INFO, "CSR Application is launched");
  		driver.manage().window().maximize();
  		String usenameId = "loginRequestBean.userId";

@@ -48,7 +48,7 @@ public class EOD_BatchProcess_DueDate extends AA_CO_ILP{
 
 				//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 
-				//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 
 				System.out.println(AdminURL);
 
@@ -60,7 +60,7 @@ public class EOD_BatchProcess_DueDate extends AA_CO_ILP{
 				//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 
 				//appUrl = AppURL;
-
+				appUrl = AppURL;
 				Login.Login(UserName, Password, StoreId);
 
 				String SSN1 = SSN.substring(0, 3);
@@ -189,9 +189,7 @@ public class EOD_BatchProcess_DueDate extends AA_CO_ILP{
 				// //*[@id="transactionHistoryTable"]/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]
 
 				// //*[@id="ContractScheduleTable"]/tbody/tr[2]/td[2]
-				DueDate = driver
-						.findElement(By.xpath("//*[@id='ContractScheduleTable']/tbody/tr[" + InstNum + "]/td[2]"))
-						.getText();
+				DueDate = driver.findElement(By.xpath("//*[@id='ContractScheduleTable']/tbody/tr[" + InstNum + "]/td[2]")).getText();
 
 				// //*[@id="ContractScheduleTable"]/tbody/tr[2]/td[2]
 				test.log(LogStatus.INFO, "DueDate Capture is ::" + DueDate);

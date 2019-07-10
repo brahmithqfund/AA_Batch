@@ -35,7 +35,7 @@ public class AgeStore_RPP_ILP extends AA_CO_ILP{
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
-				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
 
 
 				System.out.println(AdminURL);
@@ -44,7 +44,7 @@ public class AgeStore_RPP_ILP extends AA_CO_ILP{
 
 				System.out.println(ProductID);	
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-				//appUrl = AppURL;
+				appUrl = AppURL;
 				Login.Login(UserName, Password, StoreId);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);

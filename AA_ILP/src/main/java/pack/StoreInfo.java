@@ -24,9 +24,9 @@ public class StoreInfo extends AA_CO_ILP{
 				String TxnType = TestData.getCellData(sheetName, "TxnType", row);
 				String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-				String UserName = TestData.getCellData(sheetName, "UserName", row);
-				String Password = TestData.getCellData(sheetName, "Password", row);
-				String StoreID = TestData.getCellData(sheetName, "StoreID", row);
+				//String UserName = TestData.getCellData(sheetName, "UserName", row);
+				//String Password = TestData.getCellData(sheetName, "Password", row);
+				//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 				System.out.println(AdminURL);
 
@@ -70,8 +70,8 @@ public class StoreInfo extends AA_CO_ILP{
 
 				test.log(LogStatus.PASS, "Clicked on Edit Store");
 				driver.switchTo().frame("main");
-				driver.findElement(By.name("locationBean.locNbr")).sendKeys(StoreID);
-				test.log(LogStatus.PASS, "Store number is entered: " + StoreID);
+				driver.findElement(By.name("locationBean.locNbr")).sendKeys(StoreId);
+				test.log(LogStatus.PASS, "Store number is entered: " + StoreId);
 				driver.findElement(By.name("Submit2")).click();
 				test.log(LogStatus.PASS, "Clicked on submit button");
 				for (String winHandle : driver.getWindowHandles()) {
