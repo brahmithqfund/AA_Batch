@@ -26,6 +26,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		if(counter < retryLimit)
 		{
 			counter++;
+						
 			return true;
 		}
 		return false;

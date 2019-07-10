@@ -21,5 +21,4 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class sample extends AA_CO_ILP {
-
 	}

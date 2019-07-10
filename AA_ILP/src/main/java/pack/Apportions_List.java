@@ -10,7 +10,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Apportions_List extends AA_CO_ILP{
 
-	public void Apportions_List(String SSN, String FileName, int i) throws Exception
+	public static void Apportions_List(String SSN, String FileName, int i) throws Exception
 
 	{
 

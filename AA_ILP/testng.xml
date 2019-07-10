@@ -12,15 +12,17 @@
    <!-- kiran group--> 
    
 <!-- <include name="kiran_CO_ILP"/>  -->
-<include name="kiran_FL_ILP"/>   
+<!-- <include name="kiran_FL_ILP"/>  -->  
 <!-- <include name="leela_CO_ILP"/>  -->
 <!-- <include name="venkat_CO_ILP"/>  -->
+<include name="leela_OH_ILP"/> 
 
        </run>
   </groups>
    <classes>
       <class name="pack.AA_CO_ILP"/>
       <class name="pack.AA_FL_ILP"/>
+        <class name="pack.AA_OH_ILP"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

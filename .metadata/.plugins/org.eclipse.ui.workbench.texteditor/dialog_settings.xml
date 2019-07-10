@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="false" key="isRegEx"/>
-		<item value="PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat" key="selection"/>
+		<item value="true" key="isRegEx"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="PayAnyAmt_Installments.PayAnyAmt_Installments"/>
-			<item value="ACH_Deposit.ACH_Deposit"/>
-			<item value="String StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
-			<item value="tring StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
-			<item value="String Password = TestData.getCellData(sheetName, &quot;Password&quot;, row);"/>
-			<item value="String UserName = TestData.getCellData(sheetName, &quot;UserName&quot;, row);"/>
+			<item value="appUrl = AppURL;"/>
+			<item value="(^.*priority=\d\d)"/>
+			<item value="Reg.RegistrationPage_NewLoan_PDL_FL(driver, test, AppURL, SSN, FileName);"/>
+			<item value="BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();"/>
 			<item value="(this.)([a-zA-Z_]*)(.*)"/>
-			<item value="v"/>
+			<item value="String StoreId = TestData.getCellData(sheetName,&quot;StoreID&quot;,row);"/>
+			<item value="String Password = TestData.getCellData(sheetName,&quot;Password&quot;,row);"/>
+			<item value="String UserName = TestData.getCellData(sheetName,&quot;UserName&quot;,row);"/>
 		</list>
 		<list key="replacehistory">
-			<item value="PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat"/>
-			<item value="ACH_Deposit1.ACH_Deposit1"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_OH_ILP_venkat&quot;);"/>
-			<item value="Password = prop.getProperty(&quot;Password_OH_ILP_venkat&quot;);"/>
-			<item value="UserName = prop.getProperty(&quot;UserName_OH_ILP_venkat&quot;);"/>
+			<item value=""/>
+			<item value="$1,groups = &quot;srikanth_FL_PDL&quot;"/>
+			<item value="$1,groups = &quot;pradeep_FL_PDL&quot;"/>
+			<item value="RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);"/>
 			<item value="$2.$2$3"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_FL_ILP_kiran&quot;);"/>
-			<item value="AppURL = prop.getProperty(&quot;AppURL_OH_ILP_venkat&quot;);"/>
+			<item value="StoreId = prop.getProperty(&quot;StoreID_FL_PDL_srikanth&quot;);"/>
+			<item value="Password = prop.getProperty(&quot;Password_FL_PDL_srikanth&quot;);"/>
+			<item value="UserName = prop.getProperty(&quot;UserName_FL_PDL_srikanth&quot;);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="760" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="373" key="DIALOG_HEIGHT"/>
-		<item value="517" key="DIALOG_X_ORIGIN"/>
-		<item value="131" key="DIALOG_Y_ORIGIN"/>
+		<item value="431" key="DIALOG_HEIGHT"/>
+		<item value="1905" key="DIALOG_X_ORIGIN"/>
+		<item value="126" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
