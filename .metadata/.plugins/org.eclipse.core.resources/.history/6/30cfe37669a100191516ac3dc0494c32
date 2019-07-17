@@ -1,5 +1,0 @@
-package pack;
-
-public interface IRetryAnalyzer {
-	 public boolean retry(ITestResult result);
-}
