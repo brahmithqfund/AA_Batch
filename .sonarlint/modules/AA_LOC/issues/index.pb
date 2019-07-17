@@ -434,3 +434,10 @@ Q
 !src/main/java/pack/AgeStore1.java,2\8\281ad39a5ca2e0ce643bb1f2b413825d7e49b43f
 W
 'src/test/java/pack/AA_TN_LOC_Smoke.java,c\7\c7a13d2aceed1648eee4a09579e3833dcabe4c6a
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+:
+
+ojdbc8.jar,2\4\2429695d5b84d942a64be392c5bfdcc18e0e9ee0

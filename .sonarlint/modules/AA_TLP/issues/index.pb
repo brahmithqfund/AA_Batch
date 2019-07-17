@@ -256,3 +256,10 @@ W
 'src/test/java/pack/AA_TN_TLP_Smoke.java,8\9\89897a342cba2ea67ff2a93b9023c63d2c3ccfc1
 T
 $src/test/java/pack/Config.properties,f\1\f190f0ebd735e94c429e7cd13bf7fc5269013188
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+:
+
+ojdbc8.jar,2\4\2429695d5b84d942a64be392c5bfdcc18e0e9ee0
