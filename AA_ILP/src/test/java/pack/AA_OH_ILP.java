@@ -97,7 +97,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -123,7 +123,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:01" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration_New loan_verifyOrigination fee and MHC fee");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -141,7 +141,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_Monthly_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -167,7 +167,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:02" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration monthly income frequency_New loan");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -185,7 +185,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -211,7 +211,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:03" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration semimonthly income frequency_New loan");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -229,7 +229,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -255,7 +255,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:04" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration biweekly income frequency_New loan");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -273,7 +273,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_Weekly_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -299,7 +299,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:05" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration weekly income frequency_New loan");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -317,7 +317,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_ACH_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -343,7 +343,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:05" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration weekly income frequency_New loan");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -360,7 +360,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -386,7 +386,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:07" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration_select multiple disbursement types");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -404,8 +404,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_COILP_NewLoan_Void_Testdata.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -430,7 +429,7 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan– same day Void");
 
 				Assert.assertTrue(true);
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -476,7 +475,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:9" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan – void on next day with encryption key");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -523,7 +522,7 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan– Rescind");
 
 				Assert.assertTrue(true);
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -569,7 +568,7 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan with multiple disbursement (cash& check)->void with cash");
 
 				Assert.assertTrue(true);
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -617,7 +616,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:13" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -665,7 +664,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:14" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -716,7 +715,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:15" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -767,7 +766,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:16" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -815,7 +814,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:17" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -869,7 +868,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:18" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installement amount)>void payment on next day");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -924,7 +923,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:19" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(less than 1# amount)");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -980,7 +979,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:20" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(greaterthan 1# amount)");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1009,7 +1008,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount_Testdata.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1035,7 +1034,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:21" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_Run EOB batch process from 10th day of due date_payment(greater  than 1# amount)");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 
@@ -1101,7 +1100,7 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:22" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>default>Run EOD batch process(default date+60 days)");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1161,7 +1160,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:23" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(greater  than 1# amount)_void payment on next day  (Encryption key issue)");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1190,7 +1189,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1216,7 +1215,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:24" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_Run EOB batch process from 10th day of due date>payment(greater  than 1# amount)_Void");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1280,7 +1279,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:25" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>select payment option from CSR dropdown> Payment screen ");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1328,7 +1327,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:26" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1# payment on due date>payoff");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1375,7 +1374,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:28" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>select payment option from CSR dropdown> Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t3.Pay any other Amt>select payoff balance>Enter amount>");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1392,7 +1391,7 @@ public class AA_OH_ILP extends AA_ILP{
 	}
 
 	/*
-	 * //@Test(priority = 27) Dubilecate public void
+	 * @Test(priority = 27) Dubilecate public void
 	 * AA_Loan_1stInstallmentPayments_Void() throws Exception {
 	 * 
 	 * // Start test. Mention test script name String FileName =
@@ -1439,7 +1438,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1465,7 +1464,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:30" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# payment on due date_2#payment on due date_void_run EOD batch process on 10th day of 2# _payoff_(consider loan has only three installements)_void");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1521,7 +1520,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:31" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#depsoit >rtn>payoff>");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1578,7 +1577,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:32" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#deposit >clr>2# dep>rtn>run EOD batch process on 10th from 2# due date>payoff>age the store date to one day before 3# due date(banking day)>run EOD");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1650,7 +1649,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:33" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#depsoit >rtn>payoff>void");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1679,7 +1678,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DepositACH_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1705,7 +1704,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:35" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to one day before 1# due date(banking day)_Run EOD process_Run payliance origination file_Process depsoit on due by clicking on Process ILP pre ach depsoits");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1732,7 +1731,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stInstpartialpayment_1stInstdeposit_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1758,7 +1757,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:36" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1st Inst partial payment_1st Inst deposit");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1788,7 +1787,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stInstpaymentFullCash_1stInstdeposit_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1814,7 +1813,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:37" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1st Inst  full cash payment_1st Inst deposit");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1871,7 +1870,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:38" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>ach revoke >1# deposit");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1923,7 +1922,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:39" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>ach revoke >1# payment>ach auth>2# deposit");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1977,7 +1976,7 @@ public class AA_OH_ILP extends AA_ILP{
 				test = reports.startTest(Header + "_S.No:40" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>payment all the installements acc to respective due dates except last installement>last # deposit");
 
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2036,7 +2035,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:41" + "_" + PayFrequency + "_" + CollateralType,
 						"Laon>1# deposit>Return");
-				appUrl = AppURL;
+				
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -2062,7 +2061,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stParPmt_1stDep_Ret_TestData.xls";
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/" + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2088,7 +2087,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:42" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# partial payment_1# deposit_Return");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2150,7 +2149,7 @@ public class AA_OH_ILP extends AA_ILP{
 	 * ProductID; //System.out.println(SSN); test =
 	 * reports.startTest(Header+"_S.No:43"+"_"+PayFrequency+"_"+CollateralType,
 	 * "Loan_payment all the installements acc to respective due dates except last installement_last # deposit_Return"
-	 * ); appUrl = AppURL; Login.Login(UserName,Password,StoreId);
+	 * );  Login.Login(UserName,Password,StoreId);
 	 * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,
 	 * AppURL, SSN, FileName); NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
 	 * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
@@ -2185,8 +2184,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_ACHRevoke__1stInsatllmentDeposit_Clear_Txn_Testdata.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2212,7 +2210,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:44" + "_" + PayFrequency + "_" + CollateralType,
 						"Laon>1# deposit>Clear");
-				appUrl = AppURL;
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2267,7 +2265,7 @@ public class AA_OH_ILP extends AA_ILP{
 		 	        String Header = StateID+ "_" + ProductID;
 		 	        //System.out.println(SSN);
 		 	        test = reports.startTest(Header+"_S.No:45"+"_"+PayFrequency+"_"+CollateralType, "Loan>payment all the installements acc to respective due dates except last installement>last # deposit>clear>Return");
-		 	       // appUrl = AppURL;
+		 	       // 
 		 	        
 		 	       // SetCurrentDate.SetCurrentDate(SSN, FileName);
 		 	        
@@ -2304,7 +2302,7 @@ public class AA_OH_ILP extends AA_ILP{
 		 	}
 		 }
 
-		 //@Test (priority=43,groups = "leela_OH_ILP") 
+		 @Test (priority=43,groups = "leela_OH_ILP") 
 
 		 public void Loan_1stdeposit_clr_payoff_clear_return_() throws Exception {
 
@@ -2337,7 +2335,7 @@ public class AA_OH_ILP extends AA_ILP{
 		 	        String Header = StateID+ "_" + ProductID;
 		 	        //System.out.println(SSN);
 		 	        test = reports.startTest(Header+"_S.No:46"+"_"+PayFrequency+"_"+CollateralType, "Loan_1# deposit_clr_payoff_clear return");
-		 	        appUrl = AppURL;
+		 	        
 		 	        
 		 	        SetCurrentDate.SetCurrentDate(SSN, FileName);
 		 	        
@@ -2370,7 +2368,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		 	
 				
-				//@Test(priority = 44,groups = "leela_OH_ILP") 
+				@Test(priority = 44,groups = "leela_OH_ILP") 
 				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_Default() throws Exception {
 
 					// Start test. Mention test script name
@@ -2400,7 +2398,7 @@ public class AA_OH_ILP extends AA_ILP{
 							String Header = StateID + "_" + ProductID;
 							// System.out.println(SSN);
 							test = reports.startTest(Header + "_S.No:47" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date");
-							appUrl = AppURL;
+							
 								
 								SetCurrentDate.SetCurrentDate(SSN, FileName);
 							    
@@ -2421,7 +2419,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 				}	
 				
-				//@Test(priority = 45,groups = "leela_OH_ILP") 
+				@Test(priority = 45,groups = "leela_OH_ILP") 
 				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault() throws Exception {
 
 					// Start test. Mention test script name
@@ -2451,7 +2449,7 @@ public class AA_OH_ILP extends AA_ILP{
 							String Header = StateID + "_" + ProductID;
 							// System.out.println(SSN);
 							test = reports.startTest(Header + "_S.No:48" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Before Cure end date");
-							appUrl = AppURL;
+							
 							
 							    
 						        Login.Login(UserName, Password, StoreId);
@@ -2492,7 +2490,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 				}		
 				
-				//@Test (priority=46,groups = "leela_OH_ILP") 
+				@Test (priority=46,groups = "leela_OH_ILP") 
 
 				public void Loan_PmtAllInstExceptLast_DFLTLastInst_() throws Exception {
 
@@ -2525,7 +2523,7 @@ public class AA_OH_ILP extends AA_ILP{
 					        String Header = StateID+ "_" + ProductID;
 					        //System.out.println(SSN);
 					        test = reports.startTest(Header+"_S.No:49"+"_"+PayFrequency+"_"+CollateralType, "Laon_paymet all the installement except last #_Run EOD batch process on last # due date_Run EOD Batch process(due date+10 days)_Run EOD batch process on Cure end date");
-					        appUrl = AppURL;
+					        
 
 					        
 					        Login.Login(UserName, Password, StoreId);
@@ -2552,7 +2550,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 					
 				
-				//@Test(priority = 47,groups = "leela_OH_ILP")  
+				@Test(priority = 47,groups = "leela_OH_ILP")  
 				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_CureenddateDefault() throws Exception {
 
 					// Start test. Mention test script name
@@ -2582,7 +2580,7 @@ public class AA_OH_ILP extends AA_ILP{
 							String Header = StateID + "_" + ProductID;
 							// System.out.println(SSN);
 							test = reports.startTest(Header + "_S.No:50" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>Run EODbatch process on Cure end date");
-							appUrl = AppURL;
+							
 							
 							    
 						        Login.Login(UserName, Password, StoreId);
@@ -2663,7 +2661,7 @@ public class AA_OH_ILP extends AA_ILP{
 							String Header = StateID + "_" + ProductID;
 							// System.out.println(SSN);
 							test = reports.startTest(Header + "_S.No:51" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>void>Run EOD batch process on Cure end date");
-							appUrl = AppURL;
+							
 							
 							    
 						        Login.Login(UserName, Password, StoreId);
@@ -2741,7 +2739,7 @@ public class AA_OH_ILP extends AA_ILP{
 							String Header = StateID + "_" + ProductID;
 							// System.out.println(SSN);
 							test = reports.startTest(Header + "_S.No:52" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(less than1# amount)>Run EOD batch process on Cure end date");
-							appUrl = AppURL;
+							
 							
 							    
 						        Login.Login(UserName, Password, StoreId);
@@ -2818,7 +2816,7 @@ public class AA_OH_ILP extends AA_ILP{
 										test = reports.startTest(Header+"_S.No:53"+"_"+PayFrequency+"_"+CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>select default payment option form drop down>enter full amount(with all possible tender types)");
 
 								         Assert.assertTrue(true);
-								         appUrl = AppURL;
+								         
 								         
 					                     Login.Login(UserName, Password, StoreId);
 								         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2872,7 +2870,7 @@ public class AA_OH_ILP extends AA_ILP{
 												test = reports.startTest(Header+"_S.No:54"+"_"+PayFrequency+"_"+CollateralType,"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount");
 
 										         Assert.assertTrue(true);
-										         appUrl = AppURL;
+										         
 										         
 							                     Login.Login(UserName, Password, StoreId);
 							                     RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2926,7 +2924,7 @@ public class AA_OH_ILP extends AA_ILP{
 											test = reports.startTest(Header+"_S.No:55"+"_"+PayFrequency+"_"+CollateralType,"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>Full default amount > Void");
 
 									         Assert.assertTrue(true);
-									         appUrl = AppURL;
+									         
 									         
 			                                 Login.Login(UserName, Password, StoreId);
 						                     RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2980,7 +2978,7 @@ public class AA_OH_ILP extends AA_ILP{
 													test = reports.startTest(Header+"_S.No:56"+"_"+PayFrequency+"_"+CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount>void on next day of the payment (with all possible tender types)");
 
 											         Assert.assertTrue(true);
-											         appUrl = AppURL;
+											         
 											         
 											         			
 											         Login.Login(UserName, Password, StoreId);
@@ -3034,7 +3032,7 @@ public class AA_OH_ILP extends AA_ILP{
 								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 								String Header = StateID+ "_" + ProductID;      		        
 								test = reports.startTest(Header+"_S.No:57"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>Run EOD batch process(default date+60 days)");
-								appUrl = AppURL;
+								
 
 								Login.Login(UserName, Password, StoreId);			        
 								
@@ -3084,7 +3082,7 @@ public class AA_OH_ILP extends AA_ILP{
 								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 								String Header = StateID+ "_" + ProductID;      		        
 								test = reports.startTest(Header+"_S.No:58"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-								appUrl = AppURL;
+								
 
 								Login.Login(UserName, Password, StoreId);			        
 								
@@ -3133,7 +3131,7 @@ public class AA_OH_ILP extends AA_ILP{
 								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 								String Header = StateID+ "_" + ProductID;      		        
 								test = reports.startTest(Header+"_S.No:59"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-								appUrl = AppURL;
+								
 
 								Login.Login(UserName, Password, StoreId);			        
 								
@@ -3183,7 +3181,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:60"+"_"+PayFrequency+"_"+CollateralType, "Loan_default_payment(30% of default payment)_void_Run EOD batch process(default date+60 days)");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3246,7 +3244,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:61"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(full amount)(with all possible tender types)");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3306,7 +3304,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:62"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(partial amount)(with all possible tender types)");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3371,7 +3369,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:63"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(full amount)_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_Void(with all possible tender types)");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3440,7 +3438,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:64"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(partial amount)_void on next day(with all possible tender types)");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3509,7 +3507,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:65"+"_"+PayFrequency+"_"+CollateralType, "Pick anILP Loan which is default status _ Convert to EPP _ PPAY all installments accordingly before due date");
-				 	        appUrl = AppURL;
+				 	        
 
 				 	        
 				 	        Login.Login(UserName, Password, StoreId);
@@ -3575,7 +3573,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:66"+"_"+PayFrequency+"_"+CollateralType, "Pick an ILP Loan which is default status _ Convert to EPP _ Deposit all installments on due date accordingly and clear them");
-				 	        appUrl = AppURL;
+				 	        
 				 	        
 				 	        
 				 	       SetCurrentDate.SetCurrentDate(SSN, FileName);
@@ -3690,7 +3688,7 @@ public class AA_OH_ILP extends AA_ILP{
 				 	        String Header = StateID+ "_" + ProductID;
 				 	        //System.out.println(SSN);
 				 	        test = reports.startTest(Header+"_S.No:67"+"_"+PayFrequency+"_"+CollateralType, "Pick an ILP Loan which is default status_ Convert to EPP _ PPAY all installments accordingly before due date _void last installment payment");
-				 	        appUrl = AppURL;
+				 	        
 				 	        
 				 	       SetCurrentDate.SetCurrentDate(SSN, FileName);
 				 	        
@@ -3753,7 +3751,7 @@ public class AA_OH_ILP extends AA_ILP{
 								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 								String Header = StateID+ "_" + ProductID;      		        
 								test = reports.startTest(Header+"_S.No:76"+"_"+PayFrequency+"_"+CollateralType,"Pick an ILP Loan which is default status -> PPN=>1# paymnet >void >Run EOD batch process on 35 days from the due dateNOTE:In between 1# due date to 35 days if 2# is there then that amount should be missed payment)");
-								appUrl = AppURL;
+								
 
 								Login.Login(UserName, Password, StoreId);			        
 								
@@ -3817,7 +3815,7 @@ public class AA_OH_ILP extends AA_ILP{
 		        String Header = StateID+ "_" + ProductID;
 		        //System.out.println(SSN);
 		        test = reports.startTest(Header+"_S.No:79"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
-		        appUrl = AppURL;
+		        
 		        Login.Login(UserName, Password, StoreId);
 		        
 		        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -3879,7 +3877,7 @@ public class AA_OH_ILP extends AA_ILP{
 	        String Header = StateID+ "_" + ProductID;
 	        //System.out.println(SSN);
 	        test = reports.startTest(Header+"_S.No:80"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due datePick an ILP Loan which is writeoff status_Convert to EPP_Deposit all installments on due date accordingly and clear them");
-	        appUrl = AppURL;
+	        
 	        Login.Login(UserName, Password, StoreId);
 	        
 	        //SetCurrentDate.SetCurrentDate(SSN, FileName);
@@ -3976,7 +3974,7 @@ public class AA_OH_ILP extends AA_ILP{
 		        String Header = StateID+ "_" + ProductID;
 		        //System.out.println(SSN);
 		        test = reports.startTest(Header+"_S.No:81"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
-		        appUrl = AppURL;
+		        
 		        
 		        SetCurrentDate.SetCurrentDate(SSN, FileName);
 		        Login.Login(UserName, Password, StoreId);
@@ -4039,7 +4037,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:90"+"_"+PayFrequency+"_"+CollateralType,"Pick an LOC Loan which is writeoff status_PPN=>1# paymnet _void _Run EOD batch process on 35 days from the due dateNOTE:In between 1#  due date to 35  days if 2# is there then that  amount should be missed payment))");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4099,7 +4097,7 @@ public class AA_OH_ILP extends AA_ILP{
 	        String Header = StateID+ "_" + ProductID;
 	        //System.out.println(SSN);
 	        test = reports.startTest(Header+"_S.No:91"+"_"+PayFrequency+"_"+CollateralType, "Loan_Select Void Status from Status dropdown in Bankruptcy Deceased Suite pageEnter all mandatory fields and click on Save");
-	        appUrl = AppURL;
+	        
 
 	        
 	        Login.Login(UserName, Password, StoreId);
@@ -4152,7 +4150,7 @@ public class AA_OH_ILP extends AA_ILP{
 	        String Header = StateID+ "_" + ProductID;
 	        //System.out.println(SSN);
 	        test = reports.startTest(Header+"_S.No:93"+"_"+PayFrequency+"_"+CollateralType, "Loan_Select Bankruptcy Status from Status dropdown in Bankruptcy Deceased Suite page Enter all mandatory fields and click on Save");
-	        appUrl = AppURL;
+	        
 
 	        
 	        Login.Login(UserName, Password, StoreId);
@@ -4198,7 +4196,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 			test = reports.startTest(Header+"_S.No:94"+"_"+PayFrequency+"_"+CollateralType,"Loan–BNK-Void");
 	         Assert.assertTrue(true);
-	         appUrl = AppURL;
+	         
 	         
 	         Login.Login(UserName, Password, StoreId);
 	         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -4213,7 +4211,7 @@ public class AA_OH_ILP extends AA_ILP{
 	}	
 
 
-	//@Test (priority=73,groups = "leela_OH_ILP") 
+	@Test (priority=73,groups = "leela_OH_ILP") 
 
 		public void CO_ILP_Loan_first_payment_BNK_Second_deposit() throws Exception {
 		
@@ -4246,7 +4244,7 @@ public class AA_OH_ILP extends AA_ILP{
 					test = reports.startTest(Header+"_S.No:95"+"_"+PayFrequency+"_"+CollateralType,"Loan>1 payment > mark customer to BNK>2 deposit");
 
 			         Assert.assertTrue(true);
-			         appUrl = AppURL;
+			         
 			         
 	               Login.Login(UserName, Password, StoreId);
 			         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -4266,7 +4264,7 @@ public class AA_OH_ILP extends AA_ILP{
 			}	
 		}
 
-	//@Test (priority=74,groups = "leela_OH_ILP") //leela 
+	@Test (priority=74,groups = "leela_OH_ILP") //leela 
 
 	public void LonI_Bnkrupt_Dismissed() throws Exception {
 
@@ -4297,7 +4295,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:96"+"_"+PayFrequency+"_"+CollateralType,"Loan>Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save. 2) Go to Edit bankrupt information >> Click on Go Button and select dismissed from drop down >> enter manditory fields and Clickon save.");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4317,7 +4315,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 
 
-	//@Test (priority=75,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=75,groups = "leela_OH_ILP") //Leela 
 
 	public void LonI_Bnkrupt_Deceased() throws Exception {
 
@@ -4348,7 +4346,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:97"+"_"+PayFrequency+"_"+CollateralType,"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite pageEnter all manatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select deaceased from drop down >> enter manditory fields andClick on save.");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4366,7 +4364,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	//@Test (priority=76,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=76,groups = "leela_OH_ILP") //Leela 
 
 
 	public void LonI_Bnkrupt_Discharge() throws Exception {
@@ -4398,7 +4396,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:98"+"_"+PayFrequency+"_"+CollateralType,"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select Discharge from drop down >> enter manditory fields and Clickon save.");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4414,7 +4412,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	//@Test (priority=77,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=77,groups = "leela_OH_ILP") //Leela 
 
 	public void LonI_Deceased() throws Exception {
 
@@ -4445,7 +4443,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:99"+"_"+PayFrequency+"_"+CollateralType,"Select 'deceased' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4459,7 +4457,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	//@Test (priority=78,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=78,groups = "leela_OH_ILP") //Leela 
 
 	public void LonI_DFLT_PPN_BNK_1InstDeposit() throws Exception {
 
@@ -4490,7 +4488,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:100"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4516,7 +4514,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	//@Test (priority=79,groups = "leela_OH_ILP")   //Leela
+	@Test (priority=79,groups = "leela_OH_ILP")   //Leela
 
 	public void Loan_1stpayment_activemilitary_2ndpayment_() throws Exception {
 
@@ -4549,7 +4547,7 @@ public class AA_OH_ILP extends AA_ILP{
 	        String Header = StateID+ "_" + ProductID;
 	        //System.out.println(SSN);
 	        test = reports.startTest(Header+"_S.No:101"+"_"+PayFrequency+"_"+CollateralType, "Loan_1st Inst payment_active military_2nd Inst payment");
-	        appUrl = AppURL;
+	        
 
 	        
 	        Login.Login(UserName, Password, StoreId);
@@ -4571,7 +4569,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 		}
 
-	//@Test (priority=80,groups = "leela_OH_ILP")  //Leela
+	@Test (priority=80,groups = "leela_OH_ILP")  //Leela
 
 	public void BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_() throws Exception {
 
@@ -4604,7 +4602,7 @@ public class AA_OH_ILP extends AA_ILP{
 	        String Header = StateID+ "_" + ProductID;
 	        //System.out.println(SSN);
 	        test = reports.startTest(Header+"_S.No:102"+"_"+PayFrequency+"_"+CollateralType, "Loan_1st Inst payment_active military_2nd Inst payment");
-	        appUrl = AppURL;
+	        
 
 	       /* 
 	        Login.Login(UserName, Password, StoreId);
@@ -4624,7 +4622,7 @@ public class AA_OH_ILP extends AA_ILP{
 		}
 
 
-	//@Test (priority=81,groups = "leela_OH_ILP") //Not Required - Duplicate
+	@Test (priority=81,groups = "leela_OH_ILP") //Not Required - Duplicate
 
 	public void LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions() throws Exception {
 
@@ -4655,7 +4653,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:103"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
@@ -4678,7 +4676,7 @@ public class AA_OH_ILP extends AA_ILP{
 	}
 
 
-	//@Test (priority=82,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=82,groups = "leela_OH_ILP") //Leela 
 
 	public void LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4709,7 +4707,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:104"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			appUrl = AppURL;
+			
 			
 			SetCurrentDate.SetCurrentDate(SSN, FileName);
 			Login.Login(UserName, Password, StoreId);			        
@@ -4737,7 +4735,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	//@Test (priority=83,groups = "leela_OH_ILP") //Leela 
+	@Test (priority=83,groups = "leela_OH_ILP") //Leela 
 
 	public void LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4768,7 +4766,7 @@ public class AA_OH_ILP extends AA_ILP{
 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 			String Header = StateID+ "_" + ProductID;      		        
 			test = reports.startTest(Header+"_S.No:105"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			appUrl = AppURL;
+			
 
 			Login.Login(UserName, Password, StoreId);			        
 			
