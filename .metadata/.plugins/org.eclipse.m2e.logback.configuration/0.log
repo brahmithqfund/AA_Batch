@@ -9322,3 +9322,15 @@
 2019-07-17 16:38:25,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\main\resources
 2019-07-17 16:38:25,720 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-17 16:38:25,720 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\test\resources
+2019-07-17 16:41:48,303 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:41:48,306 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-17 16:41:48,308 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:41:48,308 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-17 16:42:18,124 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:42:18,124 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_LOC\src\main\resources
+2019-07-17 16:42:18,126 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:42:18,126 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_LOC\src\test\resources
+2019-07-17 16:42:37,743 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:42:37,743 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\main\resources
+2019-07-17 16:42:37,744 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:42:37,744 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\test\resources
