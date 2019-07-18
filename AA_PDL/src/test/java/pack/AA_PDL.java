@@ -12,7 +12,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class AA_PDL {
 
-	public static String AdminURL;
+	public static String AdminURL="https://aeaqxsecuritytest.qfund.net/cc/adminIndex.do";
 	public static String AppURL;
 	public static Properties prop;
 	String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());

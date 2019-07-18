@@ -2,26 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="UserName_CO_ILP_Smoke_kiran" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="AA_Store_Test_data_OH_ILP_path_venkat"/>
-			<item value="appUrl = AppURL;"/>
-			<item value="Excel TestData = new Excel(&quot;E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/&quot; + FileName);"/>
+			<item value="UserName_CO_ILP_Smoke_kiran"/>
+			<item value="AA_Store_Test_data_CO_ILP_Smoke_path_kiran"/>
+			<item value="AA_Store_Test_data_CO_ILP_path_Smoke_kiran"/>
 		</list>
 		<list key="replacehistory">
-			<item value="//appUrl = AppURL;"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_OH_ILP_path_venkat&quot;) + FileName);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1012" key="DIALOG_X_ORIGIN"/>
-		<item value="128" key="DIALOG_Y_ORIGIN"/>
+		<item value="537" key="DIALOG_X_ORIGIN"/>
+		<item value="351" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
