@@ -10514,3 +10514,11 @@
 2019-07-18 11:43:00,366 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
 2019-07-18 11:43:00,367 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-18 11:43:00,367 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-18 12:02:29,496 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 12:02:29,499 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-18 12:02:29,501 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 12:02:29,501 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-18 12:02:30,362 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 12:02:30,362 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_PDL\src\main\resources
+2019-07-18 12:02:30,363 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 12:02:30,364 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_PDL\src\test\resources
