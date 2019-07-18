@@ -12,8 +12,11 @@
    <!-- kiran group--> 
    
 
-
+<<<<<<< HEAD
 <!-- <include name="kiran_CO_ILP1"/>   -->
+=======
+<!-- <include name="kiran_CO_ILP1"/>  --> 
+>>>>>>> chary1
 <!-- <include name="kiran_CO_ILP"/>  -->
 <!-- <include name="kiran_FL_ILP"/>  -->  
 <!-- <include name="leela_CO_ILP"/>  -->

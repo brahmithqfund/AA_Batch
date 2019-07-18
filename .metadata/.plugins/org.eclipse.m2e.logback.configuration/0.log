@@ -9335,6 +9335,7 @@
 2019-07-17 16:42:37,743 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\main\resources
 2019-07-17 16:42:37,744 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-17 16:42:37,744 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_TLP\src\test\resources
+<<<<<<< HEAD
 =======
 2019-07-11 10:46:17,841 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
 2019-07-11 10:46:18,804 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
@@ -10361,3 +10362,25 @@
 2019-07-18 10:52:48,001 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
 2019-07-18 10:52:48,003 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-18 10:52:48,004 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+=======
+2019-07-17 16:44:26,103 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:44:26,106 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-17 16:44:26,109 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 16:44:26,109 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-17 18:53:23,064 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 18:53:23,065 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-17 18:53:23,066 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-17 18:53:23,067 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+>>>>>>> chary1
+2019-07-18 10:53:39,229 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:53:39,232 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-18 10:53:39,234 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:53:39,234 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-18 10:53:58,102 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:53:58,102 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-18 10:53:58,104 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:53:58,104 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
+2019-07-18 10:54:12,920 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:54:12,920 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\main\resources
+2019-07-18 10:54:12,923 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-18 10:54:12,923 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AA_Batch\AA_ILP\src\test\resources
