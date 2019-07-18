@@ -2,3 +2,12 @@
 :
 
 testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
+:
+
+ojdbc8.jar,2\4\2429695d5b84d942a64be392c5bfdcc18e0e9ee0
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
