@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="qtlsys2-17" ignored="68" name="Test" tests="1" failures="0" timestamp="04 Jul 2019 13:12:36 GMT" time="1102.033" errors="0">
   <testcase name="DFLTLoan_EPPConvert_DepositAll_ClearAll_" time="1093.613" classname="pack.AA_CO_ILP"/>
   <testcase name="Loan_DFLT_WO_WORecPartPmt_VoidNextDay" time="0.0" classname="pack.AA_CO_ILP">
@@ -28,6 +29,9 @@
 =======
 <testsuite hostname="QTLSYS2-94" ignored="141" name="Test" tests="36" failures="1" timestamp="11 Jul 2019 06:23:16 GMT" time="23.381" errors="0">
 >>>>>>> 991e11aec76cecef96e8f173258623de8958a039
+=======
+<testsuite hostname="QTLSYS2-94" ignored="141" name="Test" tests="36" failures="1" timestamp="11 Jul 2019 06:23:16 GMT" time="23.381" errors="0">
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
   <testcase name="@AfterMethod getResult" time="0.002" classname="pack.AA_OH_ILP">
     <failure type="java.lang.NullPointerException">
       <![CDATA[java.lang.NullPointerException
@@ -35,6 +39,7 @@ at pack.AA_OH_ILP.getResult(AA_OH_ILP.java:4811)
 ... Removed 28 stack frames]]>
     </failure>
   </testcase> <!-- @AfterMethod getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="CO_ILP_Loan_DefaultPayment" time="0.005" classname="pack.AA_OH_ILP">
     <failure type="java.io.FileNotFoundException" message="C:\AA_Batch\AA_ILPnullAA_CO_ILP_Loan_DefaultPayment_Testdata.xls (The system cannot find the file specified)">
@@ -135,11 +140,17 @@ at pack.AA_OH_ILP.AA_Loan1stInsatallmentEODbatchprocess_Cure_Default(AA_OH_ILP.j
     <failure type="java.io.FileNotFoundException" message="C:\AA_Batch\AA_ILPnullAA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls (The system cannot find the file specified)">
       <![CDATA[java.io.FileNotFoundException: C:\AA_Batch\AA_ILPnullAA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls (The system cannot find the file specified)
 >>>>>>> 991e11aec76cecef96e8f173258623de8958a039
+=======
+  <testcase name="Login_Homescreen_Borrower_Registration_NewLoan_verify_" time="0.004" classname="pack.AA_OH_ILP">
+    <failure type="java.io.FileNotFoundException" message="C:\AA_Batch\AA_ILPnullAA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls (The system cannot find the file specified)">
+      <![CDATA[java.io.FileNotFoundException: C:\AA_Batch\AA_ILPnullAA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls (The system cannot find the file specified)
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
 at java.io.FileInputStream.open0(Native Method)
 at java.io.FileInputStream.open(Unknown Source)
 at java.io.FileInputStream.<init>(Unknown Source)
 at java.io.FileInputStream.<init>(Unknown Source)
 at pack.Excel.<init>(Excel.java:34)
+<<<<<<< HEAD
 <<<<<<< HEAD
 at pack.AA_OH_ILP.AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault(AA_OH_ILP.java:2429)
 ... Removed 25 stack frames]]>
@@ -993,6 +1004,11 @@ at pack.AA_OH_ILP.LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Recor
 at pack.AA_OH_ILP.Login_Homescreen_Borrower_Registration_NewLoan_verify_(AA_OH_ILP.java:100)
 ... Removed 25 stack frames]]>
     </failure>
+=======
+at pack.AA_OH_ILP.Login_Homescreen_Borrower_Registration_NewLoan_verify_(AA_OH_ILP.java:100)
+... Removed 25 stack frames]]>
+    </failure>
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
   </testcase> <!-- Login_Homescreen_Borrower_Registration_NewLoan_verify_ -->
   <testcase name="Login_Homescreen_Borrower_Registration_NewLoan_Monthly" time="0.0" classname="pack.AA_OH_ILP">
     <skipped/>
@@ -1218,9 +1234,12 @@ at pack.AA_OH_ILP.Login_Homescreen_Borrower_Registration_NewLoan_verify_(AA_OH_I
     <ignored/>
   </testcase> <!-- Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="CO_ILP_NewLoanRescind" time="0.0" classname="pack.AA_CO_ILP">
     <ignored/>
   </testcase> <!-- CO_ILP_NewLoanRescind -->
+=======
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
 =======
 >>>>>>> 991e11aec76cecef96e8f173258623de8958a039
   <testcase name="Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void" time="0.0" classname="pack.AA_CO_ILP">
@@ -1287,6 +1306,7 @@ at pack.AA_OH_ILP.Login_Homescreen_Borrower_Registration_NewLoan_verify_(AA_OH_I
     <ignored/>
   </testcase> <!-- Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_ -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatallmentDeposit" time="0.0" classname="pack.AA_OH_ILP">
     <ignored/>
   </testcase> <!-- AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatallmentDeposit -->
@@ -1307,6 +1327,13 @@ at pack.AA_OH_ILP.Login_Homescreen_Borrower_Registration_NewLoan_verify_(AA_OH_I
   <testcase name="CO_ILP_Loan_BNK_Void" time="0.0" classname="pack.AA_OH_ILP">
 >>>>>>> 991e11aec76cecef96e8f173258623de8958a039
     <ignored/>
+=======
+  <testcase name="CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid" time="0.0" classname="pack.AA_OH_ILP">
+    <ignored/>
+  </testcase> <!-- CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid -->
+  <testcase name="CO_ILP_Loan_BNK_Void" time="0.0" classname="pack.AA_OH_ILP">
+    <ignored/>
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
   </testcase> <!-- CO_ILP_Loan_BNK_Void -->
   <testcase name="Loan_Deposit_Rtn_paymentGreaterthanLoanAmount" time="0.0" classname="pack.AA_CO_ILP">
     <ignored/>

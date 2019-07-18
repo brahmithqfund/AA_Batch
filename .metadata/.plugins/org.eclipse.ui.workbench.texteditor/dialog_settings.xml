@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-<<<<<<< HEAD
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="appUrl" key="selection"/>
 =======
 		<item value="true" key="isRegEx"/>
@@ -12,11 +12,15 @@
 =======
 		<item value="//@Test (priority=6,groups = &quot;leela_FL_PDL_Smoke&quot;" key="selection"/>
 >>>>>>> chary1
+=======
+		<item value="" key="selection"/>
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="appUrl"/>
@@ -53,13 +57,28 @@
 			<item value="StoreId = prop.getProperty(&quot;StoreID_TN_LOC_Smoke_srikanth&quot;);"/>
 			<item value="Password = prop.getProperty(&quot;Password_TN_LOC_Smoke_srikanth&quot;);"/>
 			<item value="UserName = prop.getProperty(&quot;UserName_TN_LOC_Smoke_srikanth&quot;);"/>
+=======
+			<item value="AA_Store_Test_data_OH_ILP_path_venkat"/>
+			<item value="appUrl = AppURL;"/>
+			<item value="Excel TestData = new Excel(&quot;E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/&quot; + FileName);"/>
+		</list>
+		<list key="replacehistory">
+			<item value="//appUrl = AppURL;"/>
+			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_OH_ILP_path_venkat&quot;) + FileName);"/>
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="760" key="DIALOG_WIDTH"/>
+		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+<<<<<<< HEAD
 		<item value="387" key="DIALOG_HEIGHT"/>
 		<item value="406" key="DIALOG_X_ORIGIN"/>
 		<item value="374" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1012" key="DIALOG_X_ORIGIN"/>
+		<item value="128" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> 991e11aec76cecef96e8f173258623de8958a039
 	</section>
 </section>
