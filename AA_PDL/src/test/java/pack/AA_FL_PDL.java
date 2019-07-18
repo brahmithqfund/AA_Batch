@@ -162,7 +162,7 @@ public class AA_FL_PDL extends AA_PDL{
 		public void NewLoan_Biweekly_Duedate() throws Exception 
 		{
 			String FileName= "AA_NewLoan_BiweeklyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_Production_Regression/"+FileName);
+			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_revathi/"+FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -197,7 +197,7 @@ public class AA_FL_PDL extends AA_PDL{
 		public void NewLoan_Monthly_Duedate() throws Exception
 	{
 			String FileName= "AA_NewLoan_MonthlyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_Production_Regression/"+FileName);
+			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -233,7 +233,7 @@ public class AA_FL_PDL extends AA_PDL{
 		public void NewLoan_SemiMonthly_Duedate() throws Exception
 	{
 			String FileName= "AA_NewLoan_SemiDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_Production_Regression/"+FileName);
+			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);
@@ -267,7 +267,7 @@ public class AA_FL_PDL extends AA_PDL{
 		public void NewLoan_Weekly_Duedate() throws Exception 
 		{
 			String FileName= "AA_NewLoan_WeeklyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_Production_Regression/"+FileName);
+			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
 			int lastrow=TestData.getLastRow("NewLoan");
 			String sheetName="NewLoan";
 			System.out.println(lastrow);

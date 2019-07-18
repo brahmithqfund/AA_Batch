@@ -113,8 +113,7 @@ public class AA_CO_ILP extends AA_ILP{
 		String FileName = prop.getProperty("AA_Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_TestData_file_name")
 				+ ".xls";
 
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_kiran") + FileName);
 
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";

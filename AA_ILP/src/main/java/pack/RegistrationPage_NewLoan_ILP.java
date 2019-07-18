@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class RegistrationPage_NewLoan_ILP extends AA_CO_ILP{
+public class RegistrationPage_NewLoan_ILP extends AA_ILP{
 	public static void RegistrationPage_NewLoan_ILP(WebDriver driver, ExtentTest test, String AppURL, String SSN,
 			String FileName) throws Exception {
 
