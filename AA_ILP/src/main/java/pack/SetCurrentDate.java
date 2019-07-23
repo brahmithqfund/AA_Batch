@@ -40,9 +40,10 @@ public class SetCurrentDate extends AA_CO_ILP{
 					//String Password = TestData.getCellData(sheetName,"Password",row);
 					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 							
+					
+					driver.get(AdminURL);
 					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					driver.manage().window().maximize();
-					//driver.get(AdminURL);
 					  driver.findElement(By.name("loginRequestBean.userId")).sendKeys("admin");
 				        test.log(LogStatus.PASS, "Username is entered:admin");			        
 				        driver.findElement(By.name("loginRequestBean.password")).sendKeys(Password);

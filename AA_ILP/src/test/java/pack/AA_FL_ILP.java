@@ -4624,11 +4624,7 @@ public void Loan_1stdeposit_clr_payoff_clear_return_() throws Exception {
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process
 		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	
 		/*
 		 * String Node = "http://192.168.2.123:5555/wd/hub"; DesiredCapabilities
 		 * cap = DesiredCapabilities.internetExplorer();

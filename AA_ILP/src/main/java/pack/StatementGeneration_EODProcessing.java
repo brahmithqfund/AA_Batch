@@ -58,8 +58,8 @@ public class StatementGeneration_EODProcessing extends AA_CO_ILP{
 				// driver.switchTo().frame("main");
 				driver.findElement(By.name("requestBean.noOf100Dollars")).sendKeys("500");
 				test.log(LogStatus.PASS, "Count of Dollar Coins is entered as 500");
-
-				Thread.sleep(4000);
+				driver.findElement(By.name("requestBean.tot100DollarsAmt")).click();
+				Thread.sleep(10000);
 				// driver.findElement(By.name("requestBean.comments")).click();
 				driver.findElement(By.name("requestBean.comments")).sendKeys("comment");
 				test.log(LogStatus.PASS, "Count of Dollar Coins is entered as comment");
@@ -69,6 +69,7 @@ public class StatementGeneration_EODProcessing extends AA_CO_ILP{
 				driver.findElement(By.name("Submit2")).click();
 				test.log(LogStatus.PASS, "Clicked on Balance Safe");
 				Thread.sleep(4000);
+			try {
 				try {
 					Alert alert = driver.switchTo().alert();
 					alert.accept();
@@ -130,6 +131,10 @@ public class StatementGeneration_EODProcessing extends AA_CO_ILP{
 				}
 
 				Thread.sleep(1000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+				
 				for (String winHandle : driver.getWindowHandles()) {
 					driver.switchTo().window(winHandle);
 				}

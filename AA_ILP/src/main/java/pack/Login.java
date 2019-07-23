@@ -1,6 +1,9 @@
 package pack;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.*;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -48,6 +51,8 @@ public class Login extends AA_CO_ILP{
  		// JavascriptExecutor js = (JavascriptExecutor)driver;
 
  		// Launch URL
+    	 
+ 		
  		driver.get(AppURL);
  		test.log(LogStatus.INFO, "CSR Application is launched");
  		driver.manage().window().maximize();

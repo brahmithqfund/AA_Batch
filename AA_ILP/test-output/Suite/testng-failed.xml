@@ -7,6 +7,7 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="venkat_OH_ILP_Smoke"/>
       </run>
     </groups>
@@ -20,6 +21,22 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_OH_ILP_Smoke -->
+=======
+        <include name="leela_OH_ILP_Prod2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pack.AA_OH_ILP_Prod">
+        <methods>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="Loan_DFLT_WO_WORecFullWithAllTenderTypes_"/>
+          <include name="tearDown"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- pack.AA_OH_ILP_Prod -->
+>>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

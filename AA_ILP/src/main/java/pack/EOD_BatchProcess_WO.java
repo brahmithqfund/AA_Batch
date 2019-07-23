@@ -181,10 +181,15 @@ public class EOD_BatchProcess_WO extends AA_CO_ILP{
 				int InstNum = 2;
 				for (int cnt = 2; cnt <= InstNum; cnt++) {
 
-					DueDate = driver
+					/*DueDate = driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr[10]/td[4]/font")).getText();*/
+					
+					
+					DueDate=driver.findElement(By.xpath("//*[@id='ContractScheduleTable']/tbody/tr[2]/td[2]")).getText();
+					//*[@id="ContractScheduleTable"]/tbody/tr[3]/td[2]
+					/*DueDate = driver
 							.findElement(By
 									.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[14]/td/span[2]"))
-							.getText();
+							.getText();*/
 
 					// //*[@id="ContractScheduleTable"]/tbody/tr[2]/td[2]
 					test.log(LogStatus.INFO, "DueDate Capture is ::" + DueDate);
