@@ -136,12 +136,13 @@ public class Payment_PercentofDFLTAmt extends AA_CO_ILP{
 					// CSRLoginpage login = new CSRLoginpage();
 					Login.Login(UserName, Password, StoreId);
 					driver.switchTo().defaultContent();
-					Thread.sleep(1000);
+					Thread.sleep(10000);
 					driver.switchTo().frame("topFrame");
 					test.log(LogStatus.INFO, "Payment with-SSN: " +SSN +" :: Starts");
-					driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
+					driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	
+					
 					test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-					Thread.sleep(1000);
+					Thread.sleep(5000);
 					driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");

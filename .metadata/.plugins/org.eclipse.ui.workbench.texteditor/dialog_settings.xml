@@ -2,83 +2,34 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="appUrl" key="selection"/>
-=======
-		<item value="true" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="" key="selection"/>
->>>>>>> 103f8675e12064f21603070e60e2cd21b9708e81
-=======
-		<item value="//@Test (priority=6,groups = &quot;leela_FL_PDL_Smoke&quot;" key="selection"/>
->>>>>>> chary1
-=======
-		<item value="" key="selection"/>
->>>>>>> 991e11aec76cecef96e8f173258623de8958a039
+		<item value="S.No:56" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<item value="appUrl"/>
-			<item value="priority = 59"/>
-			<item value="priority =59"/>
-			<item value="priority = 0"/>
-			<item value="String StoreId = TestData.getCellData(sheetName, &quot;StoreID&quot;, row);"/>
-			<item value="String Password = TestData.getCellData(sheetName, &quot;Password&quot;, row);"/>
-			<item value="String UserName = TestData.getCellData(sheetName, &quot;UserName&quot;, row);"/>
-			<item value="String AppURL = TestData.getCellData(sheetName, &quot;AppURL&quot;, row);"/>
-=======
-			<item value="appUrl = AppURL;"/>
-=======
-			<item value="(^.*priority=\d)"/>
->>>>>>> chary1
-			<item value="(^.*priority=\d\d)"/>
-			<item value="Reg.RegistrationPage_NewLoan_LOC(driver, test,AppURL, SSN,FileName);"/>
-			<item value="BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();"/>
-			<item value="String StoreId = TestData.getCellData(sheetName,&quot;StoreID&quot;,row);"/>
-			<item value="String Password = TestData.getCellData(sheetName,&quot;Password&quot;,row);"/>
-			<item value="String UserName = TestData.getCellData(sheetName,&quot;UserName&quot;,row);"/>
-<<<<<<< HEAD
->>>>>>> 103f8675e12064f21603070e60e2cd21b9708e81
-=======
-			<item value="String AppURL = TestData.getCellData(sheetName,&quot;AppURL&quot;,row);"/>
->>>>>>> chary1
+			<item value="S.No:56"/>
+			<item value="leela_OH_ILP"/>
+			<item value="NewLoan_ILP.NewLoan_ILP"/>
+			<item value="NewLoan_ILP.NewLoan_ILP(SSN, FileName, &quot;200&quot;);"/>
+			<item value="leela_OH_ILP1"/>
+			<item value="RCC Revoke Transaction is s"/>
+			<item value="AA_Store_Test_data_FL_ILP_Smoke_path_leela"/>
+			<item value="//@Test"/>
 		</list>
 		<list key="replacehistory">
-			<item value="$1,groups = &quot;leela_FL_PDL_Smoke&quot;"/>
-			<item value="$1,groups = &quot;srikanth_TN_LOC_Smoke&quot;"/>
-			<item value="$1,groups = &quot;kiran_FL_ILP&quot;"/>
-			<item value="BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);"/>
-			<item value="//BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();"/>
-			<item value="StoreId = prop.getProperty(&quot;StoreID_TN_LOC_Smoke_srikanth&quot;);"/>
-			<item value="Password = prop.getProperty(&quot;Password_TN_LOC_Smoke_srikanth&quot;);"/>
-			<item value="UserName = prop.getProperty(&quot;UserName_TN_LOC_Smoke_srikanth&quot;);"/>
-=======
-			<item value="AA_Store_Test_data_OH_ILP_path_venkat"/>
-			<item value="appUrl = AppURL;"/>
-			<item value="Excel TestData = new Excel(&quot;E:/QC_Workspace/AA_Automation/TestData/OH_ILP/Local/&quot; + FileName);"/>
-		</list>
-		<list key="replacehistory">
-			<item value="//appUrl = AppURL;"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_OH_ILP_path_venkat&quot;) + FileName);"/>
->>>>>>> 991e11aec76cecef96e8f173258623de8958a039
+			<item value="leela_OH_ILP_Prod"/>
+			<item value="NewLoan_ILP_Prod.NewLoan_ILP_Prod"/>
+			<item value="leela_OH_ILP"/>
+			<item value="@Test"/>
+			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_OH_ILP_path_leela&quot;) + FileName);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-<<<<<<< HEAD
-		<item value="387" key="DIALOG_HEIGHT"/>
-		<item value="406" key="DIALOG_X_ORIGIN"/>
-		<item value="374" key="DIALOG_Y_ORIGIN"/>
-=======
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1012" key="DIALOG_X_ORIGIN"/>
-		<item value="128" key="DIALOG_Y_ORIGIN"/>
->>>>>>> 991e11aec76cecef96e8f173258623de8958a039
+		<item value="921" key="DIALOG_X_ORIGIN"/>
+		<item value="341" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
