@@ -88,16 +88,16 @@ import java.io.FileReader;
 public class AA_FL_PDL_Smoke extends AA_PDL{
 
 	
-	@Test (priority=1,groups = "leela_FL_PDL_Smoke")
+	@Test (priority=1,groups = "anji_FL_PDL_Smoke")
 	
 	 public void RegistrationTest() throws Exception {
 	
 		// Start test. Mention test script name
 		String FileName= "AA_BorrowerRegistration_NewLoan_Txn_Testdata.xls";
 		//////////////////////////     E:\QC_Workspace\AA_Automation\TestData\FL_PDL\Smoke_Local
-		Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/FL_PDL/Smoke_Local/"+FileName); 
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName); 
 		System.out.println();
-	//	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName); 
+	//	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName); 
 		//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/FL_PDL/Smoke_Local/AA_BorrowerRegistration_NewLoan_Txn_Testdata.xls");
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
@@ -109,10 +109,10 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -130,13 +130,13 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 	
 			}
 
-	 @Test (priority=2,groups = "leela_FL_PDL_Smoke")
+	 @Test (priority=2,groups = "anji_FL_PDL_Smoke")
 
 	public void VoidloanTest() throws Exception {
 		
 		// Start test. Mention test script name
 		String FileName= "AA_Newloan_MultipullDisb_Types.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName);  			
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName);  			
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -147,11 +147,11 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -167,13 +167,13 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 	}
 }
 
-@Test (priority=3,groups = "leela_FL_PDL_Smoke")
+@Test (priority=3,groups = "anji_FL_PDL_Smoke")
 	
 	 public void BuyBack_Change_Void() throws Exception {
 	
 		// Start test. Mention test script name
 		String FileName= "AA_PartialPayment_BuyBackChange_Void_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName);  			
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName);  			
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -184,10 +184,10 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -208,14 +208,14 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			}
 		}
 	}
-@Test (priority=4,groups = "leela_FL_PDL_Smoke")
+@Test (priority=4,groups = "anji_FL_PDL_Smoke")
 	
 	 public void PreNoteDeposit_Clear_CustomerInactive_Deposit() throws Exception {
 	
 		// Start test. Mention test script name
 		                
 		String FileName= "AA_PreNoteDeposit_Clear_CustomerInactive_Deposit_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName);  			
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName);  			
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -226,11 +226,11 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -259,13 +259,13 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 	}
 }
 	
-@Test (priority=5,groups = "leela_FL_PDL_Smoke")
+@Test (priority=5,groups = "anji_FL_PDL_Smoke")
 	
 	 public void PreNoteDeposit_Clear_CustomerActive_Deposit() throws Exception {
 	
 		// Start test. Mention test script name
 		String FileName= "AA_PreNoteDeposit_Clear_CustomerActive_Deposit_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName);  			
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName);  			
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -276,11 +276,11 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
@@ -312,13 +312,13 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 	}
 	
 }
-//@Test (priority=6,groups = "leela_FL_PDL_Smoke")	
+//@Test (priority=6,groups = "anji_FL_PDL_Smoke")	
 	
 	 	public void Newloan_missEPP_EODprocess() throws Exception {
 	
 		// Start test. Mention test script name
 		String FileName= "AA_Newloan_missEPP_EODprocess_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_leela") + FileName);  			
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_Smoke_anji") + FileName);  			
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -332,11 +332,11 @@ public class AA_FL_PDL_Smoke extends AA_PDL{
 			//driver.get(appUrl);
 			//test.log(LogStatus.INFO, "Application is launched");
 			//driver.manage().window().maximize();
-				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_leela");
-				UserName = prop.getProperty("UserName_FL_PDL_Smoke_leela");
-				Password = prop.getProperty("Password_FL_PDL_Smoke_leela");
+				AppURL = prop.getProperty("AppURL_FL_PDL_Smoke_anji");
+				UserName = prop.getProperty("UserName_FL_PDL_Smoke_anji");
+				Password = prop.getProperty("Password_FL_PDL_Smoke_anji");
 		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_leela");
+		        StoreId = prop.getProperty("StoreID_FL_PDL_Smoke_anji");
 		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 		        String StateID = TestData.getCellData(sheetName,"StateID",row);
 		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
