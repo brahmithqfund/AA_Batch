@@ -82,11 +82,26 @@ public static void NewLoan(String SSN,String FileName) throws Exception{
 				 if(driver.findElement(By.id("ShareScreenBtn")).isEnabled())
 				 {
 					 	
+					 if(ProductName.equals("Line of Credit"))
+                     	
+                     {                           	
+                             if(StoreId.equals("4323"))
+                             {
+                             	
+                             	Thread.sleep(5000);
+                             	                     
+                        driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input")).click();
+                             	
+                            }
+                             else
+                             {
+                           
+                                   driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input")).click();
+                                                              
+                             }
+                             test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
+                     }
 					
-					
-							driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input")).click();
-					
-						test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
 					
 					driver.findElement(By.name("ShareScreenBtn")).click();
 					test.log(LogStatus.PASS, "ShareScreen Button clicked");

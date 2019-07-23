@@ -46,7 +46,7 @@ public class ACHReturnPosting extends AA_CO_ILP{
 				System.out.println(AdminURL);
 
 
-				driver = new InternetExplorerDriver();
+				//driver = new InternetExplorerDriver();
 				driver.get(AdminURL);
 				// storeupdate(UserName,Password,StoreID,DueDate,AdminURL);
 				 test.log(LogStatus.PASS,"<FONT color=green style=Arial> ----------- ACH Return Posting ILP -----------");

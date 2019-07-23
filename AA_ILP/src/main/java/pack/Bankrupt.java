@@ -20,7 +20,7 @@ public class Bankrupt extends AA_CO_ILP{
 
 	public static void Bankrupt(String SSN,String FileName) throws Exception
 	{
-		Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/CO_ILP/"+FileName);	
+		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/CO_ILP/"+FileName);	
 		int lastrow=TestData.getLastRow("NewLoan");
 		System.out.println("NewLoan "+lastrow);
 		String sheetName="NewLoan";		
