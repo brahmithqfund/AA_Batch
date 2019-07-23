@@ -10,10 +10,7 @@
 
     
    <!-- kiran group--> 
-   
-
-
-<!-- <include name="kiran_CO_ILP1"/>   -->
+  <include name="groups="kiran_CO_ILP_Smoke"/>  
 <!-- <include name="kiran_CO_ILP"/>  -->
 <!-- <include name="kiran_FL_ILP"/>  -->  
 <!-- <include name="leela_CO_ILP"/>  -->
@@ -21,6 +18,10 @@
 <!--    <include name="venkat_OH_ILP"/>  -->
 <include name="leela_OH_ILP_Prod2"/> 
 <!-- <include name="leela_FL_ILP_Smoke"/>  -->
+<!--   <include name="venkat_OH_ILP"/>  -->
+<!-- <include name="leela_OH_ILP"/>  -->
+
+
 
        </run>
   </groups>

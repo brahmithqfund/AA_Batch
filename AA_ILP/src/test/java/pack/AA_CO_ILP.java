@@ -1226,8 +1226,7 @@ public class AA_CO_ILP extends AA_ILP {
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				String Header = StateID + "_" + ProductID;
-				test = reports.startTest(Header + "_S.No:105" + "_" + PayFrequency + "_" + CollateralType,
-						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
+				test = reports.startTest(Header + "_S.No:105" + "_" + PayFrequency + "_" + CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
 				// appUrl = AppURL;
 
 				Login.Login(UserName, Password, StoreId);
