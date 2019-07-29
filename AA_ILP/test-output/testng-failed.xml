@@ -4,44 +4,61 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="venkat_OH_ILP_Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="pack.AA_OH_ILP_Smoke">
-        <methods>
-          <include name="initialize"/>
-          <include name="quit"/>
-          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
-          <include name="setup_Grid"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- pack.AA_OH_ILP_Smoke -->
-=======
-        <include name="leela_OH_ILP_Prod2"/>
-=======
-        <include name="leela_OH_ILP3"/>
->>>>>>> chary1
+        <include name="leela_OH_ILP"/>
       </run>
     </groups>
     <classes>
       <class name="pack.AA_OH_ILP">
         <methods>
-          <include name="getResult"/>
           <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
+          <include name="Loan_PmtAllInstExceptLast_DFLTLastInst_"/>
+          <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_CureenddateDefault"/>
+          <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_void_CureenddateDefault"/>
+          <include name="CO_ILP_Loan_first_payment_BNK_Second_deposit"/>
+          <include name="Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_"/>
+          <include name="Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void"/>
+          <include name="DFLTLoan_EPPConvert_PpayAllInst_"/>
+          <include name="Loan_1stdeposit_clr_payoff_clear_return_"/>
+          <include name="LonI_DFLT_PPN_BNK_1InstDeposit"/>
+          <include name="Loan_PmtAllExceptLast_DepLast_Clear_Return_"/>
+          <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_Default"/>
+          <include name="LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
+          <include name="BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_"/>
+          <include name="LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions"/>
+          <include name="LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
+          <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault"/>
+          <include name="Loan_1stpayment_activemilitary_2ndpayment_"/>
           <include name="setup_Grid"/>
+          <include name="LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record"/>
+          <include name="LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120"/>
+          <include name="CO_ILP_Loan_DefaultPayment"/>
+          <include name="LonI_DFLT_EODbatchprocess_DFLTPLUS60"/>
+          <include name="Loan_Bankrupt_"/>
+          <include name="DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_"/>
+          <include name="CO_ILP_Loan_DefaultPayment_Void"/>
+          <include name="LonI_Bnkrupt_Dismissed"/>
+          <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_Less1stInsatllPayment_CureenddateDefault"/>
+          <include name="LonI_Deceased"/>
+          <include name="Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate"/>
+          <include name="CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid"/>
           <include name="tearDown"/>
+          <include name="Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes"/>
+          <include name="CO_ILP_Loan_BNK_Void"/>
+          <include name="Loan_Bankrupt_Void_"/>
+          <include name="LonI_Bnkrupt_Deceased"/>
+          <include name="LonI_Bnkrupt_Discharge"/>
+          <include name="Loan_DFLT_WO_WORecPartPmt_VoidNextDay"/>
+          <include name="getResult"/>
+          <include name="CO_ILP_Loan_DefaulPartialPayment_Void"/>
+          <include name="Loan_DFLT_WO_WORecFullWithAllTenderTypes_"/>
+          <include name="LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60"/>
+          <include name="Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear"/>
+          <include name="LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record"/>
+          <include name="Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_"/>
           <include name="quit"/>
           <include name="initialize"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- pack.AA_OH_ILP_Prod -->
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
       </class> <!-- pack.AA_OH_ILP -->
->>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
