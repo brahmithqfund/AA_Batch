@@ -215,6 +215,7 @@ public class Payment_Inst_Amount extends AA_CO_ILP{
 					catch (NoAlertPresentException e) {
 						//do what you normally would if you didn't have the alert.
 					}
+				}
 
 					/*		try { 
 									    Alert alert = driver.switchTo().alert();
@@ -274,4 +275,4 @@ public class Payment_Inst_Amount extends AA_CO_ILP{
 	
 	
 	
-}
+

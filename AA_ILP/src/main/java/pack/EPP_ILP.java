@@ -32,6 +32,7 @@ public class EPP_ILP extends AA_CO_ILP{
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
+				String StateID = TestData.getCellData(sheetName,"StateID",row);
 				System.out.println(AdminURL);
 				String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 				System.out.println(ESign_CollateralType);
@@ -39,7 +40,7 @@ public class EPP_ILP extends AA_CO_ILP{
 
 				System.out.println(ProductID);	
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-				appUrl = AppURL;
+				//appUrl = AppURL;
 				Login.Login(UserName, Password, StoreId);
 				 test.log(LogStatus.PASS,"<FONT color=green style=Arial> ----------- RPP ILP -----------");
 
@@ -150,9 +151,17 @@ public class EPP_ILP extends AA_CO_ILP{
 				driver.switchTo().frame("main");
 
 				test.log(LogStatus.INFO,"Navigate to RPP 2nd Screen");
-
-				driver.findElement(By.name("collateralTypeId")).sendKeys("CASH");
-				test.log(LogStatus.PASS,"Collateral Type is Selected as CASH");
+				
+				if(StateID.equalsIgnoreCase("CO"))
+				{
+					driver.findElement(By.name("collateralTypeId")).sendKeys("ACH");
+					test.log(LogStatus.PASS,"Collateral Type is Selected as ACH");
+				}
+				else if(StateID.equalsIgnoreCase("OH"))
+				{
+					driver.findElement(By.name("collateralTypeId")).sendKeys("CASH");
+					test.log(LogStatus.PASS,"Collateral Type is Selected as CASH");
+				}
 
 				driver.findElement(By.name("password")).sendKeys(Password);
 				test.log(LogStatus.PASS,"Password is Selected as : "+Password);

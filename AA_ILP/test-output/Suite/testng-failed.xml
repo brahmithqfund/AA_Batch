@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="pack.AnnotationTransformer"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <include name="venkat_OH_ILP_Smoke"/>
       </run>
@@ -23,20 +21,27 @@
       </class> <!-- pack.AA_OH_ILP_Smoke -->
 =======
         <include name="leela_OH_ILP_Prod2"/>
+=======
+        <include name="leela_OH_ILP3"/>
+>>>>>>> chary1
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP_Prod">
+      <class name="pack.AA_OH_ILP">
         <methods>
-          <include name="initialize"/>
-          <include name="quit"/>
-          <include name="Loan_DFLT_WO_WORecFullWithAllTenderTypes_"/>
-          <include name="tearDown"/>
-          <include name="setup_Grid"/>
           <include name="getResult"/>
+          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
+          <include name="setup_Grid"/>
+          <include name="tearDown"/>
+          <include name="quit"/>
+          <include name="initialize"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- pack.AA_OH_ILP_Prod -->
 >>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
+=======
+      </class> <!-- pack.AA_OH_ILP -->
+>>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

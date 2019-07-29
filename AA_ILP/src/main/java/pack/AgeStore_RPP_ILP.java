@@ -118,6 +118,7 @@ public class AgeStore_RPP_ILP extends AA_CO_ILP{
 				// //*[@id="PPNScheduleHistoryTable"]/tbody/tr[2]/td[2]
 				// //*[@id="PPNScheduleHistoryTable"]/tbody/tr[3]/td[2]
 				DueDate = driver.findElement(By.xpath("//*[@id='PPNScheduleHistoryTable']/tbody/tr["+instnum+"]/td[2]")).getText();
+				//*[@id="achHistoryTable"]/tbody/tr[2]/td[5]
 				//*[@id="ContractScheduleTable"]/tbody/tr[3]/td[2]
 				//*[@id="revolvingCreditHistTable"]/tbody/tr[4]/td[3]/span[2]
 				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
