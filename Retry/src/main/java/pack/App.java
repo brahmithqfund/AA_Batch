@@ -8,6 +8,21 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        
+     String var = "sample";
+     
+     char char1[]=var.toCharArray();
+    
+    for(int i=var.length()-1;i>=0;i--)
+    {
+    	System.out.print(char1[i]);
+    
+    }
+     
+    
+    	
+    	
+    	
+    	
     }
 }

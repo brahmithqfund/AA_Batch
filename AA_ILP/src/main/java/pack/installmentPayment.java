@@ -97,9 +97,7 @@ public class installmentPayment extends AA_CO_ILP{
 				} else {
 					driver.findElement(By.id("go_Button")).click();
 				}
-				for (String winHandle1 : driver.getWindowHandles()) {
-					driver.switchTo().window(winHandle1);
-				}
+				
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");

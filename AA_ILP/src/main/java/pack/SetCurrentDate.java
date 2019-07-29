@@ -51,6 +51,7 @@ public class SetCurrentDate extends AA_CO_ILP{
 				        //Click Login Button
 				        driver.findElement(By.name("login")).click();
 				        test.log(LogStatus.PASS, "Clicked on Submit button");
+				        Thread.sleep(5000);
 										
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("topFrame");
