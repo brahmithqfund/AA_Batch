@@ -89,7 +89,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Venkat scenarios
 
-	@Test(priority = 0, groups = "venkat_OH_ILP")
+	//@Test(priority = 0, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exception {
 
@@ -133,7 +133,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 1, groups = "venkat_OH_ILP")
+	//@Test(priority = 1, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_Monthly() throws Exception {
 
@@ -221,7 +221,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 3, groups = "venkat_OH_ILP")
+	//@Test(priority = 3, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__() throws Exception {
 
@@ -265,7 +265,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 4, groups = "venkat_OH_ILP")
+	//@Test(priority = 4, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_Weekly_() throws Exception {
 
@@ -309,7 +309,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 5, groups = "venkat_OH_ILP")
+	//@Test(priority = 5, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_ACH_() throws Exception {
 
@@ -352,7 +352,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 6, groups = "venkat_OH_ILP")
+	//@Test(priority = 6, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_() throws Exception {
 
@@ -438,7 +438,7 @@ public class AA_OH_ILP extends AA_ILP {
 		}
 	}
 
-	@Test(priority = 8, groups = "venkat_OH_ILP")
+	//@Test(priority = 8, groups = "venkat_OH_ILP")
 
 	public void loan_VoidEncryption() throws Exception {
 
@@ -485,7 +485,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 9, groups = "venkat_OH_ILP")
+	//@Test(priority = 9, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_NewLoanRescind() throws Exception {
 

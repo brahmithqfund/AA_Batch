@@ -2,90 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<item value="venkat_OH_ILP" key="selection"/>
-=======
-<<<<<<< HEAD
-		<item value="S.No:56" key="selection"/>
-=======
-		<item value="UserName_CO_ILP_Smoke_kiran" key="selection"/>
->>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
-		<item value="66" key="selection"/>
->>>>>>> chary1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<item value="venkat_OH_ILP"/>
-			<item value="NewLoan_LOC"/>
-			<item value=" NewLoan_LOC"/>
-			<item value="void NewLoan_LOC"/>
-			<item value="void  NewLoan_LOC"/>
-			<item value="venkat_TN_LOC"/>
-			<item value="@value"/>
-			<item value="@type"/>
-=======
-<<<<<<< HEAD
-			<item value="S.No:56"/>
-			<item value="leela_OH_ILP"/>
-			<item value="NewLoan_ILP.NewLoan_ILP"/>
-			<item value="NewLoan_ILP.NewLoan_ILP(SSN, FileName, &quot;200&quot;);"/>
-=======
-			<item value="66"/>
-			<item value="leela_OH_ILP3"/>
-			<item value="-4"/>
-			<item value="att"/>
-			<item value="103"/>
->>>>>>> chary1
-			<item value="leela_OH_ILP1"/>
-			<item value="priority = 67"/>
-			<item value="S.No:61"/>
+			<item value="venkat_OH_ILP1"/>
 		</list>
 		<list key="replacehistory">
-			<item value="EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);"/>
-			<item value="leela_OH_ILP"/>
-<<<<<<< HEAD
-			<item value="@Test"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_OH_ILP_path_leela&quot;) + FileName);"/>
-=======
-			<item value="UserName_CO_ILP_Smoke_kiran"/>
-			<item value="AA_Store_Test_data_CO_ILP_Smoke_path_kiran"/>
-			<item value="AA_Store_Test_data_CO_ILP_path_Smoke_kiran"/>
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-		</list>
-		<list key="replacehistory">
->>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
-=======
->>>>>>> chary1
+			<item value="venkat_OH_ILP1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-<<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
-		<item value="510" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-		<item value="921" key="DIALOG_X_ORIGIN"/>
-		<item value="341" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="537" key="DIALOG_X_ORIGIN"/>
-		<item value="351" key="DIALOG_Y_ORIGIN"/>
->>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
-		<item value="402" key="DIALOG_HEIGHT"/>
-		<item value="1018" key="DIALOG_X_ORIGIN"/>
-		<item value="159" key="DIALOG_Y_ORIGIN"/>
->>>>>>> chary1
+		<item value="244" key="DIALOG_X_ORIGIN"/>
+		<item value="129" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
