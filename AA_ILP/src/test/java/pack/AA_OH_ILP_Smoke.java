@@ -171,7 +171,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 
 	}
 
-@Test (priority=3,groups = "venkat_OH_ILP_Smoke")
+//@Test (priority=3,groups = "venkat_OH_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -228,13 +228,13 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 		
 	}
 
-	@Test (priority=1,groups = "venkat_OH_ILP_Smoke") 
+	//@Test (priority=1,groups = "venkat_OH_ILP_Smoke") 
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
 		// Start test. Mention test script name
 		String FileName= "LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt.xls";		 
-		Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/OH_ILP/Smoke_Local/"+FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_Smoke_path_venkat") + FileName);	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		System.out.println(lastrow);
@@ -260,7 +260,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 				String Header = StateID+ "_" + ProductID;      		        
 				test = reports.startTest(Header+"_S.No:07"+"_"+PayFrequency+"_"+CollateralType,"LONI>1#DEPOSIT>CLR>RTN>CURE>DEF>DFP(partial payment)>PPN>1#payment on due date>void>PPN default>DFP(FULL)");
 				
-				SetCurrentDate.SetCurrentDate(SSN, FileName);
+				//SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);			        
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN,FileName,"300");
@@ -291,7 +291,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 
 	}
 
-	@Test (priority=0,groups = "venkat_OH_ILP_Smoke") //15day/05m/2019 // wendensday
+	//@Test (priority=0,groups = "venkat_OH_ILP_Smoke") //15day/05m/2019 // wendensday
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name
@@ -455,20 +455,6 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 		String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
 		// Date D = new Date();
 
-		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
-
-		reports = new ExtentReports(
-				System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename, true);
-		/*
-		 * reports = new ExtentReports(System.getProperty("user.dir") +
-		 * "/ExecutionReports/CO_ILP/AA_CO_ILP_Generic Scenarios_" + timestamp +
-		 * ".html", true); reports.addSystemInfo("Browser Version", "IE 11.0");
-		 */
-	}
-
-	@BeforeTest(alwaysRun = true)
-	public void setup_Grid() throws IOException, InterruptedException {
-
 		try {
 			BufferedReader reader;
 			reader = new BufferedReader(
@@ -485,6 +471,21 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 
 			System.out.println("Object proprties file not found");
 		}
+		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+		reports = new ExtentReports(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename, true);
+		/*
+		 * reports = new ExtentReports(System.getProperty("user.dir") +
+		 * "/ExecutionReports/CO_ILP/AA_CO_ILP_Generic Scenarios_" + timestamp +
+		 * ".html", true); reports.addSystemInfo("Browser Version", "IE 11.0");
+		 */
+	}
+
+	@BeforeTest(alwaysRun = true)
+	public void setup_Grid() throws IOException, InterruptedException {
+
+		
 
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process

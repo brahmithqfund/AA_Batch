@@ -101,9 +101,7 @@ public class Void extends AA_CO_ILP{
 				driver.switchTo().frame("main");
 				if (ProductID.equals("ILP")) {
 
-					driver.findElement(By
-							.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/select"))
-							.sendKeys("cash");
+					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/select")).sendKeys("cash");
 					test.log(LogStatus.PASS, "Disb type is selected as " + "Cash");
 					driver.findElement(By.name("transactionDataBean.password")).sendKeys(Password);
 					test.log(LogStatus.PASS, "Password is selected as " + Password);

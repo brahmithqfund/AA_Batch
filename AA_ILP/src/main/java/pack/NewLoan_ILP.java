@@ -352,7 +352,7 @@ public class NewLoan_ILP extends AA_CO_ILP{
 			driver.findElement(By.id("checkNbrs"+i)).sendKeys(chknum);
 
 			                        }             */
-					driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
+					driver.findElement(By.name("requestBean.password")).sendKeys("1234");
 					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[10]/td/input")).sendKeys(ESign_Password);
 					test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
 					driver.findElement(By.name("finishLoan")).click();

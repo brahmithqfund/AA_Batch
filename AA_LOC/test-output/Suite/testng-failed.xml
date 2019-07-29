@@ -27,7 +27,6 @@
           <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282"/>
           <include name="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286"/>
           <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280"/>
-          <include name="LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_"/>
           <include name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1"/>
           <include name="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed"/>
         </methods>

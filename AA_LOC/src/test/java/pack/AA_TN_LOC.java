@@ -10531,7 +10531,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// Venkat scenarios
 
-	@Test(priority = 180, groups = "venkat_TN_LOC")
+	//@Test(priority = 180, groups = "venkat_TN_LOC")
 
 	public void LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_()
 			throws Exception {
@@ -10562,8 +10562,7 @@ public class AA_TN_LOC extends AA_LOC {
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				String Header = StateID + "_" + ProductID;
-				test = reports.startTest(Header + "_S.No:269" + "_" + PayFrequency + "_" + CollateralType,
-						"LOC Init _ Draw _ Stat _ delinquent _ Cure _ Default   _ generate RCC Schedule  _  Deposit the last installment _ Clear_ Then return the last installment ACH/RCC/NOC STORE/Online/PAM  ");
+				test = reports.startTest(Header + "_S.No:269" + "_" + PayFrequency + "_" + CollateralType, "LOC Init _ Draw _ Stat _ delinquent _ Cure _ Default   _ generate RCC Schedule  _  Deposit the last installment _ Clear_ Then return the last installment ACH/RCC/NOC STORE/Online/PAM  ");
 
 				Login.Login(UserName, Password, StoreId);
 
@@ -10657,7 +10656,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
 				AgeStore.AgeStore(SSN, FileName, 0);
@@ -11047,7 +11046,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				AgeStore_LoanDate.AgeStore_LoanDate(SSN, FileName, 2);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
@@ -11205,7 +11204,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				AgeStore_LoanDate.AgeStore_LoanDate(SSN, FileName, 2);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
@@ -12151,6 +12150,7 @@ public class AA_TN_LOC extends AA_LOC {
 		}
 
 	}
+	
 
 	// Anji Reddy scenarios
 

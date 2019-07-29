@@ -3,15 +3,29 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+		<item value="venkat_OH_ILP" key="selection"/>
+=======
+<<<<<<< HEAD
 		<item value="S.No:56" key="selection"/>
 =======
 		<item value="UserName_CO_ILP_Smoke_kiran" key="selection"/>
 >>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
+>>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
+			<item value="venkat_OH_ILP"/>
+			<item value="NewLoan_LOC"/>
+			<item value=" NewLoan_LOC"/>
+			<item value="void NewLoan_LOC"/>
+			<item value="void  NewLoan_LOC"/>
+			<item value="venkat_TN_LOC"/>
+			<item value="@value"/>
+			<item value="@type"/>
+=======
 <<<<<<< HEAD
 			<item value="S.No:56"/>
 			<item value="leela_OH_ILP"/>
@@ -32,6 +46,7 @@
 			<item value="UserName_CO_ILP_Smoke_kiran"/>
 			<item value="AA_Store_Test_data_CO_ILP_Smoke_path_kiran"/>
 			<item value="AA_Store_Test_data_CO_ILP_path_Smoke_kiran"/>
+>>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
 		</list>
 		<list key="replacehistory">
 >>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
@@ -42,11 +57,16 @@
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
 <<<<<<< HEAD
+		<item value="510" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
 		<item value="921" key="DIALOG_X_ORIGIN"/>
 		<item value="341" key="DIALOG_Y_ORIGIN"/>
 =======
 		<item value="537" key="DIALOG_X_ORIGIN"/>
 		<item value="351" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
+>>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
 	</section>
 </section>
