@@ -6,6 +6,9 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> venkat1
         <include name="venkat_OH_ILP_Smoke"/>
       </run>
     </groups>
@@ -16,9 +19,11 @@
           <include name="quit"/>
           <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
           <include name="setup_Grid"/>
+          <include name="LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_OH_ILP_Smoke -->
+<<<<<<< HEAD
 =======
         <include name="leela_OH_ILP_Prod2"/>
 =======
@@ -42,6 +47,8 @@
 =======
       </class> <!-- pack.AA_OH_ILP -->
 >>>>>>> chary1
+=======
+>>>>>>> venkat1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

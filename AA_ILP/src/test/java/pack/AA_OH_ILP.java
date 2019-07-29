@@ -775,7 +775,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
+	/*@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
 
 	public void LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt() throws Exception {
 
@@ -825,7 +825,7 @@ public class AA_OH_ILP extends AA_ILP {
 		}
 
 	}
-
+*/
 	@Test(priority = 17, groups = "venkat_OH_ILP")
 
 	public void LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void()
@@ -1226,7 +1226,7 @@ public class AA_OH_ILP extends AA_ILP {
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
 				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				PayAny_Void.PayAny_Void(SSN, FileName);
 				// History.History(SSN, FileName);
 				// History.History1(SSN, FileName);
@@ -1767,7 +1767,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
+	/*@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
 
 	public void Loan_1stInstpaymentFullCash_1stInstdeposit_() throws Exception {
 
@@ -1822,7 +1822,7 @@ public class AA_OH_ILP extends AA_ILP {
 			}
 		}
 
-	}
+	}*/
 
 	@Test(priority = 35, groups = "venkat_OH_ILP")
 	public void AA_Loan_ACHRevoke_1stInsatallmentDeposit() throws Exception {
@@ -1929,7 +1929,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
+	/*@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
 
 	public void CO_ILP_Loan_Instwisepayment_last_deposit() throws Exception {
 
@@ -1980,7 +1980,7 @@ public class AA_OH_ILP extends AA_ILP {
 			}
 
 		}
-	}
+	}*/
 
 	@Test(priority = 38, groups = "venkat_OH_ILP")
 
@@ -2075,7 +2075,7 @@ public class AA_OH_ILP extends AA_ILP {
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -6, 2);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "15");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="161" total="162" passed="1">
 =======
 <<<<<<< HEAD
@@ -9,63 +10,40 @@
 <<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="177" total="177" passed="0">
 >>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
+=======
+<testng-results skipped="0" failed="0" ignored="245" total="246" passed="1">
+>>>>>>> venkat1
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="809461" started-at="2019-07-22T06:22:10Z" finished-at="2019-07-22T06:35:39Z">
+  <suite name="Suite" duration-ms="836038" started-at="2019-07-29T06:22:50Z" finished-at="2019-07-29T06:36:46Z">
     <groups>
       <group name="venkat_OH_ILP_Smoke">
-        <method signature="AA_OH_ILP_Smoke.LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR" class="pack.AA_OH_ILP_Smoke"/>
+        <method signature="AA_OH_ILP_Smoke.LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR" class="pack.AA_OH_ILP_Smoke"/>
       </group> <!-- venkat_OH_ILP_Smoke -->
     </groups>
-    <test name="Test" duration-ms="809461" started-at="2019-07-22T06:22:10Z" finished-at="2019-07-22T06:35:39Z">
+    <test name="Test" duration-ms="836038" started-at="2019-07-29T06:22:50Z" finished-at="2019-07-29T06:36:46Z">
       <class name="pack.AA_CO_ILP">
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="7616" started-at="2019-07-22T06:22:10Z" finished-at="2019-07-22T06:22:18Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@67784306]" name="setup_Grid" is-config="true" duration-ms="5024" started-at="2019-07-29T06:22:50Z" finished-at="2019-07-29T06:22:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP@185d8b6]" name="setup_Grid" is-config="true" duration-ms="7140" started-at="2019-07-22T06:22:18Z" finished-at="2019-07-22T06:22:25Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP@335eadca]" name="setup_Grid" is-config="true" duration-ms="5032" started-at="2019-07-29T06:22:55Z" finished-at="2019-07-29T06:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP@67784306]" name="setup_Grid" is-config="true" duration-ms="7156" started-at="2019-07-22T06:22:25Z" finished-at="2019-07-22T06:22:32Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP_Smoke@2b2948e2]" name="setup_Grid" is-config="true" duration-ms="7684" started-at="2019-07-29T06:23:00Z" finished-at="2019-07-29T06:23:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP@210366b4]" name="setup_Grid" is-config="true" duration-ms="7624" started-at="2019-07-29T06:23:08Z" finished-at="2019-07-29T06:23:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP_Prod@6ddf90b0]" name="setup_Grid" is-config="true" duration-ms="7098" started-at="2019-07-29T06:23:16Z" finished-at="2019-07-29T06:23:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
 <<<<<<< HEAD
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="setup_Grid" is-config="true" duration-ms="7172" started-at="2019-07-22T06:22:32Z" finished-at="2019-07-22T06:22:39Z">
-=======
-      </class> <!-- pack.AA_CO_ILP -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="68" total="69" passed="1">
-=======
-<testng-results skipped="35" failed="1" ignored="141" total="177" passed="0">
->>>>>>> 991e11aec76cecef96e8f173258623de8958a039
-=======
-<testng-results skipped="35" failed="1" ignored="141" total="177" passed="0">
->>>>>>> 991e11aec76cecef96e8f173258623de8958a039
->>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="460298" started-at="2019-07-23T05:54:28Z" finished-at="2019-07-23T06:02:09Z">
-    <groups>
-      <group name="leela_OH_ILP_Prod2">
-        <method signature="AA_OH_ILP_Prod.Loan_DFLT_WO_WORecFullWithAllTenderTypes_()[pri:58, instance:pack.AA_OH_ILP_Prod@335eadca]" name="Loan_DFLT_WO_WORecFullWithAllTenderTypes_" class="pack.AA_OH_ILP_Prod"/>
-      </group> <!-- leela_OH_ILP_Prod2 -->
-    </groups>
-    <test name="Test" duration-ms="460298" started-at="2019-07-23T05:54:28Z" finished-at="2019-07-23T06:02:09Z">
-      <class name="pack.AA_CO_ILP">
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@6c3708b3]" name="setup_Grid" is-config="true" duration-ms="5025" started-at="2019-07-23T05:54:28Z" finished-at="2019-07-23T05:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="5019" started-at="2019-07-23T05:54:33Z" finished-at="2019-07-23T05:54:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_Grid -->
         <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP_Smoke@67784306]" name="setup_Grid" is-config="true" duration-ms="6747" started-at="2019-07-23T05:54:39Z" finished-at="2019-07-23T05:54:45Z">
           <reporter-output>
           </reporter-output>
@@ -106,25 +84,32 @@
         </test-method> <!-- setup_Grid -->
         <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP_Prod@1f28c152]" name="setup_Grid" is-config="true" duration-ms="6117" started-at="2019-07-26T12:37:33Z" finished-at="2019-07-26T12:37:39Z">
 >>>>>>> chary1
+=======
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="setup_Grid" is-config="true" duration-ms="7147" started-at="2019-07-29T06:23:23Z" finished-at="2019-07-29T06:23:30Z">
+>>>>>>> venkat1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
       </class> <!-- pack.AA_CO_ILP -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> venkat1
       <class name="pack.AA_OH_ILP_Smoke">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="initialize" is-config="true" duration-ms="70" started-at="2019-07-22T06:22:39Z" finished-at="2019-07-22T06:22:39Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="initialize" is-config="true" duration-ms="65" started-at="2019-07-29T06:23:30Z" finished-at="2019-07-29T06:23:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR" duration-ms="779551" started-at="2019-07-22T06:22:39Z" finished-at="2019-07-22T06:35:39Z">
+        <test-method status="PASS" signature="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR" duration-ms="795589" started-at="2019-07-29T06:23:30Z" finished-at="2019-07-29T06:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="getResult" is-config="true" duration-ms="182" started-at="2019-07-22T06:35:39Z" finished-at="2019-07-22T06:35:39Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="getResult" is-config="true" duration-ms="196" started-at="2019-07-29T06:36:45Z" finished-at="2019-07-29T06:36:46Z">
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR status=SUCCESS method=AA_OH_ILP_Smoke.LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@335eadca] output={null}]]]>
 =======
       <class name="pack.AA_OH_ILP_Prod">
@@ -218,6 +203,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
                 <![CDATA[[TestResult name=DFLTLoan_EPPConvert_DepositAll_ClearAll_ status=FAILURE method=AA_OH_ILP.DFLTLoan_EPPConvert_DepositAll_ClearAll_()[pri:63, instance:pack.AA_OH_ILP@731a74c] output={null}]]]>
 >>>>>>> chary1
+=======
+                <![CDATA[[TestResult name=LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR status=SUCCESS method=AA_OH_ILP_Smoke.LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR()[pri:2, instance:pack.AA_OH_ILP_Smoke@eec5a4a] output={null}]]]>
+>>>>>>> venkat1
               </value>
             </param>
           </params>
@@ -226,11 +214,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- getResult -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_OH_ILP_Smoke@335eadca]" name="quit" is-config="true" duration-ms="559" started-at="2019-07-22T06:35:39Z" finished-at="2019-07-22T06:35:39Z">
+=======
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_OH_ILP_Smoke@eec5a4a]" name="quit" is-config="true" duration-ms="561" started-at="2019-07-29T06:36:46Z" finished-at="2019-07-29T06:36:46Z">
+>>>>>>> venkat1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- pack.AA_OH_ILP_Smoke -->
+<<<<<<< HEAD
 =======
         <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_OH_ILP_Prod@335eadca]" name="tearDown" is-config="true" duration-ms="48" started-at="2019-07-23T06:02:08Z" finished-at="2019-07-23T06:02:08Z">
 =======
@@ -250,6 +243,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
 =======
 >>>>>>> chary1
+=======
+>>>>>>> venkat1
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

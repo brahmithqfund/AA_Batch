@@ -15,11 +15,12 @@
 <!-- <include name="kiran_FL_ILP"/>  -->  
 <!-- <include name="leela_CO_ILP"/> -->
   <!--  <include name="venkat_CO_ILP"/> -->  
-    <include name="venkat_OH_ILP"/> 
-  <!--  <include name="venkat_OH_ILP_Smoke"/>   -->
+   <!--  <include name="venkat_OH_ILP"/>  -->
+     <!--  <include name="venkat_OH_ILP_Prod"/> -->
+    <include name="venkat_OH_ILP_Smoke"/>   
 <!-- <include name="leela_CO_ILP"/>  -->
  <!-- <include name="venkat_CO_ILP"/> -->
-<!--    <include name="venkat_OH_ILP"/>  -->
+    <!-- <include name="venkat_OH_ILP"/>  --> 
 <!-- <include name="leela_OH_ILP_Prod2"/>  -->
 <!-- <include name="leela_FL_ILP_Smoke"/>  -->
 <!--   <include name="venkat_OH_ILP"/>  -->
@@ -34,8 +35,11 @@
       <class name="pack.AA_CO_ILP"/>
       <class name="pack.AA_FL_ILP"/>
         <class name="pack.AA_OH_ILP"/>
+                <class name="pack.AA_ILP"/>
+          <class name="pack.AA_OH_ILP_Smoke"/> 
          <class name="pack.AA_FL_ILP_Smoke"/>
           <class name="pack.AA_OH_ILP_Prod"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

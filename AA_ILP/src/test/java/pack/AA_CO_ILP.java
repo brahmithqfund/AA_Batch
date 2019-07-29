@@ -4246,7 +4246,7 @@ public class AA_CO_ILP extends AA_ILP {
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -6, 2);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "15");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
