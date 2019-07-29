@@ -67,7 +67,7 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 				System.out.println(ProductID);	
 				String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				appUrl = AppURL;
-				Login.Login(UserName, Password, StoreId);
+			    Login.Login(UserName,Password,StoreId);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
@@ -152,9 +152,9 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 
 					driver.switchTo().frame("main");
 
-				driver.findElement(By.id("LoanButtonId")).click();
+			driver.findElement(By.id("LoanLengthDocBtn")).click();
 
-					/*for (String winHandle1 : driver.getWindowHandles())
+					for (String winHandle1 : driver.getWindowHandles())
 
 					{
 						if (!(winHandle1.equals(Parent_Window1))) {
@@ -164,7 +164,7 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 							test.log(LogStatus.PASS, "ConfirmShareScreen Button clicked");
 						}
 
-					}*/
+					}
 					Thread.sleep(3000);
 					if (ProductID.equals("ILP")) {
 
@@ -389,9 +389,9 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 	driver.findElement(By.id("checkNbrs"+i)).sendKeys(chknum);
 
 	                        }             */
-							driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
+							driver.findElement(By.name("requestBean.password")).sendKeys("1234");
 							//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[10]/td/input")).sendKeys(ESign_Password);
-							test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
+							test.log(LogStatus.PASS, "ESign_Checks is selected as 1234");
 							driver.findElement(By.name("finishLoan")).click();
 							//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[12]/td/table/tbody/tr[1]/td[5]/input")).click();
 							test.log(LogStatus.PASS, "click on Finish Loan button ");
