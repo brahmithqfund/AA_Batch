@@ -177,6 +177,7 @@ public class ACH_Deposit extends AA_CO_ILP{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
+
 				
 				driver.findElement(By.name("requestBean.storeCode")).sendKeys(StoreId);
 				test.log(LogStatus.PASS, "Enter stote id::"+StoreId);

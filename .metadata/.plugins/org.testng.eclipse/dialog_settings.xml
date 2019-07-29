@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="CompareResultDialogBounds">
+<<<<<<< HEAD
 		<item value="309" key="x"/>
 		<item value="748" key="width"/>
 		<item value="167" key="y"/>
+=======
+		<item value="1675" key="x"/>
+		<item value="748" key="width"/>
+		<item value="187" key="y"/>
+>>>>>>> chary1
 		<item value="296" key="height"/>
 	</section>
 </section>
