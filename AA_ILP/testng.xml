@@ -10,9 +10,9 @@
 
     
    <!-- kiran group--> 
-  <include name="groups="kiran_CO_ILP_Smoke"/>  
+   <include name="kiran_CO_ILP_Smoke"/>   
 <!-- <include name="kiran_CO_ILP"/>  -->
-<!-- <include name="kiran_FL_ILP"/>  -->  
+<!--<include name="kiran_FL_ILP1"/>-->   
 <!-- <include name="leela_CO_ILP"/>  -->
  <!-- <include name="venkat_CO_ILP"/> -->
  <!--   <include name="venkat_OH_ILP"/>  -->
@@ -25,6 +25,7 @@
       <class name="pack.AA_CO_ILP"/>
       <class name="pack.AA_FL_ILP"/>
         <class name="pack.AA_OH_ILP"/>
+        <class name="pack.AA_CO_ILP_Smoke"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
