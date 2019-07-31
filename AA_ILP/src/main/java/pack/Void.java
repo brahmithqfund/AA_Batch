@@ -101,13 +101,11 @@ public class Void extends AA_CO_ILP{
 				driver.switchTo().frame("main");
 				if (ProductID.equals("ILP")) {
 
-					driver.findElement(By
-							.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/select"))
-							.sendKeys("cash");
-					test.log(LogStatus.PASS, "Disb type is selected as " + "Cash");
-					driver.findElement(By.name("transactionDataBean.password")).sendKeys(Password);
+					driver.findElement(By.name("tenderType")).sendKeys("Cash");
+					test.log(LogStatus.PASS, "DisbType Type is entered as Cash");
+					driver.findElement(By.name("requestBean.password")).sendKeys(Password);
 					test.log(LogStatus.PASS, "Password is selected as " + Password);
-					driver.findElement(By.name("Submit33")).click();
+					driver.findElement(By.name("finish")).click();
 					test.log(LogStatus.PASS, "Clicked on Finish Void Paymentplan Payment button ");
 
 					Thread.sleep(2000);
@@ -131,18 +129,22 @@ public class Void extends AA_CO_ILP{
 					driver.switchTo().frame("main");
 					Thread.sleep(2000);
 					Thread.sleep(2000);
-					if (driver.findElement(By.name("checkno")).isDisplayed()) {
-
-						driver.findElement(By.name("checkno")).click();
-						test.log(LogStatus.INFO, " void Payment with-SSN: " + SSN + " :: is Successful");
-					} else {
-						test.log(LogStatus.FAIL, "Payment not Completed Successfully ");
-					}
+					if (ProductID.equals("ILP")) {
+						// *[@id="totPart"]/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td[1]/input
+						if (driver.findElement(By.xpath("//*[@id='totPart']/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/input[1]")).isDisplayed())
+						// if(driver.findElement(By.name("checkyes")).isDisplayed())
+						{
+							test.log(LogStatus.PASS, "Void Loan is Completed Successfully ");
+							driver.findElement(By.xpath("//*[@id='totPart']/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/input[1]")).click();
+						} else {
+							test.log(LogStatus.FAIL, "Void Payment is not Completed Successfully ");
+						}
 
 				}
 
 			}
 
 		}
+	}
 	}
 }

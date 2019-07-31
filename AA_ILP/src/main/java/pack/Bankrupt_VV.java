@@ -108,10 +108,11 @@ public class Bankrupt_VV extends AA_CO_ILP{
 
 				// DueDate =
 				// driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]")).getText();
-				DueDate = driver
+			/*	DueDate = driver
 						.findElement(By
 								.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[8]/td/span[2]"))
-						.getText();
+						.getText();*/
+				DueDate = driver.findElement(By.xpath("//*[@id='ContractScheduleTable']/tbody/tr[4]/td[2]")).getText();
 				// *[@id="revolvingCreditHistTable"]/tbody/tr[4]/td[3]/span[2]
 				test.log(LogStatus.PASS, "Capture DueDate" + DueDate);
 				System.out.print(DueDate);

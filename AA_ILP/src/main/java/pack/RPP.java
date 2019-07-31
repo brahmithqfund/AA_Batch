@@ -29,6 +29,7 @@ public class RPP extends AA_CO_ILP{
 			String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 			if(SSN.equals(RegSSN))
 			{
+				String StateID = TestData.getCellData(sheetName,"StateID",row);
 				String TxnType=TestData.getCellData(sheetName,"TxnType",row);
 				String TenderType = TestData.getCellData(sheetName,"TenderType",row);	
 				String ProductID=TestData.getCellData(sheetName,"ProductID",row);
@@ -148,8 +149,17 @@ public class RPP extends AA_CO_ILP{
 
 				test.log(LogStatus.INFO,"Navigate to RPP 2nd Screen");
 
-				driver.findElement(By.name("collateralTypeId")).sendKeys("ACH");
-				test.log(LogStatus.PASS,"Collateral Type is Selected as ACH");
+				if(StateID.equalsIgnoreCase("CO"))
+				{
+					driver.findElement(By.name("collateralTypeId")).sendKeys("ACH");
+					test.log(LogStatus.PASS,"Collateral Type is Selected as ACH");
+				}
+				else if(StateID.equalsIgnoreCase("OH"))
+				{
+					driver.findElement(By.name("collateralTypeId")).sendKeys("CASH");
+					test.log(LogStatus.PASS,"Collateral Type is Selected as CASH");
+				}
+
 
 				driver.findElement(By.name("password")).sendKeys(Password);
 				test.log(LogStatus.PASS,"Password is Selected as : "+Password);
@@ -157,10 +167,7 @@ public class RPP extends AA_CO_ILP{
 				driver.findElement(By.name("submitBtn")).click();
 				test.log(LogStatus.PASS,"Submit Button Clicked Successfully ");
 
-				for( String winHandle1 : driver.getWindowHandles())
-				{
-					driver.switchTo().window(winHandle1);
-				}			
+						
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");

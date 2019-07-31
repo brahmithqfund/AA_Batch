@@ -88,10 +88,7 @@ public class Writoff_RecoveryFull_ILP extends AA_CO_ILP{
 
 				//  driver.findElement(By.name("button")).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
-				for( String winHandle1 : driver.getWindowHandles())
-				{
-					driver.switchTo().window(winHandle1);
-				}			
+						
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");

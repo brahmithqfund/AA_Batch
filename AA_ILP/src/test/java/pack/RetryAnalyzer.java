@@ -1,12 +1,14 @@
 package pack;
 
+import java.sql.SQLException;
+
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
 
 	int counter = 0;
-	int retryLimit = 2;
+	int retryLimit = 0;
 	/*
 	 * (non-Javadoc)
 	 * @see org.testng.IRetryAnalyzer#retry(org.testng.ITestResult)
@@ -26,7 +28,15 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		if(counter < retryLimit)
 		{
 			counter++;
-						
+				try {
+					BProc.bproc();
+				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}		
 			return true;
 		}
 		return false;

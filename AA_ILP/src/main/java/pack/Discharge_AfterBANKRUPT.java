@@ -206,11 +206,13 @@ public  class Discharge_AfterBANKRUPT extends AA_CO_ILP{
 			driver.findElement(By.name("ssn3")).sendKeys(SSN3);
 			test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 			Thread.sleep(5000);
+			Thread.sleep(5000);
 			Actions action = new Actions(driver);
-			action.moveByOffset(200,100).perform();
+			action.moveByOffset(1000,100).perform();
 			Thread.sleep(10000);
 			action.click();
 			Thread.sleep(3000);			
+					
 			
 			driver.findElement(By.name("submit")).click();
 			test.log(LogStatus.PASS, "Click on submit Button");  

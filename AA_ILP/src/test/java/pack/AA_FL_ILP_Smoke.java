@@ -107,7 +107,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	
 	
-	@Test (priority=0,groups = "leela_FL_ILP_Smoke")
+	@Test (priority=0,groups = "leela_FL_ILP_Smoke1")
 
 	public void LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR() throws Exception {
 
@@ -144,9 +144,10 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				//System.out.println(SSN);
 				test = reports.startTest(Header+"_S.No:1"+"_"+PayFrequency+"_"+CollateralType,"LONI_Partial payment_EOD_DLQ_CURE_DEF_Partial def payment_PPN_1# payment_void_PPN default_partial def payment(>15% DEF amt)_WO(DEF DATE+120 DAYS)_WOR(pay total due amt)");
 				
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);
 		     	RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"200");
+				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -5, 2);
 				Payment_LessthanAmount.Payment_LessthanAmount(SSN, FileName);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -178,7 +179,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 	}
 
 
-	//@Test (priority=1,groups = "leela_FL_ILP_Smoke")
+	@Test (priority=1,groups = "leela_FL_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -218,7 +219,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				
 				Login.Login(UserName,Password,StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"200");
+				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
 				PendingBNK.PendingBNK(SSN, FileName);
@@ -235,7 +236,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 		
 	}
 
-	// @Test(priority=2,groups = "leela_FL_ILP_Smoke") 
+	 @Test(priority=2,groups = "leela_FL_ILP_Smoke") 
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -270,7 +271,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);			        
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN,FileName,"200");
+				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -298,7 +299,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	}
 
-//	@Test (priority=3,groups = "leela_FL_ILP_Smoke") //15day/05m/2019 // wendensday
+	@Test (priority=3,groups = "leela_FL_ILP_Smoke") //15day/05m/2019 // wendensday
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name
@@ -337,7 +338,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 			    //SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);
 			    RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"200");
+			    NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);

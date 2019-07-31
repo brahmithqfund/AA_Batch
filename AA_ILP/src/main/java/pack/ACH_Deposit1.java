@@ -176,7 +176,10 @@ public class ACH_Deposit1 extends AA_CO_ILP{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
+				
 
+				driver.findElement(By.name("requestBean.storeCode")).sendKeys(StoreId);
+				test.log(LogStatus.PASS, "Store code is  entered as::"+StoreId);
 				driver.findElement(By.name("beginMonth")).click();
 				driver.findElement(By.name("beginMonth")).clear();
 				driver.findElement(By.name("beginMonth")).sendKeys(DueDate1);
@@ -196,14 +199,10 @@ public class ACH_Deposit1 extends AA_CO_ILP{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				if (driver
-						.findElement(By
-								.xpath("/html/body/form/table[1]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/input"))
-						.isDisplayed()) {
+				if (driver.findElement(By.xpath("/html/body/form/table[1]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/input")).isDisplayed()) 
+				{
 					test.log(LogStatus.PASS, "LOC Pre ACH Deposit Process  successfully.");
-					driver.findElement(By
-							.xpath("/html/body/form/table[1]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/input"))
-							.click();
+					driver.findElement(By.xpath("/html/body/form/table[1]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/input")).click();
 				} else {
 					test.log(LogStatus.FAIL, "Process LOC Pre ACH Deposit is not updated successfully.");
 				}
