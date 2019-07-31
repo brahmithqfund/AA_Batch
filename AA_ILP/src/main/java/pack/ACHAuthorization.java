@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-public class ACHAuthorization extends AA_CO_ILP{
+public class ACHAuthorization extends AA_ILP{
 
 	public static void ACHAuthorization(String SSN,String FileName) throws Exception
 	{

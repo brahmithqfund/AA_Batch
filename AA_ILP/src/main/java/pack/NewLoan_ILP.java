@@ -140,7 +140,10 @@ public class NewLoan_ILP extends AA_CO_ILP{
 						}
 					}
 */
-					driver.findElement(By.name("ShareScreenBtn")).click();
+				
+				driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/input")).click();
+				test.log(LogStatus.PASS, "Product is selected  ");
+				driver.findElement(By.name("ShareScreenBtn")).click();
 					test.log(LogStatus.PASS, "ShareScreen Button clicked");
 
 					for( String winHandle1 : driver.getWindowHandles())
@@ -173,8 +176,29 @@ public class NewLoan_ILP extends AA_CO_ILP{
 					driver.switchTo().frame("main");
 
 					driver.findElement(By.id("LoanButtonId")).click();
-					//New Loan Screens
+					try {
+						Alert alert = driver.switchTo().alert();
+						alert.accept();
+						//if alert present, accept and move on.
 
+					}
+					catch (NoAlertPresentException e) {
+						//do what you normally would if you didn't have the alert.
+					}
+					//New Loan Screens
+					for( String winHandle1 : driver.getWindowHandles())
+
+					{
+
+						driver.switchTo().window(winHandle1);
+
+					}
+
+					driver.switchTo().defaultContent();
+
+					driver.switchTo().frame("mainFrame");
+
+					driver.switchTo().frame("main");
 					if(ProductID.equals("ILP"))
 					{
 
@@ -232,13 +256,26 @@ public class NewLoan_ILP extends AA_CO_ILP{
 
 								Thread.sleep(8000);
 
+								WebElement element1 = driver.findElement(By.name("requestBean.siilBean.advAmt"));  
+								if(element.isDisplayed()){
 
+
+									Actions builder = new Actions(driver); 
+									builder.doubleClick()
+									.sendKeys(element1,Keys.BACK_SPACE)
+									.build()
+									.perform();
+								}
+// name="requestBean.siilBean.advAmt"
+								//String maxval =driver.findElement(By.xpath("/html/body/form/table/tbody/tr[3]/td/table/tbody/tr[2]/td[3]/input[1]")).getAttribute("value");
 								driver.findElement(By.name("requestBean.siilBean.advAmt")).sendKeys(NegAmt);
 								test.log(LogStatus.PASS, "Negotiable Amount Entered is::"+NegAmt);
 								// name="requestBean.siilBean.advAmt"
+								// reCalculate
 								driver.findElement(By.name("reCalculate")).click();
 								test.log(LogStatus.PASS, "ReCalculate button clicked");
 								Thread.sleep(2000);
+								// requestBean.siilBean.collateralType
 								driver.findElement(By.name("requestBean.siilBean.collateralType")).sendKeys(ESign_CollateralType);
 								test.log(LogStatus.PASS, "Collateral type is selected as ::"+ESign_CollateralType);
 								Actions builder = new Actions(driver); 
@@ -255,14 +292,22 @@ public class NewLoan_ILP extends AA_CO_ILP{
 								//     /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[3]/table/tbody/tr[15]/td/input
 								//	/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[5]/table/tbody/tr[15]/td
 								//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input")).click();
-								driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input")).click();
+							
+								//                            /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input
+								
+								// /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[13]/td/input
+								driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[13]/td/input")).click();
+
+								//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input")).click();
 								test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
+							
 								Thread.sleep(5000);
 								robot.keyRelease(KeyEvent.VK_F11);
 								test.log(LogStatus.PASS, "F11 button clicked");
+							
 							}
 
-
+						
 
 
 						}
@@ -287,6 +332,15 @@ public class NewLoan_ILP extends AA_CO_ILP{
 						//name="requestBean.siilBean.collateralType"  dropdown
 						// /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input instbutton
 
+					}
+					try {
+						Alert alert = driver.switchTo().alert();
+						alert.accept();
+						//if alert present, accept and move on.
+
+					}
+					catch (NoAlertPresentException e) {
+						//do what you normally would if you didn't have the alert.
 					}
 					String Instamt=driver.findElement(By.name("requestBean.siilBean.disbAmt")).getAttribute("value");
 					System.out.println(Instamt);
@@ -352,7 +406,7 @@ public class NewLoan_ILP extends AA_CO_ILP{
 			driver.findElement(By.id("checkNbrs"+i)).sendKeys(chknum);
 
 			                        }             */
-					driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
+					driver.findElement(By.name("requestBean.password")).sendKeys("1234");
 					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[10]/td/input")).sendKeys(ESign_Password);
 					test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
 					driver.findElement(By.name("finishLoan")).click();
@@ -376,7 +430,7 @@ public class NewLoan_ILP extends AA_CO_ILP{
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					//
 
 					//driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
@@ -411,5 +465,6 @@ public class NewLoan_ILP extends AA_CO_ILP{
 
 			}
 
-	}
+		}
+	
 }

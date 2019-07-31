@@ -2,10 +2,14 @@
   "version": "v1",
   "title": "Eclipse",
 <<<<<<< HEAD
+  "timestamp": 1563426333196,
+=======
+<<<<<<< HEAD
   "timestamp": 1563428968649,
 =======
   "timestamp": 1563361652554,
 >>>>>>> b09111cd0adbd79abad13bfb1c2f52808ed45349
+>>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
   "ttl": 10080,
   "helpUrl": "https://dev.eclipse.org/recommenders/community/aeri/v2/help/",
   "feedbackUrl": "https://www.codetrails.com/error-analytics/",
@@ -76,6 +80,10 @@
 <<<<<<< HEAD
   "problemsZipLastDownloadTimestamp": 0
 =======
+<<<<<<< HEAD
+  "problemsZipLastDownloadTimestamp": 0
+=======
   "problemsZipLastDownloadTimestamp": 1563362370459
 >>>>>>> b09111cd0adbd79abad13bfb1c2f52808ed45349
+>>>>>>> df4a0c571ef9c2b51e0f4e216c8aa764ab003281
 }

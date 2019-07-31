@@ -66,7 +66,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import Test.CO_ILP.scenario;*/
 import pack.*;
 import pack.Void;
-import bsh.*;
+
 //import scala.collection.Iterator;
 //import scala.collection.Set;
 
@@ -85,19 +85,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileReader;
 
-public class AA_OH_ILP extends AA_ILP{
+public class AA_OH_ILP extends AA_ILP {
 
-	
+	// Venkat scenarios
 
-//Venkat scenarios
-	
 	@Test(priority = 0, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exception {
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -123,7 +122,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:01" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration_New loan_verifyOrigination fee and MHC fee");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -141,7 +139,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_Monthly_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -167,7 +166,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:02" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration monthly income frequency_New loan");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -185,7 +183,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -211,7 +210,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:03" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration semimonthly income frequency_New loan");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -229,7 +227,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -255,7 +254,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:04" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration biweekly income frequency_New loan");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -273,7 +271,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_Weekly_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -299,7 +298,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:05" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration weekly income frequency_New loan");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -317,7 +315,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_ACH_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -343,7 +342,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:05" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration weekly income frequency_New loan");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -360,7 +358,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -386,7 +385,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:07" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration_select multiple disbursement types");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -404,7 +402,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_COILP_NewLoan_Void_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -429,7 +428,6 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan– same day Void");
 
 				Assert.assertTrue(true);
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -475,7 +473,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:9" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan – void on next day with encryption key");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -522,7 +520,6 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan– Rescind");
 
 				Assert.assertTrue(true);
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -568,7 +565,6 @@ public class AA_OH_ILP extends AA_ILP{
 						"Loan with multiple disbursement (cash& check)->void with cash");
 
 				Assert.assertTrue(true);
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -616,7 +612,6 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:13" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -664,12 +659,11 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:14" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
 				Customer_Status.Customer_Status(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 1, 2);
 				Payment_Pastdue_NextInst.Payment_Pastdue_NextInst(SSN, FileName);
@@ -715,14 +709,13 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:15" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
 				Customer_Status.Customer_Status(SSN, FileName);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10,10);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 10);
 				Payment_2ndEODbatchprocess.Payment_2ndEODbatchprocess(SSN, FileName);
 				Customer_Status.Customer_Status(SSN, FileName);
 				// Apportions_List.Apportions_List(SSN, FileName, 2);
@@ -766,7 +759,6 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:16" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -783,7 +775,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
+	/*@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
 
 	public void LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt() throws Exception {
 
@@ -814,12 +806,11 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:17" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installment amount");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
 				Customer_Status.Customer_Status(SSN, FileName);
 				// Apportions_List.Apportions_List(SSN, FileName, 2);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 1, 2);
@@ -834,7 +825,7 @@ public class AA_OH_ILP extends AA_ILP{
 		}
 
 	}
-
+*/
 	@Test(priority = 17, groups = "venkat_OH_ILP")
 
 	public void LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void()
@@ -868,7 +859,6 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:18" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>Run EOD batch process on 1# due date>Run again EOD batch process from 10th day of 1# due date>Payment(past due +installement amount)>void payment on next day");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -923,7 +913,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:19" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(less than 1# amount)");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -979,7 +969,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:20" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(greaterthan 1# amount)");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1008,7 +998,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1034,7 +1025,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:21" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_Run EOB batch process from 10th day of due date_payment(greater  than 1# amount)");
-				
 
 				Login.Login(UserName, Password, StoreId);
 
@@ -1100,7 +1090,6 @@ public class AA_OH_ILP extends AA_ILP{
 				String Header = StateID + "_" + ProductID;
 				test = reports.startTest(Header + "_S.No:22" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>default>Run EOD batch process(default date+60 days)");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1160,7 +1149,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:23" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_payment(greater  than 1# amount)_void payment on next day  (Encryption key issue)");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1189,7 +1178,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1215,7 +1205,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:24" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# deposit_rtn_Run EOB batch process from 10th day of due date>payment(greater  than 1# amount)_Void");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1237,7 +1226,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
 				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName,"");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				PayAny_Void.PayAny_Void(SSN, FileName);
 				// History.History(SSN, FileName);
 				// History.History1(SSN, FileName);
@@ -1279,7 +1268,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:25" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>select payment option from CSR dropdown> Payment screen ");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1327,7 +1315,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:26" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1# payment on due date>payoff");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1374,7 +1361,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:28" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>select payment option from CSR dropdown> Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t3.Pay any other Amt>select payoff balance>Enter amount>");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1438,7 +1424,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1464,7 +1451,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:30" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# payment on due date_2#payment on due date_void_run EOD batch process on 10th day of 2# _payoff_(consider loan has only three installements)_void");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1520,7 +1506,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:31" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#depsoit >rtn>payoff>");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1577,7 +1563,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:32" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#deposit >clr>2# dep>rtn>run EOD batch process on 10th from 2# due date>payoff>age the store date to one day before 3# due date(banking day)>run EOD");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1649,7 +1635,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:33" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>1#depsoit >rtn>payoff>void");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -1678,7 +1664,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_DepositACH_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1704,7 +1691,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:35" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_age the store date to one day before 1# due date(banking day)_Run EOD process_Run payliance origination file_Process depsoit on due by clicking on Process ILP pre ach depsoits");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1731,7 +1717,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stInstpartialpayment_1stInstdeposit_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1757,7 +1744,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:36" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1st Inst partial payment_1st Inst deposit");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1781,13 +1767,14 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
+	/*@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
 
 	public void Loan_1stInstpaymentFullCash_1stInstdeposit_() throws Exception {
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stInstpaymentFullCash_1stInstdeposit_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -1813,7 +1800,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:37" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1st Inst  full cash payment_1st Inst deposit");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1836,7 +1822,7 @@ public class AA_OH_ILP extends AA_ILP{
 			}
 		}
 
-	}
+	}*/
 
 	@Test(priority = 35, groups = "venkat_OH_ILP")
 	public void AA_Loan_ACHRevoke_1stInsatallmentDeposit() throws Exception {
@@ -1870,7 +1856,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:38" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>ach revoke >1# deposit");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1922,7 +1907,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:39" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>ach revoke >1# payment>ach auth>2# deposit");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -1945,7 +1929,7 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
+	/*@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
 
 	public void CO_ILP_Loan_Instwisepayment_last_deposit() throws Exception {
 
@@ -1976,8 +1960,6 @@ public class AA_OH_ILP extends AA_ILP{
 				test = reports.startTest(Header + "_S.No:40" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>payment all the installements acc to respective due dates except last installement>last # deposit");
 
-				
-
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				// NewLoan_ILP_NegAmt.NewLoan_ILP_NegAmt(SSN, FileName, "200");
@@ -1998,7 +1980,7 @@ public class AA_OH_ILP extends AA_ILP{
 			}
 
 		}
-	}
+	}*/
 
 	@Test(priority = 38, groups = "venkat_OH_ILP")
 
@@ -2035,7 +2017,7 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:41" + "_" + PayFrequency + "_" + CollateralType,
 						"Laon>1# deposit>Return");
-				
+
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
@@ -2061,7 +2043,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_1stParPmt_1stDep_Ret_TestData.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2087,13 +2070,12 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:42" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan_1# partial payment_1# deposit_Return");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -6, 2);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "15");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -2149,7 +2131,7 @@ public class AA_OH_ILP extends AA_ILP{
 	 * ProductID; //System.out.println(SSN); test =
 	 * reports.startTest(Header+"_S.No:43"+"_"+PayFrequency+"_"+CollateralType,
 	 * "Loan_payment all the installements acc to respective due dates except last installement_last # deposit_Return"
-	 * );  Login.Login(UserName,Password,StoreId);
+	 * ); Login.Login(UserName,Password,StoreId);
 	 * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,
 	 * AppURL, SSN, FileName); NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
 	 * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
@@ -2184,7 +2166,8 @@ public class AA_OH_ILP extends AA_ILP{
 
 		// Start test. Mention test script name
 		String FileName = "AA_Loan_ACHRevoke__1stInsatllmentDeposit_Clear_Txn_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_venkat") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 		// int lastrow=TestData.getLastRow("Borrower");
@@ -2210,7 +2193,6 @@ public class AA_OH_ILP extends AA_ILP{
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:44" + "_" + PayFrequency + "_" + CollateralType,
 						"Laon>1# deposit>Clear");
-				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2230,2578 +2212,2458 @@ public class AA_OH_ILP extends AA_ILP{
 
 	}
 
-	////Leela----- Starts ------- ////
-	
-	@Test (priority=42,groups = "leela_OH_ILP") 
+	//// Leela----- Starts ------- ////
 
-		 public void Loan_PmtAllExceptLast_DepLast_Clear_Return_() throws Exception {
+	@Test(priority = 42, groups = "leela_OH_ILP")
 
-		 	// Start test. Mention test script name
-		 	String FileName= "AA_Loan_PmtAllExceptLast_DepLast_Clear_Return_TestData.xls";
-		 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-		 	int lastrow=TestData.getLastRow("NewLoan");
-		 	String sheetName="NewLoan";   
-		 	//int lastrow=TestData.getLastRow("Borrower");
-		 	System.out.println(lastrow);
-		 	for(int row=2;row<=lastrow;row++)
-		 	{
-		 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		 		//System.out.println(RunFlag);
-		 	if(RunFlag.equals("Y"))
-		 	{	
-		 		//driver.get(appUrl);
-		 		//test.log(LogStatus.INFO, "Application is launched");
-		 		//driver.manage().window().maximize();
-		 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-		 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-		 			Password = prop.getProperty("Password_OH_ILP_leela");
-		 	       // System.out.println(Password);
-		 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-		 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-		 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-		 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-		 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-		 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-		 	        String Header = StateID+ "_" + ProductID;
-		 	        //System.out.println(SSN);
-		 	        test = reports.startTest(Header+"_S.No:45"+"_"+PayFrequency+"_"+CollateralType, "Loan>payment all the installements acc to respective due dates except last installement>last # deposit>clear>Return");
-		 	       // 
-		 	        
-		 	       // SetCurrentDate.SetCurrentDate(SSN, FileName);
-		 	        
-		 	        Login.Login(UserName, Password, StoreId);
-		 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-		 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-		 	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
-		 	        Payment_ILP.Payment_ILP(SSN, FileName);
-		 	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
-		 	        Payment_ILP.Payment_ILP(SSN, FileName);		
-		 	  
-		 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-		 	       // History.History(SSN, FileName, 0);
+	public void Loan_PmtAllExceptLast_DepLast_Clear_Return_() throws Exception {
 
-		 	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 4);
-		 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-		 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-		 	        StoreInfo.StoreInfo(SSN, FileName);
-		 	        Safeassign.Safeassign(SSN, FileName);
-		 	        Drawerassign.Drawerassign(SSN, FileName);
-		 	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1,4);
-		 	        ACH_Deposit1.ACH_Deposit1(SSN, FileName, 0);
-
-		 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 8, 4);
-		 	       Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-		 	        ACHReturnPosting.ACHReturnPosting(SSN, FileName);
-
-		 	       // Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-
-		 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-		 	        
-	        		        	        	        
-		 	}
-		 	}
-		 }
-
-		 @Test (priority=43,groups = "leela_OH_ILP") 
-
-		 public void Loan_1stdeposit_clr_payoff_clear_return_() throws Exception {
-
-		 	// Start test. Mention test script name
-		 	String FileName= "AA_Loan_1stdeposit_clr_payoff_clear_return_TestData.xls";
-		 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-		 	int lastrow=TestData.getLastRow("NewLoan");
-		 	String sheetName="NewLoan";   
-		 	//int lastrow=TestData.getLastRow("Borrower");
-		 	System.out.println(lastrow);
-		 	for(int row=2;row<=lastrow;row++)
-		 	{
-		 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		 		//System.out.println(RunFlag);
-		 	if(RunFlag.equals("Y"))
-		 	{	
-		 		//driver.get(appUrl);
-		 		//test.log(LogStatus.INFO, "Application is launched");
-		 		//driver.manage().window().maximize();
-		 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-		 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-		 			Password = prop.getProperty("Password_OH_ILP_leela");
-		 	       // System.out.println(Password);
-		 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-		 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-		 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-		 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-		 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-		 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-		 	        String Header = StateID+ "_" + ProductID;
-		 	        //System.out.println(SSN);
-		 	        test = reports.startTest(Header+"_S.No:46"+"_"+PayFrequency+"_"+CollateralType, "Loan_1# deposit_clr_payoff_clear return");
-		 	        
-		 	        
-		 	        SetCurrentDate.SetCurrentDate(SSN, FileName);
-		 	        
-		 	        Login.Login(UserName, Password, StoreId);
-		 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-		 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-		 	   
-
-		 	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
-		 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-		 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-		 	        StoreInfo.StoreInfo(SSN, FileName);
-		 	        Safeassign.Safeassign(SSN, FileName);
-		 	        Drawerassign.Drawerassign(SSN, FileName);
-		 	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1,2);
-		 	        ACH_Deposit1.ACH_Deposit1(SSN, FileName, 0);
-
-		 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 8, 2);
-		 	        Payoff_Installments.Payoff_Installments(SSN, FileName);
-		 	       Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-		 	        ACHReturnPosting.ACHReturnPosting(SSN, FileName);
-		 	    //    Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-		 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-		 	       		        		        	        	        
-		 	}
-		 	}
-		 	
-
-		 		}
-
-		 	
-				
-				@Test(priority = 44,groups = "leela_OH_ILP") 
-				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_Default() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_Default_Txn_Testdata.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-					int lastrow = TestData.getLastRow("NewLoan");
-					String sheetName = "NewLoan";
-					// int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for (int row = 2; row <= lastrow; row++) {
-						String RunFlag = TestData.getCellData(sheetName, "Run", row);
-						// System.out.println(RunFlag);
-						if (RunFlag.equals("Y")) {
-							// driver.get(appUrl);
-							// test.log(LogStatus.INFO, "Application is launched");
-							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-							String StateID = TestData.getCellData(sheetName, "StateID", row);
-							String SSN = TestData.getCellData(sheetName, "SSN", row);
-							String Header = StateID + "_" + ProductID;
-							// System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:47" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date");
-							
-								
-								SetCurrentDate.SetCurrentDate(SSN, FileName);
-							    
-						        Login.Login(UserName, Password, StoreId);
-						        
-						        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,AppURL, SSN,FileName);
-						        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-						        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-						     	//History_Paymentcaluculation.History_Paymentcaluculation(SSN, FileName);
-						        
-						      
-							 
-						}
-					}
-
-				}	
-				
-				@Test(priority = 45,groups = "leela_OH_ILP") 
-				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforecureendDateDefault_Txn_Testdata.xls";
-					Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/OH_ILP/"+ FileName);
-					int lastrow = TestData.getLastRow("NewLoan");
-					String sheetName = "NewLoan";
-					// int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for (int row = 2; row <= lastrow; row++) {
-						String RunFlag = TestData.getCellData(sheetName, "Run", row);
-						// System.out.println(RunFlag);
-						if (RunFlag.equals("Y")) {
-							// driver.get(appUrl);
-							// test.log(LogStatus.INFO, "Application is launched");
-							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-							String StateID = TestData.getCellData(sheetName, "StateID", row);
-							String SSN = TestData.getCellData(sheetName, "SSN", row);
-							String Header = StateID + "_" + ProductID;
-							// System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:48" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Before Cure end date");
-							
-							
-							    
-						        Login.Login(UserName, Password, StoreId);
-						        
-						        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,AppURL, SSN,FileName);
-						        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-						        if(CollateralType.contains("CASH")){
-						      
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-						        DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 28, 2);
-						        }
-						        if(CollateralType.contains("ACH")){
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 28);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        }
-						     	//History_LoanStatus.History_LoanStatus(SSN, FileName);
-						        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-						        
-						      
-							 
-						}
-					}
-
-				}		
-				
-				@Test (priority=46,groups = "leela_OH_ILP") 
-
-				public void Loan_PmtAllInstExceptLast_DFLTLastInst_() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName= "AA_Loan_PmtAllInstExceptLast_DFLTLastInst_TestData.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-					int lastrow=TestData.getLastRow("NewLoan");
-					String sheetName="NewLoan";   
-					//int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for(int row=2;row<=lastrow;row++)
-					{
-						String RunFlag = TestData.getCellData(sheetName,"Run",row);
-						//System.out.println(RunFlag);
-					if(RunFlag.equals("Y"))
-					{	
-						//driver.get(appUrl);
-						//test.log(LogStatus.INFO, "Application is launched");
-						//driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-					       // System.out.println(Password);
-					        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-					        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					        String StateID = TestData.getCellData(sheetName,"StateID",row);
-					        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-							String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					        String Header = StateID+ "_" + ProductID;
-					        //System.out.println(SSN);
-					        test = reports.startTest(Header+"_S.No:49"+"_"+PayFrequency+"_"+CollateralType, "Laon_paymet all the installement except last #_Run EOD batch process on last # due date_Run EOD Batch process(due date+10 days)_Run EOD batch process on Cure end date");
-					        
-
-					        
-					        Login.Login(UserName, Password, StoreId);
-					        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-					        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-					        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
-					        Payment_ILP.Payment_ILP(SSN, FileName);
-					        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
-					        Payment_ILP.Payment_ILP(SSN, FileName);
-					        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 4);
-					        Payment_ILP.Payment_ILP(SSN, FileName);
-					        AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 5);
-					        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 5);
-					        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-					        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 5);
-					        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 5);
-					        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-					        //History.History(SSN, FileName, 0); 	        
-					}
-					}
-					
-
-				}
-
-					
-				
-				@Test(priority = 47,groups = "leela_OH_ILP")  
-				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_CureenddateDefault() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-					int lastrow = TestData.getLastRow("NewLoan");
-					String sheetName = "NewLoan";
-					// int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for (int row = 2; row <= lastrow; row++) {
-						String RunFlag = TestData.getCellData(sheetName, "Run", row);
-						// System.out.println(RunFlag);
-						if (RunFlag.equals("Y")) {
-							// driver.get(appUrl);
-							// test.log(LogStatus.INFO, "Application is launched");
-							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-							String StateID = TestData.getCellData(sheetName, "StateID", row);
-							String SSN = TestData.getCellData(sheetName, "SSN", row);
-							String Header = StateID + "_" + ProductID;
-							// System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:50" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>Run EODbatch process on Cure end date");
-							
-							
-							    
-						        Login.Login(UserName, Password, StoreId);
-						        
-						        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,AppURL, SSN,FileName);
-						        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-						        if(CollateralType.contains("CASH")){
-						      
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-						        DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-							
-							
-						        Payment_ILP.Payment_ILP(SSN, FileName);
-							
-						    //    PaymentcureAmount_ILP.PaymentcureAmount_ILP(SSN, FileName); // not required this step
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-						        }
-						
-						
-						        if(CollateralType.contains("ACH")){
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        }						        
-						
-						        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-						        
-						      
-							 
-						}
-					}
-					}
-
-				
-				
-				@Test(priority = 48,groups = "leela_OH_ILP")  //Last
-				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_void_CureenddateDefault() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_void_CureEndDateEODbatchProcess_Txn_Testdata.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-					int lastrow = TestData.getLastRow("NewLoan");
-					String sheetName = "NewLoan";
-					// int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for (int row = 2; row <= lastrow; row++) {
-						String RunFlag = TestData.getCellData(sheetName, "Run", row);
-						// System.out.println(RunFlag);
-						if (RunFlag.equals("Y")) {
-							// driver.get(appUrl);
-							// test.log(LogStatus.INFO, "Application is launched");
-							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-							String StateID = TestData.getCellData(sheetName, "StateID", row);
-							String SSN = TestData.getCellData(sheetName, "SSN", row);
-							String Header = StateID + "_" + ProductID;
-							// System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:51" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>void>Run EOD batch process on Cure end date");
-							
-							
-							    
-						        Login.Login(UserName, Password, StoreId);
-						        
-						        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,AppURL, SSN,FileName);
-						        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-						        if(CollateralType.contains("CASH")){
-						      
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-						        DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-						        Payment_ILP.Payment_ILP(SSN, FileName);
-						       // PaymentcureAmount_ILP.PaymentcureAmount_ILP(SSN, FileName);
-						        Void_Payment.Void_Payment(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-						        }
-						        if(CollateralType.contains("ACH")){
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);	
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        }
-						      //  History_Paymentcaluculation.History_Paymentcaluculation(SSN, FileName);
-						        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-						        
-						      
-							 
-						}
-					}
-
-				}
-				
-				@Test(priority = 49,groups = "leela_OH_ILP") 
-				public void AA_Loan1stInsatallmentEODbatchprocess_Cure_Less1stInsatllPayment_CureenddateDefault() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllLessPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-					int lastrow = TestData.getLastRow("NewLoan");
-					String sheetName = "NewLoan";
-					// int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for (int row = 2; row <= lastrow; row++) {
-						String RunFlag = TestData.getCellData(sheetName, "Run", row);
-						// System.out.println(RunFlag);
-						if (RunFlag.equals("Y")) {
-							// driver.get(appUrl);
-							// test.log(LogStatus.INFO, "Application is launched");
-							// driver.manage().window().maximize();
-							AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-							UserName = prop.getProperty("UserName_OH_ILP_leela");
-							Password = prop.getProperty("Password_OH_ILP_leela");
-							String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-							String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-							String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-							String StateID = TestData.getCellData(sheetName, "StateID", row);
-							String SSN = TestData.getCellData(sheetName, "SSN", row);
-							String Header = StateID + "_" + ProductID;
-							// System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:52" + "_" + PayFrequency + "_" + CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(less than1# amount)>Run EOD batch process on Cure end date");
-							
-							
-							    
-						        Login.Login(UserName, Password, StoreId);
-						        
-						        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,AppURL, SSN,FileName);
-						        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-						        if(CollateralType.contains("CASH")){
-						      
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-						        DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-						        PaymentLess_ILP.PaymentLess_ILP(SSN, FileName);
-						        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-						        }
-						        if(CollateralType.contains("ACH")){
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        StoreInfo.StoreInfo(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
-						        DrawerDeassign.DrawerDeassign(SSN, FileName);
-						        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-						        Safeassign.Safeassign(SSN, FileName);
-						        Drawerassign.Drawerassign(SSN, FileName);
-						        }
-						      //  History_Paymentcaluculation.History_Paymentcaluculation(SSN, FileName);
-						        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-						        
-						      
-							 
-						}
-					}
-
-				}
-				@Test (priority=50,groups = "leela_OH_ILP")
-				
-				public void CO_ILP_Loan_DefaultPayment() throws Exception {
-							
-							
-								// Start test. Mention test script name
-								String FileName= "AA_CO_ILP_Loan_DefaultPayment_Testdata.xls";
-								TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-								int lastrow=TestData.getLastRow("NewLoan");
-								String sheetName="NewLoan";
-								
-								System.out.println(lastrow);
-								for(int row=2;row<=lastrow;row++)
-								{
-									String RunFlag = TestData.getCellData(sheetName,"Run",row);
-
-								if(RunFlag.equals("Y"))
-								{	
-
-										AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-										UserName = prop.getProperty("UserName_OH_ILP_leela");
-										Password = prop.getProperty("Password_OH_ILP_leela");
-								        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-								        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-								        String StateID = TestData.getCellData(sheetName,"StateID",row);
-								        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-								        String Header = StateID+ "_" + ProductID;
-								        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-										String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
-
-										test = reports.startTest(Header+"_S.No:53"+"_"+PayFrequency+"_"+CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>select default payment option form drop down>enter full amount(with all possible tender types)");
-
-								         Assert.assertTrue(true);
-								         
-								         
-					                     Login.Login(UserName, Password, StoreId);
-								         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-								         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-								         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-								         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-								      
-								         EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-								         
-								         Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 1);
-								        // History.History(SSN, FileName);
-								         Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-								     
-					                     
-								 }
-								
-								}	
-							}			
-			
-			@Test (priority=51,groups = "leela_OH_ILP")
-				
-				public void CO_ILP_Loan_DefaulPartialPayment_Void() throws Exception {
-									
-									
-										// Start test. Mention test script name
-										String FileName= "AA_CO_ILP_Loan_DefaultPartialPayment_Testdata.xls";
-										TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-										int lastrow=TestData.getLastRow("NewLoan");
-										String sheetName="NewLoan";
-										
-										System.out.println(lastrow);
-										
-										for(int row=2;row<=lastrow;row++)
-										{
-											String RunFlag = TestData.getCellData(sheetName,"Run",row);
-
-										if(RunFlag.equals("Y"))
-										{	
-
-												AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-												UserName = prop.getProperty("UserName_OH_ILP_leela");
-												Password = prop.getProperty("Password_OH_ILP_leela");
-										        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-										        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-										        String StateID = TestData.getCellData(sheetName,"StateID",row);
-										        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-										        String Header = StateID+ "_" + ProductID;
-										        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-												String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
-
-												test = reports.startTest(Header+"_S.No:54"+"_"+PayFrequency+"_"+CollateralType,"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount");
-
-										         Assert.assertTrue(true);
-										         
-										         
-							                     Login.Login(UserName, Password, StoreId);
-							                     RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-										         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-										         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-										         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-										         EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-										         Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.5);
-										         Void_Default_Payment_ILP.Void_Default_Payment_ILP(SSN, FileName);
-										       //  History.History(SSN, FileName);
-										         Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-										     
-							                     
-										 }
-										
-										}	
-									}
-			
-				
-				
-		@Test (priority=52,groups = "leela_OH_ILP")
-					
-					public void CO_ILP_Loan_DefaultPayment_Void() throws Exception {
-								
-								
-									// Start test. Mention test script name
-									String FileName= "AA_CO_ILP_Loan_DefaultPayment_Void_Testdata.xls";
-									TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-									int lastrow=TestData.getLastRow("NewLoan");
-									String sheetName="NewLoan";
-									
-									System.out.println(lastrow);
-									for(int row=2;row<=lastrow;row++)
-									{
-										String RunFlag = TestData.getCellData(sheetName,"Run",row);
-
-									if(RunFlag.equals("Y"))
-									{	
-
-											AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-											UserName = prop.getProperty("UserName_OH_ILP_leela");
-											Password = prop.getProperty("Password_OH_ILP_leela");
-									        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-									        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-									        String StateID = TestData.getCellData(sheetName,"StateID",row);
-									        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-									        String Header = StateID+ "_" + ProductID;
-									        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-											String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
-
-											test = reports.startTest(Header+"_S.No:55"+"_"+PayFrequency+"_"+CollateralType,"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>Full default amount > Void");
-
-									         Assert.assertTrue(true);
-									         
-									         
-			                                 Login.Login(UserName, Password, StoreId);
-						                     RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-									         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-									         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-									         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-									         EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-									         Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 1);
-									         Void_Default_Payment_ILP.Void_Default_Payment_ILP(SSN, FileName);						        
-									         //History.History(SSN, FileName);
-									         Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-									     
-						                    
-									 }
-									
-									}	
-								}
-				
-				 
-				 @Test (priority=53,groups = "leela_OH_ILP")
-					
-					public void CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid() throws Exception {
-										
-										
-											// Start test. Mention test script name
-											String FileName= "AA_CO_ILP_Loan_DefaultPartialPayment_Encryption_Testdata.xls";
-											TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-											int lastrow=TestData.getLastRow("NewLoan");
-											String sheetName="NewLoan";
-											
-											System.out.println(lastrow);
-											
-											for(int row=2;row<=lastrow;row++)
-											{
-												String RunFlag = TestData.getCellData(sheetName,"Run",row);
-
-											if(RunFlag.equals("Y"))
-											{	
-
-													AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-													UserName = prop.getProperty("UserName_OH_ILP_leela");
-													Password = prop.getProperty("Password_OH_ILP_leela");
-											        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-											        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-											        String StateID = TestData.getCellData(sheetName,"StateID",row);
-											        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-											        String Header = StateID+ "_" + ProductID;
-											        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-													String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
-
-													test = reports.startTest(Header+"_S.No:56"+"_"+PayFrequency+"_"+CollateralType,"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount>void on next day of the payment (with all possible tender types)");
-
-											         Assert.assertTrue(true);
-											         
-											         
-											         			
-											         Login.Login(UserName, Password, StoreId);
-								                     RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-											         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-											         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-											         EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-											         EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-											         Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.5);
-											         
-											         AgeStore_ILP_DEF.AgeStore_ILP_DEF(SSN, FileName, 1);								        
-											         Default_Payment_EncryptionKey_Void.Default_Payment_EncryptionKey_Void(SSN, FileName);
-											       
-											        // History.History(SSN, FileName);
-											     
-								                     
-											 }
-											
-											}	
-										}
-				 
-				 
-				 @Test (priority=54,groups = "leela_OH_ILP") // Leela 
-
-					public void LonI_DFLT_EODbatchprocess_DFLTPLUS60() throws Exception {
-
-						// Start test. Mention test script name
-						String FileName= "AA_LonI_DFLT_EODbatchprocess_DFLTPLUS60_Txn_TestData.xls";		 
-						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-						int lastrow=TestData.getLastRow("NewLoan");
-						String sheetName="NewLoan";
-						System.out.println(lastrow);
-						for(int row=2;row<=lastrow;row++)
-						{
-							String RunFlag = TestData.getCellData(sheetName,"Run",row);
-							//System.out.println(RunFlag);
-							if(RunFlag.equals("Y"))
-							{	
-								//driver.get(appUrl);
-								//test.log(LogStatus.INFO, "Application is launched");
-								//driver.manage().window().maximize();
-								AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-								UserName = prop.getProperty("UserName_OH_ILP_leela");
-								Password = prop.getProperty("Password_OH_ILP_leela");
-								// System.out.println(Password);
-								StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-								String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-								String StateID = TestData.getCellData(sheetName,"StateID",row);
-								String SSN = TestData.getCellData(sheetName,"SSN",row);
-								String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-								String Header = StateID+ "_" + ProductID;      		        
-								test = reports.startTest(Header+"_S.No:57"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>Run EOD batch process(default date+60 days)");
-								
-
-								Login.Login(UserName, Password, StoreId);			        
-								
-								RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-								NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");				
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-								//Apportions_List.Apportions_List(SSN, FileName, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 91, 2);
-								//Apportions_List.Apportions_List(SSN, FileName, 2);
-								Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-							}
-						}
-
-					}
-				 
-				
-				 @Test (priority=55,groups = "leela_OH_ILP") // Leela  
-
-					public void LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120() throws Exception {
-
-						// Start test. Mention test script name
-						String FileName= "LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120.xls";		 
-						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-						int lastrow=TestData.getLastRow("NewLoan");
-						String sheetName="NewLoan";
-						System.out.println(lastrow);
-						for(int row=2;row<=lastrow;row++)
-						{
-							String RunFlag = TestData.getCellData(sheetName,"Run",row);
-							//System.out.println(RunFlag);
-							if(RunFlag.equals("Y"))
-							{	
-								//driver.get(appUrl);
-								//test.log(LogStatus.INFO, "Application is launched");
-								//driver.manage().window().maximize();
-								AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-								UserName = prop.getProperty("UserName_OH_ILP_leela");
-								Password = prop.getProperty("Password_OH_ILP_leela");
-								// System.out.println(Password);
-								StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-								String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-								String StateID = TestData.getCellData(sheetName,"StateID",row);
-								String SSN = TestData.getCellData(sheetName,"SSN",row);
-								String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-								String Header = StateID+ "_" + ProductID;      		        
-								test = reports.startTest(Header+"_S.No:58"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-								
-
-								Login.Login(UserName, Password, StoreId);			        
-								
-								RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-								NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");	
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-								Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.15);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
-								//History.History1(SSN, FileName);
-								Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-							}
-						}
-
-					}
-				 
-				 @Test (priority=56,groups = "leela_OH_ILP") // Leela 
-
-					public void LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60() throws Exception {
-
-						// Start test. Mention test script name
-						String FileName= "LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60.xls";		 
-						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-						int lastrow=TestData.getLastRow("NewLoan");
-						String sheetName="NewLoan";
-						System.out.println(lastrow);
-						for(int row=2;row<=lastrow;row++)
-						{
-							String RunFlag = TestData.getCellData(sheetName,"Run",row);
-							//System.out.println(RunFlag);
-							if(RunFlag.equals("Y"))
-							{	
-								//driver.get(appUrl);
-								//test.log(LogStatus.INFO, "Application is launched");
-								//driver.manage().window().maximize();
-								AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-								UserName = prop.getProperty("UserName_OH_ILP_leela");
-								Password = prop.getProperty("Password_OH_ILP_leela");
-								// System.out.println(Password);
-								StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-								String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-								String StateID = TestData.getCellData(sheetName,"StateID",row);
-								String SSN = TestData.getCellData(sheetName,"SSN",row);
-								String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-								String Header = StateID+ "_" + ProductID;      		        
-								test = reports.startTest(Header+"_S.No:59"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-								
-
-								Login.Login(UserName, Password, StoreId);			        
-								
-								RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-								NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");		
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-								Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.20);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 91, 2);				
-								Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-							}
-						}
-
-					}
-				 
-				 @Test (priority=57,groups = "leela_OH_ILP")
-
-				 public void Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:60"+"_"+PayFrequency+"_"+CollateralType, "Loan_default_payment(30% of default payment)_void_Run EOD batch process(default date+60 days)");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-
-
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	   
-				 	
-				 	      //  EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN, FileName, 2);
-				 	       EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        //History.History(SSN, FileName);
-				 	        Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.3);
-				 	        //History.History(SSN, FileName);
-				 	        DefaultPmt_Void_ILP.DefaultPmt_Void_ILP(SSN, FileName);
-				 	       // History.History(SSN, FileName);
-				 	        EOD_BatchProcess_WO.EOD_BatchProcess_WO(SSN, FileName, 60);
-				 	       // History.History(SSN, FileName);
-	  		        		        	        	        
-				 	}
-				 	}
-				 	
-
-				}
-
-			 @Test (priority=58,groups = "leela_OH_ILP")
-
-				 public void Loan_DFLT_WO_WORecFullWithAllTenderTypes_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_Loan_DFLT_WO_WORecFullWithAllTenderTypes_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:61"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(full amount)(with all possible tender types)");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	   
-				 	       EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-				 	      //  EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN, FileName, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	    
-				 	       // History.History(SSN, FileName);
-				 	        
-				 	        EOD_BatchProcess_WO.EOD_BatchProcess_WO(SSN, FileName, 60);
-				 	      //  History.History(SSN, FileName);
-				 	        Writoff_RecoveryFull_ILP.Writoff_RecoveryFull_ILP(SSN, FileName);
-				 	     //   History.History(SSN, FileName);
-		 	}
-		}
-				 	
-
-			}
-	 	
-
-			 @Test (priority=59,groups = "leela_OH_ILP")
-
-				 public void Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:62"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(partial amount)(with all possible tender types)");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	   
-				 	
-				 	       // EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN, FileName, 2);
-				 	       EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	    
-				 	    //    History.History(SSN, FileName);
-				 	        EOD_BatchProcess_WO.EOD_BatchProcess_WO(SSN, FileName, 60);
-				 	      //  History.History(SSN, FileName);
-
-				 	        Writoff_RecoveryPartPmt_ILP.Writoff_RecoveryPartPmt_ILP(SSN, FileName);
-
-				 	     //   History.History(SSN, FileName);
-				 	       	        
-				 	       
-				 	       		        		        	        	        
-				 	}
-				 	}
-				 	
-
-				}		 
-				 
-				 @Test (priority=60,groups = "leela_OH_ILP")
-
-				 public void Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:63"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(full amount)_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_Void(with all possible tender types)");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-
-
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	   
-				 	
-				 	      //  EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN, FileName, 2);
-				 	       EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	    
-				 	      //  History.History(SSN, FileName);
-				 	        EOD_BatchProcess_WO.EOD_BatchProcess_WO(SSN, FileName, 60);
-
-				 	     //  History.History(SSN, FileName);
-				 	        Writoff_RecoveryFull_ILP.Writoff_RecoveryFull_ILP(SSN, FileName);
-				 	
-
-				 	        Void_WO.Void_WO(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	    //    History.History(SSN, FileName);
-				 	       	        
-				 	       
-				 	       		        		        	        	        
-				 	}
-				 	}
-				 	
-
-				 		}
-				 
-				 @Test (priority=61,groups = "leela_OH_ILP") 
-
-				 public void Loan_DFLT_WO_WORecPartPmt_VoidNextDay() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_Loan_DFLT_WO_WORecPartPmt_VoidNextDay_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:64"+"_"+PayFrequency+"_"+CollateralType, "Laon_default_write off_writeoff recovery(partial amount)_void on next day(with all possible tender types)");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	   
-				 	
-				 	      //  EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN, FileName, 2);
-				 	       EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	    
-				 	     //   History.History(SSN, FileName);
-				 	        EOD_BatchProcess_WO.EOD_BatchProcess_WO(SSN, FileName, 60);
-				 	      //  History.History(SSN, FileName);
-
-				 	        Writoff_RecoveryPartPmt_ILP.Writoff_RecoveryPartPmt_ILP(SSN, FileName);
-				 	        AgeStore_AfterWO.AgeStore_AfterWO(SSN, FileName, 61);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	     //   History.History(SSN, FileName);
-				 	       
-				 	        EncryptionKey_Void_WORec.EncryptionKey_Void_WORec(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);       
-				 	       
-				 	       		        		        	        	        
-				 	}
-				 	}
-				 	
-
-				 		}
-
-		 
-			 @Test (priority=62,groups = "leela_OH_ILP")  //Leela
-
-				 public void DFLTLoan_EPPConvert_PpayAllInst_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_DFLTLoan_EPPConvert_PpayAllInst_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:65"+"_"+PayFrequency+"_"+CollateralType, "Pick anILP Loan which is default status _ Convert to EPP _ PPAY all installments accordingly before due date");
-				 	        
-
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				            EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	        EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        RCC_Revoke.RCC_Revoke(SSN, FileName);
-				 	        EPP_ILP.EPP_ILP(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 6);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-
-				 	       		        		        	        	        
-				 	}
-				 	}
-
-				}
-				 
-				 
-		 @Test (priority=63,groups = "leela_OH_ILP")// - Need to execute last
-
-				 public void DFLTLoan_EPPConvert_DepositAll_ClearAll_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_DFLTLoan_EPPConvert_DepositAll_ClearAll_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:66"+"_"+PayFrequency+"_"+CollateralType, "Pick an ILP Loan which is default status _ Convert to EPP _ Deposit all installments on due date accordingly and clear them");
-				 	        
-				 	        
-				 	        
-				 	       SetCurrentDate.SetCurrentDate(SSN, FileName);
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				 	        
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	        EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        RCC_Revoke.RCC_Revoke(SSN, FileName);
-				 	        EPP_ILP.EPP_ILP(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 2);     			
-				 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-				 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-				 	        StoreInfo.StoreInfo(SSN, FileName);
-				 	        Safeassign.Safeassign(SSN, FileName);
-				 	        Drawerassign.Drawerassign(SSN, FileName);
-				 	        Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1,2);
-				 	        ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0,2);
-				 	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 10, 2);
-				 	     //   Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 3);			
-				 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-				 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-				 	        StoreInfo.StoreInfo(SSN, FileName);
-				 	        Safeassign.Safeassign(SSN, FileName);
-				 	        Drawerassign.Drawerassign(SSN, FileName);
-				 	        Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1,3);
-				 	        ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0,3);
-				 	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 3);
-				 	      //  Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-				 	        
-				 	        
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4); 			
-				 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-				 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-				 	        StoreInfo.StoreInfo(SSN, FileName);
-				 	        Safeassign.Safeassign(SSN, FileName);
-				 	        Drawerassign.Drawerassign(SSN, FileName);
-				 	        Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1,4);
-				 	        ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0,4);
-				 	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 4);
-				 	    //    Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-				 	       Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 5); 			
-				 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-				 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-				 	        StoreInfo.StoreInfo(SSN, FileName);
-				 	        Safeassign.Safeassign(SSN, FileName);
-				 	        Drawerassign.Drawerassign(SSN, FileName);
-				 	        Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1,5);
-				 	        ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0,5);
-				 	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 5);
-				 	      //  Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 6); 			
-				 	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-				 	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-				 	        StoreInfo.StoreInfo(SSN, FileName);
-				 	        Safeassign.Safeassign(SSN, FileName);
-				 	        Drawerassign.Drawerassign(SSN, FileName);
-				 	        Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1,6);
-				 	        ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0,6);
-				 	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 6);
-				 	     //   Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	}
-				 	}
-				 	
-
-				}
-
-				 @Test (priority=64,groups = "leela_OH_ILP")
-
-				 public void DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_() throws Exception {
-
-				 	// Start test. Mention test script name
-				 	String FileName= "AA_DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_TestData.xls";
-				 	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-				 	int lastrow=TestData.getLastRow("NewLoan");
-				 	String sheetName="NewLoan";   
-				 	//int lastrow=TestData.getLastRow("Borrower");
-				 	System.out.println(lastrow);
-				 	for(int row=2;row<=lastrow;row++)
-				 	{
-				 		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				 		//System.out.println(RunFlag);
-				 	if(RunFlag.equals("Y"))
-				 	{	
-				 		//driver.get(appUrl);
-				 		//test.log(LogStatus.INFO, "Application is launched");
-				 		//driver.manage().window().maximize();
-				 			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-				 			UserName = prop.getProperty("UserName_OH_ILP_leela");
-				 			Password = prop.getProperty("Password_OH_ILP_leela");
-				 	       // System.out.println(Password);
-				 	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-				 	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				 	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-				 	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-				 	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				 			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-				 	        String Header = StateID+ "_" + ProductID;
-				 	        //System.out.println(SSN);
-				 	        test = reports.startTest(Header+"_S.No:67"+"_"+PayFrequency+"_"+CollateralType, "Pick an ILP Loan which is default status_ Convert to EPP _ PPAY all installments accordingly before due date _void last installment payment");
-				 	        
-				 	        
-				 	       SetCurrentDate.SetCurrentDate(SSN, FileName);
-				 	        
-				 	        Login.Login(UserName, Password, StoreId);
-				 	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				 	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				            EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0,2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				 	        EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        RCC_Revoke.RCC_Revoke(SSN, FileName);
-				 	        EPP_ILP.EPP_ILP(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
-				 	        RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	        RPP_Payment_Void.RPP_Payment_Void(SSN, FileName);
-				 	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				 	       		        		        	        	        
-				 	}
-				 	}
-			}
-				 
-				 //Scenarios 68 to 75 were blocked
-				
-				 
-				 @Test (priority=65,groups = "leela_OH_ILP") //Not Required - Duplicate
-
-					public void LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate() throws Exception {
-
-						// Start test. Mention test script name
-						String FileName= "LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate.xls";		 
-						TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-						int lastrow=TestData.getLastRow("NewLoan");
-						String sheetName="NewLoan";
-						System.out.println(lastrow);
-						for(int row=2;row<=lastrow;row++)
-						{
-							String RunFlag = TestData.getCellData(sheetName,"Run",row);
-							//System.out.println(RunFlag);
-							if(RunFlag.equals("Y"))
-							{	
-								//driver.get(appUrl);
-								//test.log(LogStatus.INFO, "Application is launched");
-								//driver.manage().window().maximize();
-								AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-								UserName = prop.getProperty("UserName_OH_ILP_leela");
-								Password = prop.getProperty("Password_OH_ILP_leela");
-								// System.out.println(Password);
-								StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-								String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-								String StateID = TestData.getCellData(sheetName,"StateID",row);
-								String SSN = TestData.getCellData(sheetName,"SSN",row);
-								String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-								String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-								String Header = StateID+ "_" + ProductID;      		        
-								test = reports.startTest(Header+"_S.No:76"+"_"+PayFrequency+"_"+CollateralType,"Pick an ILP Loan which is default status -> PPN=>1# paymnet >void >Run EOD batch process on 35 days from the due dateNOTE:In between 1# due date to 35 days if 2# is there then that amount should be missed payment)");
-								
-
-								Login.Login(UserName, Password, StoreId);			        
-								
-								RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-								NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");				
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);				
-								//History.History(SSN, FileName);	
-								RCC_Revoke.RCC_Revoke(SSN, FileName);
-								RPP.RPP(SSN, FileName);
-								AgeStore_EPP.AgeStore_EPP(SSN, FileName, 0, 2);
-								RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-								Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
-								AgeStore_EPP.AgeStore_EPP(SSN, FileName, 35, 2);
-								EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-
-						      
-					
-							}
-						}
-
-					}
-
-				 //Scenarios 77 and 78 were blocked
-				 
-
-	@Test(priority=66,groups = "leela_OH_ILP") //Not Required - Duplicate
-
-	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate() throws Exception {
-		
 		// Start test. Mention test script name
-		String FileName= "AA_Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  	
-		int lastrow=TestData.getLastRow("NewLoan");
-		String sheetName="NewLoan";
-
-		//int lastrow=TestData.getLastRow("Borrower");
+		String FileName = "AA_Loan_PmtAllExceptLast_DepLast_Clear_Return_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
 		System.out.println(lastrow);
-		for(int row=2;row<=lastrow;row++)
-		{
-			String RunFlag = TestData.getCellData(sheetName,"Run",row);
-			//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-				
-			
-			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
 				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
 				UserName = prop.getProperty("UserName_OH_ILP_leela");
 				Password = prop.getProperty("Password_OH_ILP_leela");
-		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-		        String StateID = TestData.getCellData(sheetName,"StateID",row);
-		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-		        String Header = StateID+ "_" + ProductID;
-		        //System.out.println(SSN);
-		        test = reports.startTest(Header+"_S.No:79"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
-		        
-		        Login.Login(UserName, Password, StoreId);
-		        
-		        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-		        NewLoan_ILP_NegAmt_Monthly.NewLoan_ILP_NegAmt_Monthly(SSN, FileName, "100");
-		        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);				
-	            EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
-	            EPP_ILP.EPP_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	            
-		}       
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:45" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>payment all the installements acc to respective due dates except last installement>last # deposit>clear>Return");
+				//
+
+				// SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History.History(SSN, FileName, 0);
+
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 4);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 4);
+				ACH_Deposit1.ACH_Deposit1(SSN, FileName, 0);
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 8, 4);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				ACHReturnPosting.ACHReturnPosting(SSN, FileName);
+
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
 		}
-		
+	}
+
+	@Test(priority = 43, groups = "leela_OH_ILP")
+
+	public void Loan_1stdeposit_clr_payoff_clear_return_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_1stdeposit_clr_payoff_clear_return_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:46" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_1# deposit_clr_payoff_clear return");
+
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 2);
+				ACH_Deposit1.ACH_Deposit1(SSN, FileName, 0);
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 8, 2);
+				Payoff_Installments.Payoff_Installments(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				ACHReturnPosting.ACHReturnPosting(SSN, FileName);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
 
 	}
 
-	@Test (priority=67,groups = "leela_OH_ILP") // need to run last
+	@Test(priority = 44, groups = "leela_OH_ILP")
+	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_Default() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_Default_Txn_Testdata.xls";
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:47" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date");
+
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History_Paymentcaluculation.History_Paymentcaluculation(SSN,
+				// FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 45, groups = "leela_OH_ILP")
+	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforeCureenddateDefault() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_BeforecureendDateDefault_Txn_Testdata.xls";
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:48" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Before Cure end date");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				if (CollateralType.contains("CASH")) {
+
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+					DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 28, 2);
+				}
+				if (CollateralType.contains("ACH")) {
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 28);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+				}
+				// History_LoanStatus.History_LoanStatus(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 46, groups = "leela_OH_ILP")
+
+	public void Loan_PmtAllInstExceptLast_DFLTLastInst_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_PmtAllInstExceptLast_DFLTLastInst_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:49" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon_paymet all the installement except last #_Run EOD batch process on last # due date_Run EOD Batch process(due date+10 days)_Run EOD batch process on Cure end date");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 4);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 5);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 5);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 5);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 5);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History.History(SSN, FileName, 0);
+			}
+		}
+
+	}
+
+	@Test(priority = 47, groups = "leela_OH_ILP")
+	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_CureenddateDefault() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:50" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>Run EODbatch process on Cure end date");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				if (CollateralType.contains("CASH")) {
+
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+					DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+
+					Payment_ILP.Payment_ILP(SSN, FileName);
+
+					// PaymentcureAmount_ILP.PaymentcureAmount_ILP(SSN,
+					// FileName); // not required this step
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				}
+
+				if (CollateralType.contains("ACH")) {
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+				}
+
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+	}
+
+	@Test(priority = 48, groups = "leela_OH_ILP") // Last
+	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_void_CureenddateDefault()
+			throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllPMT_void_CureEndDateEODbatchProcess_Txn_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:51" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(1# amount)>void>Run EOD batch process on Cure end date");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				if (CollateralType.contains("CASH")) {
+
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+					DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+					Payment_ILP.Payment_ILP(SSN, FileName);
+					// PaymentcureAmount_ILP.PaymentcureAmount_ILP(SSN,
+					// FileName);
+					Void_Payment.Void_Payment(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				}
+				if (CollateralType.contains("ACH")) {
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+				}
+				// History_Paymentcaluculation.History_Paymentcaluculation(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 49, groups = "leela_OH_ILP")
+	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_Less1stInsatllPayment_CureenddateDefault() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan1stInsatallmentEODbatchprocess_Cure_IstInsatllLessPMT_CureEndDateEODbatchProcess_Txn_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:52" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>payment(less than1# amount)>Run EOD batch process on Cure end date");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				if (CollateralType.contains("CASH")) {
+
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+					DeliquentPaymentStatus.DeliquentPaymentStatus(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+					PaymentLess_ILP.PaymentLess_ILP(SSN, FileName);
+					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				}
+				if (CollateralType.contains("ACH")) {
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 10);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 31);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+				}
+				// History_Paymentcaluculation.History_Paymentcaluculation(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 50, groups = "leela_OH_ILP")
+
+	public void CO_ILP_Loan_DefaultPayment() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_CO_ILP_Loan_DefaultPayment_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+
+				test = reports.startTest(Header + "_S.No:53" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>select default payment option form drop down>enter full amount(with all possible tender types)");
+
+				Assert.assertTrue(true);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+
+				Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 1);
+				// History.History(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+
+		}
+	}
+
+	@Test(priority = 51, groups = "leela_OH_ILP")
+
+	public void CO_ILP_Loan_DefaulPartialPayment_Void() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_CO_ILP_Loan_DefaultPartialPayment_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		System.out.println(lastrow);
+
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+
+				test = reports.startTest(Header + "_S.No:54" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount");
+
+				Assert.assertTrue(true);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.5);
+				Void_Default_Payment_ILP.Void_Default_Payment_ILP(SSN, FileName);
+				// History.History(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+
+		}
+	}
+
+	@Test(priority = 52, groups = "leela_OH_ILP")
+
+	public void CO_ILP_Loan_DefaultPayment_Void() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_CO_ILP_Loan_DefaultPayment_Void_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+
+				test = reports.startTest(Header + "_S.No:55" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan >Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>Full default amount > Void");
+
+				Assert.assertTrue(true);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 1);
+				Void_Default_Payment_ILP.Void_Default_Payment_ILP(SSN, FileName);
+				// History.History(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+
+		}
+	}
+
+	@Test(priority = 53, groups = "leela_OH_ILP")
+
+	public void CO_ILP_Loan_DefaulPartialPayment_EncryptionVoid() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_CO_ILP_Loan_DefaultPartialPayment_Encryption_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		System.out.println(lastrow);
+
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+
+				test = reports.startTest(Header + "_S.No:56" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon>Run EOD batch process on 1# due date>Run EOD Batch process(due date+10 days)>Run EOD batch process on Cure end date>partial default amount>void on next day of the payment (with all possible tender types)");
+
+				Assert.assertTrue(true);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.5);
+
+				AgeStore_ILP_DEF.AgeStore_ILP_DEF(SSN, FileName, 1);
+				Default_Payment_EncryptionKey_Void.Default_Payment_EncryptionKey_Void(SSN, FileName);
+
+				// History.History(SSN, FileName);
+
+			}
+
+		}
+	}
+
+	@Test(priority = 54, groups = "leela_OH_ILP") // Leela
+
+	public void LonI_DFLT_EODbatchprocess_DFLTPLUS60() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_DFLT_EODbatchprocess_DFLTPLUS60_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:57" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>default>Run EOD batch process(default date+60 days)");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				// Apportions_List.Apportions_List(SSN, FileName, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 91, 2);
+				// Apportions_List.Apportions_List(SSN, FileName, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+			}
+		}
+
+	}
+
+	@Test(priority = 55, groups = "leela_OH_ILP") // Leela
+
+	public void LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "LonI_DFLT_Pymt_15percentofDFLTamt_EODbatchprocess_DFLTPLUS120.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:58" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.15);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
+				// History.History1(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+			}
+		}
+
+	}
+
+	@Test(priority = 56, groups = "leela_OH_ILP") // Leela
+
+	public void LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "LonI_DFLT_Pymt_20percentofDFLTamt_EODbatchprocess_DFLTPLUS60.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:59" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.20);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 91, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+			}
+		}
+
+	}
+
+	@Test(priority = 57, groups = "leela_OH_ILP")
+
+	public void Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:60" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_default_payment(30% of default payment)_void_Run EOD batch process(default date+60 days)");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				// EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN,
+				// FileName, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History.History(SSN, FileName);
+				Default_Payment_ILP.Default_Payment_ILP(SSN, FileName, 0.3);
+				// History.History(SSN, FileName);
+				DefaultPmt_Void_ILP.DefaultPmt_Void_ILP(SSN, FileName);
+				// History.History(SSN, FileName);
+				EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);
+				// History.History(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 58, groups = "leela_OH_ILP")
+
+	public void Loan_DFLT_WO_WORecFullWithAllTenderTypes_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_DFLT_WO_WORecFullWithAllTenderTypes_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:61" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon_default_write off_writeoff recovery(full amount)(with all possible tender types)");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				// EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN,
+				// FileName, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				// History.History(SSN, FileName);
+
+				EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);
+				// History.History(SSN, FileName);
+				Writoff_RecoveryFull_ILP.Writoff_RecoveryFull_ILP(SSN, FileName);
+				// History.History(SSN, FileName);
+			}
+		}
+
+	}
+
+	@Test(priority = 59, groups = "leela_OH_ILP")
+
+	public void Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:62" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon_default_write off_writeoff recovery(partial amount)(with all possible tender types)");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				// EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN,
+				// FileName, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				// History.History(SSN, FileName);
+				EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);
+				// History.History(SSN, FileName);
+
+				Writoff_RecoveryPartPmt_ILP.Writoff_RecoveryPartPmt_ILP(SSN, FileName);
+
+				// History.History(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 60, groups = "leela_OH_ILP")
+
+	public void Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:63" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon_default_write off_writeoff recovery(full amount)_Loan_DFLT_WO_WORecFull_VoidWithAllTenderTypes_Void(with all possible tender types)");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				// EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN,
+				// FileName, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				// History.History(SSN, FileName);
+				EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);
+
+				// History.History(SSN, FileName);
+				Writoff_RecoveryFull_ILP.Writoff_RecoveryFull_ILP(SSN, FileName);
+
+				Void_WO.Void_WO(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History.History(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 61, groups = "leela_OH_ILP")
+
+	public void Loan_DFLT_WO_WORecPartPmt_VoidNextDay() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_DFLT_WO_WORecPartPmt_VoidNextDay_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:64" + "_" + PayFrequency + "_" + CollateralType,
+						"Laon_default_write off_writeoff recovery(partial amount)_void on next day(with all possible tender types)");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+
+				// EOD_BatchProcess_Default.EOD_BatchProcess_Default(SSN,
+				// FileName, 2);
+				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				// History.History(SSN, FileName);
+				EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);
+				// History.History(SSN, FileName);
+
+				Writoff_RecoveryPartPmt_ILP.Writoff_RecoveryPartPmt_ILP(SSN, FileName);
+				AgeStore_AfterWO.AgeStore_AfterWO(SSN, FileName, 61);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// History.History(SSN, FileName);
+
+				EncryptionKey_Void_WORec.EncryptionKey_Void_WORec(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 62, groups = "leela_OH_ILP") // Leela
+
+	public void DFLTLoan_EPPConvert_PpayAllInst_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_DFLTLoan_EPPConvert_PpayAllInst_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:65" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick anILP Loan which is default status _ Convert to EPP _ PPAY all installments accordingly before due date");
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 6);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 63, groups = "leela_OH_ILP3") // - Need to execute last
+
+	public void DFLTLoan_EPPConvert_DepositAll_ClearAll_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_DFLTLoan_EPPConvert_DepositAll_ClearAll_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:66" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick an ILP Loan which is default status _ Convert to EPP _ Deposit all installments on due date accordingly and clear them");
+
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 2);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 2);
+				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 2);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 10, 2);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 3);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 3);
+				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 3);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 3);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 4);
+				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 4);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 4);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 5);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 5);
+				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 5);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 5);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 6);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 6);
+				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 6);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 6);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+			}
+		}
+
+	}
+
+	@Test(priority = 64, groups = "leela_OH_ILP")
+
+	public void DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:67" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick an ILP Loan which is default status_ Convert to EPP _ PPAY all installments accordingly before due date _void last installment payment");
+
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_Default_leela.EOD_BatchProcess_Default_leela(SSN, FileName, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				RPP_Payment_Void.RPP_Payment_Void(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+	}
+
+	// Scenarios 68 to 75 were blocked
+
+	@Test(priority = 65, groups = "leela_OH_ILP") // Not Required - Duplicate
+
+	public void LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:76" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick an ILP Loan which is default status -> PPN=>1# paymnet >void >Run EOD batch process on 35 days from the due dateNOTE:In between 1# due date to 35 days if 2# is there then that amount should be missed payment)");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				// History.History(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				RPP.RPP(SSN, FileName);
+				AgeStore_EPP.AgeStore_EPP(SSN, FileName, 0, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
+				AgeStore_EPP.AgeStore_EPP(SSN, FileName, 35, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+
+			}
+		}
+
+	}
+
+	// Scenarios 77 and 78 were blocked
+
+	@Test(priority = 66, groups = "leela_OH_ILP") // Not Required - Duplicate
+
+	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:79" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
+
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 67, groups = "leela_OH_ILP") // need to run last
 
 	public void Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear_Testdata.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  	
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-
-	//int lastrow=TestData.getLastRow("Borrower");
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-	if(RunFlag.equals("Y"))
-	{	
-		//driver.get(appUrl);
-		//test.log(LogStatus.INFO, "Application is launched");
-		//driver.manage().window().maximize();
-			
-		
-		    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	       // System.out.println(Password);
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String Header = StateID+ "_" + ProductID;
-	        //System.out.println(SSN);
-	        test = reports.startTest(Header+"_S.No:80"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due datePick an ILP Loan which is writeoff status_Convert to EPP_Deposit all installments on due date accordingly and clear them");
-	        
-	        Login.Login(UserName, Password, StoreId);
-	        
-	        //SetCurrentDate.SetCurrentDate(SSN, FileName);
-	        
-	       RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-	       NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
-	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	        RCC_Revoke.RCC_Revoke(SSN, FileName);
-	        EPP_ILP.EPP_ILP(SSN, FileName);
-	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	        
-	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 2);
-	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);
-	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 2);
-	        ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 2);
-	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 2);
-	    //    Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-	        
-	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 3);
-	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);
-	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 3);
-	        ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 3);
-	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 3);
-	     //   Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-	        
-	        AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
-	        DrawerDeassign.DrawerDeassign(SSN, FileName);
-	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);
-	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 4);
-	        ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 4);
-	        EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 4);
-	   //     Check_TransactionRecords.Check_TransactionRecords(SSN, FileName);
-	       
-	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	       
-	}       
-	}
-
-
-	}
-
-
-
-	@Test (priority=68,groups = "leela_OH_ILP") 
-
-	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void() throws Exception {
-		
 		// Start test. Mention test script name
-		String FileName= "AA_Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void_Testdata.xls";
-		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  	
-		int lastrow=TestData.getLastRow("NewLoan");
-		String sheetName="NewLoan";
+		String FileName = "AA_Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
 
-		//int lastrow=TestData.getLastRow("Borrower");
+		// int lastrow=TestData.getLastRow("Borrower");
 		System.out.println(lastrow);
-		for(int row=2;row<=lastrow;row++)
-		{
-			String RunFlag = TestData.getCellData(sheetName,"Run",row);
-			//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-				
-			
-			    String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-				String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
 				UserName = prop.getProperty("UserName_OH_ILP_leela");
 				Password = prop.getProperty("Password_OH_ILP_leela");
-		       // System.out.println(Password);
-		        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-		        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-		        String StateID = TestData.getCellData(sheetName,"StateID",row);
-		        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-		        String Header = StateID+ "_" + ProductID;
-		        //System.out.println(SSN);
-		        test = reports.startTest(Header+"_S.No:81"+"_"+PayFrequency+"_"+CollateralType,"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
-		        
-		        
-		        SetCurrentDate.SetCurrentDate(SSN, FileName);
-		        Login.Login(UserName, Password, StoreId);
-		        
-		        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-		        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-		        EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:80" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due datePick an ILP Loan which is writeoff status_Convert to EPP_Deposit all installments on due date accordingly and clear them");
+
+				Login.Login(UserName, Password, StoreId);
+
+				// SetCurrentDate.SetCurrentDate(SSN, FileName);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);				
-	            EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
-	            RCC_Revoke.RCC_Revoke(SSN, FileName);
-	            EPP_ILP.EPP_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
-	            RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-	            Void_Afterallinstallment.Void_Afterallinstallment(SSN, FileName);
-	            Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	            
-		}       
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 2);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				//Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 2);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 2);
+				ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 2);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 2);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 3);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				//Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 3);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 2);
+				ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 3);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 3);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				//Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 4);
+				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 2);
+				ACH_Deposit.ACH_Deposit(SSN, FileName, 0, 4);
+				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 8, 4);
+				// Check_TransactionRecords.Check_TransactionRecords(SSN,
+				// FileName);
+
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
 		}
-		
 
 	}
 
-	//Scenarios Blocked from 82 to 89
+	@Test(priority = 68, groups = "leela_OH_ILP")
 
-	@Test (priority=69,groups = "leela_OH_ILP")
+	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:81" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick anILP Loan which is writeoff status_Convert to EPP_PPAY all installments accordingly before due date");
+
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 3);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 4);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -4, 5);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Void_Afterallinstallment.Void_Afterallinstallment(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
+		}
+
+	}
+
+	// Scenarios Blocked from 82 to 89
+
+	@Test(priority = 69, groups = "leela_OH_ILP")
 
 	public void LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate_Testdata.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:90"+"_"+PayFrequency+"_"+CollateralType,"Pick an LOC Loan which is writeoff status_PPN=>1# paymnet _void _Run EOD batch process on 35 days from the due dateNOTE:In between 1#  due date to 35  days if 2# is there then that  amount should be missed payment))");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:90" + "_" + PayFrequency + "_" + CollateralType,
+						"Pick an LOC Loan which is writeoff status_PPN=>1# paymnet _void _Run EOD batch process on 35 days from the due dateNOTE:In between 1#  due date to 35  days if 2# is there then that  amount should be missed payment))");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");			
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
-		//	History.History(SSN, FileName);	
-			RCC_Revoke.RCC_Revoke(SSN, FileName);
-			RPP.RPP(SSN, FileName);
-			AgeStore_EPP.AgeStore_EPP(SSN, FileName, 0, 2);
-			RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-			Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
-			AgeStore_EPP.AgeStore_EPP(SSN, FileName, 35, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
 
-	      
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 151, 2);
+				// History.History(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				RPP.RPP(SSN, FileName);
+				AgeStore_EPP.AgeStore_EPP(SSN, FileName, 0, 2);
+				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
+				Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
+				AgeStore_EPP.AgeStore_EPP(SSN, FileName, 35, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
 
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=70,groups = "leela_OH_ILP")  //Leela 
+	@Test(priority = 70, groups = "leela_OH_ILP") // Leela
 
 	public void Loan_Bankrupt_Void_() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_Loan_Bankrupt_Void_TestData.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";   
-	//int lastrow=TestData.getLastRow("Borrower");
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-	if(RunFlag.equals("Y"))
-	{	
-		//driver.get(appUrl);
-		//test.log(LogStatus.INFO, "Application is launched");
-		//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	       // System.out.println(Password);
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-	        String Header = StateID+ "_" + ProductID;
-	        //System.out.println(SSN);
-	        test = reports.startTest(Header+"_S.No:91"+"_"+PayFrequency+"_"+CollateralType, "Loan_Select Void Status from Status dropdown in Bankruptcy Deceased Suite pageEnter all mandatory fields and click on Save");
-	        
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_Bankrupt_Void_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:91" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_Select Void Status from Status dropdown in Bankruptcy Deceased Suite pageEnter all mandatory fields and click on Save");
 
-	        
-	        Login.Login(UserName, Password, StoreId);
-	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-	        Bankrupt.Bankrupt(SSN, FileName);
-	        Bankrupt_Void.Bankrupt_Void(SSN, FileName);
-	        BankruptStatus.BankruptStatus(SSN, FileName);
-	     
-	      //  History.History(SSN, FileName);
-	       		        		        	        	        
-	}
-	}
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Bankrupt.Bankrupt(SSN, FileName);
+				Bankrupt_Void.Bankrupt_Void(SSN, FileName);
+				BankruptStatus.BankruptStatus(SSN, FileName);
 
+				// History.History(SSN, FileName);
 
+			}
 		}
 
-	//Scenario 92 - Duplicate
+	}
 
-	@Test (priority=71,groups = "leela_OH_ILP")  //Not Required - Duplicate
+	// Scenario 92 - Duplicate
+
+	@Test(priority = 71, groups = "leela_OH_ILP") // Not Required - Duplicate
 
 	public void Loan_Bankrupt_() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_Loan_Bankrupt_TestData.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";   
-	//int lastrow=TestData.getLastRow("Borrower");
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-	if(RunFlag.equals("Y"))
-	{	
-		//driver.get(appUrl);
-		//test.log(LogStatus.INFO, "Application is launched");
-		//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	       // System.out.println(Password);
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-	        String Header = StateID+ "_" + ProductID;
-	        //System.out.println(SSN);
-	        test = reports.startTest(Header+"_S.No:93"+"_"+PayFrequency+"_"+CollateralType, "Loan_Select Bankruptcy Status from Status dropdown in Bankruptcy Deceased Suite page Enter all mandatory fields and click on Save");
-	        
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_Bankrupt_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:93" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_Select Bankruptcy Status from Status dropdown in Bankruptcy Deceased Suite page Enter all mandatory fields and click on Save");
 
-	        
-	        Login.Login(UserName, Password, StoreId);
-	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-	        Bankrupt.Bankrupt(SSN, FileName);
-	        BankruptStatus.BankruptStatus(SSN, FileName);
-	     
-	       // History.History(SSN, FileName, 0);        
-	}
-	}
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Bankrupt.Bankrupt(SSN, FileName);
+				BankruptStatus.BankruptStatus(SSN, FileName);
 
-
+				// History.History(SSN, FileName, 0);
+			}
 		}
-	@Test (priority=72,groups = "leela_OH_ILP") //Not Required - Duplicate
+
+	}
+
+	@Test(priority = 72, groups = "leela_OH_ILP") // Not Required - Duplicate
 	public void CO_ILP_Loan_BNK_Void() throws Exception {
 
+		// Start test. Mention test script name
+		String FileName = "AA_COILP_NewLoan_BNK_Void_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
 
-	// Start test. Mention test script name
-	String FileName= "AA_COILP_NewLoan_BNK_Void_Testdata.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
 
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			if (RunFlag.equals("Y")) {
 
-	if(RunFlag.equals("Y"))
-	{	
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String Header = StateID+ "_" + ProductID;
-	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
+				test = reports.startTest(Header + "_S.No:94" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan–BNK-Void");
+				Assert.assertTrue(true);
 
-			test = reports.startTest(Header+"_S.No:94"+"_"+PayFrequency+"_"+CollateralType,"Loan–BNK-Void");
-	         Assert.assertTrue(true);
-	         
-	         
-	         Login.Login(UserName, Password, StoreId);
-	         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-	         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
-	         AgeStore.AgeStore(SSN, FileName, 0);
-	         Bankrupt.Bankrupt(SSN, FileName);
-	         Bankrupt_VV.Bankrupt_VV(SSN, FileName);;
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore.AgeStore(SSN, FileName, 0);
+				Bankrupt.Bankrupt(SSN, FileName);
+				Bankrupt_Void.Bankrupt_Void(SSN, FileName);
+				
 
-	}	
-	}
-
-	}	
-
-
-	@Test (priority=73,groups = "leela_OH_ILP") 
-
-		public void CO_ILP_Loan_first_payment_BNK_Second_deposit() throws Exception {
-		
-		
-			// Start test. Mention test script name
-			String FileName= "AA_OH_ILP_Loan_first_payment_BNK_Second_deposit_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName); 
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-
-			if(RunFlag.equals("Y"))
-			{	
-
-					AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-					UserName = prop.getProperty("UserName_OH_ILP_leela");
-					Password = prop.getProperty("Password_OH_ILP_leela");
-			        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			        String StateID = TestData.getCellData(sheetName,"StateID",row);
-			        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-			        String Header = StateID+ "_" + ProductID;
-			        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);		 
-
-					test = reports.startTest(Header+"_S.No:95"+"_"+PayFrequency+"_"+CollateralType,"Loan>1 payment > mark customer to BNK>2 deposit");
-
-			         Assert.assertTrue(true);
-			         
-			         
-	               Login.Login(UserName, Password, StoreId);
-			         RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			         NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			         AgeStore.AgeStore(SSN, FileName, -4);
-			         installmentPayment.installmentPayment(SSN, FileName);
-			         Bankrupt.Bankrupt(SSN, FileName);
-			         AgeStore_2ndInstallment.AgeStore_2ndInstallment(SSN, FileName,0);
-			         DrawerDeassign.DrawerDeassign(SSN, FileName);
-			         StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-			         StoreInfo.StoreInfo(SSN, FileName);
-			         Safeassign.Safeassign(SSN, FileName);
-			         Drawerassign.Drawerassign(SSN, FileName);			         
-			        
-			 }
-			
-			}	
+			}
 		}
 
-	@Test (priority=74,groups = "leela_OH_ILP") //leela 
+	}
+
+	@Test(priority = 73, groups = "leela_OH_ILP")
+
+	public void CO_ILP_Loan_first_payment_BNK_Second_deposit() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "AA_OH_ILP_Loan_first_payment_BNK_Second_deposit_Testdata.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String Header = StateID + "_" + ProductID;
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+
+				test = reports.startTest(Header + "_S.No:95" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>1 payment > mark customer to BNK>2 deposit");
+
+				Assert.assertTrue(true);
+
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore.AgeStore(SSN, FileName, -2);
+				installmentPayment.installmentPayment(SSN, FileName);
+				Bankrupt.Bankrupt(SSN, FileName);
+				AgeStore_2ndInstallment.AgeStore_2ndInstallment(SSN, FileName, 0);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+
+			}
+
+		}
+	}
+
+	@Test(priority = 74, groups = "leela_OH_ILP") // leela
 
 	public void LonI_Bnkrupt_Dismissed() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_Bnkrupt_Dismissed_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:96"+"_"+PayFrequency+"_"+CollateralType,"Loan>Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save. 2) Go to Edit bankrupt information >> Click on Go Button and select dismissed from drop down >> enter manditory fields and Clickon save.");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_Bnkrupt_Dismissed_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:96" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save. 2) Go to Edit bankrupt information >> Click on Go Button and select dismissed from drop down >> enter manditory fields and Clickon save.");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			Bankrupt.Bankrupt(SSN, FileName);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
-			Dismissed_AfterBANKRUPT.Dismissed_AfterBANKRUPT(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Bankrupt.Bankrupt(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+				Dismissed_AfterBANKRUPT.Dismissed_AfterBANKRUPT(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+
+			}
 		}
-	}
 
 	}
 
-
-
-	@Test (priority=75,groups = "leela_OH_ILP") //Leela 
+	@Test(priority = 75, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_Bnkrupt_Deceased() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_Bnkrupt_Deceased_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:97"+"_"+PayFrequency+"_"+CollateralType,"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite pageEnter all manatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select deaceased from drop down >> enter manditory fields andClick on save.");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_Bnkrupt_Deceased_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:97" + "_" + PayFrequency + "_" + CollateralType,
+						"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite pageEnter all manatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select deaceased from drop down >> enter manditory fields andClick on save.");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			Bankrupt.Bankrupt(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			Deceased_AfterBANKRUPT_leela.Deceased_AfterBANKRUPT_leela(SSN, FileName, 6);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Bankrupt.Bankrupt(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				Deceased_AfterBANKRUPT_leela.Deceased_AfterBANKRUPT_leela(SSN, FileName, 6);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=76,groups = "leela_OH_ILP") //Leela 
-
+	@Test(priority = 76, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_Bnkrupt_Discharge() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_Bnkrupt_Discharge_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:98"+"_"+PayFrequency+"_"+CollateralType,"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select Discharge from drop down >> enter manditory fields and Clickon save.");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_Bnkrupt_Discharge_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:98" + "_" + PayFrequency + "_" + CollateralType,
+						"1)Select 'Bankruptcy' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save.2) Go to Edit bankrupt information >> Click on Go Button and select Discharge from drop down >> enter manditory fields and Clickon save.");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			Bankrupt.Bankrupt(SSN, FileName);
-			Discharge_AfterBANKRUPT.Discharge_AfterBANKRUPT(SSN, FileName, 6);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Bankrupt.Bankrupt(SSN, FileName);
+				Discharge_AfterBANKRUPT.Discharge_AfterBANKRUPT(SSN, FileName, 6);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=77,groups = "leela_OH_ILP") //Leela 
+	@Test(priority = 77, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_Deceased() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_Deceased_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:99"+"_"+PayFrequency+"_"+CollateralType,"Select 'deceased' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_Deceased_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:99" + "_" + PayFrequency + "_" + CollateralType,
+						"Select 'deceased' Status from Status dropdown in Bankruptcy/Deceased Suite page Enter all mandatory fields and click on Save");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			Deceased.Deceased(SSN, FileName);
-			Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-			//Customer_Status.Customer_Status(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				Deceased.Deceased(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				// Customer_Status.Customer_Status(SSN, FileName);
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=78,groups = "leela_OH_ILP") //Leela 
+	@Test(priority = 78, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_DFLT_PPN_BNK_1InstDeposit() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "LonI_DFLT_PPN_BNK_1InstDeposit.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:100"+"_"+PayFrequency+"_"+CollateralType,"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
-			
+		// Start test. Mention test script name
+		String FileName = "LonI_DFLT_PPN_BNK_1InstDeposit.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:100" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan>default>payment(15% of default payment)Run EOD batch process(default date+120 days)");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");				
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
-			EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);				
-			//History.History(SSN, FileName);
-			RCC_Revoke.RCC_Revoke(SSN, FileName);
-			EPP_ILP.EPP_ILP(SSN, FileName);			
-			Bankrupt.Bankrupt(SSN, FileName);
-			AgeStore_EPP.AgeStore_EPP(SSN, FileName, -1, 2);				
-			DrawerDeassign.DrawerDeassign(SSN, FileName);
-			EODProcessing_with_recordsChecking.EODProcessing_with_recordsChecking(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);
-	      
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
+				// History.History(SSN, FileName);
+				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				EPP_ILP.EPP_ILP(SSN, FileName);
+				Bankrupt.Bankrupt(SSN, FileName);
+				AgeStore_EPP.AgeStore_EPP(SSN, FileName, -1, 2);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				EODProcessing_with_recordsChecking.EODProcessing_with_recordsChecking(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=79,groups = "leela_OH_ILP")   //Leela
+	@Test(priority = 79, groups = "leela_OH_ILP1") // Leela
 
 	public void Loan_1stpayment_activemilitary_2ndpayment_() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_Loan_1stpayment_activemilitary_2ndpayment_TestData.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";   
-	//int lastrow=TestData.getLastRow("Borrower");
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-	if(RunFlag.equals("Y"))
-	{	
-		//driver.get(appUrl);
-		//test.log(LogStatus.INFO, "Application is launched");
-		//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	       // System.out.println(Password);
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-	        String Header = StateID+ "_" + ProductID;
-	        //System.out.println(SSN);
-	        test = reports.startTest(Header+"_S.No:101"+"_"+PayFrequency+"_"+CollateralType, "Loan_1st Inst payment_active military_2nd Inst payment");
-	        
+		// Start test. Mention test script name
+		String FileName = "AA_Loan_1stpayment_activemilitary_2ndpayment_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:101" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_1st Inst payment_active military_2nd Inst payment");
 
-	        
-	        Login.Login(UserName, Password, StoreId);
-	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 
-	        NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, -3, 2);
-	        Payment_ILP.Payment_ILP(SSN, FileName);
-	        Active_Military_Start.Active_Military_Start(SSN, FileName);
-	        
-	        AgeStore_ILP.AgeStore_ILP(SSN, FileName, -3, 3);
-	        Payment_ILP.Payment_ILP(SSN, FileName);
-	        Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-	       
-	       // History.History(SSN, FileName, 0); 	        
-	}
-	}
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -3, 2);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				Active_Military_Start.Active_Military_Start(SSN, FileName);
 
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -3, 3);
+				Payment_ILP.Payment_ILP(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
 
+				// History.History(SSN, FileName, 0);
+			}
 		}
 
-	@Test (priority=80,groups = "leela_OH_ILP")  //Leela
+	}
+
+	@Test(priority = 80, groups = "leela_OH_ILP1") // Leela
 
 	public void BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_TestData.xls";
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);  
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";   
-	//int lastrow=TestData.getLastRow("Borrower");
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-	if(RunFlag.equals("Y"))
-	{	
-		//driver.get(appUrl);
-		//test.log(LogStatus.INFO, "Application is launched");
-		//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-	       // System.out.println(Password);
-	        StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-	        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-	        String StateID = TestData.getCellData(sheetName,"StateID",row);
-	        String SSN = TestData.getCellData(sheetName,"SSN",row);	
-	        String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-	        String Header = StateID+ "_" + ProductID;
-	        //System.out.println(SSN);
-	        test = reports.startTest(Header+"_S.No:102"+"_"+PayFrequency+"_"+CollateralType, "Loan_1st Inst payment_active military_2nd Inst payment");
-	        
+		// Start test. Mention test script name
+		String FileName = "AA_BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				// System.out.println(SSN);
+				test = reports.startTest(Header + "_S.No:102" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_1st Inst payment_active military_2nd Inst payment");
 
-	       /* 
-	        Login.Login(UserName, Password, StoreId);
-	        RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);*/
-	        
-	        
-	        
-	        Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-	        Active_Military_Start.Active_Military_Start(SSN, FileName);
-	        Check_NewLoan_ILP.Check_NewLoan_ILP(SSN, FileName);        
-	}
-	}
+				/*
+				 * Login.Login(UserName, Password, StoreId);
+				 * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(
+				 * driver, test, AppURL, SSN, FileName);
+				 */
 
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				Active_Military_Start.Active_Military_Start(SSN, FileName);
+				Check_NewLoan_ILP.Check_NewLoan_ILP(SSN, FileName);
+			}
 		}
 
+	}
 
-	@Test (priority=81,groups = "leela_OH_ILP") //Not Required - Duplicate
+	@Test(priority = 81, groups = "leela_OH_ILP") // Not Required - Duplicate
 
 	public void LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:103"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:103" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);			
-			Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
-			Active_Military_Start.Active_Military_Start(SSN, FileName);
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 2, 2);		
-			Active_Military_End.Active_Military_End(SSN, FileName);
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
-			Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 3);
-			Apportions_List.Apportions_List(SSN, FileName, row);
-			
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
+				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
+				Active_Military_Start.Active_Military_Start(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 2, 2);
+				Active_Military_End.Active_Military_End(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
+				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 3);
+				Apportions_List.Apportions_List(SSN, FileName, row);
 
+			}
 		}
-	}
 
 	}
 
-
-	@Test (priority=82,groups = "leela_OH_ILP") //Leela 
+	@Test(priority = 82, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:104"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			
-			
-			SetCurrentDate.SetCurrentDate(SSN, FileName);
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);			
-			Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
-			Apportions_List.Apportions_List(SSN, FileName, 2);
-			Active_Military_Start.Active_Military_Start(SSN, FileName);
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);	
-			DrawerDeassign.DrawerDeassign(SSN, FileName);
-	        StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);
-	        Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 3);
-	        ACH_Deposit_ILP.ACH_Deposit_ILP(SSN, FileName, 0);				
-			//Apportions_List.Apportions_List(SSN, FileName, 3);
-			Deposit_Record_Verification.Deposit_Record_Verification(SSN, FileName);
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:104" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
 
+				SetCurrentDate.SetCurrentDate(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
+				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
+				Apportions_List.Apportions_List(SSN, FileName, 2);
+				Active_Military_Start.Active_Military_Start(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
+				Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, -1, 3);
+				//Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 3);
+				ACH_Deposit_ILP.ACH_Deposit_ILP(SSN, FileName, 0);
+				// Apportions_List.Apportions_List(SSN, FileName, 3);
+				Deposit_Record_Verification.Deposit_Record_Verification(SSN, FileName);
+
+			}
 		}
-	}
 
 	}
 
-	@Test (priority=83,groups = "leela_OH_ILP") //Leela 
+	@Test(priority = 83, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record() throws Exception {
 
-	// Start test. Mention test script name
-	String FileName= "AA_LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record_Txn_TestData.xls";		 
-	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	String sheetName="NewLoan";
-	System.out.println(lastrow);
-	for(int row=2;row<=lastrow;row++)
-	{
-		String RunFlag = TestData.getCellData(sheetName,"Run",row);
-		//System.out.println(RunFlag);
-		if(RunFlag.equals("Y"))
-		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
-			AppURL = prop.getProperty("AppURL_OH_ILP_leela");
-			UserName = prop.getProperty("UserName_OH_ILP_leela");
-			Password = prop.getProperty("Password_OH_ILP_leela");
-			// System.out.println(Password);
-			StoreId = prop.getProperty("StoreID_OH_ILP_leela");
-			String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-			String StateID = TestData.getCellData(sheetName,"StateID",row);
-			String SSN = TestData.getCellData(sheetName,"SSN",row);
-			String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-			String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-			String Header = StateID+ "_" + ProductID;      		        
-			test = reports.startTest(Header+"_S.No:105"+"_"+PayFrequency+"_"+CollateralType,"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
-			
+		// Start test. Mention test script name
+		String FileName = "AA_LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record_Txn_TestData.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_OH_ILP_leela");
+				UserName = prop.getProperty("UserName_OH_ILP_leela");
+				Password = prop.getProperty("Password_OH_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_OH_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:105" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
 
-			Login.Login(UserName, Password, StoreId);			        
-			
-			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);			
-			Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
-			//Apportions_List.Apportions_List(SSN, FileName, 2);
-			Active_Military_Start.Active_Military_Start(SSN, FileName);
-			ACHRevoke.ACHRevoke(SSN, FileName);
-			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);	
-			DrawerDeassign.DrawerDeassign(SSN, FileName);
-	        EODProcessing_with_recordsChecking.EODProcessing_with_recordsChecking(SSN, FileName);
-	        StoreInfo.StoreInfo(SSN, FileName);
-	        Safeassign.Safeassign(SSN, FileName);
-	        Drawerassign.Drawerassign(SSN, FileName);		       			
-			
-		
+				Login.Login(UserName, Password, StoreId);
 
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
+				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
+				// Apportions_List.Apportions_List(SSN, FileName, 2);
+				Active_Military_Start.Active_Military_Start(SSN, FileName);
+				ACHRevoke.ACHRevoke(SSN, FileName);
+				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
+				DrawerDeassign.DrawerDeassign(SSN, FileName);
+				EODProcessing_with_recordsChecking.EODProcessing_with_recordsChecking(SSN, FileName);
+				StoreInfo.StoreInfo(SSN, FileName);
+				Safeassign.Safeassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName);
 
+			}
 		}
 	}
-	}
 
-
- 
-
-	
-	
-	
-	
-	
- 
-	 
-	
 	@AfterMethod(alwaysRun = true)
 
 	public void getResult(ITestResult result) throws Exception {
@@ -4839,10 +4701,11 @@ public class AA_OH_ILP extends AA_ILP{
 		return destination;
 	}
 
-	@AfterMethod
-	@AfterTest(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
+	//@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		// Ending Test
+		//driver.quit();
 		reports.endTest(test);
 
 		// writing everything into HTML report
@@ -4924,11 +4787,11 @@ public class AA_OH_ILP extends AA_ILP{
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process
 		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+ 		driver = new InternetExplorerDriver();
+ 		driver.manage().window().maximize();
+ 		driver.manage().deleteAllCookies();
+ 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+ 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		/*
 		 * String Node = "http://192.168.2.123:5555/wd/hub"; DesiredCapabilities
 		 * cap = DesiredCapabilities.internetExplorer();

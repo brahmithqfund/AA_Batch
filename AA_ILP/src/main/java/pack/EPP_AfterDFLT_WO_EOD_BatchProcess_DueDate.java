@@ -194,11 +194,12 @@ public class EPP_AfterDFLT_WO_EOD_BatchProcess_DueDate extends AA_CO_ILP{
 				// driver.findElement(By.xpath("//*[@id='ContractScheduleTable']/tbody/tr["+InstNum+"]/td[2]")).getText();
 
 				// //*[@id="transactionDetailsTable"]/tbody/tr[10]/td[4]/font
-				DueDate = driver
+				/*DueDate = driver
 						.findElement(By
 								.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[11]/td/span[2]"))
-						.getText();
-
+						.getText();*/
+				
+				DueDate = driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr[10]/td[4]/font")).getText();
 				// DueDate =
 				// driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr[10]/td[4]/font")).getText();
 				// *[@id="transactionHistoryTable"]/tbody/tr/td[3]/table/tbody/tr[7]/td/span[2]

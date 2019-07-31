@@ -34,7 +34,7 @@ public class Payoff_Installments extends AA_CO_ILP{
 				//String Password = TestData.getCellData(sheetName, "Password", row);
 				String TenderType = TestData.getCellData(sheetName, "Tender_Type", row);
 				// System.out.println(Password);
-				String StoreId = TestData.getCellData(sheetName, "StoreID", row);
+				//String StoreId = TestData.getCellData(sheetName, "StoreID", row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3, 5);
 				String SSN3 = SSN.substring(5, 9);

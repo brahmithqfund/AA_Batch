@@ -64,7 +64,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import pack.*;
+//import pack.*;
 
 /*import Test.CO_ILP.Need;
 import Test.CO_ILP.scenario;*/
@@ -148,7 +148,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 				Login.Login(UserName,Password,StoreId);
 				BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();
 				Reg.RegistrationPage_NewLoan_Smoke_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"400");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName,"400");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -5, 2);
 				Payment_LessthanAmount.Payment_LessthanAmount(SSN, FileName);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -226,7 +226,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 				Login.Login(UserName,Password,StoreId);
 				BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();
 				Reg.RegistrationPage_NewLoan_Smoke_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"400");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName,"400");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				Payment_Inst_Amount.Payment_Inst_Amount(SSN, FileName, 2);
 				PendingBNK.PendingBNK(SSN, FileName);
@@ -242,7 +242,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 	}
 	
-	@Test (priority=1,groups="kiran_CO_ILP_Smoke") //issue
+	//@Test (priority=1,groups="kiran_CO_ILP_Smoke") //issue
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -278,7 +278,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 				Login.Login(UserName,Password,StoreId);			        
 				BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();
 				Reg.RegistrationPage_NewLoan_Smoke_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN,FileName,"400");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN,FileName,"400");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -309,7 +309,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 
 
-	@Test (priority=0,groups="kiran_CO_ILP_Smoke")
+	//@Test (priority=0,groups="kiran_CO_ILP_Smoke")
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name
@@ -349,7 +349,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 				Login.Login(UserName,Password,StoreId);
 				BorrowerRegistrationpage Reg = new BorrowerRegistrationpage();
 				Reg.RegistrationPage_NewLoan_Smoke_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"400");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName,"400");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -464,6 +464,22 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 		String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
 		// Date D = new Date();
 
+		try {
+			BufferedReader reader;
+			reader = new BufferedReader(
+
+					new FileReader("C:/AA_Batch/AA_ILP/src/test/java/pack/Config.properties"));
+
+			prop = new Properties();
+			prop.load(reader);
+			reader.close();
+
+		}
+
+		catch (Exception e) {
+
+			System.out.println("Object proprties file not found");
+		}
 		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 		reports = new ExtentReports(

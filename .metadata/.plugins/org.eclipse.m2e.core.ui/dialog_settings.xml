@@ -80,6 +80,7 @@
 			<item value="AA_"/>
 		</list>
 		<list key="artifactId">
+			<item value="Retry"/>
 			<item value="AA_TLP"/>
 			<item value="AA_LOC"/>
 			<item value="AA_PDL"/>

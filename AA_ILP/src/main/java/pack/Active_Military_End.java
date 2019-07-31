@@ -46,7 +46,7 @@ public class Active_Military_End extends AA_CO_ILP {
 			System.out.println(ProductID);	
 			String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 			appUrl = AppURL;
-			driver=new InternetExplorerDriver();
+			//driver=new InternetExplorerDriver();
 			Login.Login(UserName, Password, StoreId);
 			String SSN1 = SSN.substring(0, 3);
 			String SSN2 = SSN.substring(3,5);

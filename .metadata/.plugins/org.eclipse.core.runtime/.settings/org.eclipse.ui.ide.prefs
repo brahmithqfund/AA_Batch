@@ -1,7 +1,8 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=991e11aec76cecef96e8f173258623de8958a039
+>>>>>>>=d8a5ec37620239e994d0a685be1965d0a42e2ad7
 PROBLEMS_FILTERS_MIGRATE=true
+TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1458722045242
 quickStart=false

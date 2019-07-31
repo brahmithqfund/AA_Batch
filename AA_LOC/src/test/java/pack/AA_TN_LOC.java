@@ -7367,7 +7367,7 @@ public class AA_TN_LOC extends AA_LOC {
 	}
 
 	// Kiran scenarios
-	// @Test (priority=120,groups = "kiran_TN_LOC")
+	 @Test (priority=120,groups = "kiran_TN_LOC")
 
 	public void LOCI_Draw_StGn_DFLT_WO_RCC_Deceased_LineStatusWO_() throws Exception {
 
@@ -7451,7 +7451,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=122,groups = "kiran_TN_LOC")
 
-	// @Test (priority=122,groups = "kiran_TN_LOC")
+	 @Test (priority=122,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_Dismissed_NextDrawshouldnotbeavailble_Bankrupt_CheckDraw_() throws Exception {
 
 		// Start test. Mention test script name
@@ -7506,7 +7506,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=124,groups = "kiran_TN_LOC")
 
-	// @Test (priority=124,groups = "kiran_TN_LOC")
+	 @Test (priority=124,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_StmtGn_DismissedBeforeDueDate_WORecovery_OldLoanClosed_NewLoanEnable_() throws Exception {
 
 		// Start test. Mention test script name
@@ -7560,7 +7560,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=125,groups = "kiran_TN_LOC")
 
-	// @Test (priority=125,groups = "kiran_TN_LOC")
+	 @Test (priority=125,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_stmt_DismissedonDuedate_LineStatustoWO_Sc176() throws Exception {
 
 		// Start test. Mention test script name
@@ -7616,7 +7616,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=126,groups = "kiran_TN_LOC")
 
-	// @Test (priority=126,groups = "kiran_TN_LOC")
+	 @Test (priority=126,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_stmt_DLQ_DismissedinCureperiod_LineStatustoWO2_Sc177() throws Exception {
 
 		// Start test. Mention test script name
@@ -7681,7 +7681,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=127,groups = "kiran_TN_LOC")
 
-	// @Test (priority=127,groups = "kiran_TN_LOC")
+	 @Test (priority=127,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_stmt_DLQ_DFLT_DismissedinDFLT_LineStatustoWO_Sc178() throws Exception {
 
 		// Start test. Mention test script name
@@ -7753,7 +7753,7 @@ public class AA_TN_LOC extends AA_LOC {
 	}
 	// @Test (priority=128,groups = "kiran_TN_LOC")
 
-	// @Test (priority=128,groups = "kiran_TN_LOC")
+	 @Test (priority=128,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_stmt_DLQ_DFLT_WO_Dismissedonduedate_LineStatustoWO_Sc179() throws Exception {
 
 		// Start test. Mention test script name
@@ -7828,7 +7828,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=130,groups = "kiran_TN_LOC")
 
-	// @Test (priority=130,groups = "kiran_TN_LOC")
+	 @Test (priority=130,groups = "kiran_TN_LOC")
 	public void LOCI_Draw_Payoffwithcash_Dismissed_DrawnotAvailable_Sc181() throws Exception {
 
 		// Start test. Mention test script name
@@ -7879,7 +7879,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=131,groups = "kiran_TN_LOC")
 
-	// @Test (priority=131,groups = "kiran_TN_LOC")
+	 @Test (priority=131,groups = "kiran_TN_LOC")
 	public void Loan_Draw_MinPayment_Dismissed_Drawnotavilable_Txn_Testdata() throws Exception {
 
 		// Start test. Mention test script name
@@ -7933,7 +7933,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=132,groups = "kiran_TN_LOC")
 
-	// @Test (priority=132,groups = "kiran_TN_LOC")
+	 @Test (priority=132,groups = "kiran_TN_LOC")
 	public void Loan_Draw_StGn_Dismissedonduedate_ACHshouldnotgetdeposited() throws Exception {
 
 		// Start test. Mention test script name
@@ -7992,7 +7992,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=133,groups = "kiran_TN_LOC")
 
-	// @Test (priority=133,groups = "kiran_TN_LOC")
+	 @Test (priority=133,groups = "kiran_TN_LOC")
 	public void Loan_Draw_StGn_ACHDeposit_RTN_Dismissed_ACHDepositnotRedeposit() throws Exception {
 
 		// Start test. Mention test script name
@@ -8050,7 +8050,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=134,groups = "kiran_TN_LOC")
+	 @Test (priority=134,groups = "kiran_TN_LOC")
 
 	public void Loan_Draw_StGn_Default_RCC_Dismissed_RCCNotgetDeposit_LinestatusWO() throws Exception {
 
@@ -8120,7 +8120,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=135,groups = "kiran_TN_LOC")
+	 @Test (priority=135,groups = "kiran_TN_LOC")
 
 	public void Loan_Draw_StGn_Dfault_RCCRevoke_RPP_Dismissed_LinestatusWO() throws Exception {
 
@@ -8192,7 +8192,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=136,groups = "kiran_TN_LOC")
+ @Test (priority=136,groups = "kiran_TN_LOC")
 
 	public void LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Month() throws Exception {
 
@@ -8267,7 +8267,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// @Test (priority=137,groups = "kiran_TN_LOC")
 
-	// @Test (priority=137,groups = "kiran_TN_LOC")
+	 @Test (priority=137,groups = "kiran_TN_LOC")
 
 	public void LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Semi() throws Exception {
 
@@ -8341,7 +8341,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=139,groups = "kiran_TN_LOC")
+	 @Test (priority=139,groups = "kiran_TN_LOC")
 
 	public void LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Bweek() throws Exception {
 
@@ -8412,8 +8412,7 @@ public class AA_TN_LOC extends AA_LOC {
 		// Login.Login("CSR353","1234","353");
 
 	}
-
-	// @Test (priority=140,groups = "kiran_TN_LOC")
+ @Test (priority=140,groups = "kiran_TN_LOC")
 
 	public void LOC_default_RCCRevoke_EPP_Instwisepayment_Monthly() throws Exception {
 
@@ -8490,7 +8489,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=141,groups = "kiran_TN_LOC")
+	 @Test (priority=141,groups = "kiran_TN_LOC")
 
 	public void LOC_default_RCCRevoke_EPP_Instwisepayment_Semmonthly() throws Exception {
 
@@ -8568,7 +8567,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=142,groups = "kiran_TN_LOC")
+	 @Test (priority=142,groups = "kiran_TN_LOC")
 
 	public void LOC_default_RCCRevoke_EPP_Instwisepayment_Week() throws Exception {
 
@@ -8647,7 +8646,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=143,groups = "kiran_TN_LOC")
+	 @Test (priority=143,groups = "kiran_TN_LOC")
 
 	public void LOC_default_RCCRevoke_EPP_Instwisepayment_Biweekly() throws Exception {
 
@@ -8726,7 +8725,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	}
 
-	// @Test (priority=144,groups = "kiran_TN_LOC") //Deposit Issue
+	 @Test (priority=144,groups = "kiran_TN_LOC") //Deposit Issue
 
 	public void LOCI_Draw_Default_RCCRevoke_ConverEPP_DepositandClearInswise_Monthly() throws Exception {
 
@@ -10531,7 +10530,7 @@ public class AA_TN_LOC extends AA_LOC {
 
 	// Venkat scenarios
 
-	@Test(priority = 180, groups = "venkat_TN_LOC")
+	//@Test(priority = 180, groups = "venkat_TN_LOC")
 
 	public void LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_()
 			throws Exception {
@@ -10562,8 +10561,7 @@ public class AA_TN_LOC extends AA_LOC {
 				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
 				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
 				String Header = StateID + "_" + ProductID;
-				test = reports.startTest(Header + "_S.No:269" + "_" + PayFrequency + "_" + CollateralType,
-						"LOC Init _ Draw _ Stat _ delinquent _ Cure _ Default   _ generate RCC Schedule  _  Deposit the last installment _ Clear_ Then return the last installment ACH/RCC/NOC STORE/Online/PAM  ");
+				test = reports.startTest(Header + "_S.No:269" + "_" + PayFrequency + "_" + CollateralType, "LOC Init _ Draw _ Stat _ delinquent _ Cure _ Default   _ generate RCC Schedule  _  Deposit the last installment _ Clear_ Then return the last installment ACH/RCC/NOC STORE/Online/PAM  ");
 
 				Login.Login(UserName, Password, StoreId);
 
@@ -10657,7 +10655,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
 				AgeStore.AgeStore(SSN, FileName, 0);
@@ -11047,7 +11045,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				AgeStore_LoanDate.AgeStore_LoanDate(SSN, FileName, 2);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
@@ -11205,7 +11203,7 @@ public class AA_TN_LOC extends AA_LOC {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(driver, test, AppURL, SSN, FileName);
-				NewLoan.NewLoan(SSN, FileName);
+				NewLoan_LOC.NewLoan_LOC(SSN, FileName);
 				AgeStore_LoanDate.AgeStore_LoanDate(SSN, FileName, 2);
 				DrawLoan1.DrawLoan1(SSN, FileName);
 				StatementGeneration.StatementGeneration(SSN, FileName);
@@ -12151,6 +12149,7 @@ public class AA_TN_LOC extends AA_LOC {
 		}
 
 	}
+	
 
 	// Anji Reddy scenarios
 
