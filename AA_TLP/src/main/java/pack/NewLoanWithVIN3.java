@@ -106,7 +106,7 @@ public class NewLoanWithVIN3 extends AA_TLP{
 				String ProductType = TestData.getCellData(sheetName,"ProductType",row);
 				String ProductName = TestData.getCellData(sheetName,"ProductName",row);
 				String VehicleType= TestData.getCellData(sheetName,"VehicleType",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				String stateProductType=State+" "+ProductType;
 				String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);

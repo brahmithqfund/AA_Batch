@@ -150,10 +150,40 @@ public class OutToRepo extends AA_TLP{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
+				driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[13]/input")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for( String winHandle1 : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle1);
+				}			
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("transactionList")).sendKeys("History");
+				if(ProductID.equals("TLP"))
+				{
+					driver.findElement(By.xpath("//*[@id='go_Button']")).click(); 
+				}
+
+				for( String winHandle1 : driver.getWindowHandles())
+
+				{
+
+					driver.switchTo().window(winHandle1);
+
+				}
+
+				driver.switchTo().defaultContent();
+
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				/*driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");*/
 				String DefaultDate=null;
 				//String SecondLoanStatus=null;
 
-				DefaultDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[3]")).getText();
+				DefaultDate = driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[7]/td/span[2]")).getText();
 
 				test.log(LogStatus.PASS,"DefaultDate::  "+DefaultDate);
 

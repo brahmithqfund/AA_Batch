@@ -105,7 +105,7 @@ public class Void_Payment extends AA_TLP{
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				Login.Login(UserName, Password, StoreId);	
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
@@ -156,7 +156,8 @@ public class Void_Payment extends AA_TLP{
 				}
 				if(ProductID.equals("TLP"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				if(ProductID.equals("LOC"))
 				{

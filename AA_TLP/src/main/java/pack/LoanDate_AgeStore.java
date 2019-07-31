@@ -118,7 +118,7 @@ public class LoanDate_AgeStore extends AA_TLP{
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				Thread.sleep(3000);
-			
+				Thread.sleep(3000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
@@ -156,7 +156,8 @@ public class LoanDate_AgeStore extends AA_TLP{
 
 				if(ProductID.equals("TLP"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 
 				}
 				test.log(LogStatus.PASS, "Click on GO Button");

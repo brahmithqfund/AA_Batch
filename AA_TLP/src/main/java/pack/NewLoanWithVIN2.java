@@ -110,7 +110,7 @@ public class NewLoanWithVIN2 extends AA_TLP{
 				String VehicleType= TestData.getCellData(sheetName,"VehicleType",row);
 				// String NewVIN2= TestData.getCellData(sheetName,"NewVIN2",row);
 				//System.out.println(Term);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String stateProduct=State+" "+ProductID;
 				String stateProductType=State+" "+ProductType;
@@ -137,7 +137,7 @@ public class NewLoanWithVIN2 extends AA_TLP{
 				// System.out.println(Password);
 				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-				String StateID = TestData.getCellData(sheetName,"StateID",row);
+				//String StateID = TestData.getCellData(sheetName,"StateID",row);
 				//String SSN = TestData.getCellData(sheetName,"SSN",row);	
 				String Parent_Window = driver.getWindowHandle();
 				
