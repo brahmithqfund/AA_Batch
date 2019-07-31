@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class AA_ILP {
+class AA_ILP {
 
 	public static String AdminURL="https://aeaqxsecuritytest.qfund.net/cc/adminIndex.do";
 	public static String AppURL;

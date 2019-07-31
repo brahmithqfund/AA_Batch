@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="pack.AA_OH_ILP_Smoke">
         <methods>
           <include name="initialize"/>
@@ -13,6 +14,18 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_OH_ILP_Smoke -->
+=======
+      <class name="pack.AA_CO_ILP_Smoke">
+        <methods>
+          <include name="setup_Grid"/>
+          <include name="LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt"/>
+          <include name="getResult"/>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pack.AA_CO_ILP_Smoke -->
+>>>>>>> kiran1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

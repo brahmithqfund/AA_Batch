@@ -7,7 +7,11 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="venkat_OH_ILP_Smoke"/>
+=======
+        <include name="kiran_CO_ILP_Smoke"/>
+>>>>>>> kiran1
       </run>
     </groups>
 =======
@@ -15,6 +19,7 @@
   <test thread-count="5" name="Default test(failed)">
 >>>>>>> venkat1
     <classes>
+<<<<<<< HEAD
       <class name="pack.AA_OH_ILP_Smoke">
         <methods>
           <include name="initialize"/>
@@ -41,8 +46,18 @@
           <include name="setup_Grid"/>
           <include name="tearDown"/>
           <include name="quit"/>
+=======
+      <class name="pack.AA_CO_ILP_Smoke">
+        <methods>
+          <include name="LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR"/>
+          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
+>>>>>>> kiran1
           <include name="initialize"/>
+          <include name="quit"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- pack.AA_OH_ILP_Prod -->
 >>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
@@ -51,6 +66,9 @@
 >>>>>>> chary1
 =======
 >>>>>>> venkat1
+=======
+      </class> <!-- pack.AA_CO_ILP_Smoke -->
+>>>>>>> kiran1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
