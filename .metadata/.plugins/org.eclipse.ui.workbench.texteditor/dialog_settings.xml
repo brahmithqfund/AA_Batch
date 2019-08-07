@@ -2,29 +2,22 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="//@Test" key="selection"/>
+		<item value="srikanth_TN_LOC_Smoke" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="@Test"/>
-			<item value="AA_Store_Test_data_FL_PDL_path_Smoke_anji"/>
-			<item value="leela"/>
-			<item value="Excel TestData = new Excel(&quot;E:/QC_Workspace/AA_Automation/TestData/FL_PDL/Smoke_Local/&quot;+FileName);"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_FL_PDL_path_Smoke_leela&quot;) + FileName);"/>
+			<item value="anji"/>
 		</list>
 		<list key="replacehistory">
-			<item value="//@Test"/>
-			<item value="anji"/>
-			<item value="TestData = new Excel(System.getProperty(&quot;user.dir&quot;) + prop.getProperty(&quot;AA_Store_Test_data_FL_PDL_path_Smoke_leela&quot;) + FileName);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="545" key="DIALOG_WIDTH"/>
+		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="622" key="DIALOG_X_ORIGIN"/>
-		<item value="253" key="DIALOG_Y_ORIGIN"/>
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

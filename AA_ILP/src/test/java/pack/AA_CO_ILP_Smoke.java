@@ -107,7 +107,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 	
 
-	@Test (priority=3)
+	@Test (priority=3, groups="kiran_CO_ILP_Smoke")
 
 	public void LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR() throws Exception {
 
@@ -184,7 +184,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 	}
 
 
-	@Test (priority=2)
+	@Test (priority=2,groups="kiran_CO_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -242,7 +242,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 	}
 	
-	@Test (priority=1) //issue
+	@Test (priority=1,groups="kiran_CO_ILP_Smoke") //issue
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -309,7 +309,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 
 
-	@Test (priority=0)
+	@Test (priority=0,groups="kiran_CO_ILP_Smoke")
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name

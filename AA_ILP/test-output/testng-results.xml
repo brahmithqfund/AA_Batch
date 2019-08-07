@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="177" total="177" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21962" started-at="2019-07-11T05:59:37Z" finished-at="2019-07-11T05:59:59Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21962" started-at="2019-07-11T05:59:37Z" finished-at="2019-07-11T05:59:59Z">
+      <class name="pack.AA_CO_ILP">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_CO_ILP@520a3426]" name="setup_Grid" is-config="true" duration-ms="7556" started-at="2019-07-11T05:59:37Z" finished-at="2019-07-11T05:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_ILP@18eed359]" name="setup_Grid" is-config="true" duration-ms="7209" started-at="2019-07-11T05:59:45Z" finished-at="2019-07-11T05:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_OH_ILP@3e9b1010]" name="setup_Grid" is-config="true" duration-ms="7189" started-at="2019-07-11T05:59:52Z" finished-at="2019-07-11T05:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+      </class> <!-- pack.AA_CO_ILP -->
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4950,6 +4973,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- pack.AA_OH_ILP -->
+>>>>>>> b09111cd0adbd79abad13bfb1c2f52808ed45349
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
