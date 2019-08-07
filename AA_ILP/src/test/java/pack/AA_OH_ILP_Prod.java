@@ -122,6 +122,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:01" + "_" + PayFrequency + "_" + CollateralType,
 						"Login_ Home screen_ Borrower _Registration_New loan_verifyOrigination fee and MHC fee");
+				
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
@@ -2214,7 +2215,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	//// Leela----- Starts ------- ////
 
-	@Test(priority = 42, groups = "leela_OH_ILP_Prod")
+	@Test(priority = 42, groups = "leela_OH_ILP_Prod1")
 
 	public void Loan_PmtAllExceptLast_DepLast_Clear_Return_() throws Exception {
 
@@ -2247,13 +2248,14 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 				// System.out.println(SSN);
 				test = reports.startTest(Header + "_S.No:45" + "_" + PayFrequency + "_" + CollateralType,
 						"Loan>payment all the installements acc to respective due dates except last installement>last # deposit>clear>Return");
-				//
-
+				
+				
+			
 				// SetCurrentDate.SetCurrentDate(SSN, FileName);
 
 				Login.Login(UserName, Password, StoreId);
-				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_Prod.NewLoan_ILP_Prod(SSN, FileName, "200");
+					RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+			NewLoan_ILP_Prod.NewLoan_ILP_Prod(SSN, FileName, "200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
 				Payment_ILP.Payment_ILP(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
@@ -3527,10 +3529,11 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 3);
 				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 3);
 				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 3);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
 
-				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
+				/*AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
 				StoreInfo.StoreInfo(SSN, FileName);
@@ -3567,7 +3570,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 6);
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
-				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);*/
 			}
 		}
 
@@ -3636,7 +3639,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	// Scenarios 68 to 75 were blocked
 
-	@Test(priority = 65, groups = "leela_OH_ILP_Prod") // Not Required - Duplicate
+	@Test(priority = 65, groups = "duplicate") // Not Required - Duplicate
 
 	public void LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate() throws Exception {
 
@@ -3691,7 +3694,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	// Scenarios 77 and 78 were blocked
 
-	@Test(priority = 66, groups = "leela_OH_ILP_Prod2") // Not Required - Duplicate
+	@Test(priority = 66, groups = "duplicate") // Not Required - Duplicate
 
 	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate() throws Exception {
 
@@ -3751,7 +3754,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 67, groups = "leela_OH_ILP_Prod2") // need to run last
+	@Test(priority = 67, groups = "leela_OH_ILP_Prod1") // need to run last
 
 	public void Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear() throws Exception {
 
@@ -3847,7 +3850,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 68, groups = "leela_OH_ILP_Prod2")
+	@Test(priority = 68, groups = "leela_OH_ILP_Prod1")
 
 	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void() throws Exception {
 
@@ -3967,7 +3970,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 70, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 70, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void Loan_Bankrupt_Void_() throws Exception {
 
@@ -4017,7 +4020,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	// Scenario 92 - Duplicate
 
-	@Test(priority = 71, groups = "leela_OH_ILP_Prod") // Not Required - Duplicate
+	@Test(priority = 71, groups = "duplicate") // Not Required - Duplicate
 
 	public void Loan_Bankrupt_() throws Exception {
 
@@ -4063,7 +4066,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 72, groups = "leela_OH_ILP_Prod") // Not Required - Duplicate
+	@Test(priority = 72, groups = "duplicate") // Not Required - Duplicate
 	public void CO_ILP_Loan_BNK_Void() throws Exception {
 
 		// Start test. Mention test script name
@@ -4096,10 +4099,10 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_Prod.NewLoan_ILP_Prod(SSN, FileName, "100");
+				NewLoan_ILP_Prod.NewLoan_ILP_Prod(SSN, FileName, "200");
 				AgeStore.AgeStore(SSN, FileName, 0);
 				Bankrupt.Bankrupt(SSN, FileName);
-				Bankrupt_VV.Bankrupt_VV(SSN, FileName);
+				Bankrupt_Void.Bankrupt_Void(SSN, FileName);
 				;
 
 			}
@@ -4107,7 +4110,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 73, groups = "leela_OH_ILP_Prod")
+	@Test(priority = 73, groups = "leela_OH_ILP_Prod1")
 
 	public void CO_ILP_Loan_first_payment_BNK_Second_deposit() throws Exception {
 
@@ -4158,7 +4161,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 		}
 	}
 
-	@Test(priority = 74, groups = "leela_OH_ILP_Prod") // leela
+	@Test(priority = 74, groups = "leela_OH_ILP_Prod1") // leela
 
 	public void LonI_Bnkrupt_Dismissed() throws Exception {
 
@@ -4206,7 +4209,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 75, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 75, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void LonI_Bnkrupt_Deceased() throws Exception {
 
@@ -4254,7 +4257,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 76, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 76, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void LonI_Bnkrupt_Discharge() throws Exception {
 
@@ -4300,7 +4303,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 77, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 77, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void LonI_Deceased() throws Exception {
 
@@ -4344,7 +4347,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 78, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 78, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void LonI_DFLT_PPN_BNK_1InstDeposit() throws Exception {
 
@@ -4399,7 +4402,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 79, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 79, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void Loan_1stpayment_activemilitary_2ndpayment_() throws Exception {
 
@@ -4451,7 +4454,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 80, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 80, groups = "leela_OH_ILP_Prod1") // Leela
 
 	public void BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_() throws Exception {
 
@@ -4501,7 +4504,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 81, groups = "leela_OH_ILP_Prod") // Not Required - Duplicate
+	@Test(priority = 81, groups = "duplicate") // Not Required - Duplicate
 
 	public void LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions() throws Exception {
 
@@ -4551,7 +4554,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 82, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 82, groups = "leela_OH_ILP_Prod2") // Leela
 
 	public void LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4608,7 +4611,7 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-	@Test(priority = 83, groups = "leela_OH_ILP_Prod") // Leela
+	@Test(priority = 83, groups = "leela_OH_ILP_Prod2") // Leela
 
 	public void LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4677,7 +4680,9 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 			test.log(LogStatus.PASS, result.getName() + " Test Case is Passed");
 		}
-		reports.flush();
+		
+		//reports.flush();
+		
 		// driver.quit();
 
 	}
@@ -4702,10 +4707,19 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 	public void tearDown() {
 		// Ending Test
 		//driver.quit();
+		
 		reports.endTest(test);
-
+		
 		// writing everything into HTML report
 		reports.flush();
+		
+		//reports2=reports;
+		//test2=test;
+		//test2=test2.appendChild(test);
+		//reports.endTest(test);
+		//reports2.endTest(test2);
+		
+		//reports2.flush();
 	}
 
 	@AfterClass(alwaysRun = true)
@@ -4750,9 +4764,13 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 		// Date D = new Date();
 
 		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+		//String kfilename2 = prop.getProperty("QC_Store_extent_report_file_name2") + timestamp + ".html";
 
 		reports = new ExtentReports(
 				System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename, true);
+		//reports2 = new ExtentReports(
+				//System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename2, true);
+
 		/*
 		 * reports = new ExtentReports(System.getProperty("user.dir") +
 		 * "/ExecutionReports/CO_ILP/AA_CO_ILP_Generic Scenarios_" + timestamp +

@@ -2,24 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="66" key="selection"/>
+		<item value="104" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="66"/>
-			<item value="leela_OH_ILP3"/>
-			<item value="-4"/>
-			<item value="att"/>
-			<item value="103"/>
+			<item value="104"/>
+			<item value="76"/>
+			<item value="leela_OH_ILP_Prod"/>
+			<item value="leela_OH_ILP_Prod2"/>
+			<item value="leela_OH_IL2"/>
+			<item value="leela_OH_ILP2"/>
 			<item value="leela_OH_ILP1"/>
-			<item value="priority = 67"/>
-			<item value="S.No:61"/>
+			<item value="41"/>
 		</list>
 		<list key="replacehistory">
-			<item value="EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);"/>
+			<item value="leela_OH_ILP_Prod"/>
 			<item value="leela_OH_ILP"/>
+			<item value="EOD_BatchProcess_WO_OH.EOD_BatchProcess_WO_OH(SSN, FileName, 91,2);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

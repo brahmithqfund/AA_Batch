@@ -4,20 +4,21 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="leela_OH_ILP3"/>
+        <include name="leela_OH_ILP_Prod1"/>
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP">
+      <class name="pack.AA_OH_ILP_Prod">
         <methods>
-          <include name="getResult"/>
-          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
-          <include name="setup_Grid"/>
-          <include name="tearDown"/>
-          <include name="quit"/>
           <include name="initialize"/>
+          <include name="quit"/>
+          <include name="LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record"/>
+          <include name="tearDown"/>
+          <include name="LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- pack.AA_OH_ILP -->
+      </class> <!-- pack.AA_OH_ILP_Prod -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
