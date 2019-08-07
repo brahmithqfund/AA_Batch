@@ -100,9 +100,9 @@ public class Drawerassign extends AA_TLP{
 				String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
-				String UserName = TestData.getCellData(sheetName, "UserName", row);
+/*				String UserName = TestData.getCellData(sheetName, "UserName", row);
 				String Password = TestData.getCellData(sheetName, "Password", row);
-				String StoreId = TestData.getCellData(sheetName, "StoreId", row);
+				String StoreId = TestData.getCellData(sheetName, "StoreId", row);*/
 
 				Thread.sleep(2000);
 

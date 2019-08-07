@@ -47,19 +47,19 @@ public class Bankrupt_Void extends AA_CO_ILP{
 				///////////////////////////////////////
 
 				//driver = new InternetExplorerDriver();
-				//driver.get(AdminURL);
+				driver.get(AdminURL);
 				test.log(LogStatus.INFO, "Admin portal is launched");
 
 				////////////////////////////////////
 				
-/*				 * driver.get(AdminURL); test.log(LogStatus.INFO,
-				 * "Admin portal is launched");*/
+			  driver.get(AdminURL);
+			  test.log(LogStatus.INFO,"Admin portal is launched");
 				 
 				driver.manage().window().maximize();
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys("admin");
-				test.log(LogStatus.PASS, "Username is entered: " + UserName);
+				test.log(LogStatus.PASS, "Username is entered: admin" );
 				driver.findElement(By.name("loginRequestBean.password")).sendKeys(Password);
 				test.log(LogStatus.PASS, "Password is entered: " + Password);
 				// Click Login Button

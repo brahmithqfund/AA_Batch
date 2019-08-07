@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="15" failed="1" ignored="58" total="74" passed="0">
+<testng-results skipped="0" failed="15" ignored="58" total="73" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44865" started-at="2019-07-17T06:37:47Z" finished-at="2019-07-17T06:38:32Z">
+  <suite name="Suite" duration-ms="753584" started-at="2019-07-22T07:39:48Z" finished-at="2019-07-22T07:52:22Z">
     <groups>
       <group name="venkat_TN_LOC">
         <method signature="AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284()[pri:189, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284" class="pack.AA_TN_LOC"/>
@@ -15,7 +15,6 @@
         <method signature="AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277()[pri:183, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277" class="pack.AA_TN_LOC"/>
         <method signature="AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278()[pri:184, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278" class="pack.AA_TN_LOC"/>
         <method signature="AA_TN_LOC.LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291()[pri:196, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291" class="pack.AA_TN_LOC"/>
-        <method signature="AA_TN_LOC.LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_()[pri:180, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_" class="pack.AA_TN_LOC"/>
         <method signature="AA_TN_LOC.LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_()[pri:197, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_" class="pack.AA_TN_LOC"/>
         <method signature="AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_()[pri:182, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_" class="pack.AA_TN_LOC"/>
         <method signature="AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_()[pri:198, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_" class="pack.AA_TN_LOC"/>
@@ -23,37 +22,39 @@
         <method signature="AA_TN_LOC.LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1()[pri:194, instance:pack.AA_TN_LOC@6c3708b3]" name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1" class="pack.AA_TN_LOC"/>
       </group> <!-- venkat_TN_LOC -->
     </groups>
-    <test name="Test" duration-ms="44865" started-at="2019-07-17T06:37:47Z" finished-at="2019-07-17T06:38:32Z">
+    <test name="Test" duration-ms="753584" started-at="2019-07-22T07:39:48Z" finished-at="2019-07-22T07:52:22Z">
       <class name="pack.AA_TN_LOC">
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="setup_Grid" is-config="true" duration-ms="6750" started-at="2019-07-17T06:37:47Z" finished-at="2019-07-17T06:37:54Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="setup_Grid" is-config="true" duration-ms="7668" started-at="2019-07-22T07:39:48Z" finished-at="2019-07-22T07:39:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="initialize" is-config="true" duration-ms="80" started-at="2019-07-17T06:37:54Z" finished-at="2019-07-17T06:37:54Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="initialize" is-config="true" duration-ms="83" started-at="2019-07-22T07:39:56Z" finished-at="2019-07-22T07:39:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_()[pri:180, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_" duration-ms="36907" started-at="2019-07-17T06:37:54Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_()[pri:182, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_" duration-ms="31655" started-at="2019-07-22T07:39:56Z" finished-at="2019-07-22T07:40:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Finding elements with css selector == frame[name='topFrame'],iframe[name='topFrame']returned an unexpected error (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-*** Element info: {Using=css selector, value=frame[name='topFrame'],iframe[name='topFrame']}]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Finding elements with css selector == frame[name='topFrame'],iframe[name='topFrame']returned an unexpected error (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-*** Element info: {Using=css selector, value=frame[name='topFrame'],iframe[name='topFrame']}
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -66,13 +67,12 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:874)
-at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
-at pack.AA_TN_LOC.LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_(AA_TN_LOC.java:10571)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_(AA_TN_LOC.java:10737)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -100,185 +100,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_ -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="16" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_ status=FAILURE method=AA_TN_LOC.LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_ClearLastInst_ReturnLastInst_()[pri:180, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_()[pri:182, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_ -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="196" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="575" started-at="2019-07-22T07:40:28Z" finished-at="2019-07-22T07:40:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_()[pri:182, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_ status=FAILURE method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_()[pri:182, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277()[pri:183, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277()[pri:183, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277" duration-ms="31470" started-at="2019-07-22T07:40:28Z" finished-at="2019-07-22T07:41:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -291,19 +150,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277(AA_TN_LOC.java:10811)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -325,40 +183,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="28" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="345" started-at="2019-07-22T07:41:00Z" finished-at="2019-07-22T07:41:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277()[pri:183, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277 status=FAILURE method=AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277()[pri:183, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278()[pri:184, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278()[pri:184, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278" duration-ms="31454" started-at="2019-07-22T07:41:00Z" finished-at="2019-07-22T07:41:32Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -371,19 +233,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278(AA_TN_LOC.java:10891)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -405,40 +266,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="27" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="318" started-at="2019-07-22T07:41:32Z" finished-at="2019-07-22T07:41:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278()[pri:184, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278 status=FAILURE method=AA_TN_LOC.LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278()[pri:184, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280()[pri:185, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280()[pri:185, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280" duration-ms="31558" started-at="2019-07-22T07:41:32Z" finished-at="2019-07-22T07:42:03Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -451,19 +316,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280(AA_TN_LOC.java:10971)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -485,40 +349,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="23" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="343" started-at="2019-07-22T07:42:03Z" finished-at="2019-07-22T07:42:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280()[pri:185, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280 status=FAILURE method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280()[pri:185, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282()[pri:187, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282()[pri:187, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282" duration-ms="31450" started-at="2019-07-22T07:42:04Z" finished-at="2019-07-22T07:42:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -531,19 +399,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282(AA_TN_LOC.java:11127)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -565,40 +432,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="25" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="336" started-at="2019-07-22T07:42:35Z" finished-at="2019-07-22T07:42:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282()[pri:187, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282 status=FAILURE method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282()[pri:187, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284()[pri:189, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284()[pri:189, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284" duration-ms="31482" started-at="2019-07-22T07:42:36Z" finished-at="2019-07-22T07:43:07Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -611,19 +482,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284(AA_TN_LOC.java:11274)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -645,40 +515,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="19" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="303" started-at="2019-07-22T07:43:07Z" finished-at="2019-07-22T07:43:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284()[pri:189, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284 status=FAILURE method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284()[pri:189, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286()[pri:191, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286()[pri:191, instance:pack.AA_TN_LOC@6c3708b3]" name="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286" duration-ms="31447" started-at="2019-07-22T07:43:07Z" finished-at="2019-07-22T07:43:39Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -691,19 +565,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286(AA_TN_LOC.java:11419)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -725,40 +598,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="18" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="341" started-at="2019-07-22T07:43:39Z" finished-at="2019-07-22T07:43:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286()[pri:191, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286 status=FAILURE method=AA_TN_LOC.DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286()[pri:191, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed()[pri:192, instance:pack.AA_TN_LOC@6c3708b3]" name="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed()[pri:192, instance:pack.AA_TN_LOC@6c3708b3]" name="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed" duration-ms="31538" started-at="2019-07-22T07:43:39Z" finished-at="2019-07-22T07:44:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == loginRequestBean.userId (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27259/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: b6298c6d-6a6a-4b77-b9fc-d4526c0e94c4
+*** Element info: {Using=name, value=loginRequestBean.userId}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -771,19 +648,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pack.Login.Login(Login.java:99)
+at pack.AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed(AA_TN_LOC.java:11496)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -805,65 +681,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="21" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="302" started-at="2019-07-22T07:44:11Z" finished-at="2019-07-22T07:44:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed()[pri:192, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed status=FAILURE method=AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed()[pri:192, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed()[pri:193, instance:pack.AA_TN_LOC@6c3708b3]" name="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed()[pri:193, instance:pack.AA_TN_LOC@6c3708b3]" name="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed" duration-ms="86708" started-at="2019-07-22T07:44:11Z" finished-at="2019-07-22T07:45:38Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed(AA_TN_LOC.java:11578)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -885,65 +739,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="19" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="104" started-at="2019-07-22T07:45:38Z" finished-at="2019-07-22T07:45:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed()[pri:193, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed status=FAILURE method=AA_TN_LOC.DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed()[pri:193, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1()[pri:194, instance:pack.AA_TN_LOC@6c3708b3]" name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1()[pri:194, instance:pack.AA_TN_LOC@6c3708b3]" name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1" duration-ms="68565" started-at="2019-07-22T07:45:38Z" finished-at="2019-07-22T07:46:46Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1(AA_TN_LOC.java:11660)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -965,65 +797,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="18" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="107" started-at="2019-07-22T07:46:46Z" finished-at="2019-07-22T07:46:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1()[pri:194, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1 status=FAILURE method=AA_TN_LOC.LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1()[pri:194, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291()[pri:196, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291()[pri:196, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291" duration-ms="66595" started-at="2019-07-22T07:46:47Z" finished-at="2019-07-22T07:47:53Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291(AA_TN_LOC.java:11815)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1045,65 +855,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="19" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="121" started-at="2019-07-22T07:47:53Z" finished-at="2019-07-22T07:47:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291()[pri:196, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291 status=FAILURE method=AA_TN_LOC.LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291()[pri:196, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_()[pri:197, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_()[pri:197, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_" duration-ms="67058" started-at="2019-07-22T07:47:53Z" finished-at="2019-07-22T07:49:00Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_(AA_TN_LOC.java:11888)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1125,65 +913,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_ -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="18" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="94" started-at="2019-07-22T07:49:00Z" finished-at="2019-07-22T07:49:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_()[pri:197, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_ status=FAILURE method=AA_TN_LOC.LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_()[pri:197, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_()[pri:198, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_()[pri:198, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_" duration-ms="66906" started-at="2019-07-22T07:49:00Z" finished-at="2019-07-22T07:50:07Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_(AA_TN_LOC.java:11966)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1205,65 +971,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_ -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="18" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="109" started-at="2019-07-22T07:50:07Z" finished-at="2019-07-22T07:50:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_()[pri:198, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_ status=FAILURE method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_()[pri:198, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN()[pri:199, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN()[pri:199, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN" duration-ms="66985" started-at="2019-07-22T07:50:07Z" finished-at="2019-07-22T07:51:14Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN(AA_TN_LOC.java:12040)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1285,65 +1029,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="25" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="94" started-at="2019-07-22T07:51:14Z" finished-at="2019-07-22T07:51:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN()[pri:199, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN status=FAILURE method=AA_TN_LOC.LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN()[pri:199, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_()[pri:200, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_" duration-ms="0" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_()[pri:200, instance:pack.AA_TN_LOC@6c3708b3]" name="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_" duration-ms="66747" started-at="2019-07-22T07:51:15Z" finished-at="2019-07-22T07:52:21Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d]]>
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id topFrame
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-238', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22094/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: e24a94f3-7bef-4f26-9e38-857dd1dff38d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at pack.AA_TN_LOC.getScreenhot(AA_TN_LOC.java:13196)
-at pack.AA_TN_LOC.getResult(AA_TN_LOC.java:13177)
+System info: host: 'QTLSYS2-94', ip: '192.168.2.94', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:881)
+at pack.BorrowerRegistrationpage.RegistrationPage_NewLoan_LOC(BorrowerRegistrationpage.java:3219)
+at pack.AA_TN_LOC.LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_(AA_TN_LOC.java:12115)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1365,22 +1087,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_ -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="19" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="getResult" is-config="true" duration-ms="106" started-at="2019-07-22T07:52:21Z" finished-at="2019-07-22T07:52:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=AA_TN_LOC.LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_()[pri:200, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
+                <![CDATA[[TestResult name=LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_ status=FAILURE method=AA_TN_LOC.LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_()[pri:200, instance:pack.AA_TN_LOC@6c3708b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="quit" is-config="true" duration-ms="551" started-at="2019-07-17T06:38:31Z" finished-at="2019-07-17T06:38:32Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_TN_LOC@6c3708b3]" name="quit" is-config="true" duration-ms="544" started-at="2019-07-22T07:52:21Z" finished-at="2019-07-22T07:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

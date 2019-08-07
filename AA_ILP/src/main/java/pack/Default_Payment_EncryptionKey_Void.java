@@ -159,14 +159,14 @@ public class Default_Payment_EncryptionKey_Void extends AA_CO_ILP{
 				driver.findElement(By.name("requestBean.tranNbr")).sendKeys(TranID2);
 				test.log(LogStatus.PASS, "Tran number Entered");
 
-				driver.findElement(By.name("trancd")).sendKeys("Advance-ADV");
+/*				driver.findElement(By.name("trancd")).sendKeys("Advance-ADV");
 				test.log(LogStatus.PASS, "Trancd selected");
 
 				driver.findElement(By.name("trancd")).sendKeys("Early pay off-EPAY");
 				test.log(LogStatus.PASS, "Trancd selected");
 
 				driver.findElement(By.name("trancd")).sendKeys("Payment-PAYIL");
-				test.log(LogStatus.PASS, "Trancd selected");
+				test.log(LogStatus.PASS, "Trancd selected");*/
 
 				driver.findElement(By.name("trancd")).sendKeys("Default Payment-DFP");
 				test.log(LogStatus.PASS, "Trancd selected");
@@ -256,14 +256,15 @@ public class Default_Payment_EncryptionKey_Void extends AA_CO_ILP{
 					// driver.findElement(By.name("requestBean.siilBean.disbType")).sendKeys("Cash");
 					// test.log(LogStatus.PASS, "DisbType Type is entered as
 					// Cash");
-					String Pmt = driver
+//Updated on 23 July in presense Kiran in prod					
+				/*	String Pmt = driver
 							.findElement(By
 									.xpath(" /html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[3]/td/table/tbody/tr[3]/td[1]"))
-							.getText();
+							.getText();*/
 
-					System.out.println(Pmt);
-					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys(Pmt);
-					test.log(LogStatus.PASS, "Tender Amt is entered as " + Pmt);
+//					System.out.println(Pmt);
+//					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys(Pmt);
+//					test.log(LogStatus.PASS, "Tender Amt is entered as " + Pmt);
 
 					driver.findElement(By.name("transactionDataBean.encryptionKey")).sendKeys(Eankey);
 					test.log(LogStatus.PASS, "Encryption key is entered as " + Eankey);
