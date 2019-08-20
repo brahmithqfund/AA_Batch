@@ -107,7 +107,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	
 	
-	@Test (priority=0,groups = "leela_FL_ILP_Smoke1")
+	@Test (priority=0,groups = "leela_FL_ILP_Smoke")
 
 	public void LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR() throws Exception {
 
@@ -144,7 +144,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				//System.out.println(SSN);
 				test = reports.startTest(Header+"_S.No:1"+"_"+PayFrequency+"_"+CollateralType,"LONI_Partial payment_EOD_DLQ_CURE_DEF_Partial def payment_PPN_1# payment_void_PPN default_partial def payment(>15% DEF amt)_WO(DEF DATE+120 DAYS)_WOR(pay total due amt)");
 				
-				SetCurrentDate.SetCurrentDate(SSN, FileName);
+				//SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);
 		     	RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
@@ -179,7 +179,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 	}
 
 
-	@Test (priority=1,groups = "leela_FL_ILP_Smoke")
+	//@Test (priority=1,groups = "leela_FL_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -299,7 +299,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	}
 
-	@Test (priority=3,groups = "leela_FL_ILP_Smoke") //15day/05m/2019 // wendensday
+	//@Test (priority=3,groups = "leela_FL_ILP_Smoke1") //15day/05m/2019 // wendensday
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name

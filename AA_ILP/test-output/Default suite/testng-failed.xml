@@ -3,8 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pack.AA_CO_ILP">
+      <class name="pack.AA_FL_ILP_Smoke">
         <methods>
+<<<<<<< HEAD
           <include name="Loan_DFLT_WO_WORecPartPmt_VoidNextDay"/>
           <include name="AA_Loan1stInsatallmentEODbatchprocess_Cure_Less1stInsatllPayment_CureenddateDefault"/>
           <include name="LonI_Deceased"/>
@@ -61,8 +62,17 @@
           <include name="Loan_DepositACH_"/>
           <include name="LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record"/>
           <include name="Loan_Deposit_Rtn_clear_2InstDeposit_Return_EODBatchprocess_payoff"/>
+=======
+          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
+          <include name="initialize"/>
+          <include name="LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt"/>
+          <include name="quit"/>
+          <include name="tearDown"/>
+>>>>>>> charyStable29July
         </methods>
-      </class> <!-- pack.AA_CO_ILP -->
+      </class> <!-- pack.AA_FL_ILP_Smoke -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

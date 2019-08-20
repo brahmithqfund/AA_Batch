@@ -16,15 +16,17 @@ public class AA_ILP {
 	public static String AppURL;
 	public static Properties prop;
 	String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
-	public WebDriverWait wait;
+	public static WebDriverWait wait;
 	static WebDriver driver;
 	static String appUrl;
 
 	static ExtentReports reports;
+	static ExtentReports reports2;
 	public static String UserName;
 	public static String Password;
 	public static String StoreId;
 	public static ExtentTest test;
+	public static ExtentTest test2;
 	public static Excel TestData;
 	
 }
