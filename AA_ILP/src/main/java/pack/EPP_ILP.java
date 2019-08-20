@@ -162,6 +162,11 @@ public class EPP_ILP extends AA_CO_ILP{
 					driver.findElement(By.name("collateralTypeId")).sendKeys("CASH");
 					test.log(LogStatus.PASS,"Collateral Type is Selected as CASH");
 				}
+				else if(StateID.equalsIgnoreCase("FL"))
+				{
+					driver.findElement(By.name("collateralTypeId")).sendKeys("CASH");
+					test.log(LogStatus.PASS,"Collateral Type is Selected as CASH");
+				}
 
 				driver.findElement(By.name("password")).sendKeys(Password);
 				test.log(LogStatus.PASS,"Password is Selected as : "+Password);

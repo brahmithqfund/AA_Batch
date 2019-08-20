@@ -4,44 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="venkat_OH_ILP_Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="pack.AA_OH_ILP_Smoke">
-        <methods>
-          <include name="initialize"/>
-          <include name="quit"/>
-          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
-          <include name="setup_Grid"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- pack.AA_OH_ILP_Smoke -->
-=======
         <include name="leela_OH_ILP_Prod2"/>
-=======
-        <include name="leela_OH_ILP3"/>
->>>>>>> chary1
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP">
+      <class name="pack.AA_OH_ILP_Prod">
         <methods>
-          <include name="getResult"/>
-          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
-          <include name="setup_Grid"/>
-          <include name="tearDown"/>
-          <include name="quit"/>
           <include name="initialize"/>
+          <include name="LonI_DFLT_PPN_BNK_1InstDeposit"/>
+          <include name="quit"/>
+          <include name="tearDown"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
         </methods>
-<<<<<<< HEAD
       </class> <!-- pack.AA_OH_ILP_Prod -->
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
-      </class> <!-- pack.AA_OH_ILP -->
->>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

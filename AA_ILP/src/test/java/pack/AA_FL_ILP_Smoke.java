@@ -107,7 +107,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	
 	
-	@Test (priority=0,groups = "leela_FL_ILP_Smoke1")
+	@Test (priority=0,groups = "leela_FL_ILP_Smoke")
 
 	public void LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR() throws Exception {
 
@@ -144,7 +144,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				//System.out.println(SSN);
 				test = reports.startTest(Header+"_S.No:1"+"_"+PayFrequency+"_"+CollateralType,"LONI_Partial payment_EOD_DLQ_CURE_DEF_Partial def payment_PPN_1# payment_void_PPN default_partial def payment(>15% DEF amt)_WO(DEF DATE+120 DAYS)_WOR(pay total due amt)");
 				
-				SetCurrentDate.SetCurrentDate(SSN, FileName);
+				//SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);
 		     	RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
@@ -236,13 +236,13 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 		
 	}
 
-	 @Test(priority=2,groups = "leela_FL_ILP_Smoke") 
+	 @Test(priority=2,groups = "leela_FL_ILP_Smoke1") 
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
 		// Start test. Mention test script name
 		String FileName= "LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt.xls";		 
-		Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_ILP/Smoke_Local/"+FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_ILP_Smoke_path_leela") + FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";
 		System.out.println(lastrow);
