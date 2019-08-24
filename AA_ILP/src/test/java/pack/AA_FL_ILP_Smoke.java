@@ -179,7 +179,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 	}
 
 
-	@Test (priority=1,groups = "leela_FL_ILP_Smoke")
+	//@Test (priority=1,groups = "leela_FL_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -299,7 +299,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	}
 
-	@Test (priority=3,groups = "leela_FL_ILP_Smoke") //15day/05m/2019 // wendensday
+	//@Test (priority=3,groups = "leela_FL_ILP_Smoke1") //15day/05m/2019 // wendensday
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name

@@ -241,16 +241,27 @@ public class Bankrupt extends AA_CO_ILP{
 				driver.findElement(By.name("submit")).click();
 				test.log(LogStatus.PASS, "Click on submit Button");  
 
-
+				Actions action = new Actions(driver);
+				action.moveByOffset(1000,100).perform();
+				Thread.sleep(10000);
+				action.click();
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
+				
 
+				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
 
+<<<<<<< HEAD
 				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
 				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 
+=======
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				
+				
+>>>>>>> chary1
 				test.log(LogStatus.PASS,"Click on Go button");		 
 
 				driver.switchTo().defaultContent();

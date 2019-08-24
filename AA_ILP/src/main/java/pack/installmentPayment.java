@@ -79,6 +79,7 @@ public class installmentPayment extends AA_CO_ILP{
 				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 			/*	if (ProductID.equals("ILP")) {
 					/// html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
+<<<<<<< HEAD
 					/*driver.findElement(By
 							.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input"))
 <<<<<<< HEAD
@@ -87,6 +88,10 @@ public class installmentPayment extends AA_CO_ILP{
 				}
 =======
 							.click();
+=======
+					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+>>>>>>> chary1
 					// driver.findElement(By.name("button")).click();
 				}*/
 >>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
