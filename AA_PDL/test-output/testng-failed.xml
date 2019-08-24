@@ -3,67 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pack.AA_FL_PDL">
+      <class name="pack.AA_TN_PDL">
         <methods>
-          <include name="BorrowerNewLoan_Rule"/>
-          <include name="LoanwithACH_NACHA_ACHDepProc_ProcessClear"/>
-          <include name="Loan_ReturnPosting_30PerofTotalDue__CheckWriteOff180daystoretdate"/>
-          <include name="NewLoan_RPP_AgeInstwise_PPPayment"/>
-          <include name="initialize"/>
-          <include name="quit"/>
-          <include name="getResult"/>
-          <include name="VerifyBuyBack_TotalDue"/>
-          <include name="EPP_MissRPPPayment_EOD_Forcefully"/>
-          <include name="Partialpayment_void"/>
+          <include name="NewLoanMultipledisbursement_AgestoreVoid"/>
+          <include name="NewLoan_AgeStore_BuyBack"/>
+          <include name="PartialPayment_BuyBackChange_Void"/>
+          <include name="VerifyLoanAmount"/>
+          <include name="PartialPayment_BuyBack_Void"/>
           <include name="tearDown"/>
           <include name="Partialpayment_agestorevoid"/>
-          <include name="NewLoan_DueDate_Holiday_Verification"/>
-          <include name="Loan_Deposit_FullPrePayment_Clear_Refund"/>
-          <include name="NewLoan_Prenote_Deposit_Verification_weekly"/>
-          <include name="NewLoan_PreNoteDiposit_6daysBeforeDueDate"/>
-          <include name="Byback_agestore_void"/>
-          <include name="NewLoan_VoidEncryptionKey"/>
-          <include name="LoanWithCheck_ConvertAch_AchPrePayment_AchClr_Refund"/>
-          <include name="Nacha_ACHDepositProcess_ACHReturn"/>
-          <include name="LoanwithCheck_ConverttoACH_ACHDepproc_ProcClear"/>
-          <include name="BuyBack_Void"/>
-          <include name="NewLoan_ReturnPosting_60days_Writeoff"/>
-          <include name="setup_Grid"/>
-          <include name="Newloan_DisbACH_void"/>
-          <include name="PartialPayment_ACH_Deposit"/>
-          <include name="NewLoan_Weekly_Duedate"/>
-          <include name="Loan_ReturnPosting_NSF15_Void_WO60days_Returndate"/>
+          <include name="PartialPayment_BuyBack"/>
+          <include name="NewLoanMultiDisb_Void"/>
+          <include name="Rescind_AgeStore"/>
+          <include name="Prenotedeposit_Verification"/>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="BorrowerNewLoan_Rule"/>
           <include name="NewLoan_Deposit_Return_Prenotedeposit"/>
           <include name="Newloan_MultipullDisb"/>
-          <include name="Rescind_AgeStore"/>
-          <include name="PartialPayment_BuyBack_Void"/>
-          <include name="NewLoan_Biweekly_Duedate"/>
-          <include name="Newloan_PartialPayment_Deposit_Clear_Refund"/>
-          <include name="BorrowerRegistration_NewLoan"/>
-          <include name="NewLoan_AgeStore_BuyBack"/>
-          <include name="Prenotedeposit_Verification_within5businessdays"/>
-          <include name="VerifyLoanAmount"/>
-          <include name="LoanwithCheck_Deposit_ReturnwithoutR01R09_FutureDepositNotposted"/>
-          <include name="LoanwithCheck__DepConvertACH__Deposit__ACHReturn"/>
-          <include name="NewLoan_SemiMonthly_Duedate"/>
-          <include name="Void"/>
-          <include name="NewLoan_Monthly_Duedate"/>
-          <include name="Prenotedeposit_Verification"/>
-          <include name="Loan_Agestoreduedate_performdepositPrepayment_agestore_ProcessClear"/>
-          <include name="NewLoan_Perform_EPP"/>
-          <include name="ConvertCheckToACHNacha_ACHDepositProcess_ACHReturn"/>
-          <include name="EPP_MissRPPPayment_EOD_Checkbox"/>
-          <include name="Loan_Deposit_PrePaymentfull_Return_RefundnotDisplay"/>
-          <include name="Loan_ReturnPosting_15PerofTotalDue__CheckWriteOff120daystoretdate"/>
-          <include name="NewLoanMultipledisbursement_AgestoreVoid"/>
-          <include name="PartialPayment_BuyBackChange_Void"/>
-          <include name="NewLoan_PreNoteDeposit_PreNoteClear"/>
-          <include name="Rescind"/>
-          <include name="Loan_Deposit_PrePayment_Return"/>
-          <include name="NewLoanMultiDisb_Void"/>
-          <include name="PartialPayment_BuyBack"/>
+          <include name="setup_Grid"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- pack.AA_FL_PDL -->
+      </class> <!-- pack.AA_TN_PDL -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

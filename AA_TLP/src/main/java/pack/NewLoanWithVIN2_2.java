@@ -109,7 +109,7 @@ public class NewLoanWithVIN2_2 extends AA_TLP{
 				
 				String VehicleType= TestData.getCellData(sheetName,"VehicleType",row);
 				
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				
 				String stateProductType=State+" "+ProductType;

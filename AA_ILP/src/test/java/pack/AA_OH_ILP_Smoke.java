@@ -64,7 +64,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import pack.*;
+//import pack.*;
 
 /*import Test.CO_ILP.Need;
 import Test.CO_ILP.scenario;*/
@@ -144,6 +144,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 				test = reports.startTest(Header+"_S.No:1"+"_"+PayFrequency+"_"+CollateralType,"LONI_Partial payment_EOD_DLQ_CURE_DEF_Partial def payment_PPN_1# payment_void_PPN default_partial def payment(>15% DEF amt)_WO(DEF DATE+120 DAYS)_WOR(pay total due amt)");
 				
 			   Login.Login(UserName,Password,StoreId);
+			  
 		     	RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName,"200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -5, 2);
@@ -157,7 +158,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 				EPP_ILP.EPP_ILP(SSN, FileName);
 				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, 0, 2);
 				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				Void.Void(SSN, FileName);
+				Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
 				EPP_EOD_BatchProcess_DueDate.EPP_EOD_BatchProcess_DueDate(SSN, FileName, 35, 2);
 				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.15);
 				EPP_AfterDFLT_WO_EOD_BatchProcess_DueDate.EPP_AfterDFLT_WO_EOD_BatchProcess_DueDate(SSN, FileName, 180, 2);

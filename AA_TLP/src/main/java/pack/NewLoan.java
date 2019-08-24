@@ -88,7 +88,7 @@ import java.io.FileReader;
 public class NewLoan extends AA_TN_TLP{
 	public static void NewLoan(String SSN,String FileName) throws Exception
 	{
-		Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/TLP/"+FileName);  	
+		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/TLP/"+FileName);  	
 		int lastrow=TestData.getLastRow("NewLoan");
 		System.out.println("NewLoan "+lastrow);
 		String sheetName="NewLoan";		
@@ -106,7 +106,7 @@ public class NewLoan extends AA_TN_TLP{
 				String NewVIN= TestData.getCellData(sheetName,"NewVIN",row);
 				System.out.println(FileName);
 				System.out.println(NewVIN);
-				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 				String stateProductType=State+" "+ProductType;
 				String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 				System.out.println(ESign_CollateralType);

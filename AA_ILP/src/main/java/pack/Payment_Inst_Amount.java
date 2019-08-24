@@ -74,15 +74,21 @@ public class Payment_Inst_Amount extends AA_CO_ILP{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 
-
-				if(ProductID.equals("ILP"))
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+		/*		if(ProductID.equals("ILP"))
 				{
 					///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]	
+<<<<<<< HEAD
 					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
 					// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
 			    	 driver.findElement(By.xpath("//input[@type='button' and @value='Go']")).click();// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
 
 				}
+=======
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
+				}*/
+>>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
 				//  driver.findElement(By.name("button")).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())

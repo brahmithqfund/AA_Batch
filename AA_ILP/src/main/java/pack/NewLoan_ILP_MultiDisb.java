@@ -65,9 +65,9 @@ public class NewLoan_ILP_MultiDisb extends AA_CO_ILP{
 				System.out.println(stateProductType);
 				String Parent_Window1 = driver.getWindowHandle();  
 				System.out.println(ProductID);	
-				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-				appUrl = AppURL;
-				Login.Login(UserName, Password, StoreId);
+				String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				//appUrl = AppURL;
+				Login.Login(UserName,Password,StoreId);
 				 test.log(LogStatus.PASS,"<FONT color=green style=Arial> ----------- NewLoan ILP -----------");
 
 				String SSN1 = SSN.substring(0, 3);
@@ -178,12 +178,43 @@ public class NewLoan_ILP_MultiDisb extends AA_CO_ILP{
 
 					driver.switchTo().frame("main");
 
-					driver.findElement(By.id("LoanButtonId")).click();
+			   driver.findElement(By.id("LoanLengthDocBtn")).click();
+			
+			for (String winHandle1 : driver.getWindowHandles())
+
+			{
+				if (!(winHandle1.equals(Parent_Window1))) {
+					driver.switchTo().window(winHandle1);
+					Thread.sleep(1000);
+					driver.findElement(By.name("confirmSummary")).click();
+					test.log(LogStatus.PASS, "ConfirmShareScreen Button clicked");
+				}
+
+			}
+			Thread.sleep(3000);
 					//New Loan Screens
 
-					if(ProductID.equals("ILP"))
+			if (ProductID.equals("ILP")) {
+
+
+
+				if(ProductID.equals("ILP"))
+				{
+
+					driver.switchTo().window(Parent_Window1);
+
+					for (String winHandle1 : driver.getWindowHandles())
+
 					{
 
+						driver.switchTo().window(winHandle1);
+
+					}
+					driver.switchTo().defaultContent();
+
+					driver.switchTo().frame("mainFrame");
+
+					driver.switchTo().frame("main");
 
 						//negLoanAmt buton
 
@@ -429,8 +460,10 @@ public class NewLoan_ILP_MultiDisb extends AA_CO_ILP{
 
 
 			}
-
 		}
+		}
+}
+
 
 	
 	
@@ -439,4 +472,4 @@ public class NewLoan_ILP_MultiDisb extends AA_CO_ILP{
 	
 	
 	
-}
+

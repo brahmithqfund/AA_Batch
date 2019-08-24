@@ -3872,8 +3872,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
-		reports = new ExtentReports(
-				System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename, true);
+		reports = new ExtentReports(System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + kfilename, true);
 		/*
 		 * reports = new ExtentReports(System.getProperty("user.dir") +
 		 * "/ExecutionReports/CO_ILP/AA_CO_ILP_Generic Scenarios_" + timestamp +
