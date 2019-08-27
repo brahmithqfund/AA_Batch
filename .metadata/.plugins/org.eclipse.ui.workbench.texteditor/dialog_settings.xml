@@ -2,12 +2,33 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		<item value="97" key="selection"/>
+=======
+<<<<<<< HEAD
+		<item value="srikanth_TN_LOC_Smoke" key="selection"/>
+=======
+<<<<<<< HEAD
+		<item value="39" key="selection"/>
+=======
+		<item value="Login_Homescreen_Borrower_Registration_NewLoan_verify_" key="selection"/>
+>>>>>>> cee862edff1ea40830b33adb2df9038107fbb316
+>>>>>>> eb0d0356a82571981b67942f25f52f2828d44d1d
+>>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
+=======
+		<item value="leela_OH_ILP" key="selection"/>
+>>>>>>> chary1
+>>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="//@Test"/>
 			<item value="Venkat_CO_ILP"/>
 			<item value="@b"/>
@@ -20,13 +41,93 @@
 		<list key="replacehistory">
 			<item value="@Test"/>
 			<item value="driver.findElement(By.xpath(&quot;//input[@value=&apos;Go&apos; and @type=&apos;button&apos;]&quot;)).click();"/>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<item value="97"/>
+			<item value="81"/>
+			<item value="45"/>
+			<item value="98"/>
+			<item value="101"/>
+			<item value="99"/>
+			<item value="90"/>
+			<item value="80"/>
+		</list>
+		<list key="replacehistory">
+			<item value="leela_OH_ILP_Prod"/>
+			<item value="@Test"/>
+			<item value="//@Test"/>
+			<item value="leela_OH_ILP"/>
+			<item value="leela_FL_ILP_Smoke"/>
+=======
+<<<<<<< HEAD
+			<item value="anji"/>
+=======
+<<<<<<< HEAD
+			<item value="39"/>
+			<item value="29"/>
+			<item value="25"/>
+			<item value="17"/>
+			<item value="34"/>
+			<item value="27"/>
+			<item value="23"/>
+			<item value="21"/>
+=======
+			<item value="Login_Homescreen_Borrower_Registration_NewLoan_verify_"/>
+			<item value="bsh"/>
+>>>>>>> cee862edff1ea40830b33adb2df9038107fbb316
+>>>>>>> eb0d0356a82571981b67942f25f52f2828d44d1d
+		</list>
+		<list key="replacehistory">
+>>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
+=======
+			<item value="leela_OH_ILP2"/>
+			<item value="leela_OH_ILP1"/>
+			<item value="45"/>
+			<item value="leela_OH_ILP_Prod1"/>
+			<item value="leela_OH_ILP_Prod2"/>
+			<item value="duplicate"/>
+			<item value="duplicate\"/>
+			<item value="100"/>
+		</list>
+		<list key="replacehistory">
+			<item value="leela_OH_ILP"/>
+			<item value="leela_OH_ILP_Prod"/>
+>>>>>>> chary1
+>>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="580" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+<<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="63" key="DIALOG_X_ORIGIN"/>
 		<item value="234" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
+		<item value="495" key="DIALOG_X_ORIGIN"/>
+		<item value="347" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
+		<item value="490" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> cee862edff1ea40830b33adb2df9038107fbb316
+>>>>>>> eb0d0356a82571981b67942f25f52f2828d44d1d
+>>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
+=======
+		<item value="605" key="DIALOG_HEIGHT"/>
+		<item value="8" key="DIALOG_X_ORIGIN"/>
+		<item value="171" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> chary1
+>>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 	</section>
 </section>

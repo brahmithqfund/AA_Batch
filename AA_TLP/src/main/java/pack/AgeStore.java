@@ -97,16 +97,16 @@ public class AgeStore extends AA_TLP{
 			if (SSN.equals(RegSSN)) {
 
 				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
-				String UserName = TestData.getCellData(sheetName, "UserName", row);
+				/*String UserName = TestData.getCellData(sheetName, "UserName", row);
 				String Password = TestData.getCellData(sheetName, "Password", row);
-				String StoreId = TestData.getCellData(sheetName, "StoreId", row);
+				//String StoreId = TestData.getCellData(sheetName, "StoreId", row);
 				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
-
+*/
 				System.out.println(AdminURL);
 				test.log(LogStatus.INFO, "Scheduler-Store Aging");
 
 				System.out.println(ProductID);
-				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
+				//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				
 				Login.Login(UserName, Password, StoreId);
 				String SSN1 = SSN.substring(0, 3);

@@ -4119,7 +4119,9 @@ public void RegistrationPage_NewLoan_Smoke_ILP(WebDriver driver,ExtentTest test,
 	
 	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/"+FileName);//RegressionCOILP
 	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/ILP/"+FileName);
-	Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/ILP/"+FileName);//SMokeCOILP
+	TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_Smoke_path_kiran") + FileName);
+
+	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/ILP/"+FileName);//SMokeCOILP
 	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/FL_ILP/"+FileName);//FLILP
 
 	int lastrow=TestData.getLastRow("Borrower_Registration");

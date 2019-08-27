@@ -62,6 +62,7 @@ public class Login extends AA_CO_ILP{
  		String Login = "login";
 
  		test.log(LogStatus.PASS, "<FONT color=green style=Arial> ----------- Application Login -----------");
+ 		//test2.log(LogStatus.PASS, "<FONT color=green style=Arial> ----------- Application Login -----------");
 
  		driver.findElement(By.name(usenameId)).clear();
  		driver.findElement(By.name(usenameId)).sendKeys(username);

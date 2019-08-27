@@ -183,7 +183,8 @@ public class AgeStore_1stInst_DueDate10DaysBefore extends AA_TLP{
 				{
 
 
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 
 				}
 

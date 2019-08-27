@@ -117,7 +117,7 @@ public class NewLoanRule extends AA_TLP{
 
 					System.out.println(ProductID);
 
-					String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+					//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 
 					//String stateProduct=State+" "+ProductID;
 					String stateProductType=State+" "+ProductType;
@@ -139,7 +139,7 @@ public class NewLoanRule extends AA_TLP{
 					System.out.println(stateProductType);
 					//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
+					//String StateID = TestData.getCellData(sheetName,"StateID",row);
 
 					String Parent_Window = driver.getWindowHandle();
 					

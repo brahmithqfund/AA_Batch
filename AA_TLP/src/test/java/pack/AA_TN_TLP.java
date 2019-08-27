@@ -84,7 +84,7 @@ import java.io.FileReader;
 public class AA_TN_TLP extends AA_TLP {
 
 	
-	//@Test (priority=0,groups = "chenna_TN_TLP")
+	@Test (priority=0,groups = "chenna_TN_TLP")
 
 	public void Loan_EncryptionKey_Void() throws Exception
 	{
@@ -125,7 +125,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 
-   //@Test (priority=1,groups = "chenna_TN_TLP")
+   @Test (priority=1,groups = "chenna_TN_TLP")
 
 	public void Loan_AgestoreRescindDays_Rescind() throws Exception {
 
@@ -174,7 +174,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 
-	//@Test (priority=2,groups = "chenna_TN_TLP")
+	@Test (priority=2,groups = "chenna_TN_TLP")
 
 	public void NewLoan_multiplel_disbursement_void() throws Exception {
 
@@ -226,7 +226,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 
 
-	//@Test (priority=3,groups = "chenna_TN_TLP")
+	@Test (priority=3,groups = "chenna_TN_TLP")
 
 	public void NewLoan_Paymenttoapportinateprinciple_Void_Cancelreschudle() throws Exception {
 
@@ -282,8 +282,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 
-
-//@Test (priority=4,groups = "chenna_TN_TLP")
+   @Test (priority=4,groups = "chenna_TN_TLP")
 
 	public void TwoLoansameVIN_OneLoanDefault_OutofReposhouldnotpostotherLoan() throws Exception {
 
@@ -326,20 +325,19 @@ public class AA_TN_TLP extends AA_TLP {
 				RegistrationPage_NewLoan_TLP.RegistrationPage_NewLoan_TLP(driver, test, AppURL, SSN, FileName);
 				NewLoanWithVIN.NewLoanWithVIN(SSN, FileName,NewVIN);
 				LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,5);
-				NewLoanWithVIN2_2.NewLoanWithVIN2_2(SSN, FileName,NewVIN);//updated
+				NewLoanWithVIN2_2.NewLoanWithVIN2_2(SSN, FileName,NewVIN);//updated 
 				AgeStore1_1.AgeStore1_1(SSN, FileName, 0); 
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
 				StoreInfo.StoreInfo(SSN, FileName);
 				Safeassign.Safeassign(SSN, FileName);
-				Drawerassign.Drawerassign(SSN, FileName);  
+				Drawerassign.Drawerassign(SSN, FileName); 
 				AgeStore2_1.AgeStore2_1(SSN, FileName, 0);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
-				//EODProcessing.EODProcessing(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
 				StoreInfo.StoreInfo(SSN, FileName);
 				Safeassign.Safeassign(SSN, FileName);
-				Drawerassign.Drawerassign(SSN, FileName);
+				Drawerassign.Drawerassign(SSN, FileName); 
 				AgeStore1_1BatchProcess.AgeStore1_1BatchProcess(SSN, FileName, 0);
 				DefaultPaymentStatus1.DefaultPaymentStatus1(SSN, FileName);	
 				OutToRepo.OutToRepo(SSN, FileName, 1); 
@@ -350,7 +348,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 
-//@Test (priority=5,groups = "chenna_TN_TLP")
+   @Test (priority=5,groups = "chenna_TN_TLP")
 
 	public void TwoLoansameVIN_OneDefault_Repossession_RepossessionshouldposttwoLoans() throws Exception {
 
@@ -411,7 +409,7 @@ public class AA_TN_TLP extends AA_TLP {
 				AgeStore1_1BatchProcess.AgeStore1_1BatchProcess(SSN, FileName, 0);
 				DefaultPaymentStatus1.DefaultPaymentStatus1(SSN, FileName);	
 				OutToRepo.OutToRepo(SSN, FileName, 1);
-				Repossession.Repossession(SSN, FileName, 1);
+				Repossession.Repossession(SSN, FileName, 0);
 				DefaultPaymentStatus1.DefaultPaymentStatus1(SSN, FileName);
 				IETaskKiller();
 		
@@ -422,7 +420,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 
-//@Test (priority=6,groups = "chenna_TN_TLP") 
+    @Test (priority=6,groups = "chenna_TN_TLP") 
 
 	public void TwoLoansameVIN_Default_Repossion_repoPaymentmoreAmount_ShouldnoteffectotherLoan() throws Exception {
 
@@ -497,7 +495,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 
 
-	//@Test (priority=7,groups = "chenna_TN_TLP") //Auction should consider system date to perform(done for past dates )
+	@Test (priority=7,groups = "chenna_TN_TLP") //Auction should consider system date to perform(done for past dates )
 
 	
 	public void TwoLoansonsameVin_Default_Repossession_OneLoanAcution_ShouldnoteffectotherLoan() throws Exception {
@@ -569,7 +567,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=8,groups = "chenna_TN_TLP")
+	@Test (priority=8,groups = "chenna_TN_TLP")
 
 	public void TwoLoansonsameVin_Default_saleLessAmount_RemainingAmountShouldbwaived() throws Exception {
 
@@ -645,7 +643,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	
 	
-	//@Test (priority=9,groups = "chenna_TN_TLP")
+	@Test (priority=9,groups = "chenna_TN_TLP")
 
 	public void TwoLoansonsameVin_Default_saleMoreAmount_RemainingAmountShouldbwaived() throws Exception 
 {
@@ -719,7 +717,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 	
-//@Test (priority=10,groups = "chenna_TN_TLP")
+     @Test (priority=10,groups = "chenna_TN_TLP")
 
 	public void BorrowerNewLoan_Rule_TLP() throws Exception {
 
@@ -778,7 +776,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////KIRAN
- // @Test (priority=11,groups = "chenna_TN_TLP")//complete
+   @Test (priority=11,groups = "chenna_TN_TLP")//complete
 	public void Loan_InstallmentPayment_Void_TLP() throws Exception 
 	{
 		String FileName= "AA_Loan__InstallmentPayment__Void_TLP_Txn_Testdata.xls";
@@ -818,7 +816,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-  //  @Test (priority=12,groups = "chenna_TN_TLP")// completed
+    @Test (priority=12,groups = "chenna_TN_TLP")// completed
 
 	public void AA_Loan__Payment__RenewLoanDueDate__shouldnotdisplayVoid() throws Exception
 	{
@@ -870,7 +868,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 
-//@Test (priority=13,groups = "chenna_TN_TLP")//completed
+    @Test (priority=13,groups = "chenna_TN_TLP")//completed
 	public void Loan_GenerateLetter_EOD1stInstDate_EOD2ndInstDate_Default_DefaultPmt_Void_CheckLoanStatus() throws Exception {
 
 		String FileName= "AA_Loan_GenerateLetter_EOD1stInstDate_EOD2ndInstDate_Default_DefaultPmt_Void_CheckLoanStatus_Txn_Testdata.xls";
@@ -937,7 +935,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 
-//@Test (priority=14,groups = "chenna_TN_TLP")//completed
+    @Test (priority=14,groups = "chenna_TN_TLP")//completed
 
 	public void Loan_Letter10days1stDuedate_Miss1stInstPmt_RenewLoan1stDuedate_Pay1stInstAmtAfterletterGeneration_AppApportionate() throws Exception {
 
@@ -1007,7 +1005,7 @@ public class AA_TN_TLP extends AA_TLP {
 	
 	
 	
-    // @Test (priority=15,groups = "chenna_TN_TLP")//completed
+     @Test (priority=15,groups = "chenna_TN_TLP")//completed
 
 	public void Loan_PaymentForInterestAmount_paymentForFee_paymentforPrincipleAmount_ReviseSchedule() throws Exception {
 
@@ -1049,7 +1047,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 	
-	//@Test (priority=16,groups = "chenna_TN_TLP")//completed
+	@Test (priority=16,groups = "chenna_TN_TLP")//completed
 
 	public void AA_OneCustomer_OneVIN_TwoLoans_ThirdLoanNotOriginate_TLP() throws Exception {
 
@@ -1089,7 +1087,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-//@Test (priority=17,groups = "chenna_TN_TLP")//completed
+   @Test (priority=17,groups = "chenna_TN_TLP")//completed
 
 	public void TwoLoans_TwoCustomers_OneVIN_3rdLoanNotOriginate() throws Exception 
 	{
@@ -1125,7 +1123,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 	
-//	@Test (priority=18,groups = "chenna_TN_TLP")//completed
+	@Test (priority=18,groups = "chenna_TN_TLP")//completed
 	public void Loan_PartialPmtStopRenewal_LetterNotGenerate_EOD1stInsDueDate_LoanNotRenewed_Default_DFLTAmt() throws Exception 
 	{
 
@@ -1193,7 +1191,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 	//Leela
- // @Test (priority=19,groups = "chenna_TN_TLP")//completed
+  @Test (priority=19,groups = "chenna_TN_TLP")//completed
 	public void AA_TwoLoans_OneVIN_OneDefault_Repossession_Salvage_Refund() throws Exception {
 
 		String FileName= "AA_TwoLoans_OneVIN_OneDefault_Repossession_Salvage_Refund_Testdata.xls";
@@ -1256,7 +1254,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=20,groups = "chenna_TN_TLP")//completed	
+	@Test (priority=20,groups = "chenna_TN_TLP")//completed	
 	public void NewLoan_Agestore_beforeduedate_Partialpymt_Void() throws Exception
 	{
 		String FileName= "AA_NewLoan_Agestore_beforeduedate_Partialpymt_Void_Txn_Testdata.xls";
@@ -1294,7 +1292,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=21,groups = "chenna_TN_TLP")	//complete
+	@Test (priority=21,groups = "chenna_TN_TLP")	//complete
 	public void NewLoan_Agestore_beforeduedate_Payoff_Void() throws Exception 
 	{
 		String FileName= "AA_NewLoan_Agestore_beforeduedate_Payoff_Void_Txn_Testdata.xls";
@@ -1332,7 +1330,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=22,groups = "chenna_TN_TLP")	//complete
+	@Test (priority=22,groups = "chenna_TN_TLP")	//complete
 	public void NewLoan_Bi_Weekly_Frequency_Check_Duedate_30days() throws Exception 
 	{
 		String FileName= "AA_Newloan_Bi_Weekly_Frequency_Check_DueDate_30days_Txns_Testdata.xls";
@@ -1368,7 +1366,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=23,groups = "chenna_TN_TLP")//completed	
+	@Test (priority=23,groups = "chenna_TN_TLP")//completed	
 	public void TwoLoans_1VIN_1DFLT_2NotDFLT_Voluntary_Surrender_Auction_SalewithlessAmt_Waived_OtherloanWaived() throws Exception 
 	{
 		String FileName= "TwoLoans_1VIN_1DFLT_2NotDFLT_Voluntary_Surrender_Auction_SalewithlessAmt_Waived_OtherloanWaived_Testdata.xls";
@@ -1428,7 +1426,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=24,groups = "chenna_TN_TLP")//completed	
+	@Test (priority=24,groups = "chenna_TN_TLP")//completed	
 	public void TwoLoans_1VIN_1DFLT_2NotDFLT_Voluntary_Surrender_Auction_Salewithmorethantwoloans_TotalDue_Waived_OtherloanWaived() throws Exception {
 
 		// Start test. Mention test script name
@@ -1496,7 +1494,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=25,groups = "chenna_TN_TLP")//completed
+	@Test (priority=25,groups = "chenna_TN_TLP")//completed
 	public void TwoLoans_1VIN_1DFLT_2NotDFLT_Voluntary_Surrender_Auction_Salewithmorethanoneloan_TotalDue_Remainingsaletootherloan_remainingamtWaived() throws Exception {
 
 		// Start test. Mention test script name
@@ -1564,7 +1562,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-//@Test (priority=26,groups = "chenna_TN_TLP")//completed	
+    @Test (priority=26,groups = "chenna_TN_TLP")//completed	
 	public void TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT_VoluntarySurrender() throws Exception {
 
 		// Start test. Mention test script name
@@ -1636,7 +1634,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 
-	//@Test (priority=27,groups = "chenna_TN_TLP")	//completed /// issues 
+	@Test (priority=27,groups = "chenna_TN_TLP")	//completed /// issues 
 	public void TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Voluntary_Surrender_Salvage_MorethanoneloanTotalDue_Waived() throws Exception {
 
 		String FileName= "TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Voluntary_Surrender_Salvage_morethanoneloanTotalDue_Waived_Testdata.xls";
@@ -1698,7 +1696,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-//@Test (priority=28,groups = "chenna_TN_TLP")	
+   @Test (priority=28,groups = "chenna_TN_TLP")	
 	public void TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Voluntary_Surrender_Salvage_TwoloansTotalDue_2loansclosed_refund() throws Exception {
 
 		// Start test. Mention test script name
@@ -1769,7 +1767,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 	
-//@Test (priority=29,groups = "chenna_TN_TLP")	
+    @Test (priority=29,groups = "chenna_TN_TLP")	
 	public void TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Voluntary_Surrender_Salvage_Waived() throws Exception {
 
 		// Start test. Mention test script name
@@ -1834,7 +1832,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 // Venkey
 
-	//@Test (priority=30,groups = "chenna_TN_TLP")//complete
+	@Test (priority=30,groups = "chenna_TN_TLP")//complete
 	
 	public void BarrowRegistration_VerfyLoanAmountBased_BlockBookValueOrnot() throws Exception {
 
@@ -1876,7 +1874,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 	
-	//@Test (priority=31,groups = "chenna_TN_TLP")
+	@Test (priority=31,groups = "chenna_TN_TLP")
 
 	public void Newloan_void() throws Exception {
 
@@ -1912,7 +1910,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=32,groups = "chenna_TN_TLP")
+	@Test (priority=32,groups = "chenna_TN_TLP")
 
 	public void NewLoan_Rescind() throws Exception {
 
@@ -1946,7 +1944,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=33,groups = "chenna_TN_TLP")
+	@Test (priority=33,groups = "chenna_TN_TLP")
 
 	public void NewLoan_EODon10DaysBeforeInstallmentDuedate_RenewalLaterShouldBePrinted() throws Exception {
 
@@ -1987,7 +1985,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 
-	//@Test (priority=34,groups = "chenna_TN_TLP")
+	@Test (priority=34,groups = "chenna_TN_TLP")
 
 	public void NewLoan_EODon10DaysBeforeInstallmentDuedate_RenewalLaterShouldBePrinted_OnDueDateEOD_Renewed() throws Exception {
 
@@ -2032,7 +2030,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=35,groups = "chenna_TN_TLP")
+	@Test (priority=35,groups = "chenna_TN_TLP")
 
 	public void NewLoan_PartialPayment_GenerateRenewLater10DaysBeforeDueDate_ShouldnotgenerateTheRenewalLater() throws Exception {
 
@@ -2073,7 +2071,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=36,groups = "chenna_TN_TLP")
+	@Test (priority=36,groups = "chenna_TN_TLP")
 
 	public void NewLoan_PartialPayment_GenerateRenewLater10DaysBeforeDueDate_ShouldnotgenerateTheRenewalLater_PartialPayment() throws Exception {
 
@@ -2117,7 +2115,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 
 
-  //  @Test (priority=37,groups = "chenna_TN_TLP")
+    @Test (priority=37,groups = "chenna_TN_TLP")
 
 	public void NewLoan_PartialPayment_GenerateRenewLater10DaysBeforeDueDate_ShouldnotgenerateTheRenewalLater_1stand2ndinstallmentPayment_on2ndinstallmentdurationdate() throws Exception {
 
@@ -2168,7 +2166,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
- // @Test (priority=38,groups = "chenna_TN_TLP")
+    @Test (priority=38,groups = "chenna_TN_TLP")
 	public void Loan_GenerateLetter_EOD1stInstDate_EOD2ndInstDate_Default_DefaultPmt_LoanShouldbeClosed() throws Exception {
 
 		String FileName= "Loan_GenerateLetter_EOD1stInstDate_EOD2ndInstDate_Default_DefaultPmt_LoanShouldbeClosed_TestData.xls";
@@ -2225,7 +2223,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-  //@Test (priority=39,groups = "chenna_TN_TLP")
+  @Test (priority=39,groups = "chenna_TN_TLP")
 	public void TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Surrender_Salvage_Waive1() throws Exception {
 
 		String FileName= "TwoLoans_singleVIN_OneDFLT_Other_ShouldNotDFLT2_Surrender_Salvage_Waive_TestData.xls";
@@ -2281,7 +2279,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
- //@Test (priority=40,groups = "chenna_TN_TLP")
+ @Test (priority=40,groups = "chenna_TN_TLP")
 
 	public void Newloan_Default_Writeoff_WriteOffRecovery_LoanShouldClosed() throws Exception {
 		//Start test. Mention test script name
@@ -2325,7 +2323,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-//@Test (priority=41,groups = "chenna_TN_TLP")
+  @Test (priority=41,groups = "chenna_TN_TLP")
 
 	public void Newloan_Default_Writeoff_WriteOffRecovery_void_LoanOpened() throws Exception {
 
@@ -2371,7 +2369,7 @@ public class AA_TN_TLP extends AA_TLP {
 	}
 
 	//Anji
-//	@Test (priority=42,groups = "chenna_TN_TLP")
+	@Test (priority=42,groups = "chenna_TN_TLP")
 
 	public void Newloan_1stinstTo3rdinstPayment_check4thinstpayment() throws Exception {
 
@@ -2447,7 +2445,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=43,groups = "chenna_TN_TLP")
+	@Test (priority=43,groups = "chenna_TN_TLP")
 
 	public void AA_NewLoan_PartialPayment_StopRenew_EODDuedate () throws Exception {
 
@@ -2512,7 +2510,7 @@ public class AA_TN_TLP extends AA_TLP {
 
 	}
 
-	//@Test (priority=44,groups = "chenna_TN_TLP")
+	@Test (priority=44,groups = "chenna_TN_TLP")
 
 	public void AA_NewLoan_PPayment_StpY_2inst_FeePriciple_PPayment () throws Exception {
 
@@ -2556,7 +2554,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=45,groups = "chenna_TN_TLP")
+	@Test (priority=45,groups = "chenna_TN_TLP")
 
 	public void AA_NewLoan_PPayment_StpY_2ndInstDuration_Payment_StpN () throws Exception {
 
@@ -2599,7 +2597,7 @@ public class AA_TN_TLP extends AA_TLP {
 		}
 	}
 
-	//@Test (priority=46,groups = "chenna_TN_TLP")
+	@Test (priority=46,groups = "chenna_TN_TLP")
 
 	public void AA_OneCustomer_OneVIN_TwoLoans_Writoff() throws Exception {
 
@@ -2723,6 +2721,23 @@ public class AA_TN_TLP extends AA_TLP {
 		String timestamp = new SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
 		// Date D = new Date();
 
+		try {
+			BufferedReader reader;
+			reader = new BufferedReader(
+
+					new FileReader("C:/AA_Batch/AA_TLP/src/test/java/pack/Config.properties"));
+
+			prop = new Properties();
+			prop.load(reader);
+			reader.close();
+
+		}
+
+		catch (Exception e) {
+
+			System.out.println("Object proprties file not found");
+		}
+
 		String kfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 		reports = new ExtentReports(
@@ -2737,23 +2752,7 @@ public class AA_TN_TLP extends AA_TLP {
 	@BeforeTest(alwaysRun = true)
 	public void setup_Grid() throws IOException, InterruptedException {
 
-		try {
-			BufferedReader reader;
-			reader = new BufferedReader(
-
-					new FileReader("C:/AA_Batch/AA_ILP/src/test/java/pack/Config.properties"));
-
-			prop = new Properties();
-			prop.load(reader);
-			reader.close();
-
-		}
-
-		catch (Exception e) {
-
-			System.out.println("Object proprties file not found");
-		}
-
+		
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process
 		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");

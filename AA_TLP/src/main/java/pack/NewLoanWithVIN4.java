@@ -107,7 +107,7 @@ public class NewLoanWithVIN4 extends AA_TLP{
 				String ProductType = TestData.getCellData(sheetName,"ProductType",row);
 				String ProductName = TestData.getCellData(sheetName,"ProductName",row);
 				String VehicleType= TestData.getCellData(sheetName,"VehicleType",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				String stateProductType=State+" "+ProductType;
 				String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
@@ -127,7 +127,7 @@ public class NewLoanWithVIN4 extends AA_TLP{
 				System.out.println(last4cheknum);
 				System.out.println(stateProductType);
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-				String StateID = TestData.getCellData(sheetName,"StateID",row);
+				//String StateID = TestData.getCellData(sheetName,"StateID",row);
 				String Parent_Window = driver.getWindowHandle();
 				
 				Login.Login(UserName, Password, StoreId);
