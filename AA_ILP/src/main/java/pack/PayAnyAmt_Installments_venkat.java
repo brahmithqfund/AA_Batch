@@ -18,7 +18,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 public class PayAnyAmt_Installments_venkat extends AA_CO_ILP{
 
-	public static void PayAnyAmt_Installments_venkat(String SSN, String FileName,String Amt) throws Exception {
+	public static void PayAnyAmt_Installments_venkat(String SSN, String FileName) throws Exception {
 
 		//Excel TestData = new Excel(System.getProperty("user.dir") + "/TestData/CO_ILP/Local/" + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
@@ -105,15 +105,17 @@ public class PayAnyAmt_Installments_venkat extends AA_CO_ILP{
 
 				{
 
-					driver.findElement(By.xpath("//*[@id='PD5']")).click();
+					driver.findElement(By.xpath("//*[@id='PD4']")).click();
 					test.log(LogStatus.PASS, "Pay anyAmount the balance option is selected ");
 
 			/*		Payoffbalance = driver.findElement(By.name("payOff")).getAttribute("value");
 					test.log(LogStatus.PASS, "Capture the Payoff balance " + Payoffbalance);*/
 
 					Thread.sleep(500);
+					String Amt=driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input[2]")).getAttribute("value");
+					
 	// name="requestBean.siilBean.payAmt"
-					driver.findElement(By.name("requestBean.siilBean.payAmt")).sendKeys(Amt);
+					//driver.findElement(By.name("requestBean.siilBean.payAmt")).sendKeys(Amt);
 					test.log(LogStatus.PASS, "Payment Amount is ::"+Amt );
 					driver.findElement(By.name("requestBean.siilBean.tenderTypeFirst")).sendKeys(DisbType);
 					test.log(LogStatus.PASS, "Tender Type is selected " + TenderType);

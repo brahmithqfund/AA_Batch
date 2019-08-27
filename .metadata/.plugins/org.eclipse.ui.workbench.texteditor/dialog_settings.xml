@@ -2,24 +2,31 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="venkat_OH_ILP" key="selection"/>
+		<item value="@Test" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="//@Test"/>
+			<item value="Venkat_CO_ILP"/>
+			<item value="@b"/>
+			<item value=" driver.findElement(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input&quot;)).click();"/>
+			<item value="driver.findElement(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input&quot;)).click();"/>
+			<item value="priority "/>
 			<item value="venkat_OH_ILP"/>
-			<item value="venkat_OH_ILP1"/>
+			<item value="OH_ILP_venkat"/>
 		</list>
 		<list key="replacehistory">
-			<item value="venkat_OH_ILP1"/>
+			<item value="@Test"/>
+			<item value="driver.findElement(By.xpath(&quot;//input[@value=&apos;Go&apos; and @type=&apos;button&apos;]&quot;)).click();"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="244" key="DIALOG_X_ORIGIN"/>
-		<item value="129" key="DIALOG_Y_ORIGIN"/>
+		<item value="63" key="DIALOG_X_ORIGIN"/>
+		<item value="234" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

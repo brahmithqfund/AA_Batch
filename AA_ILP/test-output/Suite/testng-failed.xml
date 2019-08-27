@@ -4,98 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="venkat_OH_ILP"/>
+        <include name="venkat_OH_ILP_Prod"/>
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP">
-        <methods>
-          <include name="Loan_1stInstpaymentFullCash_1stInstdeposit_"/>
-          <include name="LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment"/>
-          <include name="LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt"/>
-          <include name="LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void"/>
-          <include name="Loan_Deposit_Rtn_payoff"/>
-          <include name="loan_VoidEncryption"/>
-          <include name="LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt"/>
-          <include name="Loan_1stInstDeposit_Rtn"/>
-          <include name="CO_ILP_MultipleDisbNewLoan_Void"/>
-          <include name="Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_"/>
-          <include name="Loan_1stParPmt_1stDep_Ret_"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_Monthly"/>
-          <include name="Loan_Deposit_Rtn_paymentGreaterthanLoanAmount"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentDeposit"/>
-          <include name="Loan_DepositACH_"/>
-          <include name="Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void"/>
-          <include name="LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint"/>
-          <include name="setup_Grid"/>
-          <include name="Loan_Deposit_Rtn_clear_2InstDeposit_Return_EODBatchprocess_payoff"/>
-          <include name="Loan_Deposit_Rtn_paymentLessthanLoanAmount"/>
-          <include name="CO_ILP_NewLoanVoid"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_ACH_"/>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentDeposit_Clear"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_Weekly_"/>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatallmentDeposit"/>
-          <include name="CO_ILP_Loan_Instwisepayment_last_deposit"/>
-          <include name="Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_"/>
-          <include name="LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment"/>
-          <include name="CO_ILP_NewLoanRescind"/>
-          <include name="Loan_1stInstpartialpayment_1stInstdeposit_"/>
-          <include name="Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount"/>
-          <include name="tearDown"/>
-          <include name="LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint_VoidPymt"/>
-          <include name="getResult"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_verify_"/>
-          <include name="Loan_Deposit_Rtn_Payoff_Void"/>
-          <include name="quit"/>
-          <include name="initialize"/>
-        </methods>
-      </class> <!-- pack.AA_OH_ILP -->
       <class name="pack.AA_OH_ILP_Prod">
         <methods>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentDeposit_Clear"/>
-          <include name="Loan_Deposit_Rtn_payoff"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_ACH_"/>
-          <include name="CO_ILP_NewLoanVoid"/>
-          <include name="LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt"/>
-          <include name="Loan_Deposit_Rtn_paymentLessthanLoanAmount"/>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentDeposit"/>
-          <include name="Loan_DepositACH_"/>
-          <include name="LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint"/>
-          <include name="setup_Grid"/>
-          <include name="Loan_Deposit_Rtn_paymentGreaterthanLoanAmount"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
-          <include name="Loan_Deposit_Rtn_clear_2InstDeposit_Return_EODBatchprocess_payoff"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_Monthly"/>
-          <include name="Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_"/>
-          <include name="CO_ILP_MultipleDisbNewLoan_Void"/>
-          <include name="LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void"/>
-          <include name="Loan_1stInstDeposit_Rtn"/>
-          <include name="LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment"/>
-          <include name="loan_VoidEncryption"/>
-          <include name="Loan_1stInstpaymentFullCash_1stInstdeposit_"/>
           <include name="initialize"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__"/>
           <include name="quit"/>
-          <include name="Loan_Deposit_Rtn_Payoff_Void"/>
-          <include name="LonI_StoreDateafterRescindPeriod_Payment_selectpayanyotheramt_Pymtamtlessthan1stint_VoidPymt"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_verify_"/>
-          <include name="LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt"/>
-          <include name="AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatallmentDeposit"/>
-          <include name="getResult"/>
-          <include name="Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void"/>
-          <include name="CO_ILP_NewLoanRescind"/>
-          <include name="Loan_1stInstpartialpayment_1stInstdeposit_"/>
-          <include name="Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount"/>
           <include name="tearDown"/>
-          <include name="LonI_1stInstdeposit_return_Payment_lessthan1stInstamount_VoidPayment"/>
           <include name="Loan_1stParPmt_1stDep_Ret_"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_Weekly_"/>
+          <include name="setup_Grid"/>
+          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
           <include name="Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_"/>
-          <include name="CO_ILP_Loan_Instwisepayment_last_deposit"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_OH_ILP_Prod -->
     </classes>

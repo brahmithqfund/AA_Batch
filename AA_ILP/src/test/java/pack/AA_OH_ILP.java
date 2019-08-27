@@ -89,7 +89,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Venkat scenarios
 
-	//@Test(priority = 0, groups = "venkat_OH_ILP")
+	@Test(priority = 0, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exception {
 
@@ -345,7 +345,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_OHILP_AccuralDate.NewLoan_OHILP_AccuralDate(SSN, FileName, "200");
+				NewLoan_OHILP_AccuralDate_Local.NewLoan_OHILP_AccuralDate_Local(SSN, FileName, "200");
 
 			}
 		}
@@ -388,7 +388,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_MultiDisb.NewLoan_ILP_MultiDisb(SSN, FileName, "200");
+				NewLoan_ILP_MultiDisb_Local.NewLoan_ILP_MultiDisb_Local(SSN, FileName, "200");
 				// History.History(SSN, FileName, 0);
 
 			}
@@ -396,7 +396,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 7, groups = "venkat_OH_ILP")
+	//@Test(priority = 7, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_NewLoanVoid() throws Exception {
 
@@ -532,7 +532,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 10, groups = "venkat_OH_ILP")
+	//@Test(priority = 10, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_MultipleDisbNewLoan_Void() throws Exception {
 
@@ -568,7 +568,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_MultiDisb.NewLoan_ILP_MultiDisb(SSN, FileName, "200");
+				NewLoan_ILP_MultiDisb_Local.NewLoan_ILP_MultiDisb_Local(SSN, FileName, "200");
 				Void.Void(SSN, FileName);
 				/// History.History(SSN, FileName);
 				// Drawerassign.Drawerassign(SSN, FileName);
@@ -579,7 +579,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 12, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 12, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -625,7 +625,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 13, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 13, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -663,7 +663,7 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 1, 2);
 				Payment_Pastdue_NextInst.Payment_Pastdue_NextInst(SSN, FileName);
@@ -675,7 +675,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 14, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 14, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -713,9 +713,9 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 10);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				Payment_2ndEODbatchprocess.Payment_2ndEODbatchprocess(SSN, FileName);
 				Customer_Status.Customer_Status(SSN, FileName);
 				// Apportions_List.Apportions_List(SSN, FileName, 2);
@@ -725,7 +725,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 15, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 15, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -775,7 +775,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
+	/*@Test(priority = 16, groups = "venkat_OH_ILP") // Dubilicate
 
 	public void LonI_RunEODbatchon1Instduedate_Payment_PayPastDue_NextInstallment_VoidPymt() throws Exception {
 
@@ -825,8 +825,8 @@ public class AA_OH_ILP extends AA_ILP {
 		}
 
 	}
-
-	@Test(priority = 17, groups = "venkat_OH_ILP")
+*/
+	//@Test(priority = 17, groups = "venkat_OH_ILP")
 
 	public void LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void()
 			throws Exception {
@@ -878,7 +878,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 18, groups = "venkat_OH_ILP")
+	//@Test(priority = 18, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_Rtn_paymentLessthanLoanAmount() throws Exception {
 
@@ -934,7 +934,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 19, groups = "venkat_OH_ILP")
+	//@Test(priority = 19, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_Rtn_paymentGreaterthanLoanAmount() throws Exception {
 
@@ -992,7 +992,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 20, groups = "venkat_OH_ILP")
+	//@Test(priority = 20, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount() throws Exception {
 
@@ -1226,7 +1226,7 @@ public class AA_OH_ILP extends AA_ILP {
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
 				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				PayAny_Void.PayAny_Void(SSN, FileName);
 				// History.History(SSN, FileName);
 				// History.History1(SSN, FileName);
@@ -1236,7 +1236,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 24, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel() throws Exception {
 
 		// Start test. Mention test script name
@@ -1283,7 +1283,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 25, groups = "venkat_OH_ILP")
 	public void AA_Loan_1stInstallmentPayments() throws Exception {
 
 		// Start test. Mention test script name
@@ -1329,7 +1329,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 26, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel_Void() throws Exception {
 
 		// Start test. Mention test script name
@@ -1767,7 +1767,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
+	/*@Test(priority = 34, groups = "venkat_OH_ILP") // dubilacate
 
 	public void Loan_1stInstpaymentFullCash_1stInstdeposit_() throws Exception {
 
@@ -1822,7 +1822,7 @@ public class AA_OH_ILP extends AA_ILP {
 			}
 		}
 
-	}
+	}*/
 
 	@Test(priority = 35, groups = "venkat_OH_ILP")
 	public void AA_Loan_ACHRevoke_1stInsatallmentDeposit() throws Exception {
@@ -1929,7 +1929,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
+	/*@Test(priority = 37, groups = "venkat_OH_ILP") // dubilicate
 
 	public void CO_ILP_Loan_Instwisepayment_last_deposit() throws Exception {
 
@@ -1980,7 +1980,7 @@ public class AA_OH_ILP extends AA_ILP {
 			}
 
 		}
-	}
+	}*/
 
 	@Test(priority = 38, groups = "venkat_OH_ILP")
 
@@ -2075,7 +2075,7 @@ public class AA_OH_ILP extends AA_ILP {
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -6, 2);
-				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName, "15");
+				PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
