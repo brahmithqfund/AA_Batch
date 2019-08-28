@@ -3094,11 +3094,9 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-<<<<<<< HEAD
+
 	@Test(priority = 57, groups = "leela_OH_ILP_Pro1")
-=======
-	//@Test(priority = 57, groups = "leela_OH_ILP_Prod")
->>>>>>> chary1
+
 
 	public void Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_() throws Exception {
 
@@ -3758,11 +3756,9 @@ public class AA_OH_ILP_Prod extends AA_ILP {
 
 	}
 
-<<<<<<< HEAD
+
 	@Test(priority = 67, groups = "leela_OH_ILP_Prod") // need to run last
-=======
-	@Test(priority = 67, groups = "leela_OH_ILP_Prod1") // need to run last
->>>>>>> chary1
+
 
 	public void Pick_ILP_WriteOff_ConvertEpp_DepositAllinstOnduedate_Clear() throws Exception {
 

@@ -663,7 +663,7 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 1, 2);
 				Payment_Pastdue_NextInst.Payment_Pastdue_NextInst(SSN, FileName);
@@ -713,9 +713,9 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 10);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				Payment_2ndEODbatchprocess.Payment_2ndEODbatchprocess(SSN, FileName);
 				Customer_Status.Customer_Status(SSN, FileName);
 				// Apportions_List.Apportions_List(SSN, FileName, 2);
@@ -1114,7 +1114,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 22, groups = "venkat_OH_ILP")
+	@Test(priority = 22, groups = "venkat_OH_ILP") //need change ssn
 
 	public void Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void() throws Exception {
 
@@ -1236,7 +1236,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 24, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel() throws Exception {
 
 		// Start test. Mention test script name
@@ -1283,7 +1283,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 25, groups = "venkat_OH_ILP")
 	public void AA_Loan_1stInstallmentPayments() throws Exception {
 
 		// Start test. Mention test script name
@@ -1329,7 +1329,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 26, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel_Void() throws Exception {
 
 		// Start test. Mention test script name

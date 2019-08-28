@@ -81,33 +81,24 @@ public class Payment_LessthanAmount extends AA_CO_ILP{
 					 driver.switchTo().defaultContent();
 					    driver.switchTo().frame("mainFrame");
 					    driver.switchTo().frame("main");
-<<<<<<< HEAD
+
 					    
 						driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();		 
 			/*		    if(ProductID.equals("ILP"))
 						 {
 					    	///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]	
-<<<<<<< HEAD
+
 					    	// driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
 					    	
 					    	 
 					    	 driver.findElement(By.xpath("//input[@type='button' and @value='Go']")).click();// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
 						 }
-=======
+
 					    	driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 					    	// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
 						 }*/
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-						Thread.sleep(5000);
-						driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();		 
-		/*			    if(ProductID.equals("ILP"))
-						 {
-					    	///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]	
-					    	 driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
-					    	// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
-						 }*/
->>>>>>> chary1
+
+
 					  //  driver.findElement(By.name("button")).click();
 						test.log(LogStatus.PASS, "Click on GO Button");
 						for( String winHandle1 : driver.getWindowHandles())

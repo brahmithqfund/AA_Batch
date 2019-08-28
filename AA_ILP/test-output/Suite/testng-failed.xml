@@ -4,105 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="leela_OH_ILP_Prod2"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> venkat1
-        <include name="venkat_OH_ILP_Smoke"/>
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-        <include name="leela_OH_ILP_Prod"/>
->>>>>>> chary1
-      </run>
-    </groups>
-    <classes>
-      <class name="pack.AA_OH_ILP_Prod">
-        <methods>
-          <include name="initialize"/>
-          <include name="LonI_DFLT_PPN_BNK_1InstDeposit"/>
-          <include name="quit"/>
-<<<<<<< HEAD
-          <include name="tearDown"/>
-          <include name="setup_Grid"/>
-          <include name="LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR"/>
-          <include name="getResult"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- pack.AA_OH_ILP_Prod -->
-=======
-      </class> <!-- pack.AA_OH_ILP_Smoke -->
-<<<<<<< HEAD
-=======
-        <include name="leela_OH_ILP_Prod2"/>
-=======
-        <include name="leela_OH_ILP3"/>
->>>>>>> chary1
+        <include name="venkat_OH_ILP3"/>
       </run>
     </groups>
     <classes>
       <class name="pack.AA_OH_ILP">
         <methods>
+          <include name="Loan_1stParPmt_1stDep_Ret_"/>
           <include name="getResult"/>
-          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
           <include name="setup_Grid"/>
           <include name="tearDown"/>
           <include name="quit"/>
-=======
-        <include name="kiran_CO_ILP_Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="pack.AA_CO_ILP_Smoke">
-        <methods>
-          <include name="LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR"/>
-          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
-          <include name="setup_Grid"/>
-          <include name="getResult"/>
->>>>>>> kiran1
           <include name="initialize"/>
-          <include name="quit"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- pack.AA_OH_ILP_Prod -->
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
       </class> <!-- pack.AA_OH_ILP -->
->>>>>>> chary1
-=======
->>>>>>> venkat1
-=======
-      </class> <!-- pack.AA_CO_ILP_Smoke -->
->>>>>>> kiran1
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-          <include name="LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record"/>
-          <include name="LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record"/>
-          <include name="setup_Grid"/>
-          <include name="Loan_1stpayment_activemilitary_2ndpayment_"/>
-          <include name="Loan_Bankrupt_Void_"/>
-          <include name="LonI_Bnkrupt_Deceased"/>
-          <include name="BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_"/>
-          <include name="LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
-          <include name="getResult"/>
-          <include name="LonI_Bnkrupt_Discharge"/>
-          <include name="LonI_DFLT_PPN_BNK_1InstDeposit"/>
-          <include name="tearDown"/>
-          <include name="LonI_Deceased"/>
-          <include name="Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate_Void"/>
-          <include name="CO_ILP_Loan_first_payment_BNK_Second_deposit"/>
-          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
-          <include name="LonI_Bnkrupt_Dismissed"/>
-          <include name="DFLTLoan_EPPConvert_PpayAllInst_VoidLastInst_"/>
-        </methods>
-      </class> <!-- pack.AA_OH_ILP_Prod -->
->>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
