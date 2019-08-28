@@ -21,7 +21,10 @@ public class Payment_gaterthanAmount extends AA_CO_ILP{
 	public static void Payment_gaterthanAmount (String SSN,String FileName) throws Exception{
 		
 		
+
 	//	Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/"+FileName);	
+
+
 		int lastrow=TestData.getLastRow("NewLoan");
 		System.out.println("NewLoan "+lastrow);
 		String sheetName="NewLoan";		
@@ -177,8 +180,9 @@ public class Payment_gaterthanAmount extends AA_CO_ILP{
 					 
 					    if(ProductID.equals("ILP"))
 						 {
-					    	///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]	
-					    	driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();					    //	 /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
+	    	 driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					    	 //	 /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
+
 						 }
 					  //  driver.findElement(By.name("button")).click();
 						test.log(LogStatus.PASS, "Click on GO Button");

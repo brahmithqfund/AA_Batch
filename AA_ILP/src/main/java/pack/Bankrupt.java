@@ -254,7 +254,9 @@ public class Bankrupt extends AA_CO_ILP{
 				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
 
 
+
 				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
+
 
 
 				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();

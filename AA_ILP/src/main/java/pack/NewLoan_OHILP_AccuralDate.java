@@ -115,19 +115,46 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 				//    Selection of Product based on the Name provided in
 				//Test Data
 				// if(driver.findElement(By.id("LoanButtonId")).isEnabled())
-				if(driver.findElement(By.name("ShareScreenBtn")).isEnabled())
+				Thread.sleep(4000);
+				/*if(driver.findElement(By.name("ShareScreenBtn")).isEnabled())
 				{
 
 
+					if(ProductName.equals("CO ILP"))
+					{
 
+						if(ESign_CollateralType.equals("ACH"))
+						{
+							//*[@id="termSel1"]
 
-					driver.findElement(By.name("ShareScreenBtn")).click();
+							driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[1]/td/b/input")).click();
+							test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
+
+						}
+
+						if(ESign_CollateralType.equals("CASH"))
+						{
+							//*[@id="termSel1"]
+							//driver.findElement(By.xpath("//*[@id='termSel1']")).click();
+							//*[@id="tableWid1"]/tbody/tr[1]/td/b
+							//*[@id="tableWid2"]/tbody/tr[1]/td/b
+							driver.findElement(By.xpath("//*[@id='tableWid2']/tbody/tr[1]/td/b/input")).click();
+							test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
+						}
+					}
+*/
+				
+				//driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/input")).click();
+				test.log(LogStatus.PASS, "Product is selected  ");
+				
+				driver.findElement(By.name("ShareScreenBtn")).click();
 					test.log(LogStatus.PASS, "ShareScreen Button clicked");
-
-					for (String winHandle1 : driver.getWindowHandles())
+					Thread.sleep(3000);
+					for( String winHandle1 : driver.getWindowHandles())
 
 					{
-						if (!(winHandle1.equals(Parent_Window1))) {
+						if(!(winHandle1.equals(Parent_Window)))
+						{
 							driver.switchTo().window(winHandle1);
 							Thread.sleep(1000);
 							driver.findElement(By.name("confirmSummary")).click();
@@ -136,9 +163,9 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 
 					}
 					Thread.sleep(3000);
-					driver.switchTo().window(Parent_Window1);
+					driver.switchTo().window(Parent_Window);
 
-					for (String winHandle1 : driver.getWindowHandles())
+					for( String winHandle1 : driver.getWindowHandles())
 
 					{
 
@@ -152,20 +179,31 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 
 					driver.switchTo().frame("main");
 
-			driver.findElement(By.id("LoanLengthDocBtn")).click();
-
-					for (String winHandle1 : driver.getWindowHandles())
-
-					{
-						if (!(winHandle1.equals(Parent_Window1))) {
-							driver.switchTo().window(winHandle1);
-							Thread.sleep(1000);
-							driver.findElement(By.name("confirmSummary")).click();
-							test.log(LogStatus.PASS, "ConfirmShareScreen Button clicked");
-						}
+					driver.findElement(By.id("LoanButtonId")).click();
+					try {
+						Alert alert = driver.switchTo().alert();
+						alert.accept();
+						//if alert present, accept and move on.
 
 					}
-					Thread.sleep(3000);
+					catch (NoAlertPresentException e) {
+						//do what you normally would if you didn't have the alert.
+					}
+					//New Loan Screens
+					for( String winHandle1 : driver.getWindowHandles())
+
+					{
+
+						driver.switchTo().window(winHandle1);
+
+					}
+
+					driver.switchTo().defaultContent();
+
+					driver.switchTo().frame("mainFrame");
+
+					driver.switchTo().frame("main");
+					
 					if (ProductID.equals("ILP")) {
 
 
@@ -463,4 +501,4 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 	
 	
 	
-}
+

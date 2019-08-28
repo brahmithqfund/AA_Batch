@@ -345,3 +345,15 @@ F
 test-output/testng.css,5\3\53149e8fcb459b7b9396a1aca5faf8674b87236d
 B
 IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+W
+'src/main/java/pack/NewLoan_product.java,9\6\965caca39d186ed7568a0f6947a8b662ec068013
+™
+iExecutionReports/LOC/FailedTestsScreenshots/Newloan_PartialPayment_Deposit_Clear_Refund20190710023003.png,5\4\5405e964eda56ada41f280a7d883ef40f5885779
+‚
+RExecutionReports/LOC/FailedTestsScreenshots/Newloan_DisbACH_void20190710023000.png,b\5\b556fc916c23feebc3ae453be7a139959f179a69
+„
+TExecutionReports/LOC/FailedTestsScreenshots/NewLoan_Weekly_Duedate20190710022958.png,e\0\e0f3f57c2d7608ea608bfb6e3adc3db0bca1497a
+‡
+WExecutionReports/LOC/FailedTestsScreenshots/NewLoan_VoidEncryptionKey20190710022958.png,a\5\a5e0c3f9134422f0edabf13d2a71443897152c5f
+ƒ
+SExecutionReports/LOC/FailedTestsScreenshots/Newloan_MultipullDisb20190710022958.png,6\2\628eb6937312d7ec66a0c3c362f01480d2c80d40

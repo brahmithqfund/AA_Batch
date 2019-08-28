@@ -99,7 +99,8 @@ public class Payoff extends AA_CO_ILP{
 				if (ProductID.equals("LOC")) {
 					driver.findElement(By.name("button")).click();
 				} else {
-					driver.findElement(By.id("go_Button")).click();
+					//driver.findElement(By.id("go_Button")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				for (String winHandle1 : driver.getWindowHandles()) {
 					driver.switchTo().window(winHandle1);

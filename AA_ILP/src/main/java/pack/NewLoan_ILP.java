@@ -141,11 +141,12 @@ public class NewLoan_ILP extends AA_CO_ILP{
 					}
 */
 				
-				driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/input")).click();
+				//driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/input")).click();
 				test.log(LogStatus.PASS, "Product is selected  ");
+				
 				driver.findElement(By.name("ShareScreenBtn")).click();
 					test.log(LogStatus.PASS, "ShareScreen Button clicked");
-
+					Thread.sleep(3000);
 					for( String winHandle1 : driver.getWindowHandles())
 
 					{
@@ -296,8 +297,8 @@ public class NewLoan_ILP extends AA_CO_ILP{
 								//                            /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input
 								
 								// /html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[13]/td/input
-								driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[13]/td/input")).click();
-
+								//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[13]/td/input")).click();
+									driver.findElement(By.xpath("//input[@name='negSel' and @onclick='sel(1)']")).click();							
 								//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td/table/tbody/tr/td[2]/table/tbody/tr[14]/td/input")).click();
 								test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
 							

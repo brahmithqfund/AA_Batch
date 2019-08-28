@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="venkat_OH_ILP_Prod"/>
 =======
 <<<<<<< HEAD
@@ -56,37 +57,23 @@
 =======
         <include name="leela_OH_ILP3"/>
 >>>>>>> chary1
+=======
+        <include name="venkat_OH_ILP3"/>
+>>>>>>> chary1
       </run>
     </groups>
     <classes>
       <class name="pack.AA_OH_ILP">
         <methods>
+          <include name="Loan_1stParPmt_1stDep_Ret_"/>
           <include name="getResult"/>
-          <include name="DFLTLoan_EPPConvert_DepositAll_ClearAll_"/>
           <include name="setup_Grid"/>
           <include name="tearDown"/>
           <include name="quit"/>
-=======
-        <include name="kiran_CO_ILP_Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="pack.AA_CO_ILP_Smoke">
-        <methods>
-          <include name="LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR"/>
-          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
-          <include name="setup_Grid"/>
-          <include name="getResult"/>
->>>>>>> kiran1
           <include name="initialize"/>
-          <include name="quit"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- pack.AA_OH_ILP_Prod -->
->>>>>>> 224822450881a5dfb3f0eddc84ed27d45d2a476a
-=======
       </class> <!-- pack.AA_OH_ILP -->
+<<<<<<< HEAD
 >>>>>>> chary1
 =======
 >>>>>>> venkat1
@@ -117,6 +104,8 @@
       </class> <!-- pack.AA_OH_ILP_Prod -->
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+>>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

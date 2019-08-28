@@ -3,6 +3,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -23,11 +24,15 @@
 		<item value="leela_OH_ILP" key="selection"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+		<item value="venkat_OH_ILP" key="selection"/>
+>>>>>>> chary1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="//@Test"/>
 			<item value="Venkat_CO_ILP"/>
@@ -95,13 +100,24 @@
 			<item value="leela_OH_ILP_Prod"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+			<item value="venkat_OH_ILP4"/>
+			<item value="venkat_OH_ILP3"/>
+			<item value="venkat_OH_ILP2"/>
+			<item value="venkat_OH_ILP1"/>
+			<item value="AA_Store_Test_data_TN_PDL_path_brahmith"/>
+			<item value="AA_Store_Test_data_FL_PDL_path_brahmith"/>
+		</list>
+		<list key="replacehistory">
+			<item value="venkat_OH_ILP"/>
+>>>>>>> chary1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="580" key="DIALOG_WIDTH"/>
+		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-<<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="63" key="DIALOG_X_ORIGIN"/>
 		<item value="234" key="DIALOG_Y_ORIGIN"/>
@@ -129,5 +145,9 @@
 		<item value="171" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+		<item value="673" key="DIALOG_X_ORIGIN"/>
+		<item value="396" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> chary1
 	</section>
 </section>

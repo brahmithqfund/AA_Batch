@@ -2,12 +2,8 @@
 <launchHistory>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
 <mruHistory>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_TN_PDL&quot;/&gt;&#13;&#10;"/>
-=======
-<<<<<<< HEAD
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;testng.xml&quot;/&gt;&#13;&#10;"/>
 =======
@@ -74,6 +70,9 @@
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_OH_ILP_Prod&quot;/&gt;&#13;&#10;"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_PDL_testng.xml&quot;/&gt;&#13;&#10;"/>
+>>>>>>> chary1
 </mruHistory>
 <favorites/>
 </launchGroup>
@@ -87,6 +86,7 @@
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
 <mruHistory>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -166,6 +166,10 @@
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_OH_ILP_Prod&quot;/&gt;&#13;&#10;"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;AA_PDL_testng.xml&quot;/&gt;&#13;&#10;"/>
+>>>>>>> chary1
 </mruHistory>
 <favorites/>
 </launchGroup>
