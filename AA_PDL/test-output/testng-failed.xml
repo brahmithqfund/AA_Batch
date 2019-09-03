@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="kiran_TN_PDL_NEW"/>
+      </run>
+    </groups>
     <classes>
       <class name="pack.AA_TN_PDL">
         <methods>
+<<<<<<< HEAD
           <include name="NewLoanMultipledisbursement_AgestoreVoid"/>
           <include name="NewLoan_AgeStore_BuyBack"/>
           <include name="PartialPayment_BuyBackChange_Void"/>
@@ -21,10 +27,15 @@
           <include name="BorrowerNewLoan_Rule"/>
           <include name="NewLoan_Deposit_Return_Prenotedeposit"/>
           <include name="Newloan_MultipullDisb"/>
+=======
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed"/>
+>>>>>>> kiran1
           <include name="setup_Grid"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_TN_PDL -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -3,6 +3,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -23,11 +24,15 @@
 		<item value="leela_OH_ILP" key="selection"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+		<item value="@Test" key="selection"/>
+>>>>>>> kiran1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="//@Test"/>
 			<item value="Venkat_CO_ILP"/>
@@ -95,6 +100,23 @@
 			<item value="leela_OH_ILP_Prod"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+			<item value="//@Test"/>
+			<item value="@Test"/>
+			<item value="Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_"/>
+			<item value="59"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;200&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="// @Test"/>
+			<item value="NewLoan_CO_ILP"/>
+		</list>
+		<list key="replacehistory">
+			<item value="@Test"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;200&quot;);"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;100&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="NewLoan_ILP"/>
+>>>>>>> kiran1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
@@ -102,6 +124,7 @@
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 <<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="63" key="DIALOG_X_ORIGIN"/>
 		<item value="234" key="DIALOG_Y_ORIGIN"/>
@@ -129,5 +152,9 @@
 		<item value="171" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
+=======
+		<item value="853" key="DIALOG_X_ORIGIN"/>
+		<item value="236" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> kiran1
 	</section>
 </section>

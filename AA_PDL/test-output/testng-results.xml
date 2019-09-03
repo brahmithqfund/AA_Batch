@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="13" ignored="0" total="14" passed="1">
   <reporter-output>
   </reporter-output>
@@ -1124,4 +1125,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- pack.AA_TN_PDL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+<testng-results skipped="0" failed="0" ignored="58" total="59" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="271281" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:52:10Z">
+    <groups>
+      <group name="kiran_TN_PDL_NEW">
+        <method signature="AA_TN_PDL.Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17]" name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed" class="pack.AA_TN_PDL"/>
+      </group> <!-- kiran_TN_PDL_NEW -->
+    </groups>
+    <test name="Test" duration-ms="271281" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:52:10Z">
+      <class name="pack.AA_TN_PDL">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="initialize" is-config="true" duration-ms="62" started-at="2019-08-28T07:47:53Z" finished-at="2019-08-28T07:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17]" name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed" duration-ms="255547" started-at="2019-08-28T07:47:53Z" finished-at="2019-08-28T07:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="getResult" is-config="true" duration-ms="178" started-at="2019-08-28T07:52:09Z" finished-at="2019-08-28T07:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed status=SUCCESS method=AA_TN_PDL.Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="quit" is-config="true" duration-ms="581" started-at="2019-08-28T07:52:09Z" finished-at="2019-08-28T07:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- pack.AA_TN_PDL -->
+      <class name="pack.AA_FL_PDL">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="setup_Grid" is-config="true" duration-ms="7708" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="7182" started-at="2019-08-28T07:47:46Z" finished-at="2019-08-28T07:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+      </class> <!-- pack.AA_FL_PDL -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+>>>>>>> kiran1
 </testng-results>
