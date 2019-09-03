@@ -2,23 +2,34 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Login_Homescreen_Borrower_Registration_NewLoan_verify_" key="selection"/>
+		<item value="@Test" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Login_Homescreen_Borrower_Registration_NewLoan_verify_"/>
-			<item value="bsh"/>
+			<item value="//@Test"/>
+			<item value="@Test"/>
+			<item value="Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_"/>
+			<item value="59"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;200&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="// @Test"/>
+			<item value="NewLoan_CO_ILP"/>
 		</list>
 		<list key="replacehistory">
+			<item value="@Test"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;200&quot;);"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;100&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="NewLoan_ILP"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
+		<item value="853" key="DIALOG_X_ORIGIN"/>
+		<item value="236" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

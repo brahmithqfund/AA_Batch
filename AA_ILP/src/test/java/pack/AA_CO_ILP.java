@@ -1252,7 +1252,7 @@ public class AA_CO_ILP extends AA_ILP {
 				SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
 				Payment_ILP.Payment_ILP(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
@@ -1323,7 +1323,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
@@ -1384,7 +1384,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
@@ -1435,7 +1435,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				if (CollateralType.contains("CASH")) {
 
 					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -1505,7 +1505,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
 				Payment_ILP.Payment_ILP(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
@@ -1563,7 +1563,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "200");
 				if (CollateralType.contains("CASH")) {
 
 					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -1599,7 +1599,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 	}
 
-	// @Test(priority = 48,groups="leela_CO_ILP") //Leela
+	 @Test(priority = 48,groups="leela_CO_ILP") //Leela
 	public void AA_Loan1stInsatallmentEODbatchprocess_Cure_1stInsatllPayment_void_CureenddateDefault()
 			throws Exception {
 
@@ -1639,7 +1639,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				if (CollateralType.contains("CASH")) {
 
 					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -1716,7 +1716,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				if (CollateralType.contains("CASH")) {
 
 					EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
@@ -1750,7 +1750,7 @@ public class AA_CO_ILP extends AA_ILP {
 		}
 
 	}
-	// @Test (priority=50,groups="leela_CO_ILP") //Leela
+	 @Test (priority=50,groups="leela_CO_ILP") //Leela
 
 	public void CO_ILP_Loan_DefaultPayment() throws Exception {
 
@@ -1786,7 +1786,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -1798,7 +1798,7 @@ public class AA_CO_ILP extends AA_ILP {
 		}
 	}
 
-	// @Test (priority=51,groups="leela_CO_ILP") //Leela
+	@Test (priority=51,groups="leela_CO_ILP") //Leela
 
 	public void CO_ILP_Loan_DefaulPartialPayment_Void() throws Exception {
 
@@ -1835,7 +1835,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -1884,7 +1884,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -1903,8 +1903,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 		// Start test. Mention test script name
 		String FileName = "AA_CO_ILP_Loan_DefaultPartialPayment_Encryption_Testdata.xls";
-		TestData = new Excel(
-				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 		int lastrow = TestData.getLastRow("NewLoan");
 		String sheetName = "NewLoan";
 
@@ -1935,7 +1934,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -1951,7 +1950,7 @@ public class AA_CO_ILP extends AA_ILP {
 		}
 	}
 
-	// @Test (priority=54,groups="leela_CO_ILP") //Leela
+	@Test (priority=54,groups="leela_CO_ILP") //Leela
 
 	public void LonI_DFLT_EODbatchprocess_DFLTPLUS60() throws Exception {
 
@@ -1987,7 +1986,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -2037,7 +2036,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName, 0, 2);
@@ -2087,7 +2086,7 @@ public class AA_CO_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 
 				BorrowerRegistrationpage.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
@@ -2100,7 +2099,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 	}
 
-	// @Test (priority=57,groups="leela_CO_ILP") //Leela
+	@Test (priority=57,groups="leela_CO_ILP") //Leela
 
 	public void Loan_DFLT_30PerDFLTPmt_void_EODBatchProcessDFLTdate60days_() throws Exception {
 
@@ -2137,7 +2136,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
@@ -2196,7 +2195,7 @@ public class AA_CO_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+				NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
@@ -2228,7 +2227,8 @@ public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exce
 
 	// Start test. Mention test script name
 	String FileName = "AA_Login_Homescreen_Borrower_Registration_NewLoan_verify_TestData.xls";
-	Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/CO_ILP/Local/" + FileName);
+	TestData = new Excel(
+			System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_CO_ILP_path_leela") + FileName);
 	int lastrow = TestData.getLastRow("NewLoan");
 	String sheetName = "NewLoan";
 	// int lastrow=TestData.getLastRow("Borrower");
@@ -2258,7 +2258,7 @@ public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exce
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			// this.History(SSN, FileName, 0);
 
 		}
@@ -2302,7 +2302,7 @@ public void Login_Homescreen_Borrower_Registration_NewLoan_Monthly() throws Exce
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			// this.History(SSN, FileName, 0);
 
 		}
@@ -2346,7 +2346,7 @@ public void Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly() throws 
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			// this.History(SSN, FileName, 0);
 
 		}
@@ -2390,7 +2390,7 @@ public void Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__() throws E
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			// this.History(SSN, FileName, 0);
 
 		}
@@ -3505,7 +3505,7 @@ public void Loan_PaymentinCSRPortel_Void() throws Exception {
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore.AgeStore(SSN, FileName, -5);
 			Payoff.Payoff(SSN, FileName);
 			PayAny_Void.PayAny_Void(SSN, FileName);
@@ -3517,7 +3517,7 @@ public void Loan_PaymentinCSRPortel_Void() throws Exception {
 }
 
 /*
- * //@Test(priority = 27,groups = "venkat_CO_ILP") public void
+ * @Test(priority = 27,groups = "venkat_CO_ILP") public void
  * AA_Loan_1stInstallmentPayments_Void() throws Exception {
  * 
  * // Start test. Mention test script name String FileName =
@@ -3594,7 +3594,7 @@ public void Loan_Pmt1stInstdate_Pmt2ndInstdate_void_EODBatch10days2Inst_payoff_(
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
 			Payment_ILP.Payment_ILP(SSN, FileName);
 			AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
@@ -3649,7 +3649,7 @@ public void Loan_Deposit_Rtn_payoff() throws Exception {
 			appUrl = AppURL;
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore.AgeStore(SSN, FileName, -1);
 			DrawerDeassign.DrawerDeassign(SSN, FileName);
 			StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -3903,7 +3903,7 @@ public void Loan_1stInstpartialpayment_1stInstdeposit_() throws Exception {
 }
 
 /*
- * // @Test (priority=34,groups = "venkat_CO_ILP")
+ * @Test (priority=34,groups = "venkat_CO_ILP")
  * 
  * public void Loan_1stInstpaymentFullCash_1stInstdeposit_() throws
  * Exception {
@@ -3937,7 +3937,7 @@ public void Loan_1stInstpartialpayment_1stInstdeposit_() throws Exception {
  * 
  * Login.Login(UserName, Password, StoreId);
  * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,
- * AppURL, SSN, FileName); NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+ * AppURL, SSN, FileName); NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
  * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
  * Payment_ILP.Payment_ILP(SSN, FileName); AgeStore_ILP.AgeStore_ILP(SSN,
  * FileName, -1, 2); DrawerDeassign.DrawerDeassign(SSN, FileName); //
@@ -3992,7 +3992,7 @@ public void AA_Loan_ACHRevoke_1stInsatallmentDeposit() throws Exception {
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			ACH_Revoke.ACH_Revoke(SSN, FileName);
 			AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, -1);
 			DrawerDeassign.DrawerDeassign(SSN, FileName);
@@ -4043,7 +4043,7 @@ public void AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatall
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			ACH_Revoke.ACH_Revoke(SSN, FileName);
 			AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, 0);
 			Payment_ILP.Payment_ILP(SSN, FileName);
@@ -4063,7 +4063,7 @@ public void AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatall
 }
 
 /*
- * // @Test (priority=37,groups = "venkat_CO_ILP")
+ * @Test (priority=37,groups = "venkat_CO_ILP")
  * 
  * public void CO_ILP_Loan_Instwisepayment_last_deposit() throws Exception {
  * 
@@ -4101,7 +4101,7 @@ public void AA_Loan_ACHRevoke_1stInsatallmentPayment_ACHAuthorization_2ndIsatall
  * Login.Login(UserName, Password, StoreId);
  * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,
  * AppURL, SSN, FileName); // NewLoan_ILP.NewLoan_ILP_NegAmt(SSN, FileName,
- * "200"); NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+ * "200"); NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
  * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
  * this.installmentPayment(SSN, FileName); AgeStore_ILP.AgeStore_ILP(SSN,
  * FileName, 0, 3); this.installmentPayment(SSN, FileName);
@@ -4154,7 +4154,7 @@ public void Loan_1stInstDeposit_Rtn() throws Exception {
 			appUrl = AppURL;
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore.AgeStore(SSN, FileName, -1);
 			DrawerDeassign.DrawerDeassign(SSN, FileName);
 			StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
@@ -4207,7 +4207,7 @@ public void Loan_1stParPmt_1stDep_Ret_() throws Exception {
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore_ILP.AgeStore_ILP(SSN, FileName, -6, 2);
 			PayAnyAmt_Installments_venkat.PayAnyAmt_Installments_venkat(SSN, FileName);
 			AgeStore_ILP.AgeStore_ILP(SSN, FileName, -1, 2);
@@ -4229,7 +4229,7 @@ public void Loan_1stParPmt_1stDep_Ret_() throws Exception {
 }
 
 /*
- * // @Test (priority=40,groups = "venkat_CO_ILP")
+ * @Test (priority=40,groups = "venkat_CO_ILP")
  * 
  * public void
  * Loan_PaymentallInstOnduedate_ExceptLastInst_LastDeposit_Return() throws
@@ -4266,7 +4266,7 @@ public void Loan_1stParPmt_1stDep_Ret_() throws Exception {
  * "Loan_payment all the installements acc to respective due dates except last installement_last # deposit_Return"
  * ); appUrl = AppURL; Login.Login(UserName,Password,StoreId);
  * RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test,
- * AppURL, SSN, FileName); NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+ * AppURL, SSN, FileName); NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
  * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 2);
  * this.Payment_Inst_Amount(SSN, FileName, 2);
  * AgeStore_ILP.AgeStore_ILP(SSN, FileName, 0, 3);
@@ -4330,7 +4330,7 @@ public void AA_Loan_ACHRevoke_1stInsatallmentDeposit_Clear() throws Exception {
 
 			Login.Login(UserName, Password, StoreId);
 			RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-			NewLoan_ILP.NewLoan_ILP(SSN, FileName, "100");
+			NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, "100");
 			AgeStore_1stInstallment.AgeStore_1stInstallment(SSN, FileName, -1);
 			DrawerDeassign.DrawerDeassign(SSN, FileName);
 			StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);

@@ -147,20 +147,7 @@ public class Void extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 
-				if(ProductID.equals("PDL"))
-				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
-				}
-				if(ProductID.equals("TLP"))
-				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
-				}
-
-				Thread.sleep(1000);
-				if(ProductID.equals("LOC"))
-				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
-				}
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
 				{
