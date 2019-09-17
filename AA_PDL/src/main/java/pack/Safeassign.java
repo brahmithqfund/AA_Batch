@@ -105,7 +105,7 @@ public class Safeassign extends AA_PDL{
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				
 				Login.Login(UserName, Password, StoreId);
 				Thread.sleep(2000);

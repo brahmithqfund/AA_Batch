@@ -25,8 +25,13 @@
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 =======
+<<<<<<< HEAD
 		<item value="venkat_OH_ILP" key="selection"/>
 >>>>>>> chary1
+=======
+		<item value="@Test" key="selection"/>
+>>>>>>> kiran1
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -101,6 +106,7 @@
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 =======
+<<<<<<< HEAD
 			<item value="venkat_OH_ILP4"/>
 			<item value="venkat_OH_ILP3"/>
 			<item value="venkat_OH_ILP2"/>
@@ -111,6 +117,24 @@
 		<list key="replacehistory">
 			<item value="venkat_OH_ILP"/>
 >>>>>>> chary1
+=======
+			<item value="//@Test"/>
+			<item value="@Test"/>
+			<item value="Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_"/>
+			<item value="59"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;200&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="// @Test"/>
+			<item value="NewLoan_CO_ILP"/>
+		</list>
+		<list key="replacehistory">
+			<item value="@Test"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;200&quot;);"/>
+			<item value="NewLoan_CO_ILP.NewLoan_ILP(SSN, FileName, &quot;100&quot;);"/>
+			<item value="AA_CO_ILP_NewLoan.AA_CO_ILP_NewLoan(SSN, FileName, &quot;100&quot;);"/>
+			<item value="NewLoan_ILP"/>
+>>>>>>> kiran1
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
@@ -146,8 +170,14 @@
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
 =======
+<<<<<<< HEAD
 		<item value="673" key="DIALOG_X_ORIGIN"/>
 		<item value="396" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> chary1
+=======
+		<item value="853" key="DIALOG_X_ORIGIN"/>
+		<item value="236" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> kiran1
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
 	</section>
 </section>

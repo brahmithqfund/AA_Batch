@@ -141,7 +141,7 @@ public class NACHA extends AA_PDL{
 				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 				driver.findElement(By.name("submit1")).click();
 				test.log(LogStatus.PASS, "Click on submit Button");		
-				for(String winHandle : driver.getWindowHandles()){
+				/*for(String winHandle : driver.getWindowHandles()){
 					driver.switchTo().window(winHandle);
 				}
 				driver.switchTo().defaultContent();
@@ -156,7 +156,51 @@ public class NACHA extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				String DueDate=null;
-				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+
+
+				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);*/
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("button")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}				    
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for( String winHandle1 : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle1);
+				}			
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("transactionList")).sendKeys("History");
+				if(ProductID.equals("PDL"))
+				{
+					driver.findElement(By.id("go_Button")).click();  
+				}
+
+				for( String winHandle1 : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle1);
+				}			
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				String DueDate=null;
+
+				DueDate = driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]")).getText();
+
 				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
 				System.out.print(DueDate);	
 				

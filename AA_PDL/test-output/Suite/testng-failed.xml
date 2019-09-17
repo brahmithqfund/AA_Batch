@@ -4,7 +4,11 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="brahmith_TN_PDL"/>
+=======
+        <include name="kiran_TN_PDL_NEW"/>
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
       </run>
     </groups>
     <classes>
@@ -12,8 +16,13 @@
         <methods>
           <include name="initialize"/>
           <include name="quit"/>
+<<<<<<< HEAD
           <include name="setup_Grid"/>
           <include name="NewLoan_Deposit_Clear_transactions_dropdown"/>
+=======
+          <include name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed"/>
+          <include name="setup_Grid"/>
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_TN_PDL -->

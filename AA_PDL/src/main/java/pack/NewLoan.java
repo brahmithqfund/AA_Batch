@@ -90,6 +90,7 @@ public class NewLoan extends AA_PDL{
 
 		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/PDL_SmokeTest/"+FileName);
 		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/PDL_Regression_Prod/"+FileName);
+
 				int lastrow=TestData.getLastRow("NewLoan");
 				System.out.println("NewLoan "+lastrow);
 				String sheetName="NewLoan";		
@@ -187,7 +188,7 @@ public class NewLoan extends AA_PDL{
 								 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")));
 								*/ 
 							 Thread.sleep(4000);
-							 							 
+
 							 driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
 								 test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
 							 
@@ -346,4 +347,4 @@ public class NewLoan extends AA_PDL{
 	}
 }
 				
-	
+

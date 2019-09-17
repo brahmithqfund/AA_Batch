@@ -3647,7 +3647,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				//@Test (priority=73,groups = "pradeep_TN_PDL")
 
-				public void Loan_Deposit_PrePaymentfull_Return_RefundnotDisplay() throws Exception {
+				public void Loan_BuyBack_() throws Exception {
 
 					// Start test. Mention test script name
 					String FileName= "AA_Loan_Deposit_PrePaymentfull_Return_RefundnotDisplay_Txn_Testdata.xls";
@@ -3699,69 +3699,196 @@ public class AA_TN_PDL extends AA_PDL{
 					
 				}
 
+
+
+
+	
+				//@Test (priority=36,groups = "kiran_TN_PDL_NEW")
+
+				public void Advance_BuyBackWithtwotendertypesasCCKwithDifferentNumbers_TransactionShouldProcess_DrawerDeAssign_ValidateEOD_deposit_MidDayDeposit_VoidBuyBackCashOnlyDisplay() throws Exception {
+
+				// Start test. Mention test script name
+				String FileName= "AA_TN_PDL_Advance_BuyBackWithtwotendertypesasCCKwithDifferentNumbers_TransactionShouldProcess_DrawerDeAssign_ValidateEOD_deposit_MidDayDeposit_VoidBuyBackCashOnlyDisplay_Txn_Testdata.xls";
+
+			
+				// Start test. Mention test script name
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_TN_PDL_path_kiran") + FileName);     
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
 				
-
-
-	
-	
-				@Test (priority=48,groups = "brahmith_TN_PDL")
-
-				public void NewLoan_Deposit_Clear_transactions_dropdown() throws Exception {
-
-					// Start test. Mention test script name
-					String FileName= "NewLoan_Deposit_Clear_transactions_dropdown.xls";
-					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_TN_PDL_path_brahmith") + FileName);     
-					int lastrow=TestData.getLastRow("NewLoan");
-					String sheetName="NewLoan";
-					//int lastrow=TestData.getLastRow("Borrower");
-					System.out.println(lastrow);
-					for(int row=2;row<=lastrow;row++)
-					{
-						String RunFlag = TestData.getCellData(sheetName,"Run",row);
-						//System.out.println(RunFlag);
-						if(RunFlag.equals("Y"))
-						{	
-							
-							AppURL = prop.getProperty("AppURL_TN_PDL_brahmith");
-							UserName = prop.getProperty("UserName_TN_PDL_brahmith");
-							Password = prop.getProperty("Password_TN_PDL_brahmith");
-							// System.out.println(Password);
-							StoreId = prop.getProperty("StoreID_TN_PDL_brahmith");
-							String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-							String StateID = TestData.getCellData(sheetName,"StateID",row);
-							String SSN = TestData.getCellData(sheetName,"SSN",row);	
-							String Header = StateID+ "_" + ProductID;
-							//System.out.println(SSN);
-							test = reports.startTest(Header + "_S.No:48" + "_" , "Advance (ACH/Check) =>Process Deposit => Based on manual clear days rule value =>Validate Manual Clear transactions is been displayed in transaction drop down => Process Clear");
-							
-							
-							//SetCurrentDate.SetCurrentDate(SSN, FileName);				
-							/*Login.Login(UserName,Password,StoreId);
-							
-							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-							NewLoan_product.NewLoan_product(SSN, FileName);*/
-							AgeStore.AgeStore(SSN, FileName, 0);
-							NACHA.NACHA(SSN, FileName, 0);
-							DrawerDeassign.DrawerDeassign(SSN, FileName);
-							//EODProcessing.EODProcessing(SSN, FileName);
-							StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-							StoreInfo.StoreInfo(SSN, FileName);						     
-							Safeassign.Safeassign(SSN, FileName);
-							Drawerassign.Drawerassign(SSN, FileName);
-							
-							//Prepaymentfull.Prepaymentfull(SSN, FileName);
-							//ACHReturnPosting1.ACHReturnPosting1(SSN, FileName);						   
-							//Refund_Status.Refund_Status(SSN, FileName);
-						}
+						AppURL = prop.getProperty("AppURL_TN_PDL_kiran");
+						UserName = prop.getProperty("UserName_TN_PDL_kiran");
+						Password = prop.getProperty("Password_TN_PDL_kiran");
+						// System.out.println(Password);
+						StoreId = prop.getProperty("StoreID_TN_PDL_kiran");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+						String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+						String Header = StateID + "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest(Header + "_S.No:36_Newly_Assigned" + "_" + PayFrequency + "_" + CollateralType, "Advance _ Buyback with 2 tender types as CCk with different numbers _ Transaction should be processed _ deassign drawer _ Validate they are available for mid day deposit.Process Mid day deposit _ Void Buyback Only cash should be displayed");
+						
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);				
+						Login.Login(UserName,Password,StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore_LoanDate.AgeStore_LoanDate(SSN, FileName, 4);
+						BuyBack_TwoTenderTypesCCK_2DifferentNumbers.BuyBack_TwoTenderTypesCCK_2DifferentNumbers(SSN, FileName, 0.5);
+						
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						CHECK_CCMO_Record_EODProcessing.CHECK_CCMO_Record_EODProcessing(SSN, FileName);
+						MidDayDeposit.MidDayDeposit(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);	
+						SafeDeAssign.SafeDeAssign(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						BuybackVoid.BuybackVoid(SSN, FileName);
+						
+				
 					}
-					
 				}
-
 				
-	
+			}
+
 	
  
-	 
+
+				//@Test (priority=37,groups = "kiran_TN_PDL_NEW")
+
+				public void Advance_deposit_ACHPPwith2tendertypessMOwithdiffnumbers_Transactionprocessed_VoidACHPPwithcash() throws Exception {
+
+				// Start test. Mention test script name
+				String FileName= "AA_TN_PDL_Advance_deposit_ACHPPwith2tendertypessMOwithdiffnumbers_Transactionprocessed_VoidACHPPwithcash_Txn_Testdata.xls";
+
+			
+				// Start test. Mention test script name
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_TN_PDL_path_kiran") + FileName);     
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+				
+						AppURL = prop.getProperty("AppURL_TN_PDL_kiran");
+						UserName = prop.getProperty("UserName_TN_PDL_kiran");
+						Password = prop.getProperty("Password_TN_PDL_kiran");
+						// System.out.println(Password);
+						StoreId = prop.getProperty("StoreID_TN_PDL_kiran");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+						String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+						String Header = StateID + "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest(Header + "_S.No:37_Newly_Assigned" + "_" + PayFrequency + "_" + CollateralType, "Advance _deposit _ACHPP with 2 tender types as MO with different numbers _Transaction should be processed _Void ACHPP with cash");
+						
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);				
+						Login.Login(UserName,Password,StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);						     
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						NACHA.NACHA(SSN, FileName, 0);
+						ACHPP_MO_2tendertypes.ACHPP_MO_2tendertypes_DiffNumbers(SSN, FileName);
+						Void_ACHPP_MO_2tendertypes.Void_ACHPP_MO_2tendertypes_Cash(SSN, FileName);
+						
+				
+					}
+				}
+				
+			}
+
+
+
+				@Test (priority=38,groups = "kiran_TN_PDL_NEW")
+
+				public void Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed() throws Exception {
+
+				// Start test. Mention test script name
+				String FileName= "AA_TN_PDL_Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed_Txn_Testdata.xls";
+
+			
+				// Start test. Mention test script name
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_TN_PDL_path_kiran") + FileName);     
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+				
+						AppURL = prop.getProperty("AppURL_TN_PDL_kiran");
+						UserName = prop.getProperty("UserName_TN_PDL_kiran");
+						Password = prop.getProperty("Password_TN_PDL_kiran");
+						// System.out.println(Password);
+						StoreId = prop.getProperty("StoreID_TN_PDL_kiran");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+						String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+						String Header = StateID + "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest(Header + "_S.No:38_Newly_Assigned" + "_" + PayFrequency + "_" + CollateralType, "Advance_deposit _ACHPP with 2 tender types as MO with same numbers _Transaction should not be processed");
+						
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);				
+						Login.Login(UserName,Password,StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);						     
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						NACHA.NACHA(SSN, FileName, 0);
+						ACHPP_MO_2tendertypes.ACHPP_MO_2tendertypes_SameNumbers(SSN, FileName);
+						
+				
+					}
+				}
+				
+			}	
+ 	 
 	
 	@AfterMethod(alwaysRun = true)
 

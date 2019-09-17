@@ -113,13 +113,7 @@ public class Void_PrePayment extends AA_PDL{
 
 				String ProductID=TestData.getCellData(sheetName,"ProductID",row);
 
-				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 
-				//String UserName = TestData.getCellData(sheetName,"UserName",row);
-
-				//String Password = TestData.getCellData(sheetName,"Password",row);
-
-				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 
 				String SSN1 = SSN.substring(0, 3);
 
@@ -130,10 +124,6 @@ public class Void_PrePayment extends AA_PDL{
 
 				Login.Login(UserName, Password, StoreId);
 
-				/*	
-
-	Login.Login(UserName, Password, StoreId);
-				 */
 				driver.switchTo().defaultContent();
 
 				Thread.sleep(2000);
@@ -206,17 +196,7 @@ public class Void_PrePayment extends AA_PDL{
 
 
 
-				if(ProductID.equals("PDL"))
-
-				{
-
-					///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
-
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
-					//     /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]
-				}
-
-				// driver.findElement(By.name("button")).click();
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 
 				test.log(LogStatus.PASS, "Click on GO Button");
 
@@ -284,12 +264,12 @@ public class Void_PrePayment extends AA_PDL{
 					//  action.sendKeys(Keys.PAGE_DOWN).build().perform();
 
 					Thread.sleep(2000); 
-					//*[@id="totPart"]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/p[2]/input[2]
+
 					if(driver.findElement(By.xpath("//*[@id='totPart']/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/p[2]/input[2]")).isDisplayed())
 					{
 						test.log(LogStatus.PASS, "Void Pre-Payment Completed Successfully");
 						driver.findElement(By.xpath("//*[@id='totPart']/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/p[2]/input[2]")).click();
-						//robot.keyPress(KeyEvent.VK_F11);
+
 					}
 					else
 					{

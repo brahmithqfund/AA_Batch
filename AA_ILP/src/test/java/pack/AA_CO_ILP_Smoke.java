@@ -161,7 +161,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 				EPP_ILP.EPP_ILP(SSN, FileName);
 				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, 0, 2);
 				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				Void.Void(SSN, FileName);
+				Void.RPP_PmtVoid_CO_ILP(SSN, FileName);
 				EPP_EOD_BatchProcess_DueDate.EPP_EOD_BatchProcess_DueDate(SSN, FileName, 35, 2);
 
 				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.15);
@@ -242,7 +242,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 	}
 	
-	//@Test (priority=1,groups="kiran_CO_ILP_Smoke") //issue
+	@Test (priority=1,groups="kiran_CO_ILP_Smoke") //issue
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -309,7 +309,7 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 
 
 
-	//@Test (priority=0,groups="kiran_CO_ILP_Smoke")
+	@Test (priority=0,groups="kiran_CO_ILP_Smoke")
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name
@@ -670,4 +670,5 @@ public class AA_CO_ILP_Smoke extends AA_ILP{
 	}
 
 }
+
 
