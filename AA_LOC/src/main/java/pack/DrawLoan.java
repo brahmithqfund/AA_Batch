@@ -25,7 +25,7 @@ public static void DrawLoan(String SSN,String FileName,String DawAmt) throws Exc
 		
 		
 		//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/TN_LOC_Regression_Set1/"+FileName);	
-		Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/TN_LOC_Regression_Set1/"+FileName);   	
+		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/TN_LOC_Regression_Set1/"+FileName);   	
 
 		
 			int lastrow=TestData.getLastRow("NewLoan");
@@ -39,13 +39,13 @@ public static void DrawLoan(String SSN,String FileName,String DawAmt) throws Exc
 					String TxnType=TestData.getCellData(sheetName,"TxnType",row);
 					String TenderType = TestData.getCellData(sheetName,"TenderType",row);	
 					String ProductID=TestData.getCellData(sheetName,"ProductID",row);
-					String Password = TestData.getCellData(sheetName,"Password",row);
+					//String Password = TestData.getCellData(sheetName,"Password",row);
 					String SSN1 = SSN.substring(0, 3);
 					String SSN2 = SSN.substring(3,5);
 					String SSN3 = SSN.substring(5,9);
 					String State = TestData.getCellData(sheetName,"StateID",row);
 					System.out.println(ProductID);
-					String UserName = TestData.getCellData(sheetName,"UserName",row);
+					//String UserName = TestData.getCellData(sheetName,"UserName",row);
 					//String Password = TestData.getCellData(sheetName,"Password",row);
 					String ProductType = TestData.getCellData(sheetName,"ProductType",row);
 					String ProductName = TestData.getCellData(sheetName,"ProductName",row);
@@ -53,7 +53,7 @@ public static void DrawLoan(String SSN,String FileName,String DawAmt) throws Exc
 					String VehicleType= TestData.getCellData(sheetName,"VehicleType",row);
 					String NewVIN= TestData.getCellData(sheetName,"NewVIN",row);
 					//System.out.println(Term);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 					//String stateProduct=State+" "+ProductID;
 					String stateProductType=State+" "+ProductType;
 					String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
@@ -71,7 +71,7 @@ public static void DrawLoan(String SSN,String FileName,String DawAmt) throws Exc
 					String last4cheknum= ChkgAcctNbr.substring(ChkgAcctNbr.length() - 4);
 					System.out.println(last4cheknum);
 					System.out.println(stateProductType);
-					Login.Login(UserName,Password,StoreID);	
+					Login.Login(UserName,Password,StoreId);	
   Thread.sleep(2000);
 					driver.switchTo().defaultContent();				
 					driver.switchTo().frame("topFrame");

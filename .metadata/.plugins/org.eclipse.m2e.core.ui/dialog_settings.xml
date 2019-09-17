@@ -70,21 +70,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="pack"/>
-			<item value="AA_"/>
 		</list>
 		<list key="groupId">
-			<item value="AA"/>
-			<item value="AA_PDL"/>
-			<item value="AA_ILP"/>
-			<item value="AA_"/>
 		</list>
 		<list key="artifactId">
-			<item value="Retry"/>
-			<item value="AA_TLP"/>
-			<item value="AA_LOC"/>
-			<item value="AA_PDL"/>
-			<item value="AA_ILP"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -163,7 +163,7 @@ public class DrawLoanwithACH extends AA_LOC {
 				Thread.sleep(2000);
 				driver.findElement(By.name("disbType")).sendKeys("ACH");
 				// driver.findElement(By.name("disbType")).sendKeys(ESign_DisbType);
-				test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
+				test.log(LogStatus.PASS, "Disb Type is enterted as :"+"ACH");
 				test.log(LogStatus.PASS, "Disb Amt is enterted as 50");
 				driver.findElement(By.name("disbAmtFirst")).sendKeys("50");					
 				test.log(LogStatus.PASS, "Disb Amt is enterted as 50");

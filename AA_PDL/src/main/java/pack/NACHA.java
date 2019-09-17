@@ -119,13 +119,14 @@ public class NACHA extends AA_PDL{
 
 				System.out.println(ProductID);	
 				//appUrl = AppURL;
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+				Thread.sleep(2000);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
@@ -141,7 +142,7 @@ public class NACHA extends AA_PDL{
 				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 				driver.findElement(By.name("submit1")).click();
 				test.log(LogStatus.PASS, "Click on submit Button");		
-				for(String winHandle : driver.getWindowHandles()){
+				/*for(String winHandle : driver.getWindowHandles()){
 					driver.switchTo().window(winHandle);
 				}
 				driver.switchTo().defaultContent();
@@ -156,8 +157,55 @@ public class NACHA extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				String DueDate=null;
+<<<<<<< HEAD
 				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
 													  // /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]
+=======
+
+
+				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);*/
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("button")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}				    
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for( String winHandle1 : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle1);
+				}			
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("transactionList")).sendKeys("History");
+				if(ProductID.equals("PDL"))
+				{
+					driver.findElement(By.id("go_Button")).click();  
+				}
+
+				for( String winHandle1 : driver.getWindowHandles())
+				{
+					driver.switchTo().window(winHandle1);
+				}			
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				String DueDate=null;
+
+				DueDate = driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]")).getText();
+
 				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
 				System.out.print(DueDate);	
 				

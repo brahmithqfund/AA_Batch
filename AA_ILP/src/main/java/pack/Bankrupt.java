@@ -222,7 +222,8 @@ public class Bankrupt extends AA_CO_ILP{
 				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);*/
 				Thread.sleep(5000);
 				 driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS); driver.switchTo().defaultContent();
-						  driver.switchTo().frame("mainFrame"); WebElement elements1 = driver.findElement(By.linkText("QA Jobs")); 
+				  driver.switchTo().frame("mainFrame"); 
+				  WebElement elements1 = driver.findElement(By.linkText("Title Loan")); 
 						  Actions actions1 = new Actions(driver);
 						  actions1.moveToElement(elements1).build().perform();
 						  driver.manage().timeouts().implicitlyWait(120,
@@ -240,14 +241,27 @@ public class Bankrupt extends AA_CO_ILP{
 				driver.findElement(By.name("submit")).click();
 				test.log(LogStatus.PASS, "Click on submit Button");  
 
-
+				Actions action = new Actions(driver);
+				action.moveByOffset(1000,100).perform();
+				Thread.sleep(10000);
+				action.click();
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
+				
+
+				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
 
 
-				driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
+
+				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();		
+
+
+
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				
+				
 
 				test.log(LogStatus.PASS,"Click on Go button");		 
 

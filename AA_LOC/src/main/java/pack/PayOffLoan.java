@@ -39,7 +39,7 @@ public class PayOffLoan extends AA_LOC {
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);

@@ -38,7 +38,7 @@ public class Safeassign extends AA_LOC {
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				
 				Login.Login(UserName, Password, StoreId);
 				 test.log(LogStatus.PASS,"<FONT color=green style=Arial> ----------- Safe Assign -----------");

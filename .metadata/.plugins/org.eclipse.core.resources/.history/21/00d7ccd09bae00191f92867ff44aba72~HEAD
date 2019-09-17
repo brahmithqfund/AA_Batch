@@ -1,6 +1,10 @@
 db_username=QFXAEA_AUTOM_MAR2019
 AA_Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_TestData_file_name=AA_Loan_DFLT_WO_WORecPartPmtWithAllTenderTypes_TestData
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/a2/50d8916fcab100191178fa9c5034c06b
+QC_Store_extent_report_file_name=Report_OH_
+=======
 QC_Store_extent_report_file_name=Report_OH
+>>>>>>> 098e2ff8fbc0eb39513e8b75f95ecd184b0455a2:.metadata/.plugins/org.eclipse.core.resources/.history/21/00d7ccd09bae00191f92867ff44aba72~HEAD
 QC_Store_extent_report_path=/ExecutionReports/
 
 AA_Store_Test_data_CO_ILP_path_kiran=/TestData/kiran/CO_ILP/
@@ -21,9 +25,10 @@ StoreID_CO_ILP_Smoke_kiran=1247
 
 
 AA_Store_Test_data_OH_ILP_path_venkat=/TestData/venkat/OH_ILP/
-AA_Store_Test_data_CO_ILP_path_venkat=/TestData/venkat/CO_ILP/
+AA_Store_Test_data_CO_ILP_path_venkat=/TestData/venkat/CO_ILP/Local/
 AA_Store_Test_data_FL_ILP_path_venkat=/TestData/venkat/FL_ILP/
 AA_Store_Test_data_OH_ILP_Smoke_path_venkat=/TestData/venkat/OH_ILP_Smoke/
+
 AppURL_CO_ILP_venkat=https://aeaqxsecuritytest.qfund.net/cc/trainingIndex.do
 UserName_CO_ILP_venkat=CO1257
 Password_CO_ILP_venkat=1234
@@ -33,15 +38,15 @@ UserName_FL_ILP_venkat=CO1257
 Password_FL_ILP_venkat=1234
 StoreID_FL_ILP_venkat=1257
 
-AppURL_OH_ILP__Smokevenkat=https://aeaqxsecuritytest.qfund.net/cc/trainingIndex.do
-UserName_OH_ILP_Smoke_venkat=CO1257
+AppURL_OH_ILP_Smoke_venkat=https://aeaqxsecuritytest.qfund.net/cc/trainingIndex.do
+UserName_OH_ILP_Smoke_venkat=OH410
 Password_OH_ILP_Smoke_venkat=1234
-StoreID_OH_ILP_Smoke_venkat=1257
+StoreID_OH_ILP_Smoke_venkat=410
 
 AppURL_OH_ILP_venkat=https://aeaqxsecuritytest.qfund.net/cc/trainingIndex.do
-UserName_OH_ILP_venkat=OH410
+UserName_OH_ILP_venkat=OH402
 Password_OH_ILP_venkat=1234
-StoreID_OH_ILP_venkat=410
+StoreID_OH_ILP_venkat=402
 
 
 AA_Store_Test_data_CO_ILP_path_leela=/TestData/leela/CO_ILP/

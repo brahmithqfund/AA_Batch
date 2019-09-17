@@ -144,7 +144,11 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				//System.out.println(SSN);
 				test = reports.startTest(Header+"_S.No:1"+"_"+PayFrequency+"_"+CollateralType,"LONI_Partial payment_EOD_DLQ_CURE_DEF_Partial def payment_PPN_1# payment_void_PPN default_partial def payment(>15% DEF amt)_WO(DEF DATE+120 DAYS)_WOR(pay total due amt)");
 				
+<<<<<<< HEAD
+				//SetCurrentDate.SetCurrentDate(SSN, FileName);
+=======
 				SetCurrentDate.SetCurrentDate(SSN, FileName);
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 				Login.Login(UserName,Password,StoreId);
 		     	RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");

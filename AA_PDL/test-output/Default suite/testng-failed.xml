@@ -5,6 +5,7 @@
     <classes>
       <class name="pack.AA_TN_PDL">
         <methods>
+<<<<<<< HEAD
           <include name="PartialPayment_ACH_Deposit"/>
           <include name="PreNotDeposit_PreNoteClear_CustomerInactive_Deposit"/>
           <include name="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate"/>
@@ -21,6 +22,14 @@
           <include name="Newloan_VoidPrePayment"/>
           <include name="Loan_Deposit_FullPrePayment_Clear_Refund"/>
           <include name="NewLoan_ReturnPosting_60days_Writeoff"/>
+=======
+<<<<<<< HEAD
+          <include name="NewLoanMultipledisbursement_AgestoreVoid"/>
+          <include name="NewLoan_AgeStore_BuyBack"/>
+          <include name="PartialPayment_BuyBackChange_Void"/>
+          <include name="VerifyLoanAmount"/>
+          <include name="PartialPayment_BuyBack_Void"/>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <include name="tearDown"/>
           <include name="ConvertCheckToACHNacha_ACHDepositProcess_ACHReturn"/>
           <include name="Partialpayment_agestorevoid"/>
@@ -77,10 +86,28 @@
           <include name="Loan_ReturnPosting_NSF15_Void_WO60days_Returndate"/>
           <include name="NewLoan_Deposit_Return_Prenotedeposit"/>
           <include name="Newloan_MultipullDisb"/>
+<<<<<<< HEAD
           <include name="BorrRegistration_NewLoan"/>
           <include name="LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD"/>
           <include name="LoanWithCheck_ConvertACH_Deposit_ACHClear"/>
           <include name="Loan_ReturnPosting_15PerofTotalDue__CheckWriteOff120daystoretdate"/>
+=======
+          <include name="setup_Grid"/>
+=======
+          <include name="Newloan_VoidPrePayment"/>
+          <include name="Advance_BuyBackWithtwotendertypesasCCKwithDifferentNumbers_TransactionShouldProcess_DrawerDeAssign_ValidateEOD_deposit_MidDayDeposit_VoidBuyBackCashOnlyDisplay"/>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="NewLoan_AgeStore_BuyBack"/>
+          <include name="PartialPayment_BuyBackChange_Void"/>
+          <include name="Partialpayment_void"/>
+          <include name="tearDown"/>
+          <include name="Partialpayment_agestorevoid"/>
+          <include name="setup_Grid"/>
+          <include name="Newloan_PartialPayment_Deposit_Clear_Refund"/>
+>>>>>>> kiran1
+          <include name="getResult"/>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
         </methods>
       </class> <!-- pack.AA_TN_PDL -->
     </classes>

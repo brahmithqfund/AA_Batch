@@ -89,7 +89,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Venkat scenarios
 
-	@Test(priority = 0, groups = "venkat_OH_ILP")
+	@Test(priority = 0, groups = "venkat_OH_ILP1")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_verify_() throws Exception {
 
@@ -133,7 +133,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 1, groups = "venkat_OH_ILP")
+	//@Test(priority = 1, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_Monthly() throws Exception {
 
@@ -221,7 +221,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 3, groups = "venkat_OH_ILP")
+	//@Test(priority = 3, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_BiWeekly__() throws Exception {
 
@@ -265,7 +265,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 4, groups = "venkat_OH_ILP")
+	//@Test(priority = 4, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_Weekly_() throws Exception {
 
@@ -309,7 +309,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 5, groups = "venkat_OH_ILP")
+	//@Test(priority = 5, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_ACH_() throws Exception {
 
@@ -345,14 +345,14 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_OHILP_AccuralDate.NewLoan_OHILP_AccuralDate(SSN, FileName, "200");
+				NewLoan_OHILP_AccuralDate_Local.NewLoan_OHILP_AccuralDate_Local(SSN, FileName, "200");
 
 			}
 		}
 
 	}
 
-	@Test(priority = 6, groups = "venkat_OH_ILP")
+	//@Test(priority = 6, groups = "venkat_OH_ILP")
 
 	public void Login_Homescreen_Borrower_Registration_NewLoan_MultiDisb_() throws Exception {
 
@@ -388,7 +388,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_MultiDisb.NewLoan_ILP_MultiDisb(SSN, FileName, "200");
+				NewLoan_ILP_MultiDisb_Local.NewLoan_ILP_MultiDisb_Local(SSN, FileName, "200");
 				// History.History(SSN, FileName, 0);
 
 			}
@@ -396,7 +396,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 7, groups = "venkat_OH_ILP")
+	//@Test(priority = 7, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_NewLoanVoid() throws Exception {
 
@@ -438,7 +438,7 @@ public class AA_OH_ILP extends AA_ILP {
 		}
 	}
 
-	@Test(priority = 8, groups = "venkat_OH_ILP")
+	//@Test(priority = 8, groups = "venkat_OH_ILP")
 
 	public void loan_VoidEncryption() throws Exception {
 
@@ -485,7 +485,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 9, groups = "venkat_OH_ILP")
+	//@Test(priority = 9, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_NewLoanRescind() throws Exception {
 
@@ -532,7 +532,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 10, groups = "venkat_OH_ILP")
+	//@Test(priority = 10, groups = "venkat_OH_ILP")
 
 	public void CO_ILP_MultipleDisbNewLoan_Void() throws Exception {
 
@@ -568,7 +568,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
-				NewLoan_ILP_MultiDisb.NewLoan_ILP_MultiDisb(SSN, FileName, "200");
+				NewLoan_ILP_MultiDisb_Local.NewLoan_ILP_MultiDisb_Local(SSN, FileName, "200");
 				Void.Void(SSN, FileName);
 				/// History.History(SSN, FileName);
 				// Drawerassign.Drawerassign(SSN, FileName);
@@ -579,7 +579,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 12, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 12, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -625,7 +625,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 13, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 13, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -663,7 +663,7 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
 				AgeStore_ILP.AgeStore_ILP(SSN, FileName, 1, 2);
 				Payment_Pastdue_NextInst.Payment_Pastdue_NextInst(SSN, FileName);
@@ -675,7 +675,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 14, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 14, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -713,9 +713,9 @@ public class AA_OH_ILP extends AA_ILP {
 				Login.Login(UserName, Password, StoreId);
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 0);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 0, 2);
 				Customer_Status.Customer_Status(SSN, FileName);
-				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 10);
+				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				Payment_2ndEODbatchprocess.Payment_2ndEODbatchprocess(SSN, FileName);
 				Customer_Status.Customer_Status(SSN, FileName);
 				// Apportions_List.Apportions_List(SSN, FileName, 2);
@@ -725,7 +725,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 15, groups = "venkat_OH_ILP") // Run scenario.scenario with
+	//@Test(priority = 15, groups = "venkat_OH_ILP") // Run scenario.scenario with
 													// store date need to check
 													// again for the date
 
@@ -826,7 +826,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 */
-	@Test(priority = 17, groups = "venkat_OH_ILP")
+	//@Test(priority = 17, groups = "venkat_OH_ILP")
 
 	public void LonI_RunEODbatchon1Instduedate_AgainEODbatchfrom10thdayof1stInstduedate_Payment_Pastdue_1stInstamt_Void()
 			throws Exception {
@@ -878,7 +878,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 18, groups = "venkat_OH_ILP")
+	//@Test(priority = 18, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_Rtn_paymentLessthanLoanAmount() throws Exception {
 
@@ -934,7 +934,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 19, groups = "venkat_OH_ILP")
+	//@Test(priority = 19, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_Rtn_paymentGreaterthanLoanAmount() throws Exception {
 
@@ -992,7 +992,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 20, groups = "venkat_OH_ILP")
+	//@Test(priority = 20, groups = "venkat_OH_ILP")
 
 	public void Loan_Deposit_RTN_EODBatchon10days_PaymentGeterthanLoanAmount() throws Exception {
 
@@ -1114,7 +1114,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 22, groups = "venkat_OH_ILP")
+	@Test(priority = 22, groups = "venkat_OH_ILP") //need change ssn
 
 	public void Loan_Deposit_Rtn_paymentLessthanLoanAmount_Void() throws Exception {
 
@@ -1236,7 +1236,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 24, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel() throws Exception {
 
 		// Start test. Mention test script name
@@ -1283,7 +1283,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 25, groups = "venkat_OH_ILP")
 	public void AA_Loan_1stInstallmentPayments() throws Exception {
 
 		// Start test. Mention test script name
@@ -1329,7 +1329,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 26, groups = "venkat_OH_ILP")
 	public void Loan_PaymentinCSRPortel_Void() throws Exception {
 
 		// Start test. Mention test script name
@@ -3456,7 +3456,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 63, groups = "leela_OH_ILP3") // - Need to execute last
+	@Test(priority = 63, groups = "leela_OH_ILP") // - Need to execute last
 
 	public void DFLTLoan_EPPConvert_DepositAll_ClearAll_() throws Exception {
 
@@ -3526,10 +3526,11 @@ public class AA_OH_ILP extends AA_ILP {
 				Payliance_OriginationFile_PPN.Payliance_OriginationFile_PPN(SSN, FileName, -1, 3);
 				ACH_Deposit_RPP_ILP.ACH_Deposit_RPP_ILP(SSN, FileName, 0, 3);
 				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 3);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
 
-				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
+				/*AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, -1, 4);
 				DrawerDeassign.DrawerDeassign(SSN, FileName);
 				StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
 				StoreInfo.StoreInfo(SSN, FileName);
@@ -3566,7 +3567,7 @@ public class AA_OH_ILP extends AA_ILP {
 				EOD_BatchProcess_EPPDueDate.EOD_BatchProcess_EPPDueDate(SSN, FileName, 9, 6);
 				// Check_TransactionRecords.Check_TransactionRecords(SSN,
 				// FileName);
-				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);
+				Loan_Balance_Status.Loan_Balance_Status(SSN, FileName);*/
 			}
 		}
 
@@ -3635,7 +3636,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Scenarios 68 to 75 were blocked
 
-	@Test(priority = 65, groups = "leela_OH_ILP") // Not Required - Duplicate
+	@Test(priority = 65, groups = "duplicate") // Not Required - Duplicate
 
 	public void LonI_DFLT_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate() throws Exception {
 
@@ -3690,7 +3691,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Scenarios 77 and 78 were blocked
 
-	@Test(priority = 66, groups = "leela_OH_ILP") // Not Required - Duplicate
+	@Test(priority = 66, groups = "duplicate") // Not Required - Duplicate
 
 	public void Pick_ILP_WriteoffLoan_ConvertEPP_PPayAllInstallementBeforeDueDate() throws Exception {
 
@@ -3970,7 +3971,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 70, groups = "leela_OH_ILP") // Leela
+	@Test(priority = 70, groups = "leela_OH_ILP1") // Leela
 
 	public void Loan_Bankrupt_Void_() throws Exception {
 
@@ -4020,7 +4021,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	// Scenario 92 - Duplicate
 
-	@Test(priority = 71, groups = "leela_OH_ILP") // Not Required - Duplicate
+	@Test(priority = 71, groups = "duplicate") // Not Required - Duplicate
 
 	public void Loan_Bankrupt_() throws Exception {
 
@@ -4066,7 +4067,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 72, groups = "leela_OH_ILP") // Not Required - Duplicate
+	@Test(priority = 72, groups = "duplicate") // Not Required - Duplicate
 	public void CO_ILP_Loan_BNK_Void() throws Exception {
 
 		// Start test. Mention test script name
@@ -4110,7 +4111,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 73, groups = "leela_OH_ILP")
+	@Test(priority = 73, groups = "leela_OH_ILP1")
 
 	public void CO_ILP_Loan_first_payment_BNK_Second_deposit() throws Exception {
 
@@ -4209,7 +4210,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 75, groups = "leela_OH_ILP1") // Leela
+	@Test(priority = 75, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_Bnkrupt_Deceased() throws Exception {
 
@@ -4257,7 +4258,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 76, groups = "leela_OH_ILP") // Leela
+	@Test(priority = 76, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_Bnkrupt_Discharge() throws Exception {
 
@@ -4303,7 +4304,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 77, groups = "leela_OH_ILP1") // Leela
+	@Test(priority = 77, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_Deceased() throws Exception {
 
@@ -4347,7 +4348,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 78, groups = "leela_OH_ILP1") // Leela
+	@Test(priority = 78, groups = "leela_OH_ILP") // Leela
 
 	public void LonI_DFLT_PPN_BNK_1InstDeposit() throws Exception {
 
@@ -4402,7 +4403,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 79, groups = "leela_OH_ILP1") // Leela
+	@Test(priority = 79, groups = "leela_OH_ILP") // Leela
 
 	public void Loan_1stpayment_activemilitary_2ndpayment_() throws Exception {
 
@@ -4454,7 +4455,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 80, groups = "leela_OH_ILP1") // Leela
+	@Test(priority = 80, groups = "leela_OH_ILP") // Leela
 
 	public void BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_() throws Exception {
 
@@ -4504,7 +4505,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 81, groups = "leela_OH_ILP") // Not Required - Duplicate
+	@Test(priority = 81, groups = "duplicate") // Not Required - Duplicate
 
 	public void LonI_IstInstPayment_ACTM_ACTMEnd_2ndInstpymt_Verify_Apportions() throws Exception {
 
@@ -4554,7 +4555,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 82, groups = "leela_OH_ILP") // Leela
+	@Test(priority = 82, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4612,7 +4613,7 @@ public class AA_OH_ILP extends AA_ILP {
 
 	}
 
-	@Test(priority = 83, groups = "leela_OH_ILP") // Leela
+	@Test(priority = 83, groups = "leela_OH_ILP1") // Leela
 
 	public void LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record() throws Exception {
 
@@ -4659,6 +4660,52 @@ public class AA_OH_ILP extends AA_ILP {
 				StoreInfo.StoreInfo(SSN, FileName);
 				Safeassign.Safeassign(SSN, FileName);
 				Drawerassign.Drawerassign(SSN, FileName);
+
+			}
+		}
+	}
+
+	
+	@Test(priority = 84, groups = "brahmith") // Leela
+
+	public void Due_Date_verification() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName = "Due_Date_verification.xls";
+		TestData = new Excel(
+				System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_OH_ILP_path_leela") + FileName);
+		int lastrow = TestData.getLastRow("NewLoan");
+		String sheetName = "NewLoan";
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+				// driver.get(appUrl);
+				// test.log(LogStatus.INFO, "Application is launched");
+				// driver.manage().window().maximize();
+				AppURL = prop.getProperty("AppURL_CO_ILP_leela");
+				UserName = prop.getProperty("UserName_CO_ILP_leela");
+				Password = prop.getProperty("Password_CO_ILP_leela");
+				// System.out.println(Password);
+				StoreId = prop.getProperty("StoreID_CO_ILP_leela");
+				String ProductID = TestData.getCellData(sheetName, "ProductID", row);
+				String StateID = TestData.getCellData(sheetName, "StateID", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+				String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+				String Header = StateID + "_" + ProductID;
+				test = reports.startTest(Header + "_S.No:105" + "_" + PayFrequency + "_" + CollateralType,
+						"Loan_age the store date to after rescind period_select payment option from CSR dropdown_Payment screen should show the follwing options  1.Pay Off the balance 2.Pay Installment Am t 3.Pay any other Amt>select pay any other amt_enter Payment amount less than 1# amount");
+
+				Loan_Date.SetCurrentDate(SSN, FileName);
+				Login.Login(UserName, Password, StoreId);
+
+				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
+				NewLoan_ILP.NewLoan_ILP(SSN, FileName, "200");
+				
+				DueDate.DueDate(SSN, FileName, 0, 2);
+				AA_Holidays.holidays();
 
 			}
 		}

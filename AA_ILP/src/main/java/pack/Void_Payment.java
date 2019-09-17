@@ -73,9 +73,7 @@ public class Void_Payment extends AA_CO_ILP{
 /*
 				if (ProductID.equals("ILP")) {
 					/// html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
-					driver.findElement(By
-							.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input"))
-							.click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 					// /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input
 				}*/
 				// driver.findElement(By.name("button")).click();
@@ -100,9 +98,7 @@ public class Void_Payment extends AA_CO_ILP{
 				driver.switchTo().frame("main");
 				if (ProductID.equals("ILP")) {
 
-					driver.findElement(By
-							.xpath("/html/body/form[1]/table/tbody/tr[6]/td/table/tbody/tr[2]/td[1]/table/tbody/tr[3]/td[2]/select"))
-							.sendKeys("cash");
+					driver.findElement(By.name("requestBean.siilBean.disbType")).sendKeys("Cash");
 					test.log(LogStatus.PASS, "Disb type is selected as " + "Cash");
 					driver.findElement(By.name("requestBean.password")).sendKeys(Password);
 					test.log(LogStatus.PASS, "Password is selected as " + Password);

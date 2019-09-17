@@ -110,13 +110,14 @@ public class ACHReturnPosting extends AA_PDL{
 			
 
 			Login.Login(UserName, Password, StoreId);
-							
+			Thread.sleep(2000);	
 			String SSN1 = SSN.substring(0, 3);
 			String SSN2 = SSN.substring(3,5);
 			String SSN3 = SSN.substring(5,9);
 			driver.switchTo().frame("topFrame");
 			driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 			test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+			Thread.sleep(2000);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.switchTo().defaultContent();
 			driver.switchTo().frame("mainFrame");
@@ -148,8 +149,9 @@ public class ACHReturnPosting extends AA_PDL{
 			driver.switchTo().frame("mainFrame");
 			driver.switchTo().frame("main");
 
-			String LoanNumber = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[2]")).getText();
-			                                                 
+
+			String LoanNumber = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[2]")).getText();
+
 															//html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[2]
 			test.log(LogStatus.PASS, "Captured Loan Number"+LoanNumber);
 			

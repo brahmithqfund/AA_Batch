@@ -103,6 +103,7 @@ public class BuybackVoid extends AA_PDL{
 				String ProductID=TestData.getCellData(sheetName,"ProductID",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				String ESign_Disb_Type2 = TestData.getCellData(sheetName,"Esign_Disb_Type2",row);
+				Login.Login(UserName, Password, StoreId);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
@@ -148,15 +149,7 @@ public class BuybackVoid extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 
-				if(ProductID.equals("PDL"))
-				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
-				}
-				if(ProductID.equals("TLP"))
-				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
-				}
-
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				Thread.sleep(2000);
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
@@ -180,8 +173,8 @@ public class BuybackVoid extends AA_PDL{
 				
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.name("transactionDataBean.disbursementType")).sendKeys(ESign_Disb_Type2);
-					test.log(LogStatus.PASS, "disbursementType "+ESign_Disb_Type2);
+					driver.findElement(By.name("transactionDataBean.disbursementType")).sendKeys("Cash");
+					test.log(LogStatus.PASS, "disbursementType :: Cash");
 
 				}
 				

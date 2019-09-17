@@ -96,6 +96,7 @@ public class Login extends AA_PDL{
 		String passwordId = "loginRequestBean.password";
 		String StoreId = "loginRequestBean.locNbr";
 		String Login = "login";
+		driver.findElement(By.name(usenameId)).clear();
 		driver.findElement(By.name(usenameId)).sendKeys(username);
 		Assert.assertTrue(true);
 		test.log(LogStatus.PASS, "Username is entered: "+username);

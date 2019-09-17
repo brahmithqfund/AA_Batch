@@ -212,8 +212,10 @@ public class Payment_EncryptionKey_Void extends AA_CO_ILP{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				driver.findElement(By.name("button")).click();
+				//driver.findElement(By.name("button")).click();
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
+				
 				for(String winHandle : driver.getWindowHandles()){
 					driver.switchTo().window(winHandle);
 				}				    

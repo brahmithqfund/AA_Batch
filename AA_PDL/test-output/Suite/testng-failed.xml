@@ -4,12 +4,25 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="pradeep_TN_PDL"/>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <include name="brahmith_TN_PDL"/>
+=======
+        <include name="kiran_TN_PDL_NEW"/>
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+        <include name="brahmith_FL_PDL"/>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
       </run>
     </groups>
     <classes>
       <class name="pack.AA_TN_PDL">
         <methods>
+<<<<<<< HEAD
           <include name="PartialPayment_ACH_Deposit"/>
           <include name="NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit"/>
           <include name="CheckingPartialPmt_SomeDaysAfterDueDate"/>
@@ -38,8 +51,16 @@
           <include name="LoanwithCheck__DepConvertACH__Deposit__ACHReturn"/>
           <include name="Loan_ReturnPosting_30PerofTotalDue__CheckWriteOff180daystoretdate"/>
           <include name="NewLoan_RPP_AgeInstwise_PPPayment"/>
+=======
+          <include name="Deposit_ACR_WOR_2tender_type_MO_transaction_Void"/>
+          <include name="Deposit_ACR_WOR_2tender_type_same_MO_transaction"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash"/>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <include name="initialize"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction"/>
+          <include name="NewLoan_Deposit_Clear_prepayment_clear_refund"/>
           <include name="quit"/>
+<<<<<<< HEAD
           <include name="Loan_Full_PrePayment"/>
           <include name="PreNoteDepositClear_CustomerInactiveAndActive_EOD"/>
           <include name="Loan_ReturnPosting_NSF15_Void_WO60days_Returndate"/>
@@ -50,6 +71,26 @@
           <include name="LoanWithCheck_ConvertACH_Deposit_ACHClear"/>
           <include name="Loan_ReturnPosting_15PerofTotalDue__CheckWriteOff120daystoretdate"/>
           <include name="getResult"/>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="setup_Grid"/>
+          <include name="NewLoan_Deposit_Clear_transactions_dropdown"/>
+=======
+          <include name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed"/>
+          <include name="setup_Grid"/>
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_transaction_void"/>
+          <include name="NewLoan_Deposit_Clear_transactions_dropdown"/>
+          <include name="NewLoan_Deposit_Clear_prepayment_clear_refund_check"/>
+>>>>>>> chary1
+          <include name="getResult"/>
+          <include name="setup_Grid"/>
+          <include name="NewLoan_validate_RPP"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction"/>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
         </methods>
       </class> <!-- pack.AA_TN_PDL -->
     </classes>

@@ -274,7 +274,7 @@ public class AA_TN_LOC extends AA_LOC {
 		}
 	}
 
-	@Test(priority = 3, groups = "revathi_TN_LOC")
+	@Test(priority = 3, groups = "revathi_TN_LOC") //Issue
 
 	public void Loan_Draw1_Draw2ACH_statement_Rescind_Draw_EOD_DLQ() throws Exception {
 
@@ -333,7 +333,7 @@ public class AA_TN_LOC extends AA_LOC {
 		}
 	}
 
-	@Test(priority = 4, groups = "revathi_TN_LOC")
+	@Test(priority = 4, groups = "revathi_TN_LOC2")
 
 	public void Loan_Draw_statement_Draw_Void_Rescind() throws Exception {
 
@@ -381,7 +381,7 @@ public class AA_TN_LOC extends AA_LOC {
 		}
 	}
 
-	@Test(priority = 5, groups = "revathi_TN_LOC")
+	@Test(priority = 5, groups = "revathi_TN_LOC1")
 
 	public void Loan_Draw_PartialPMT_MinPayment_EOD() throws Exception {
 

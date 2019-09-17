@@ -22,7 +22,7 @@ public class AA_PDL {
 
 	static ExtentReports reports;
 	public static String UserName;
-	public static String Password;
+	public static String Password="1234";
 	public static String StoreId;
 	public static ExtentTest test;
 	public static Excel TestData;

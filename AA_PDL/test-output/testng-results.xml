@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="12" failed="24" ignored="1" total="37" passed="0">
   <reporter-output>
   </reporter-output>
@@ -76,24 +77,93 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=xpath, value=/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/select}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" ignored="66" total="67" passed="0">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="13" ignored="0" total="14" passed="1">
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+<testng-results skipped="9" failed="2" ignored="78" total="89" passed="0">
+>>>>>>> chary1
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="59828" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:31:43Z">
+    <groups>
+      <group name="brahmith_FL_PDL">
+        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_same_transaction()[pri:55, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash()[pri:54, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_same_transaction()[pri:57, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void()[pri:58, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_void()[pri:56, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_void" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_WOR_2tender_type_MO_transaction_Void()[pri:59, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_MO_transaction_Void" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.Deposit_ACR_WOR_2tender_type_same_MO_transaction()[pri:60, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_same_MO_transaction" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund()[pri:49, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund_check()[pri:50, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund_check" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_transactions_dropdown" class="pack.AA_FL_PDL"/>
+        <method signature="AA_FL_PDL.NewLoan_validate_RPP()[pri:52, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_validate_RPP" class="pack.AA_FL_PDL"/>
+      </group> <!-- brahmith_FL_PDL -->
+    </groups>
+    <test name="Test" duration-ms="59828" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:31:43Z">
+      <class name="pack.AA_FL_PDL">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="setup_Grid" is-config="true" duration-ms="6803" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="6375" started-at="2019-09-17T05:30:50Z" finished-at="2019-09-17T05:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="initialize" is-config="true" duration-ms="89" started-at="2019-09-17T05:30:57Z" finished-at="2019-09-17T05:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_transactions_dropdown" duration-ms="40722" started-at="2019-09-17T05:30:57Z" finished-at="2019-09-17T05:31:38Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Modal dialog present: Please Select Product
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: Please Select Product
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.NewLoan.NewLoan(NewLoan.java:221)
 at pack.AA_TN_PDL.PreNoteDepositClear_CustomerInactiveAndActive_EOD(AA_TN_PDL.java:1658)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandles(RemoteWebDriver.java:456)
+at pack.NewLoan_product.NewLoan_product(NewLoan_product.java:186)
+at pack.AA_FL_PDL.NewLoan_Deposit_Clear_transactions_dropdown(AA_FL_PDL.java:3807)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,21 +191,31 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- PreNoteDepositClear_CustomerInactiveAndActive_EOD -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="getResult" is-config="true" duration-ms="484" started-at="2019-09-11T09:43:57Z" finished-at="2019-09-11T09:43:58Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=PreNoteDepositClear_CustomerInactiveAndActive_EOD status=FAILURE method=AA_TN_PDL.PreNoteDepositClear_CustomerInactiveAndActive_EOD()[pri:38, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+        </test-method> <!-- NewLoan_Deposit_Clear_transactions_dropdown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="379" started-at="2019-09-17T05:31:38Z" finished-at="2019-09-17T05:31:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NewLoan_Deposit_Clear_transactions_dropdown status=FAILURE method=AA_FL_PDL.NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate()[pri:39, instance:pack.AA_TN_PDL@6f1fba17]" name="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate" duration-ms="56911" started-at="2019-09-11T09:43:58Z" finished-at="2019-09-11T09:44:55Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -159,6 +239,27 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+        <test-method status="FAIL" signature="NewLoan_Deposit_Clear_prepayment_clear_refund()[pri:49, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund" duration-ms="4619" started-at="2019-09-17T05:31:38Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -171,12 +272,18 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate(AA_TN_PDL.java:1716)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:918)
+at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:157)
+at pack.AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund(AA_FL_PDL.java:3858)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -204,6 +311,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
@@ -242,6 +350,38 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewLoan_Deposit_Clear_prepayment_clear_refund -->
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="18" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NewLoan_Deposit_Clear_prepayment_clear_refund status=FAILURE method=AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund()[pri:49, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -254,18 +394,28 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet(AA_TN_PDL.java:1779)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -287,6 +437,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
@@ -306,9 +457,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="NewLoan_Deposit_Clear_prepayment_clear_refund_check()[pri:50, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund_check" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+<<<<<<< HEAD
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
@@ -317,14 +478,29 @@ Session ID: a671f733-90af-4057-a8a8-0120048e52b4
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
+=======
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+<<<<<<< HEAD
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -337,18 +513,28 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.NewLoan_PartialPayment(AA_TN_PDL.java:1840)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -370,21 +556,31 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- NewLoan_PartialPayment -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="getResult" is-config="true" duration-ms="234" started-at="2019-09-11T09:46:50Z" finished-at="2019-09-11T09:46:51Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=NewLoan_PartialPayment status=FAILURE method=AA_TN_PDL.NewLoan_PartialPayment()[pri:41, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+        </test-method> <!-- NewLoan_Deposit_Clear_prepayment_clear_refund_check -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="32" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund_check()[pri:50, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="CheckingPartialPmt_SomeDaysAfterDueDate()[pri:42, instance:pack.AA_TN_PDL@6f1fba17]" name="CheckingPartialPmt_SomeDaysAfterDueDate" duration-ms="57512" started-at="2019-09-11T09:46:51Z" finished-at="2019-09-11T09:47:48Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -408,6 +604,27 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+        <test-method status="SKIP" signature="NewLoan_validate_RPP()[pri:52, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_validate_RPP" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -420,18 +637,28 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.CheckingPartialPmt_SomeDaysAfterDueDate(AA_TN_PDL.java:1888)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -453,6 +680,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
@@ -470,6 +698,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- getResult -->
         <test-method status="FAIL" signature="PartialPayment_MultipleTenderTypes()[pri:43, instance:pack.AA_TN_PDL@6f1fba17]" name="PartialPayment_MultipleTenderTypes" duration-ms="57232" started-at="2019-09-11T09:47:48Z" finished-at="2019-09-11T09:48:46Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="NewLoanMultiDisb_Void()[pri:14, instance:pack.AA_TN_PDL@63753b6d]" name="NewLoanMultiDisb_Void" duration-ms="29692" started-at="2019-07-18T08:59:32Z" finished-at="2019-07-18T09:00:02Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -544,15 +783,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=PartialPayment_MultipleTenderTypes status=FAILURE method=AA_TN_PDL.PartialPayment_MultipleTenderTypes()[pri:43, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=NewLoanMultiDisb_Void status=FAILURE method=AA_TN_PDL.NewLoanMultiDisb_Void()[pri:14, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+        </test-method> <!-- NewLoan_validate_RPP -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="30" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.NewLoan_validate_RPP()[pri:52, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit()[pri:44, instance:pack.AA_TN_PDL@6f1fba17]" name="NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit" duration-ms="57892" started-at="2019-09-11T09:48:46Z" finished-at="2019-09-11T09:49:44Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="31" started-at="2019-07-18T09:00:02Z" finished-at="2019-07-18T09:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="NewLoanMultipledisbursement_AgestoreVoid()[pri:15, instance:pack.AA_TN_PDL@63753b6d]" name="NewLoanMultipledisbursement_AgestoreVoid" duration-ms="29755" started-at="2019-07-18T09:00:02Z" finished-at="2019-07-18T09:00:32Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -571,33 +832,88 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:25507/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 01b65a57-f8e2-4de9-99cf-fb8176a5fdc9
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash()[pri:54, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+=======
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit(AA_TN_PDL.java:1986)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandles(RemoteWebDriver.java:456)
+at pack.NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(NewLoan_MultipulDisbTypes.java:156)
+at pack.AA_TN_PDL.NewLoanMultipledisbursement_AgestoreVoid(AA_TN_PDL.java:718)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -619,7 +935,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit -->
@@ -627,15 +948,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit status=FAILURE method=AA_TN_PDL.NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit()[pri:44, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=NewLoanMultipledisbursement_AgestoreVoid status=FAILURE method=AA_TN_PDL.NewLoanMultipledisbursement_AgestoreVoid()[pri:15, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="28" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash()[pri:54, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="PartialPayment_Agestore_CheckLoanDisplayedEOD()[pri:45, instance:pack.AA_TN_PDL@6f1fba17]" name="PartialPayment_Agestore_CheckLoanDisplayedEOD" duration-ms="57174" started-at="2019-09-11T09:49:44Z" finished-at="2019-09-11T09:50:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="27" started-at="2019-07-18T09:00:32Z" finished-at="2019-07-18T09:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="NewLoan_AgeStore_BuyBack()[pri:17, instance:pack.AA_TN_PDL@63753b6d]" name="NewLoan_AgeStore_BuyBack" duration-ms="97716" started-at="2019-07-18T09:00:32Z" finished-at="2019-07-18T09:02:10Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -654,33 +1000,88 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43943/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 9a87d796-a02f-47b5-8ee6-08fc074faf8b
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_ACHP_2tender_type_MO_same_transaction()[pri:55, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+=======
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.PartialPayment_Agestore_CheckLoanDisplayedEOD(AA_TN_PDL.java:2035)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandles(RemoteWebDriver.java:456)
+at pack.Buyback.Buyback(Buyback.java:162)
+at pack.AA_TN_PDL.NewLoan_AgeStore_BuyBack(AA_TN_PDL.java:762)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -702,7 +1103,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartialPayment_Agestore_CheckLoanDisplayedEOD -->
@@ -710,15 +1116,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=PartialPayment_Agestore_CheckLoanDisplayedEOD status=FAILURE method=AA_TN_PDL.PartialPayment_Agestore_CheckLoanDisplayedEOD()[pri:45, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=NewLoan_AgeStore_BuyBack status=FAILURE method=AA_TN_PDL.NewLoan_AgeStore_BuyBack()[pri:17, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_ACHP_2tender_type_MO_same_transaction -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="30" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_same_transaction()[pri:55, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost()[pri:46, instance:pack.AA_TN_PDL@6f1fba17]" name="Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost" duration-ms="57898" started-at="2019-09-11T09:50:41Z" finished-at="2019-09-11T09:51:39Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="22" started-at="2019-07-18T09:02:14Z" finished-at="2019-07-18T09:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="PartialPayment_BuyBack()[pri:21, instance:pack.AA_TN_PDL@63753b6d]" name="PartialPayment_BuyBack" duration-ms="95548" started-at="2019-07-18T09:02:14Z" finished-at="2019-07-18T09:03:49Z">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -737,9 +1168,35 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:5298/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 978559c0-e416-4358-a696-08b494d07c69
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_ACHP_2tender_type_cck_transaction_void()[pri:56, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_void" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -752,18 +1209,39 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost(AA_TN_PDL.java:2088)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at pack.LoanPartialPayment.LoanPartialPayment(LoanPartialPayment.java:183)
+at pack.AA_TN_PDL.PartialPayment_BuyBack(AA_TN_PDL.java:911)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -785,7 +1263,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost -->
@@ -793,15 +1276,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost status=FAILURE method=AA_TN_PDL.Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost()[pri:46, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=PartialPayment_BuyBack status=FAILURE method=AA_TN_PDL.PartialPayment_BuyBack()[pri:21, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_ACHP_2tender_type_cck_transaction_void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="19" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_void()[pri:56, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD()[pri:47, instance:pack.AA_TN_PDL@6f1fba17]" name="LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD" duration-ms="57061" started-at="2019-09-11T09:51:40Z" finished-at="2019-09-11T09:52:37Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="19" started-at="2019-07-18T09:03:50Z" finished-at="2019-07-18T09:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="PartialPayment_BuyBack_Void()[pri:22, instance:pack.AA_TN_PDL@63753b6d]" name="PartialPayment_BuyBack_Void" duration-ms="95841" started-at="2019-07-18T09:03:50Z" finished-at="2019-07-18T09:05:26Z">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -820,9 +1328,35 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:34100/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 217d91b4-4425-453b-93d8-e9d84be47ed6
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_ACHP_2tender_type_cck_same_transaction()[pri:57, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -835,18 +1369,39 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD(AA_TN_PDL.java:2144)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at pack.LoanPartialPayment.LoanPartialPayment(LoanPartialPayment.java:183)
+at pack.AA_TN_PDL.PartialPayment_BuyBack_Void(AA_TN_PDL.java:955)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -868,7 +1423,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD -->
@@ -876,15 +1436,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD status=FAILURE method=AA_TN_PDL.LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD()[pri:47, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=PartialPayment_BuyBack_Void status=FAILURE method=AA_TN_PDL.PartialPayment_BuyBack_Void()[pri:22, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_ACHP_2tender_type_cck_same_transaction -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="22" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_same_transaction()[pri:57, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="LoanWithCheck_ConvertACH_Deposit_ACHClear()[pri:48, instance:pack.AA_TN_PDL@6f1fba17]" name="LoanWithCheck_ConvertACH_Deposit_ACHClear" duration-ms="57270" started-at="2019-09-11T09:52:37Z" finished-at="2019-09-11T09:53:34Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="20" started-at="2019-07-18T09:05:26Z" finished-at="2019-07-18T09:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="PartialPayment_BuyBackChange_Void()[pri:23, instance:pack.AA_TN_PDL@63753b6d]" name="PartialPayment_BuyBackChange_Void" duration-ms="128697" started-at="2019-07-18T09:05:26Z" finished-at="2019-07-18T09:07:35Z">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -903,9 +1488,35 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39409/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3166cf99-d641-4beb-8a3f-9715b6becfd1
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void()[pri:58, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -918,18 +1529,39 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.LoanWithCheck_ConvertACH_Deposit_ACHClear(AA_TN_PDL.java:2211)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at pack.LoanPartialPayment.LoanPartialPayment(LoanPartialPayment.java:183)
+at pack.AA_TN_PDL.PartialPayment_BuyBackChange_Void(AA_TN_PDL.java:996)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -951,7 +1583,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoanWithCheck_ConvertACH_Deposit_ACHClear -->
@@ -959,15 +1596,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=LoanWithCheck_ConvertACH_Deposit_ACHClear status=FAILURE method=AA_TN_PDL.LoanWithCheck_ConvertACH_Deposit_ACHClear()[pri:48, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=PartialPayment_BuyBackChange_Void status=FAILURE method=AA_TN_PDL.PartialPayment_BuyBackChange_Void()[pri:23, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="25" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void()[pri:58, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="LoanwithCheck__DepConvertACH__Deposit__ACHReturn()[pri:49, instance:pack.AA_TN_PDL@6f1fba17]" name="LoanwithCheck__DepConvertACH__Deposit__ACHReturn" duration-ms="56998" started-at="2019-09-11T09:53:34Z" finished-at="2019-09-11T09:54:31Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="21" started-at="2019-07-18T09:07:35Z" finished-at="2019-07-18T09:07:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="Prenotedeposit_Verification()[pri:26, instance:pack.AA_TN_PDL@63753b6d]" name="Prenotedeposit_Verification" duration-ms="225885" started-at="2019-07-18T09:07:35Z" finished-at="2019-07-18T09:11:21Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -986,33 +1648,88 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ADMINISTRATOR50', ip: '10.10.88.51', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:35663/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 22da1d81-9d9a-4137-96b4-c8abf19a2ebe
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_WOR_2tender_type_MO_transaction_Void()[pri:59, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_MO_transaction_Void" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+=======
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.LoanwithCheck__DepConvertACH__Deposit__ACHReturn(AA_TN_PDL.java:2270)
+=======
+<<<<<<< HEAD
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:918)
+at pack.Safeassign.Safeassign(Safeassign.java:112)
+at pack.AA_TN_PDL.Prenotedeposit_Verification(AA_TN_PDL.java:1110)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1034,7 +1751,12 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoanwithCheck__DepConvertACH__Deposit__ACHReturn -->
@@ -1042,14 +1764,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=LoanwithCheck__DepConvertACH__Deposit__ACHReturn status=FAILURE method=AA_TN_PDL.LoanwithCheck__DepConvertACH__Deposit__ACHReturn()[pri:49, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=Prenotedeposit_Verification status=FAILURE method=AA_TN_PDL.Prenotedeposit_Verification()[pri:26, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_WOR_2tender_type_MO_transaction_Void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="24" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_WOR_2tender_type_MO_transaction_Void()[pri:59, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="Loan_Full_PrePayment()[pri:50, instance:pack.AA_TN_PDL@6f1fba17]" name="Loan_Full_PrePayment" duration-ms="57147" started-at="2019-09-11T09:54:32Z" finished-at="2019-09-11T09:55:29Z">
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="31" started-at="2019-07-18T09:11:21Z" finished-at="2019-07-18T09:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="NewLoan_Deposit_Return_Prenotedeposit()[pri:29, instance:pack.AA_TN_PDL@63753b6d]" name="NewLoan_Deposit_Return_Prenotedeposit" duration-ms="39292" started-at="2019-07-18T09:11:21Z" finished-at="2019-07-18T09:12:00Z">
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with name == ShareScreenBtn (WARNING: The server did not provide any stacktrace information)
@@ -1072,6 +1818,27 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2062/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 *** Element info: {Using=name, value=ShareScreenBtn}
+=======
+        <test-method status="SKIP" signature="Deposit_ACR_WOR_2tender_type_same_MO_transaction()[pri:60, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_same_MO_transaction" duration-ms="0" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS0-167-PC', ip: '192.168.0.167', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:33072/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 3e30af5d-3f94-4a58-ab2e-97c2869f13cb
+>>>>>>> chary1
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1084,18 +1851,37 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<<<<<<< HEAD
 at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:407)
 at pack.AA_TN_PDL.Loan_Full_PrePayment(AA_TN_PDL.java:2329)
+=======
+at pack.RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(RegistrationPage_NewLoan_PDL.java:406)
+at pack.AA_TN_PDL.NewLoan_Deposit_Return_Prenotedeposit(AA_TN_PDL.java:1145)
+=======
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at pack.AA_FL_PDL.getScreenhot(AA_FL_PDL.java:4386)
+at pack.AA_FL_PDL.getResult(AA_FL_PDL.java:4367)
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+<<<<<<< HEAD
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+=======
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+>>>>>>> chary1
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1117,6 +1903,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
@@ -1125,13 +1912,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=Loan_Full_PrePayment status=FAILURE method=AA_TN_PDL.Loan_Full_PrePayment()[pri:50, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=NewLoan_Deposit_Return_Prenotedeposit status=FAILURE method=AA_TN_PDL.NewLoan_Deposit_Return_Prenotedeposit()[pri:29, instance:pack.AA_TN_PDL@63753b6d] output={null}]]]>
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_ACR_WOR_2tender_type_same_MO_transaction -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="getResult" is-config="true" duration-ms="27" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=AA_FL_PDL.Deposit_ACR_WOR_2tender_type_same_MO_transaction()[pri:60, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
+>>>>>>> chary1
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="Newloan_VoidPrePayment()[pri:51, instance:pack.AA_TN_PDL@6f1fba17]" name="Newloan_VoidPrePayment" duration-ms="57279" started-at="2019-09-11T09:55:29Z" finished-at="2019-09-11T09:56:26Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -3036,4 +3839,81 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- pack.AA_TN_PDL -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="23" started-at="2019-07-18T09:12:01Z" finished-at="2019-07-18T09:12:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="quit" is-config="true" duration-ms="550" started-at="2019-07-18T09:12:01Z" finished-at="2019-07-18T09:12:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pack.AA_TN_PDL@63753b6d]" name="tearDown" is-config="true" duration-ms="21" started-at="2019-07-18T09:12:01Z" finished-at="2019-07-18T09:12:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pack.AA_TN_PDL -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+=======
+<testng-results skipped="0" failed="0" ignored="58" total="59" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="271281" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:52:10Z">
+    <groups>
+      <group name="kiran_TN_PDL_NEW">
+        <method signature="AA_TN_PDL.Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17]" name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed" class="pack.AA_TN_PDL"/>
+      </group> <!-- kiran_TN_PDL_NEW -->
+    </groups>
+    <test name="Test" duration-ms="271281" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:52:10Z">
+      <class name="pack.AA_TN_PDL">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="initialize" is-config="true" duration-ms="62" started-at="2019-08-28T07:47:53Z" finished-at="2019-08-28T07:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17]" name="Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed" duration-ms="255547" started-at="2019-08-28T07:47:53Z" finished-at="2019-08-28T07:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="getResult" is-config="true" duration-ms="178" started-at="2019-08-28T07:52:09Z" finished-at="2019-08-28T07:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed status=SUCCESS method=AA_TN_PDL.Advance_deposit_ACHPPwith2tendertypessMOwithsamenumbers_Transactionnotprocessed()[pri:38, instance:pack.AA_TN_PDL@6f1fba17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="quit" is-config="true" duration-ms="581" started-at="2019-08-28T07:52:09Z" finished-at="2019-08-28T07:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- pack.AA_TN_PDL -->
+      <class name="pack.AA_FL_PDL">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="setup_Grid" is-config="true" duration-ms="7708" started-at="2019-08-28T07:47:38Z" finished-at="2019-08-28T07:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_Grid -->
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="7182" started-at="2019-08-28T07:47:46Z" finished-at="2019-08-28T07:47:53Z">
+          <reporter-output>
+          </reporter-output>
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+        </test-method> <!-- setup_Grid -->
+=======
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="quit" is-config="true" duration-ms="547" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+>>>>>>> chary1
+      </class> <!-- pack.AA_FL_PDL -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+<<<<<<< HEAD
+=======
+>>>>>>> kiran1
+>>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+>>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
 </testng-results>

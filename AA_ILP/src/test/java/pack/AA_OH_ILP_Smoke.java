@@ -106,7 +106,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 	public static Excel TestData;*/
 
 		
-	@Test (priority=2,groups = "venkat_OH_ILP_Smoke")
+	//@Test (priority=2,groups = "venkat_OH_ILP_Smoke")
 
 	public void LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR() throws Exception {
 
@@ -172,7 +172,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 
 	}
 
-//@Test (priority=3,groups = "venkat_OH_ILP_Smoke")
+@Test (priority=3,groups = "venkat_OH_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -229,7 +229,7 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 		
 	}
 
-	//@Test (priority=1,groups = "venkat_OH_ILP_Smoke") 
+	@Test (priority=1,groups = "venkat_OH_ILP_Smoke") 
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -356,33 +356,6 @@ public class AA_OH_ILP_Smoke extends AA_ILP{
 
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	@AfterMethod(alwaysRun = true)
 

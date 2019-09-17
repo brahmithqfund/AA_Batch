@@ -5,17 +5,30 @@
    <test thread-count="5" name="Test">
   <groups>																																																	
   <run>
+
   
  
 <!-- <include name="revathi_FL_PDL"/>  -->
 <!-- <include name="anji_TN_PDL"/>  -->
 <include name="pradeep_TN_PDL"/> 
+<!-- <include name="revathi_FL_PDL"/>  -->
+<!-- <include name="anji_TN_PDL"/>  -->
+<include name="brahmith_TN_PDL"/> 
+<include name="anji_TN_PDL"/> 
+<include name="kiran_TN_PDL_NEW"/> 
+
+<!-- <include name="brahmith_TN_PDL"/>  -->
+<include name="brahmith_FL_PDL"/> 
+
+
 
        </run>
   </groups>
    <classes>
-      <class name="pack.AA_TN_PDL"/>
-      <!-- <class name="pack.AA_FL_PDL"/> -->
+
+      <class name="pack.AA_TN_PDL"/> 
+      <class name="pack.AA_FL_PDL"/>
+
      
     </classes>
   </test> <!-- Test -->
