@@ -119,13 +119,14 @@ public class NACHA extends AA_PDL{
 
 				System.out.println(ProductID);	
 				//appUrl = AppURL;
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+				Thread.sleep(2000);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");

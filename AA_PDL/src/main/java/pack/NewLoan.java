@@ -178,22 +178,49 @@ public class NewLoan extends AA_PDL{
 
 							test.log(LogStatus.INFO, "Navigated to Loan decisioning Screen");
 
-						 if(driver.findElement(By.name("ShareScreenBtn")).isEnabled())
-						 {
-							
+							if(driver.findElement(By.name("ShareScreenBtn")).isEnabled())
+							 {
+								 //driver.findElement(By.xpath("//input[contains(text(),"+stateProduct+")]")).click();
+							//test.log(LogStatus.PASS, "Borrower is Registered Successfully with SSN as " +SSN);	
+									//WebElement htmltable=driver.findElement(By.xpath("//*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr"));	
 
-							/*	 WebDriverWait wait = new WebDriverWait(driver, 10);	
-								 ///////////////////////////////////////////////////////////////// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input
-								 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")));
-								*/ 
-							 Thread.sleep(4000);
-							 							 
-							 driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
-								 test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
-							 
+								 int rows = driver.findElements(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr")).size();
+									//List<WebElement> rows=htmltable.findElements(By.tagName("tr"));
+								 test.log(LogStatus.INFO, "Rows count :: "+rows);
+								 
+									for (int a=2;a<=rows;a++)
+									{
+										String prod = driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr["+a+"]/td[2]")).getText();
+										test.log(LogStatus.INFO, "Product name is :: "+prod);
+										if (prod.equals(ProductName))
+										{
+										
+											Thread.sleep(3000);
+											//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr["+a+"]/td[2]/input")));
+											//*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input
+											//*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/input
+											 driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr["+a+"]/td[2]/input")).click();
 
+											driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr["+a+"]/td[2]/input")).click();
+											test.log(LogStatus.PASS, "ProductName is selected as "+ProductName);
+										}
+									}
+									Thread.sleep(1000);
+									WebDriverWait wait = new WebDriverWait(driver, 10);
+									
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]
+									
+									
+									
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input
+									// //*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/input
 
-						 }
+								
+							 }		
+
 						 driver.findElement(By.name("ShareScreenBtn")).click();
 						 test.log(LogStatus.PASS, "ShareScreen Button clicked");
 						 for( String winHandle1 : driver.getWindowHandles())

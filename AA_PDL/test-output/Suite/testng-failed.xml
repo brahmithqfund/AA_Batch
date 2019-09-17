@@ -4,19 +4,29 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="brahmith_TN_PDL"/>
+        <include name="brahmith_FL_PDL"/>
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_TN_PDL">
+      <class name="pack.AA_FL_PDL">
         <methods>
+          <include name="Deposit_ACR_WOR_2tender_type_MO_transaction_Void"/>
+          <include name="Deposit_ACR_WOR_2tender_type_same_MO_transaction"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash"/>
           <include name="initialize"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction"/>
+          <include name="NewLoan_Deposit_Clear_prepayment_clear_refund"/>
           <include name="quit"/>
-          <include name="setup_Grid"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_transaction_void"/>
           <include name="NewLoan_Deposit_Clear_transactions_dropdown"/>
+          <include name="NewLoan_Deposit_Clear_prepayment_clear_refund_check"/>
           <include name="getResult"/>
+          <include name="setup_Grid"/>
+          <include name="NewLoan_validate_RPP"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void"/>
+          <include name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction"/>
         </methods>
-      </class> <!-- pack.AA_TN_PDL -->
+      </class> <!-- pack.AA_FL_PDL -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

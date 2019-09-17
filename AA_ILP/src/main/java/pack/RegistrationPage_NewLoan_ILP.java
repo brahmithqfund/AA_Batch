@@ -292,7 +292,7 @@ public class RegistrationPage_NewLoan_ILP extends AA_ILP{
 
 				{
 
-					driver.findElement(By.name("customerBean.monthlyDate")).sendKeys("10th");
+					driver.findElement(By.name("customerBean.monthlyDate")).sendKeys("20th");
 
 					test.log(LogStatus.PASS, "Monthly PayFrequency Selected");
 				}
@@ -320,7 +320,7 @@ public class RegistrationPage_NewLoan_ILP extends AA_ILP{
 
 				{
 
-					driver.findElement(By.id("rad_wk4")).click();
+					driver.findElement(By.id("rad_wk2")).click();
 
 					test.log(LogStatus.PASS, "Wednesday is selected");
 

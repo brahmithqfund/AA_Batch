@@ -4,31 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="venkat_TN_LOC"/>
+        <include name="revathi_TN_LOC1"/>
       </run>
     </groups>
     <classes>
       <class name="pack.AA_TN_LOC">
         <methods>
-          <include name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278"/>
           <include name="setup_Grid"/>
           <include name="getResult"/>
-          <include name="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_"/>
-          <include name="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291"/>
           <include name="initialize"/>
           <include name="quit"/>
-          <include name="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_"/>
-          <include name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277"/>
-          <include name="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed"/>
-          <include name="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_"/>
-          <include name="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284"/>
-          <include name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN"/>
-          <include name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_"/>
-          <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282"/>
-          <include name="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286"/>
-          <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280"/>
-          <include name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1"/>
-          <include name="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed"/>
+          <include name="Loan_Draw_PartialPMT_MinPayment_EOD"/>
         </methods>
       </class> <!-- pack.AA_TN_LOC -->
     </classes>

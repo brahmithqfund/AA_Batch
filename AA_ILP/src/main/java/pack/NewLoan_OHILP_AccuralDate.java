@@ -65,7 +65,7 @@ public class NewLoan_OHILP_AccuralDate extends AA_CO_ILP{
 				System.out.println(stateProductType);
 				String Parent_Window1 = driver.getWindowHandle();  
 				System.out.println(ProductID);	
-				String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				appUrl = AppURL;
 			    Login.Login(UserName,Password,StoreId);
 				String SSN1 = SSN.substring(0, 3);

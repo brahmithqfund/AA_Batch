@@ -107,13 +107,13 @@ public class NewLoan_product extends AA_PDL {
 					String NewVIN= TestData.getCellData(sheetName,"NewVIN",row);
 					//System.out.println(Term);
 					//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 					//String stateProduct=State+" "+ProductID;
 					String stateProductType=State+" "+ProductType;
 					String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
 					System.out.println(ESign_CollateralType);
 					String ESign_LoanAmt = TestData.getCellData(sheetName,"ESign_LoanAmt",row);
-					String ChkgAcctNbr = TestData.getCellData(sheetName,"ChkgAcctNbr",row);
+					String ChkgAcctNbr = SSN.substring(3, 9);	    
 					String ESign_DisbType = TestData.getCellData(sheetName,"ESign_DisbType",row);
 					String ESign_CourtesyCallConsent = TestData.getCellData(sheetName,"ESign_CourtesyCallConsent",row);
 					String AllowPromotion = TestData.getCellData(sheetName,"Allow Promotion",row);
@@ -121,7 +121,7 @@ public class NewLoan_product extends AA_PDL {
 					String ESign_Preference = TestData.getCellData(sheetName,"ESign_Preference",row);
 					String ESign_Checks = TestData.getCellData(sheetName,"ESign_Checks",row);
 					String ESign_Password=TestData.getCellData(sheetName,"ESign_Password",row);
-					String ESign_CheckNbr = TestData.getCellData(sheetName,"ESign_CheckNbr",row);			
+					String ESign_CheckNbr = SSN.substring(3, 9);	    		
 					String last4cheknum= ChkgAcctNbr.substring(ChkgAcctNbr.length() - 4);
 					System.out.println(last4cheknum);
 					System.out.println(stateProductType);

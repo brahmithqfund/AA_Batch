@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="pack.AA_TN_LOC">
+        <methods>
+          <include name="LOCI_Draw_Stmt_Dlqt_Cure_WO_RCCSchdl_1stInstDep_clear_2ndInstDep_1stInstRet"/>
+          <include name="quit"/>
+          <include name="LOCI_Draw_stmt_DLQ_DFLT_DismissedinDFLT_LineStatustoWO_Sc178"/>
+          <include name="Loan_Draw_statement_Draw_MinPayment_EOD_PartialPayment_statement_Draw"/>
+          <include name="DFLT_RccRevoke_Epp_voidEpp__CheckWhetherStatusDefault"/>
+          <include name="DeflutLoan__GenerateRcc_PendingBNK_DepositNotBeProcessed"/>
+          <include name="DFLT_WO_RccSChedule_RccRevoke_Epp_voidEpp_RccAuthorzation_CustomershouldeligibleforRCCnow"/>
+          <include name="Loan_Draw_StGn_ACHDeposit_RTN_Deceased_ACHDepositnotRedeposit"/>
+          <include name="LOCI_Draw_StGn_DeceasedBeforeDueDate_LineStatusWo_WOR_OldLoanShouldClosed_NewLoanShouldnotBeEnabled"/>
+          <include name="Loan_Draw_statement_PartialPayment_EOD_DLQ_MinPayment_LoanCurrent_Draw"/>
+          <include name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_RCCSCheduleCancel_"/>
+          <include name="tearDown"/>
+          <include name="LOCI_DRAW_Discharge_CustmertoInactive_LineClosureShouldhappen"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule__PendingBankruptcy_VoidPendingBnkrupt_VerifyRCCSchedule_Sc286"/>
+          <include name="LOCI_DRAW_DLQ_DFLT_RccElesibilityStatus"/>
+          <include name="setup_Grid"/>
+          <include name="LOCI_Draw_stmt_DLQ_Deceasedonduedate_LineStatustoWO_Sc149"/>
+          <include name="DeflutLoan_RccElegibility_GenerateRcc_Morethan1stinstallmentPayment_Void_CheckTheRccChanges"/>
+          <include name="Loan_Draw_Payoff_Loanclosure_Deceased_NewloanOriginationshouldnotbeallowed"/>
+          <include name="LOCI_Draw_Stmnt_Dep_Return_RepDep_ActMilitary_RepresrecCancel_"/>
+          <include name="DFLTLoan_RCCRev_RPP_DepoAllInstWeekly"/>
+          <include name="LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Bweek"/>
+          <include name="LOCInit_Draw_Stmt_Dep_ReturnR01andR09_DLQT_Cure_ACHRevoke_WO_CheckRCC_"/>
+          <include name="LOC_default_RCCRevoke_EPP_Instwisepayment_Week"/>
+          <include name="LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Semi"/>
+          <include name="LOCI_wky_Bim_Bi_Draw_Stmt_Dep_Return_RepDep_Clear_Return"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule_Beforeduedate_Payfirstinsttwithcash_Voidpymt_CheckRevisedSch_RCCRevoke_CheckSch_Sc253"/>
+          <include name="LOCI_Draw_Stmt_DLQ_Cure_Default_WO_DepositandClearLastInstall_LoanshouldBeClosed"/>
+          <include name="LOCI_Draw_Dismissed_NextDrawshouldnotbeavailble_Bankrupt_CheckDraw_"/>
+          <include name="LOCInit_Draw_Stmt_delinquent_Cure_WO_RCCSchd_WORecoveryfullPmt_VoidWORecovery_RCCSCheduleRevise_IsLoanRCCN"/>
+          <include name="Loan_Draw_StGn_Dismissedonduedate_ACHshouldnotgetdeposited"/>
+          <include name="Loan_Draw_PartialPMT_MinPayment_EOD"/>
+          <include name="Loan_statement_Draw_DLQ_Cure_MinPayment_Draw_statment"/>
+          <include name="LOCI_Draw_Stmt_Deposit_RTN_DLQ_DFLT_Rccrevoke_BNK_RccStatus"/>
+          <include name="Loan_Draw_Payoff_Deceased_Void_Nextdrawavailable"/>
+          <include name="DFLTLoan_CheckRCCStatus_RCCRevoke_CheckRCCIneligibity_RCCAuthorization_RCCSchedule_RCCRevoke_"/>
+          <include name="LOC_Draw_Deposit_Return_BNK_Decease_Writoff"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule__Bankruptcy_VoidBNK_RCCStatusverification_Sc284"/>
+          <include name="Loan_Draw_StGn_Default_RCC_Dismissed_RCCNotgetDeposit_LinestatusWO"/>
+          <include name="DFLT_CheckRCCisY_CheckRCCBasedOnFrequency_BNK_WO_RCCInEligible_"/>
+          <include name="Loan_Draw_statement_Draw_Void_Rescind"/>
+          <include name="DeflutLoan__GenerateRcc_PendingBNK_VoidPendingBNK_DepositNotBeProcessed"/>
+          <include name="Loan_Draw_statement_DLQ_DeceasedincurePeriod_WO"/>
+          <include name="LOCInit_Draw_Stmt_DLQ_Cure_DFLT_RCCSchedule_DepositlastInst_"/>
+          <include name="LOCI_Draw_Payoffwithcash_Dismissed_DrawnotAvailable_Sc181"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule_R1Deposit_RCCOrg_RCCoptout_CheckSch_RCCauth2ndDuedate_CheckSch_Sc246"/>
+          <include name="LOCI_Draw_BNK_LoanShouldDefOrWOB_WORShouldbeprocessedPPNshouldnotbedisplayed_WORFullPmt_Lineshouldbeclosed_VoidWOR_CustStatusBNK_"/>
+          <include name="LOCI_DRAW_Statement_Deceased_LCstatusWO_VoidDeceased_ValidateLCstatus"/>
+          <include name="LOCI_Draw_Stmt_BNKLoanNotSelect_Payoff_CustomerStatusshouldbeBNK"/>
+          <include name="LOCI_Draw_Stmt_Deposit_RTN_PendingBNK_DLQ_DFLT_RccEligibility_CheckRccStatus"/>
+          <include name="LOCI_WKY_Bim_Bi_Draw_Stmt_Dep_Return_PartialPayment_RepDep"/>
+          <include name="LOC_default_RCCRevoke_EPP_Instwisepayment_Biweekly"/>
+          <include name="Loan_Draw_StGn_ACHDeposit_RTN_Dismissed_ACHDepositnotRedeposit"/>
+          <include name="Return_ChangeFrequency_Default_LoanInRCCisY_RCCSchedule_InstDateWithNewFrequency_"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithclear_VoidBNK_Sc282"/>
+          <include name="DFLTcustomer_RCC7_RCCSchedule__lastinstdeposit_Bnkruptwithoutclear_Sc280"/>
+          <include name="Loan_Draw_statment_MinPayment_Void_DLQ_Cure_Default"/>
+          <include name="LOCI_Draw_Stmt_DLQ_Cure_Default_WO_DepositLastInstall_LoanshouldnotBeClosed"/>
+          <include name="DFLTLoan_RCCStatusShouldbeY_ChangeFrequency_RCCSchedule_InstDatesBaseOnNewFrequency_"/>
+          <include name="getResult"/>
+          <include name="LOCI_Draw_Stmt_delinquent_Cure_DFLT_WO_RCCScdl_RCCRev_RCCCancelled_"/>
+          <include name="initialize"/>
+          <include name="DFLTLoan_CheckRCCStatus_RCCSchedule_CheckInstBasedOnFrequency_"/>
+          <include name="LOCICash_Draw_Draw2_MakePmt_Stmnt_PmtRTN_EODduedate_DLQ"/>
+          <include name="LOCI_Draw_Deceased_NextDrawshouldnotbeavailble"/>
+          <include name="LOCI_Draw_StmtGn_DismissedBeforeDueDate_WORecovery_OldLoanClosed_NewLoanEnable_"/>
+          <include name="LOCI_DEF_RccSechdule_Deposit_ReturnWithR02_ElegibleforRpp"/>
+          <include name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC"/>
+          <include name="Loan_Draw_Payoff_Deceased_Nextdrawnotavailable"/>
+          <include name="LOC_default_RCCRevoke_EPP_Instwisepayment_Monthly"/>
+          <include name="LOCI_Draw_Stmt_DLQ_Cure_Default_WO_1stinst_return_2ndinst_Return_3rdinst_Return"/>
+          <include name="LOCI_Draw_stmt_Deposit_ReturnwithR01_ACTM_ACTMEnd_RepDepRecordchouldpickforDeposit_Sc314"/>
+          <include name="Loan_Draw_MinPayment_Dismissed_Drawnotavilable_Txn_Testdata"/>
+          <include name="LOCI_Draw_Default_RCCRevoke_ConverEPP_DepositandClearInswise_SemiMonthly"/>
+          <include name="LOCI_Draw_Default_RCCRevoke_ConverEPP_MinPay_Minper_Month"/>
+          <include name="LOCI_Draw_Stmt_DLQ_Cure_Default_WO_DepositandReturnLastInstall_Loanshouldbeupdatedtopreviousstatusandscheduleshouldberevised"/>
+          <include name="LOCI_DFLT_GenerateRCCSchedule_RCC1stDeposit_RccOrigination_RccOutout_CheckUpdates_RccAuthorization_CheckUpdates"/>
+          <include name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODonDueDate_Sc278"/>
+          <include name="LOCI_Draw_Deceased_NextDrawshouldnotbeavailble_VoidDeceased_WOR_NewloanOptionShouldBeAvalabile"/>
+          <include name="LOCI_Draw_stmt_DLQ_DismissedinCureperiod_LineStatustoWO2_Sc177"/>
+          <include name="LOCI_Draw_Default_RCCRevoke_ConverEPP_DepositandClearInswise_Monthly"/>
+          <include name="LOCI_Draw_StGn_DFLT_WO_RCC_Deceased_LineStatusWO_"/>
+          <include name="LOCI_Draw_stmt_DLQ_Cure_DFLT_GenerateRCC_ACTM_ACTMEnd_EODbeforeDueDate_Sc277"/>
+          <include name="LOCInit_Draw_Stmt_delinquent_Cure_Default_RCCschedulewith2Inst_1stInstDeposit_Clear_2ndDFLTPmt_"/>
+          <include name="Loan_Draw_statement_VoidDraw_EOD__Draw_statment"/>
+          <include name="LOCI_Draw_stmt_DLQ_DFLT_WO_Dismissedonduedate_LineStatustoWO_Sc179"/>
+          <include name="DFLTcustomer_RCCRevoke_ConvertEPP_DepositallInst_ClearallInst_Weekly_CheckStatus_Sc198"/>
+          <include name="LOC_default_RCCRevoke_EPP_Instwisepayment_Semmonthly"/>
+          <include name="Loan_Draw_StGn_Dfault_RCCRevoke_RPP_Dismissed_LinestatusWO"/>
+          <include name="LocI_Draw_Stmt_Deposit_Return_DLQ_Cure_DEF_WO_CheckEligibilityofRCC1"/>
+          <include name="LOCI_Draw_Stmt_Dlqt_Cure_WO_RCCSchdl_1stInstDep_clear_NextInstPartPmt_RCCScdlReviseBalAmt_"/>
+          <include name="LOCI_Draw_stmt_Deposit_ReturnwithR01_DLQ_Cure_WO_PendingBNK_Deceased_EligibilityRCC_Sc291"/>
+          <include name="Loan_Draw_MinPayment_Deceased_Drawnotavailable"/>
+          <include name="Loan_Draw1_Draw2ACH_statement_Rescind_Draw_EOD_DLQ"/>
+          <include name="Loan_Draw_statement_Partialpayment_EOD_DLQ_Cure_Default"/>
+          <include name="LOCI_Draw_stmt_DismissedonDuedate_LineStatustoWO_Sc176"/>
+          <include name="LOCI_DRAW_Statement_BNK_LoanTobeDEForWOB_VoidBNK_LoanInWOstatus"/>
+          <include name="LOCI_Draw_Stmt_Deposit_RTN_DFLT_RCCRevoke_RCCStatus"/>
+        </methods>
+      </class> <!-- pack.AA_TN_LOC -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
