@@ -4,6 +4,7 @@
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -32,24 +33,30 @@
 		<item value="@Test" key="selection"/>
 >>>>>>> kiran1
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+		<item value="_FL_PDL" key="selection"/>
+>>>>>>> chary1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<item value="//@Test"/>
-			<item value="Venkat_CO_ILP"/>
-			<item value="@b"/>
-			<item value=" driver.findElement(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input&quot;)).click();"/>
-			<item value="driver.findElement(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input&quot;)).click();"/>
-			<item value="priority "/>
-			<item value="venkat_OH_ILP"/>
-			<item value="OH_ILP_venkat"/>
+			<item value="_TN_PDL"/>
+			<item value="_TN_PDL_"/>
+			<item value="brahmith_TN_PDL1"/>
+			<item value="brahmith"/>
+			<item value="refund"/>
+			<item value="return"/>
+			<item value="rescind"/>
+			<item value="clear"/>
 		</list>
 		<list key="replacehistory">
+			<item value="_FL_PDL"/>
+			<item value="_FL_PDL_"/>
+			<item value="brahmith_TN_PDL"/>
+			<item value="venkat_OH_ILP_Prod"/>
 			<item value="@Test"/>
+<<<<<<< HEAD
 			<item value="driver.findElement(By.xpath(&quot;//input[@value=&apos;Go&apos; and @type=&apos;button&apos;]&quot;)).click();"/>
 =======
 <<<<<<< HEAD
@@ -135,37 +142,16 @@
 			<item value="NewLoan_ILP"/>
 >>>>>>> kiran1
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+>>>>>>> chary1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="63" key="DIALOG_X_ORIGIN"/>
-		<item value="234" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-		<item value="495" key="DIALOG_X_ORIGIN"/>
-		<item value="347" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-		<item value="490" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
->>>>>>> cee862edff1ea40830b33adb2df9038107fbb316
->>>>>>> eb0d0356a82571981b67942f25f52f2828d44d1d
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-		<item value="605" key="DIALOG_HEIGHT"/>
 		<item value="8" key="DIALOG_X_ORIGIN"/>
+<<<<<<< HEAD
 		<item value="171" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> chary1
 >>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
@@ -179,5 +165,8 @@
 		<item value="236" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> kiran1
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+		<item value="258" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> chary1
 	</section>
 </section>

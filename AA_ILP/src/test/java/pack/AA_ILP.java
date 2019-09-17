@@ -28,5 +28,6 @@ class AA_ILP {
 	public static ExtentTest test;
 	public static ExtentTest test2;
 	public static Excel TestData;
+	public static String Due_Date;
 	
 }

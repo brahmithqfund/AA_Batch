@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.relevantcodes.extentreports.LogStatus"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.NoAlertPresentException"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

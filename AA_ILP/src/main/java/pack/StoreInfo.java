@@ -27,7 +27,7 @@ public class StoreInfo extends AA_CO_ILP{
 				//String UserName = TestData.getCellData(sheetName, "UserName", row);
 				//String Password = TestData.getCellData(sheetName, "Password", row);
 				//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
-				String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+				//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 				System.out.println(AdminURL);
 
 				driver.get(AdminURL);

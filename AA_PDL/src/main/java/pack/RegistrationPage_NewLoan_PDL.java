@@ -108,10 +108,10 @@ public static void RegistrationPage_NewLoan_PDL(WebDriver driver,ExtentTest test
 	       String ZipCode = TestData.getCellData(sheetName,"ZipCode",row);
 	       String MonthsAtAddress = TestData.getCellData(sheetName,"MonthsAtAddress",row);	     
 	       String Bank_ABARoutingNbr = TestData.getCellData(sheetName,"Bank_ABARoutingNbr",row);
-	       String Bank_ChkgAcctNbr = TestData.getCellData(sheetName,"Bank_ChkgAcctNbr",row);	       
+	       String Bank_ChkgAcctNbr = SSN.substring(3, 9);	       
 	       String Ctc_PrimaryPhone = TestData.getCellData(sheetName,"Ctc_PrimaryPhone",row);
 	       String Ctc_PhoneType = TestData.getCellData(sheetName,"Ctc_PhoneType",row);
-	       String Misc_PhotoIDNbr = TestData.getCellData(sheetName,"Misc_PhotoIDNbr",row);
+	       String Misc_PhotoIDNbr = SSN.substring(3, 9);	    
 	       String Misc_IDExpDate = TestData.getCellData(sheetName,"Misc_IDExpDate",row);	   
 	       String Misc_PhotoIDType = TestData.getCellData(sheetName,"Misc_PhotoIDType",row);
 	       String BorrDOB = TestData.getCellData(sheetName,"Misc_DOB",row);

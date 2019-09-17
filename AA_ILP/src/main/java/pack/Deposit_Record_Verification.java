@@ -86,7 +86,7 @@ public class Deposit_Record_Verification extends AA_CO_ILP {
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 
-				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				//driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				if(ProductID.equals("ILP"))
 				{
 

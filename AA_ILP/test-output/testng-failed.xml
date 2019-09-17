@@ -4,101 +4,23 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="venkat_OH_ILP_Prod"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="leela_OH_ILP_Prod2"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="venkat_OH_ILP_Smoke"/>
-=======
-        <include name="kiran_CO_ILP_Smoke"/>
->>>>>>> kiran1
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-        <include name="leela_OH_ILP_Prod"/>
->>>>>>> chary1
->>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
-      </run>
-    </groups>
-    <classes>
-<<<<<<< HEAD
-      <class name="pack.AA_OH_ILP_Prod">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="pack.AA_OH_ILP_Prod">
-=======
-<<<<<<< HEAD
-      <class name="pack.AA_OH_ILP_Smoke">
->>>>>>> 99623242f6dd53d8814a0f228787d3452c5cf3f0
-=======
-      <class name="pack.AA_OH_ILP_Prod">
->>>>>>> chary1
->>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
-        <methods>
-          <include name="initialize"/>
-          <include name="LonI_DFLT_PPN_BNK_1InstDeposit"/>
-          <include name="quit"/>
-<<<<<<< HEAD
-          <include name="tearDown"/>
-<<<<<<< HEAD
-          <include name="Loan_1stParPmt_1stDep_Ret_"/>
-          <include name="setup_Grid"/>
-          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
-          <include name="Loan_1stDep_Ret_EODBatch10daysDueDate_PmtGreaterthanInstAmt_Void_"/>
-=======
-<<<<<<< HEAD
-          <include name="setup_Grid"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- pack.AA_OH_ILP_Prod -->
-=======
-          <include name="LOAN_partialpayment_DLQ_Cure_DEF_PartialdefPayment_PPN_1payment_Void_PPNdefpayment_WO120_WOR"/>
-=======
-          <include name="LonI_IstInstPayment_ACTM_ACHRevoke_2ndInstDeposit_Verify_Record"/>
-          <include name="LonI_IstInstPayment_ACTM_2ndInstDeposit_Verify_Record"/>
->>>>>>> chary1
-          <include name="setup_Grid"/>
-          <include name="Loan_1stpayment_activemilitary_2ndpayment_"/>
-          <include name="Loan_Bankrupt_Void_"/>
-          <include name="LonI_Bnkrupt_Deceased"/>
-          <include name="BorrowerRegistration_ActiveMilitary_NewLoanNotProcessed_"/>
-          <include name="LonI_WO_PPN_1stInstpymt_VoidPymt_RunEODbatch35daysfromduedate"/>
->>>>>>> 6eee94d330356e1dc5d92f97e7c38f4632c5904c
-          <include name="getResult"/>
-<<<<<<< HEAD
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- pack.AA_OH_ILP_Prod -->
-=======
-      </class> <!-- pack.AA_OH_ILP_Smoke -->
-<<<<<<< HEAD
-=======
-        <include name="leela_OH_ILP_Prod2"/>
-=======
-        <include name="leela_OH_ILP3"/>
->>>>>>> chary1
-=======
-        <include name="venkat_OH_ILP3"/>
->>>>>>> chary1
+        <include name="brahmith"/>
       </run>
     </groups>
     <classes>
       <class name="pack.AA_OH_ILP">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="Loan_1stParPmt_1stDep_Ret_"/>
+=======
+>>>>>>> chary1
           <include name="getResult"/>
           <include name="setup_Grid"/>
           <include name="tearDown"/>
           <include name="quit"/>
           <include name="initialize"/>
+          <include name="Due_Date_verification"/>
         </methods>
 =======
 =======
@@ -156,6 +78,7 @@
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
       </class> <!-- pack.AA_OH_ILP -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chary1
 =======
 >>>>>>> venkat1
@@ -184,6 +107,8 @@
       </class> <!-- pack.AA_CO_ILP -->
 >>>>>>> kiran1
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+>>>>>>> chary1
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

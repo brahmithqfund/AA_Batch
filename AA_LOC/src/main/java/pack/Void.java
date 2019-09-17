@@ -39,7 +39,7 @@ public class Void extends AA_LOC {
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreId",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreId",row);
 				Login.Login(UserName,Password,StoreId);	
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);

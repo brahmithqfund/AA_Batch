@@ -11,7 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ACHPP_MO_2tendertypes extends AA_PDL {
 
 	
-	
+
 	public static void ACHPP_MO_2tendertypes_DiffNumbers(String SSN,String FileName) throws Exception{
 
 
@@ -118,7 +118,9 @@ public class ACHPP_MO_2tendertypes extends AA_PDL {
 				String SSN4 ="1"+SSN1;
 				
 				
+
 					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("Money Order");
+
 					test.log(LogStatus.PASS, "Tender Type is Selected as :: Money Order");
 					Thread.sleep(5000);					
 					driver.findElement(By.name("transactionDataBean.ccmoNbrFirst")).sendKeys(SSN3);
@@ -129,8 +131,9 @@ public class ACHPP_MO_2tendertypes extends AA_PDL {
 					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys(pmtamt3);
 					test.log(LogStatus.PASS, "Tender Type 1 AMT is ::"+pmtamt3);
 										
-						
+
 					driver.findElement(By.name("transactionDataBean.tenderTypeSecond")).sendKeys("Money Order");
+
 					test.log(LogStatus.PASS, "Tender Type is Selected as Money Order");
 					Thread.sleep(5000);
 					
@@ -296,7 +299,9 @@ public class ACHPP_MO_2tendertypes extends AA_PDL {
 				String SSN4 ="1"+SSN1;
 				
 				
+
 					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("Money Order");
+
 					test.log(LogStatus.PASS, "Tender Type is Selected as :: Money Order");
 					Thread.sleep(5000);					
 					driver.findElement(By.name("transactionDataBean.ccmoNbrFirst")).sendKeys(SSN3);
@@ -308,7 +313,9 @@ public class ACHPP_MO_2tendertypes extends AA_PDL {
 					test.log(LogStatus.PASS, "Tender Type 1 AMT is ::"+pmtamt3);
 										
 						
+
 					driver.findElement(By.name("transactionDataBean.tenderTypeSecond")).sendKeys("Money Order");
+
 					test.log(LogStatus.PASS, "Tender Type is Selected as Money Order");
 					Thread.sleep(5000);
 					
@@ -361,8 +368,7 @@ public class ACHPP_MO_2tendertypes extends AA_PDL {
 		}
 	
 	
+
+	
 }
-
-		
-
 

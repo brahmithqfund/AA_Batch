@@ -358,6 +358,7 @@ TExecutionReports/LOC/FailedTestsScreenshots/NewLoan_Weekly_Duedate2019071002295
 WExecutionReports/LOC/FailedTestsScreenshots/NewLoan_VoidEncryptionKey20190710022958.png,a\5\a5e0c3f9134422f0edabf13d2a71443897152c5f
 ƒ
 SExecutionReports/LOC/FailedTestsScreenshots/Newloan_MultipullDisb20190710022958.png,6\2\628eb6937312d7ec66a0c3c362f01480d2c80d40
+<<<<<<< HEAD
 =======
 Y
 )src/main/java/pack/AgeStore_LoanDate.java,a\3\a3141a9f405777c11a9e85bbf85f514a7eccd9fe
@@ -374,3 +375,29 @@ b
 ]
 -src/main/java/pack/ACHPP_MO_2tendertypes.java,5\e\5e7bdb187907dfc74cd54e770374c9d49abe7c87
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
+=======
+`
+0src/main/java/pack/EOD_BatchProcess_DueDate.java,9\4\940af6b958756be2bc1b9264db0b210367d83e5e
+Q
+!src/main/java/pack/RPP_check.java,f\9\f9859b4a87bc10d587856587a2535886b580d364
+[
++src/main/java/pack/LoanACHPayment_Diff.java,f\c\fcc2d7ec16fea1359602a533e246464b3a9d05ca
+b
+2src/main/java/pack/Void_ACHPP_MO_2tendertypes.java,0\0\009af4d479f9c929543dcd54f780927a76034a63
+>
+testng.out.xml,2\7\2752d696f2e2eed0be9a108c703430e7dcb978ae
+c
+3src/main/java/pack/Void_ACHPP_CCK_2tendertypes.java,7\5\750c82e65c56d9668d3b6bf592646442897e3afd
+^
+.src/main/java/pack/ACHPP_CCK_2tendertypes.java,5\9\5942942cb326e3f0253da4d2593b62b3184aea5a
+\
+,src/main/java/pack/WOR_CCK_2tendertypes.java,c\2\c24d883785d7f83fc406e05bd9b00dc9742f57b2
+\
+,src/main/java/pack/ACH_Prepayment_extra.java,b\1\b1de4671b7a2c8e38b804c4c05a3a14576d642b7
+b
+2src/main/java/pack/ACH_Prepayment_extraamount.java,0\7\0743ddf0282c23af639a40f2448f359f141e3c29
+Q
+!src/main/java/pack/ACH_Clear.java,5\1\5193ecab02aa73ab5f0f25b458db09c3f99e3e77
+X
+(src/main/java/pack/ACH_Refund_Check.java,2\7\27e99cf1efef4cc766f4c96cfadf35d0d1306329
+>>>>>>> chary1

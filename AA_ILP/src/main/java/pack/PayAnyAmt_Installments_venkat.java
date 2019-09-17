@@ -117,7 +117,7 @@ public class PayAnyAmt_Installments_venkat extends AA_CO_ILP{
 	// name="requestBean.siilBean.payAmt"
 					//driver.findElement(By.name("requestBean.siilBean.payAmt")).sendKeys(Amt);
 					test.log(LogStatus.PASS, "Payment Amount is ::"+Amt );
-					driver.findElement(By.name("requestBean.siilBean.tenderTypeFirst")).sendKeys(DisbType);
+					driver.findElement(By.name("requestBean.siilBean.tenderTypeFirst")).sendKeys("CASH");
 					test.log(LogStatus.PASS, "Tender Type is selected " + TenderType);
 	/// name="requestBean.siilBean.tenderTypeFirst"
 					// name="requestBean.siilBean.tenderAmtFirst"
