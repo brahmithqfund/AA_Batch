@@ -156,8 +156,9 @@ public class AgeStore extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
-				}
+					//driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
 				{
@@ -169,7 +170,8 @@ public class AgeStore extends AA_PDL{
 				driver.findElement(By.name("transactionList")).sendKeys("History");
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.id("go_Button")).click();  
+					//driver.findElement(By.id("go_Button")).click();  
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 
 				for( String winHandle1 : driver.getWindowHandles())
@@ -199,14 +201,16 @@ public class AgeStore extends AA_PDL{
 				test.log(LogStatus.PASS, "Password is entered: "+Password);					  	        			   
 				driver.findElement(By.name("login")).click();
 				test.log(LogStatus.PASS, "Clicked on Submit button");
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 				driver.switchTo().defaultContent();
+				Thread.sleep(3000);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
 				test.log(LogStatus.PASS, "Clicked on Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
+				Thread.sleep(3000);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  
 				WebElement elements1 = driver.findElement(By.linkText("QA Jobs"));
 				Actions actions1 = new Actions(driver); 

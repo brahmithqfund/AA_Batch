@@ -106,7 +106,7 @@ public class LoanPartialPayment extends AA_PDL{
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
@@ -118,6 +118,7 @@ public class LoanPartialPayment extends AA_PDL{
 				Thread.sleep(2000);
 				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Loan Transactions")));	
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	
+				
 				Thread.sleep(1000);
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -153,7 +154,7 @@ public class LoanPartialPayment extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 												//html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
 					
 				}

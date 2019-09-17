@@ -145,7 +145,8 @@ public class Prepaymentfull extends AA_PDL{
 				//driver.findElement(By.xpath("//input[@name='button'][@value='Go']")).click();
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					//driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				if(ProductID.equals("TLP"))
 				{

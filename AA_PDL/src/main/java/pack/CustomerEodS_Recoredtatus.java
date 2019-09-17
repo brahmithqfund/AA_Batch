@@ -142,7 +142,8 @@ public class CustomerEodS_Recoredtatus extends AA_PDL{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				driver.findElement(By.name("button")).click();
+				//driver.findElement(By.name("button")).click();
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for(String winHandle : driver.getWindowHandles()){
 					driver.switchTo().window(winHandle);
@@ -154,8 +155,7 @@ public class CustomerEodS_Recoredtatus extends AA_PDL{
 				if(ProductID.equals("PDL"))
 				{
 
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
-				}
+			driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();				}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
 				{

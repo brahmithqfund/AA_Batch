@@ -115,11 +115,13 @@ public static void SetCurrentDate(String SSN, String FileName) throws Exception{
 				        //Click Login Button
 				        driver.findElement(By.name("login")).click();
 				        test.log(LogStatus.PASS, "Clicked on Submit button");
+				        Thread.sleep(3000);
 										
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("topFrame");
 					driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
 					test.log(LogStatus.PASS, "Clicked on Transactions");
+					Thread.sleep(3000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.findElement(By.linkText("QA Jobs")).click();

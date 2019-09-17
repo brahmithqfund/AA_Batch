@@ -159,8 +159,9 @@ public static void RegistrationPage_NewLoan_PDL(WebDriver driver,ExtentTest test
 			
 			//Thread.sleep(3000);
 	        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));       
-	        //driver.findElement(By.cssSelector("li[id='900000']")).click();	
-	        driver.findElement(By.xpath("//*[@id='900000']/a")).click();
+	        driver.findElement(By.cssSelector("li[id='900000']")).click();	
+			//driver.findElement(By.linkText("Borrower")).click();
+			driver.findElement(By.xpath("//*[@id='900000']/a")).click();
 			
 			test.log(LogStatus.PASS, "Clicked on Borrower");			
 			driver.switchTo().defaultContent();

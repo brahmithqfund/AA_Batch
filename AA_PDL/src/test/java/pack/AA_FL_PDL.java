@@ -3883,22 +3883,7 @@ public class AA_FL_PDL extends AA_PDL{
 	@BeforeTest(alwaysRun = true)
 	public void setup_Grid() throws IOException, InterruptedException {
 
-		try {
-			BufferedReader reader;
-			reader = new BufferedReader(
-
-					new FileReader("C:/AA_Batch/AA_PDL/src/test/java/pack/Config.properties"));
-
-			prop = new Properties();
-			prop.load(reader);
-			reader.close();
-
-		}
-
-		catch (Exception e) {
-
-			System.out.println("Object proprties file not found");
-		}
+		
 
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process

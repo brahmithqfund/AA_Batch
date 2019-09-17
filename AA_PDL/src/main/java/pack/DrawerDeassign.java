@@ -105,7 +105,7 @@ public class DrawerDeassign extends AA_PDL{
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);

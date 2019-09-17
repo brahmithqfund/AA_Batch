@@ -156,7 +156,7 @@ public class PrenoteClear_BeforeDuedate extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
@@ -170,7 +170,8 @@ public class PrenoteClear_BeforeDuedate extends AA_PDL{
 				test.log(LogStatus.PASS, "transactionList Selected as History");
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.id("go_Button")).click(); 
+					//driver.findElement(By.id("go_Button")).click(); 
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 					test.log(LogStatus.PASS, "Click on GO Button");
 
 				}

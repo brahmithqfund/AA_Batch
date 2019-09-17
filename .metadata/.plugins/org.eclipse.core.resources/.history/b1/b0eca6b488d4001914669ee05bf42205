@@ -1,0 +1,7 @@
+package pack;
+
+public interface LearnI {
+	public void s1();
+	void s2();
+
+}

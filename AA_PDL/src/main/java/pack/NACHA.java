@@ -156,7 +156,8 @@ public class NACHA extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				String DueDate=null;
-				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+													  // /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]
 				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
 				System.out.print(DueDate);	
 				

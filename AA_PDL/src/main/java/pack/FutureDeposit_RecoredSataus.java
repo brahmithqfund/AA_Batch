@@ -116,7 +116,7 @@ public class FutureDeposit_RecoredSataus extends AA_PDL{
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
@@ -156,7 +156,9 @@ public class FutureDeposit_RecoredSataus extends AA_PDL{
 
 					//driver.findElement(By.name("button")).click();
 					///html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]	
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+
+
 					//   /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]    
 				}
 				//  driver.findElement(By.name("button")).click();

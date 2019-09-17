@@ -1,0 +1,49 @@
+package pack;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+import org.apache.xmlbeans.impl.xb.xmlconfig.JavaNameList.Member2;
+
+
+
+
+
+ class Learn {
+
+	
+	public void display()
+	{
+		System.out.println("print class");
+	}
+	
+	
+	
+}
+
+	
+
+ class Child extends Learn
+{
+	public void display()
+	{
+		System.out.println("child class");
+		
+	}
+	
+}
+ 
+  public class Learn2 extends Child
+{
+	  public static void main()
+		{
+			//System.out.println("child class2");
+			//super.display();
+		//	this.display();
+		  Learn2 obj2=new Learn2();
+			obj2.display();
+		}	
+	
+}

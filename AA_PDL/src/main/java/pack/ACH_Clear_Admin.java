@@ -91,177 +91,192 @@ public class ACH_Clear_Admin extends AA_PDL{
 
 	//Excel TestData = new Excel("E:/QC_Workspace/AA_Automation/TestData/PDL/"+FileName);
 		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/PDL_Regression_Prod/"+FileName);
-	int lastrow=TestData.getLastRow("NewLoan");
-	System.out.println("NewLoan "+lastrow);
-	String sheetName="NewLoan";		
-	for(int row=2;row<=lastrow;row++)
-	{	
-		String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-		if(SSN.equals(RegSSN))
-		{
-			String TxnType=TestData.getCellData(sheetName,"TxnType",row);
-			String TenderType = TestData.getCellData(sheetName,"TenderType",row);	
-			String ProductID=TestData.getCellData(sheetName,"ProductID",row);
-			//String UserName = TestData.getCellData(sheetName,"UserName",row);
-			//String Password = TestData.getCellData(sheetName,"Password",row);
-			////String StoreId = TestData.getCellData(sheetName,"StoreId",row); 
-			//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
-
-
-			//System.out.println(AdminURL);
-			test.log(LogStatus.INFO, "Scheduler-Store Aging");
-
-			//System.out.println(ProductID);	
-			//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
-			//appUrl = AppURL;
-			Login.Login(UserName, Password, StoreId);
-			String SSN1 = SSN.substring(0, 3);
-			String SSN2 = SSN.substring(3,5);
-			String SSN3 = SSN.substring(5,9);
-			Thread.sleep(2000);
-			//Thread.sleep(1000);
-			driver.switchTo().frame("topFrame");
-			driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
-			test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.findElement(By.cssSelector("li[id='911101']")).click();			
-			test.log(LogStatus.PASS, "Clicked on Transactions");		
-			driver.switchTo().frame("main");		
-			driver.findElement(By.name("ssn1")).sendKeys(SSN1);
-			test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
-			driver.findElement(By.name("ssn2")).sendKeys(SSN2);
-			test.log(LogStatus.PASS, "SSN2 is entered: "+SSN2);
-			driver.findElement(By.name("ssn3")).sendKeys(SSN3);
-			test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
-			driver.findElement(By.name("submit1")).click();
-			test.log(LogStatus.PASS, "Click on submit Button");		
-			for(String winHandle : driver.getWindowHandles()){
-				driver.switchTo().window(winHandle);
-			}
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-			driver.findElement(By.name("button")).click();
-			test.log(LogStatus.PASS, "Click on GO Button");
-			for(String winHandle : driver.getWindowHandles()){
-				driver.switchTo().window(winHandle);
-			}				    
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-
-			if(ProductID.equals("PDL"))
+		int lastrow=TestData.getLastRow("NewLoan");
+		String sheetName="NewLoan";		
+		for(int row=2;row<=lastrow;row++)
+		{	
+			String RegSSN = TestData.getCellData(sheetName,"SSN",row);
+			if(SSN.equals(RegSSN))
 			{
-				driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click(); //Pradeep
-										 	//html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]
-											
-			}
-			test.log(LogStatus.PASS, "Click on GO Button");
-			for( String winHandle1 : driver.getWindowHandles())
-			{
-				driver.switchTo().window(winHandle1);
-			}			
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-			driver.findElement(By.name("transactionList")).sendKeys("History");
-			if(ProductID.equals("PDL"))
-			{
-				driver.findElement(By.id("go_Button")).click();  
-			}
+				String TxnType=TestData.getCellData(sheetName,"TxnType",row);
+				String TenderType = TestData.getCellData(sheetName,"TenderType",row);	
+				String ProductID=TestData.getCellData(sheetName,"ProductID",row);
+				//String UserName = TestData.getCellData(sheetName,"UserName",row);
+				//String Password = TestData.getCellData(sheetName,"Password",row);
+				//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				//appUrl = AppURL;
+				Login.Login(UserName,Password,StoreId);
+				String SSN1 = SSN.substring(0, 3);
+				String SSN2 = SSN.substring(3,5);
+				String SSN3 = SSN.substring(5,9);
+				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				driver.switchTo().frame("topFrame");
+				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
+				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				driver.findElement(By.cssSelector("li[id='911101']")).click();			
+				test.log(LogStatus.PASS, "Clicked on Transactions");		
+				driver.switchTo().frame("main");		
+				driver.findElement(By.name("ssn1")).sendKeys(SSN1);
+				test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
+				driver.findElement(By.name("ssn2")).sendKeys(SSN2);
+				test.log(LogStatus.PASS, "SSN2 is entered: "+SSN2);
+				driver.findElement(By.name("ssn3")).sendKeys(SSN3);
+				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
+				driver.findElement(By.name("submit1")).click();
+				test.log(LogStatus.PASS, "Click on submit Button");		
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("button")).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
+				for(String winHandle : driver.getWindowHandles()){
+					driver.switchTo().window(winHandle);
+				}				    
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
 
-			for( String winHandle1 : driver.getWindowHandles())
-			{
-				driver.switchTo().window(winHandle1);
-			}			
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-			String loanNumber=null;
-
-			loanNumber = driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[4]/table/tbody/tr[4]/td/span[2]")).getText();
-
-			test.log(LogStatus.PASS, "Capture LoanNumber"+loanNumber);
-			
-			//driver = new InternetExplorerDriver(); // pradeep
-			driver.get(AdminURL);
-				
-			driver.findElement(By.name("loginRequestBean.userId")).sendKeys("admin");
-			test.log(LogStatus.PASS, "Username is entered: admin");			        
-			driver.findElement(By.name("loginRequestBean.password")).sendKeys(Password);
-			test.log(LogStatus.PASS, "Password is entered: "+Password);					  	        			   
-			driver.findElement(By.name("login")).click();
-			test.log(LogStatus.PASS, "Clicked on Submit button");
-			Thread.sleep(2000);	
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("topFrame");
-			driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
-			test.log(LogStatus.PASS, "Clicked on Transactions");
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);  
-			driver.findElement(By.linkText("ACH")).click();
-			test.log(LogStatus.PASS, "Clicked on ACH");
-			Thread.sleep(5000);
-			driver.findElement(By.linkText("Payday Loan")).click();
-			test.log(LogStatus.PASS, "Clicked on PayDayLoan");
-			
-			driver.findElement(By.linkText("ACH Clear")).click();
-			test.log(LogStatus.PASS, "Clicked on ACH Clear");
-			
-			/*driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);			
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);*/
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  
-			driver.findElement(By.linkText("QA Jobs")).click();
-			test.log(LogStatus.PASS, "Clicked on QA Jobs");
-			Thread.sleep(2000);
-				
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-
-			driver.findElement(By.name("requestBean.locationNbr")).sendKeys(StoreId);
-				test.log(LogStatus.PASS, "StoreId is entered: "+StoreId);					  	        			   
-				driver.findElement(By.name("submit")).click();
-				test.log(LogStatus.PASS, "Clicked on Submit button");
-
+				if(ProductID.equals("PDL"))
+				{
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				}
+				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
 				{
-				    driver.switchTo().window(winHandle1);
+					driver.switchTo().window(winHandle1);
 				}			
-				 driver.switchTo().defaultContent();
-				 driver.switchTo().frame("mainFrame");
-				 driver.switchTo().frame("main");
-				 
-				 int rowsize = driver.findElements(By.name("requestBean.chkName")).size();
-				 
-				 for (int i=4; i<=rowsize;i++)
-						
-				 {
-				 
-					 String value = driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[1]/input")).getAttribute("value");
-					 if(value.contains(loanNumber))
-				 	 {
-						 driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[1]/input")).click();
-						 driver.findElement(By.xpath("//*[@id='CmdReturnPosting']")).click();
-				 							////*[@id="CmdReturnPosting"]
-					 break;
-					 }
-				 }
-						/*driver.findElement(By.name("requestBean.chkName")).click();;
-						test.log(LogStatus.PASS, "Customer Record CheckBox Selected");					  	        			   
-						driver.findElement(By.name("rtnReasonId")).sendKeys("R01-Insufficient Funds");
-						test.log(LogStatus.PASS, "Return Reason Selected as ::  R01-Insufficient Funds");
-						driver.findElement(By.name("CmdReturnPosting")).click();
-						test.log(LogStatus.PASS, "Clicked on ACH Return Posting button");*/
-						
-						
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("transactionList")).sendKeys("History");
+				driver.findElement(By.xpath("//*[@id='go_Button']")).click();
+				test.log(LogStatus.PASS, "Click on Go for TRANSACTION Selection Button");
+				
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				String DueDate=null;
+				DueDate = driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]")).getText();
+				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
+
+				driver.close();
+
+				driver = new InternetExplorerDriver();
+				driver.manage().window().maximize();
+				driver.get(AdminURL);
+
+
+				DateFormat  df=new SimpleDateFormat("MM/dd/yyyy");		
+				driver.findElement(By.name("loginRequestBean.userId")).sendKeys("admin");
+				test.log(LogStatus.PASS, "Username is entered: admin");			        
+				driver.findElement(By.name("loginRequestBean.password")).sendKeys(Password);
+				test.log(LogStatus.PASS, "Password is entered: "+Password);					  	        			   
+				driver.findElement(By.name("login")).click();
+				test.log(LogStatus.PASS, "Clicked on Submit button");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("topFrame");
+				driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
+				test.log(LogStatus.PASS, "Clicked on Transactions");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  
+				 driver.findElement(By.linkText("QA Jobs")).click();
+			      test.log(LogStatus.PASS, "Clicked on QA Jobs");
+				
+				driver.findElement(By.linkText("Process Date Change")).click();
+				test.log(LogStatus.PASS, "Clicked on Process Date Change");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+				
+				String DDueDate[] =DueDate.split("/");
+				Date DDueDateminus1 = df.parse(DueDate);
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(DDueDateminus1);
+				cal.add(Calendar.DATE, 8);
+				Date DDueDate1= cal.getTime();
+				DueDate =df.format(DDueDate1);
+				String DueDate0[] =DueDate.split("/");
+				String DueDate1 = DueDate0[0];
+				String DueDate2 = DueDate0[1];
+				String DueDate3 = DueDate0[2];
+
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+
+				driver.findElement(By.name("storeCode")).click();
+				driver.findElement(By.name("storeCode")).sendKeys(StoreId);
+				test.log(LogStatus.PASS, "Store number is entered: "+StoreId);
+				
+				driver.findElement(By.name("beginMonth")).clear();
+				driver.findElement(By.name("beginMonth")).sendKeys(DueDate1); 
+				test.log(LogStatus.PASS, "beginMonth is entered: "+DueDate1);
+				driver.findElement(By.name("beginDay")).clear();
+				driver.findElement(By.name("beginDay")).sendKeys(DueDate2);
+				test.log(LogStatus.PASS, "beginDay is entered: "+DueDate2);
+				driver.findElement(By.name("beginYear")).clear();
+				driver.findElement(By.name("beginYear")).sendKeys(DueDate3);
+				test.log(LogStatus.PASS, "beginYear is entered: "+DueDate3);
+				
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				
+				driver.findElement(By.name("btnPreview")).click();
+				test.log(LogStatus.PASS, "Clicked on submit button");	
+								
+				//New line of code
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("topFrame");
+				driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
+				test.log(LogStatus.PASS, "Clicked on Transactions");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  
+				 driver.findElement(By.linkText("ACH")).click();
+			      test.log(LogStatus.PASS, "Clicked on ACH");
+				
+				driver.findElement(By.linkText("Payday Loan")).click();
+				test.log(LogStatus.PASS, "Clicked on Payday Loan");
+				driver.findElement(By.linkText("ACH Clear")).click();
+				test.log(LogStatus.PASS, "Clicked on ACH Clear");
+				
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);  
+				driver.findElement(By.linkText("QA Jobs")).click();
+				test.log(LogStatus.PASS, "Clicked on QA Jobs");
+				Thread.sleep(1000);
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+
+				driver.findElement(By.name("requestBean.locationNbr")).sendKeys(StoreId);
+					test.log(LogStatus.PASS, "StoreID is entered: "+StoreId);					  	        			   
+					driver.findElement(By.name("submit")).click();
+					test.log(LogStatus.PASS, "Clicked on Submit button");
+
+					for( String winHandle1 : driver.getWindowHandles())
+					{
+					    driver.switchTo().window(winHandle1);
+					}			
+					 driver.switchTo().defaultContent();
+					 driver.switchTo().frame("mainFrame");
+					 driver.switchTo().frame("main");
+					 
+					 driver.findElement(By.name("requestBean.chkName")).click();;
+					 test.log(LogStatus.PASS, "Customer Record CheckBox Selected");					
+					 driver.findElement(By.name("CmdReturnPosting")).click();
+						test.log(LogStatus.PASS, "Clicked on ACH Clear button");
 						for( String winHandle1 : driver.getWindowHandles())
 						{
 						    driver.switchTo().window(winHandle1);
@@ -270,15 +285,47 @@ public class ACH_Clear_Admin extends AA_PDL{
 						 driver.switchTo().frame("mainFrame");
 						 driver.switchTo().frame("main");
 					
-	/*if(driver.findElement(By.name("Ok")).isDisplayed())
+	if(driver.findElement(By.name("Ok")).isDisplayed())
 	{
-		test.log(LogStatus.PASS, "ACH Clear Done Successfull");	
 		driver.findElement(By.name("Ok")).click();
-		
-	}*/
+		test.log(LogStatus.PASS, "ACH Clear Done Successfully");	
+	}
+					 
+					 
+				/*driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.findElement(By.linkText("EOD Batch Process")).click();
+				test.log(LogStatus.PASS, "Clicked on EOD Batch Process");
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(By.name("requestBean.storeCode")).sendKeys(StoreID);
+				test.log(LogStatus.PASS, "Store number is entered: "+StoreID);
+				driver.findElement(By.name("beginMonth")).clear();
+				driver.findElement(By.name("beginMonth")).sendKeys(DueDate1); 
+				test.log(LogStatus.PASS, "beginMonth is entered: "+DueDate1);
+				driver.findElement(By.name("beginDay")).clear();
+				driver.findElement(By.name("beginDay")).sendKeys(DueDate2);
+				test.log(LogStatus.PASS, "beginDay is entered: "+DueDate2);
+				driver.findElement(By.name("beginYear")).clear();
+				driver.findElement(By.name("beginYear")).sendKeys(DueDate3);
+				test.log(LogStatus.PASS, "beginYear is entered: "+DueDate3);
+				driver.findElement(By.name("submit")).click();
+				test.log(LogStatus.PASS, "Clicked on submit button");
+				if( driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr/td")).isDisplayed())
+				{
+					test.log(LogStatus.PASS, "OK Button as Enabled");
+					test.log(LogStatus.PASS, "EOD Batch Process completed Successfully.");
 
-
+				}
+				else
+				{
+					test.log(LogStatus.FAIL, "EOD Batch Process not completed Successfully.");
+				}*/
+			}
 		}
-	}
+	}	
 }
-	}

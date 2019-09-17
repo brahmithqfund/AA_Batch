@@ -1,0 +1,5 @@
+package pack;
+
+public interface Learni2 extends LearnI{
+
+}

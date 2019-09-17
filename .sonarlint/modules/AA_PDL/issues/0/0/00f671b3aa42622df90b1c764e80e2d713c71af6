@@ -1,4 +1,7 @@
 
-Asquid:S2925¨"$Remove this use of "Thread.sleep()".(€­íÜüÿÿÿÿ
-<squid:S2925ø"$Remove this use of "Thread.sleep()".(ıÈı…
-Asquid:S2925²"$Remove this use of "Thread.sleep()".(¦ì–Éúÿÿÿÿ
+Ssquid:S2925ø"$Remove this use of "Thread.sleep()".(ıÈı…HÏÉRMAJORZ
+CODE_SMELL
+Xsquid:S2925²"$Remove this use of "Thread.sleep()".(¦ì–ÉúÿÿÿÿHĞÉRMAJORZ
+CODE_SMELL
+Xsquid:S2925¨"$Remove this use of "Thread.sleep()".(€­íÜüÿÿÿÿHÑÉRMAJORZ
+CODE_SMELL

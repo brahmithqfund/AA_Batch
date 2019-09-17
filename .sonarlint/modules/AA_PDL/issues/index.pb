@@ -345,3 +345,5 @@ F
 test-output/testng.css,5\3\53149e8fcb459b7b9396a1aca5faf8674b87236d
 B
 IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+>
+testng.out.xml,2\7\2752d696f2e2eed0be9a108c703430e7dcb978ae

@@ -125,7 +125,7 @@ public class AA_TN_PDL extends AA_PDL{
 		
 		
 	
-	@Test(priority=1,groups = "anji_TN_PDL")
+	//@Test(priority=1,groups = "anji_TN_PDL")
 
 		public void BorrowerNewLoan_Rule() throws Exception 
 		{
@@ -305,7 +305,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 		}
 
-@Test(priority=6,groups = "anji_TN_PDL")
+//@Test(priority=6,groups = "anji_TN_PDL")
 
 		public void VerifyLoanAmount() throws Exception 
 		{
@@ -343,7 +343,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 		}
 
-@Test(priority=7,groups = "anji_TN_PDL")
+//@Test(priority=7,groups = "anji_TN_PDL")
 
 		public void Newloan_MultipullDisb() throws Exception
 		{
@@ -503,7 +503,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 		}
 
-@Test(priority=11,groups = "anji_TN_PDL")
+//@Test(priority=11,groups = "anji_TN_PDL")
 
 		public void Rescind_AgeStore() throws Exception {
 
@@ -549,7 +549,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 		}
 
-@Test(priority=12,groups = "anji_TN_PDL")
+//@Test(priority=12,groups = "anji_TN_PDL")
 
 		public void Partialpayment_void() throws Exception {
 
@@ -596,7 +596,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 		}
 
-		@Test(priority=13,groups = "anji_TN_PDL")
+		//@Test(priority=13,groups = "anji_TN_PDL")
 
 		public void Partialpayment_agestorevoid() throws Exception {
 
@@ -641,7 +641,7 @@ public class AA_TN_PDL extends AA_PDL{
 		}
 		
 		
-@Test(priority=14,groups = "anji_TN_PDL")
+//@Test(priority=14,groups = "anji_TN_PDL")
 
 		public void NewLoanMultiDisb_Void() throws Exception {
 
@@ -679,7 +679,7 @@ public class AA_TN_PDL extends AA_PDL{
 			}
 		}
 
-@Test(priority=15,groups = "anji_TN_PDL")
+//@Test(priority=15,groups = "anji_TN_PDL")
 
 		public void NewLoanMultipledisbursement_AgestoreVoid() throws Exception {
 
@@ -727,7 +727,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 
 
-@Test(priority=17,groups = "anji_TN_PDL") 
+//@Test(priority=17,groups = "anji_TN_PDL") 
 		
 		public void NewLoan_AgeStore_BuyBack() throws Exception {
 
@@ -874,7 +874,7 @@ public class AA_TN_PDL extends AA_PDL{
 			}
 		}
 
-@Test(priority=21,groups = "anji_TN_PDL") //  	As per product config Min term is 7 days for any pay frequency, but loan issued for 4 days.
+//@Test(priority=21,groups = "anji_TN_PDL") //  	As per product config Min term is 7 days for any pay frequency, but loan issued for 4 days.
 
 		public void PartialPayment_BuyBack() throws Exception 
 		{
@@ -915,7 +915,7 @@ public class AA_TN_PDL extends AA_PDL{
 			}
 		}
 
-@Test(priority=22,groups = "anji_TN_PDL")
+//@Test(priority=22,groups = "anji_TN_PDL")
 
 		public void PartialPayment_BuyBack_Void() throws Exception {
 
@@ -962,7 +962,7 @@ public class AA_TN_PDL extends AA_PDL{
 			
 		}
 
-@Test(priority=23,groups = "anji_TN_PDL")
+//@Test(priority=23,groups = "anji_TN_PDL")
 		
 	    public void PartialPayment_BuyBackChange_Void() throws Exception {
 
@@ -1072,7 +1072,7 @@ public class AA_TN_PDL extends AA_PDL{
 			}
 		}
 
-@Test(priority=26,groups = "anji_TN_PDL")
+//@Test(priority=26,groups = "anji_TN_PDL")
 
 	    public void Prenotedeposit_Verification() throws Exception 
 		{
@@ -1115,7 +1115,7 @@ public class AA_TN_PDL extends AA_PDL{
 			}
 		}
 		
-@Test(priority=29,groups = "anji_TN_PDL")
+//@Test(priority=29,groups = "anji_TN_PDL")
 
 		public void NewLoan_Deposit_Return_Prenotedeposit() throws Exception 
 		{
@@ -1160,7 +1160,7 @@ public class AA_TN_PDL extends AA_PDL{
 		}
 	   
 
-////@Test (priority=30,groups = "pradeep_TN_PDL")
+//@Test (priority=30,groups = "anji_TN_PDL")
 
 				public void Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost() throws Exception {
 
@@ -1209,7 +1209,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 				
-				////@Test (priority=31,groups = "pradeep_TN_PDL")
+				//@Test (priority=31,groups = "anji_TN_PDL")
 
 				public void Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep() throws Exception {
 
@@ -1259,7 +1259,7 @@ public class AA_TN_PDL extends AA_PDL{
 				}
 			}
 
-				////@Test (priority=32,groups = "pradeep_TN_PDL") 
+				//@Test (priority=32,groups = "anji_TN_PDL") 
 
 				public void NewLoan_PerformDeposit_ThroughEOD() throws Exception {
 
@@ -1313,7 +1313,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=33,groups = "pradeep_TN_PDL") // Need more infor on .
+				//@Test (priority=33,groups = "anji_TN_PDL") // Need more infor on .
 
 				public void ACH_Nacha_AchDepAdmin() throws Exception {
 
@@ -1372,7 +1372,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 			}
 
-				////@Test (priority=34,groups = "pradeep_TN_PDL")
+				//@Test (priority=34,groups = "anji_TN_PDL")
 
 				public void NewLoan_AchRevoke_DepositShouldNotDisplay() throws Exception {
 
@@ -1434,7 +1434,7 @@ public class AA_TN_PDL extends AA_PDL{
 				}
 
 
-				////@Test (priority=35,groups = "pradeep_TN_PDL")
+				//@Test (priority=35,groups = "anji_TN_PDL")
 
 				public void NewLoan_PartialPayment_throghEOD_CheckDepositdAmount() throws Exception {
 
@@ -1494,7 +1494,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=36,groups = "pradeep_TN_PDL")
+				//@Test (priority=36,groups = "anji_TN_PDL")
 
 				public void LoanWithACH_PartialPayment_Nacha_ACHDepositFromAdmin_checkherethedepositedamount() throws Exception {
 
@@ -1559,7 +1559,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 					
-				////@Test (priority=37,groups = "pradeep_TN_PDL")
+				@Test (priority=37,groups = "pradeep_TN_PDL1")
 
 				public void PreNotDeposit_PreNoteClear_CustomerInactive_Deposit() throws Exception {
 
@@ -1584,14 +1584,17 @@ public class AA_TN_PDL extends AA_PDL{
 							StoreId = prop.getProperty("StoreID_TN_PDL_pradeep");
 							String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 							String StateID = TestData.getCellData(sheetName,"StateID",row);
-							String SSN = TestData.getCellData(sheetName,"SSN",row);	
+							String SSN = TestData.getCellData(sheetName,"SSN",row);
+							//String SSN1 = SSN.substring(0, 3);
+							
+							
 							String Header = StateID+ "_" + ProductID;
 							//System.out.println(SSN);
 							
-							test = reports.startTest("Scenario_No_43_"+Header, "PreNoteDeposit_Clear_CustomerInactive_Deposit");
+							test = reports.startTest("Scenario_No_37_"+Header, "PreNoteDeposit_Clear_CustomerInactive_Deposit");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							//Bor.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -1616,7 +1619,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 				
-				////@Test (priority=38,groups = "pradeep_TN_PDL")
+				@Test (priority=38,groups = "pradeep_TN_PDL")
 
 				public void PreNoteDepositClear_CustomerInactiveAndActive_EOD() throws Exception {
 
@@ -1644,7 +1647,7 @@ public class AA_TN_PDL extends AA_PDL{
 							String SSN = TestData.getCellData(sheetName,"SSN",row);	
 							String Header = StateID+ "_" + ProductID;
 							//System.out.println(SSN);
-							test = reports.startTest("Scenario_No_44_"+Header, "PreNoteDeposit_Clear_CustomerActive_Deposit");
+							test = reports.startTest("Scenario_No_38_"+Header, "PreNoteDeposit_Clear_CustomerActive_Deposit");
 							
 							
 							SetCurrentDate.SetCurrentDate(SSN, FileName);
@@ -1672,7 +1675,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 
-				////@Test (priority=39,groups = "pradeep_TN_PDL")
+				@Test (priority=39,groups = "pradeep_TN_PDL")
 
 				public void ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate() throws Exception {
 
@@ -1703,7 +1706,7 @@ public class AA_TN_PDL extends AA_PDL{
 							String SSN = TestData.getCellData(sheetName,"SSN",row);	
 							String Header = StateID+ "_" + ProductID;
 							//System.out.println(SSN);
-							test = reports.startTest("ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate_"+Header, "ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate");
+							test = reports.startTest("Scenario_No_39_"+Header,"ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate");
 							
 							
 							SetCurrentDate.SetCurrentDate(SSN, FileName);
@@ -1735,7 +1738,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=40,groups = "pradeep_TN_PDL")
+				@Test (priority=40,groups = "pradeep_TN_PDL")
 
 				public void ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet() throws Exception {
 
@@ -1766,7 +1769,7 @@ public class AA_TN_PDL extends AA_PDL{
 							String SSN = TestData.getCellData(sheetName,"SSN",row);	
 							String Header = StateID+ "_" + ProductID;
 							//System.out.println(SSN);
-							test = reports.startTest("ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet_"+Header, "ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet");
+							test = reports.startTest("Scenario_No_40_"+Header, "ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet");
 							
 							
 							SetCurrentDate.SetCurrentDate(SSN, FileName);
@@ -1797,7 +1800,7 @@ public class AA_TN_PDL extends AA_PDL{
 				}
 
 
-				////@Test (priority=41,groups = "pradeep_TN_PDL")
+				@Test (priority=41,groups = "pradeep_TN_PDL")
 
 				public void NewLoan_PartialPayment() throws Exception {
 
@@ -1835,8 +1838,8 @@ public class AA_TN_PDL extends AA_PDL{
 							Login.Login(UserName,Password,StoreId);				
 											
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-							NewLoan.NewLoan(SSN, FileName);				
-							AgeStore.AgeStore(SSN, FileName,-6);
+							NewLoan.NewLoan(SSN, FileName);			
+							AgeStore.AgeStore(SSN, FileName,-5);
 							LoanPartialPayment.LoanPartialPayment(SSN, FileName);
 							
 						}
@@ -1845,7 +1848,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=42,groups = "pradeep_TN_PDL")
+				@Test (priority=42,groups = "pradeep_TN_PDL")
 
 				public void CheckingPartialPmt_SomeDaysAfterDueDate() throws Exception {
 
@@ -1893,7 +1896,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=43,groups = "pradeep_TN_PDL")
+				@Test (priority=43,groups = "pradeep_TN_PDL")
 
 				public void PartialPayment_MultipleTenderTypes() throws Exception {
 
@@ -1933,7 +1936,7 @@ public class AA_TN_PDL extends AA_PDL{
 							//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
 							NewLoan.NewLoan(SSN, FileName);
-							AgeStore.AgeStore(SSN, FileName,-5);
+							AgeStore.AgeStore(SSN, FileName,2);
 							LoanPartialPayment_MultiTender.LoanPartialPayment_MultiTender(SSN, FileName);
 							check_updates.check_updates(SSN, FileName);
 							
@@ -1943,7 +1946,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=44,groups = "pradeep_TN_PDL")
+				@Test (priority=44,groups = "pradeep_TN_PDL")
 
 				public void NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit() throws Exception {
 
@@ -1994,7 +1997,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 				
-				////@Test (priority=45,groups = "pradeep_TN_PDL")
+				@Test (priority=45,groups = "pradeep_TN_PDL")
 
 				public void PartialPayment_Agestore_CheckLoanDisplayedEOD() throws Exception {
 
@@ -2031,7 +2034,7 @@ public class AA_TN_PDL extends AA_PDL{
 											
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
 							NewLoan.NewLoan(SSN, FileName);
-							AgeStore.AgeStore(SSN, FileName,-4);
+							AgeStore.AgeStore(SSN, FileName,2);
 							LoanPartialPayment.LoanPartialPayment(SSN, FileName);
 							AgeStore.AgeStore(SSN, FileName,0);
 							DrawerDeassign.DrawerDeassign(SSN, FileName);
@@ -2045,7 +2048,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 				
-				////@Test (priority=46,groups = "pradeep_TN_PDL")
+				@Test (priority=46,groups = "pradeep_TN_PDL")
 
 				public void Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost() throws Exception {
 
@@ -2100,7 +2103,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=47,groups = "pradeep_TN_PDL")
+				@Test (priority=47,groups = "pradeep_TN_PDL")
 
 				public void LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD() throws Exception {
 
@@ -2167,7 +2170,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=48,groups = "pradeep_TN_PDL")
+				@Test (priority=48,groups = "pradeep_TN_PDL")
 
 				public void LoanWithCheck_ConvertACH_Deposit_ACHClear() throws Exception {
 
@@ -2226,7 +2229,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=49,groups = "pradeep_TN_PDL")
+				@Test (priority=49,groups = "pradeep_TN_PDL")
 
 				public void LoanwithCheck__DepConvertACH__Deposit__ACHReturn() throws Exception {
 
@@ -2285,7 +2288,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=50,groups = "pradeep_TN_PDL")
+				@Test (priority=50,groups = "pradeep_TN_PDL")
 
 				public void Loan_Full_PrePayment() throws Exception {
 
@@ -2342,7 +2345,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				//@Test (priority=51,groups = "pradeep_TN_PDL")
+				@Test (priority=51,groups = "pradeep_TN_PDL")
 
 				public void Newloan_VoidPrePayment() throws Exception {
 
@@ -2399,7 +2402,7 @@ public class AA_TN_PDL extends AA_PDL{
 					//Login.Login("CSR353","1234","353");
 				}
 				
-				////@Test (priority=52,groups = "pradeep_TN_PDL")
+				@Test (priority=52,groups = "pradeep_TN_PDL")
 
 				public void PartialPayment_ACH_Deposit() throws Exception {
 
@@ -2453,7 +2456,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 			}
 
-				////@Test (priority=53,groups = "pradeep_TN_PDL") // Return posting code updated pradeep
+				@Test (priority=53,groups = "pradeep_TN_PDL") // Return posting code updated pradeep
 
 				public void Nacha_ACHDepositProcess_ACHReturn() throws Exception {
 
@@ -2510,7 +2513,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=54,groups = "pradeep_TN_PDL") //scenario pass , results shows fail
+				@Test (priority=54,groups = "pradeep_TN_PDL") //scenario pass , results shows fail
 
 				public void ConvertCheckToACHNacha_ACHDepositProcess_ACHReturn() throws Exception {
 
@@ -2546,7 +2549,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest(Header+"_S.No:62"+"_"+PayFrequency+"_"+CollateralType,"Loan (Check)_(Convert to ACH) Ach Deposit process_Ach Return Posting");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -2571,7 +2574,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=55,groups = "pradeep_TN_PDL")
+				@Test (priority=55,groups = "pradeep_TN_PDL")
 
 				public void Loan_Deposit_PrePayment_Return() throws Exception {
 
@@ -2607,7 +2610,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest(Header+"_S.No:64"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store  upto duedate_perform deposit_age perform the Prepayment_age the store_return");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -2615,8 +2618,12 @@ public class AA_TN_PDL extends AA_PDL{
 							AgeStore.AgeStore(SSN, FileName, 0);
 							DrawerDeassign.DrawerDeassign(SSN, FileName);
 							StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+							
+							
 							//EODProcessing.EODProcessing(SSN, FileName);
 							//StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+							
+							
 							StoreInfo.StoreInfo(SSN, FileName); 
 							NACHA.NACHA(SSN, FileName, 0);
 							Safeassign.Safeassign(SSN, FileName);
@@ -2635,7 +2642,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=56,groups = "pradeep_TN_PDL") 
+				@Test (priority=56,groups = "pradeep_TN_PDL") 
 
 				public void LoanwithCheck_Deposit_ReturnwithoutR01R09_FutureDepositNotposted() throws Exception {
 
@@ -2697,7 +2704,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 					
 				}
-				////@Test (priority=57,groups = "pradeep_TN_PDL")
+				@Test (priority=57,groups = "pradeep_TN_PDL")
 
 				public void LoanwithACH_NACHA_ACHDepProc_ProcessClear() throws Exception {
 
@@ -2759,7 +2766,7 @@ public class AA_TN_PDL extends AA_PDL{
 					//Login.Login("CSR353","1234","353");
 
 				}
-				////@Test (priority=58,groups = "pradeep_TN_PDL")	
+				@Test (priority=58,groups ="pradeep_TN_PDL")	//issue
 
 				public void NewLoan_PreNoteDeposit_PreNoteClear() throws Exception {
 
@@ -2796,14 +2803,13 @@ public class AA_TN_PDL extends AA_PDL{
 							
 							SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
-							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
 							NewLoan.NewLoan(SSN, FileName);
 							AgeStore.AgeStore(SSN, FileName, -7);
 							PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
 							AgeStore.AgeStore(SSN, FileName, -1);
-							PrenoteClear_BeforeDuedate.PrenoteClear_BeforeDuedate(SSN, FileName, -1);   
-							Clear_Status.Clear_Status(SSN, FileName);
+							PrenoteClear_BeforeDuedate.PrenoteClear_BeforeDuedate(SSN, FileName, -1);  
+							//Clear_Status.Clear_Status(SSN, FileName);
 							//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
 							//wait(100);
 							// RegistrationPage.RegistrationPage(SSN);
@@ -2812,7 +2818,7 @@ public class AA_TN_PDL extends AA_PDL{
 					//Login.Login("CSR353","1234","353");
 
 				}
-				////@Test (priority=59,groups = "pradeep_TN_PDL")
+			@Test (priority=59,groups = "pradeep_TN_PDL")
 
 				public void LoanwithCheck_ConverttoACH_ACHDepproc_ProcClear() throws Exception {
 
@@ -2869,7 +2875,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=60,groups = "pradeep_TN_PDL")
+				@Test (priority=60,groups = "pradeep_TN_PDL")
 
 				public void Loan_Agestoreduedate_performdepositPrepayment_agestore_ProcessClear() throws Exception {
 
@@ -2928,12 +2934,12 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				////@Test (priority=61,groups = "pradeep_TN_PDL")
+				@Test (priority=61,groups = "pradeep_TN_PDL")
 
 				public void NewLoan_Perform_EPP() throws Exception {
 
 					// Start test. Mention test script name
-					String FileName= "AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount1.xls";
+					String FileName= "AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount.xls";
 					TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_TN_PDL_path_pradeep") + FileName);     
 					int lastrow=TestData.getLastRow("NewLoan");
 					String sheetName="NewLoan";
@@ -2973,7 +2979,7 @@ public class AA_TN_PDL extends AA_PDL{
 					}
 				}
 
-					////@Test (priority=62,groups = "pradeep_TN_PDL")
+					@Test (priority=62,groups = "pradeep_TN_PDL")
 
 				public void EPP_MissRPPPayment_EOD_Checkbox() throws Exception {
 
@@ -3027,7 +3033,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=63,groups = "pradeep_TN_PDL")
+				@Test (priority=63,groups = "pradeep_TN_PDL")
 
 				public void EPP_MissRPPPayment_EOD_Forcefully() throws Exception {
 
@@ -3060,7 +3066,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest("EPP_MissRPPPayment_EOD_Forcefully_Txn_"+Header, "Loan-RPP- Miss the EPP Payment --> Age the store to 14 days from RPP due date --> Perform EOD --> Customer record should display in EOD process and should comes out forcefully from RPP.");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3087,7 +3093,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-				//@Test (priority=64,groups = "pradeep_TN_PDL")
+				@Test (priority=64,groups = "pradeep_TN_PDL")
 
 				public void Newloan_PartialPayment_Deposit_Clear_Refund() throws Exception {
 
@@ -3120,7 +3126,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest("AA_Newloan_PartialPayment_Deposit_Clear_Refund"+Header, "Loan_Partial Payment_Deposit_Clear_Refund");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3148,7 +3154,7 @@ public class AA_TN_PDL extends AA_PDL{
 					//Login.Login("CSR353","1234","353");
 
 				}
-				////@Test (priority=65,groups = "pradeep_TN_PDL")
+				@Test (priority=65,groups = "pradeep_TN_PDL")
 
 				public void Loan_Deposit_FullPrePayment_Clear_Refund() throws Exception {
 
@@ -3206,7 +3212,7 @@ public class AA_TN_PDL extends AA_PDL{
 					//Login.Login("CSR353","1234","353");
 
 				}
-				////@Test (priority=66,groups = "pradeep_TN_PDL")
+				@Test (priority=66,groups = "pradeep_TN_PDL")
 
 				public void LoanWithCheck_ConvertAch_AchPrePayment_AchClr_Refund() throws Exception {
 
@@ -3239,7 +3245,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest("LoanWithCheck_ConvertAch_AchPrePayment_AchClr_Refund"+Header, "Loan With Check_Deposit (Convert to ACH)_ACH Pre Payment Partially_ACH CLR_Refund");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3268,7 +3274,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 			  
-				////@Test (priority=67,groups = "pradeep_TN_PDL")
+				@Test (priority=67,groups = "pradeep_TN_PDL")
 
 				public void NewLoan_ReturnPosting_60days_Writeoff() throws Exception {
 
@@ -3302,7 +3308,7 @@ public class AA_TN_PDL extends AA_PDL{
 							
 
 
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+						//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3325,7 +3331,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-			  ////@Test (priority=68,groups = "pradeep_TN_PDL")
+			  @Test (priority=68,groups = "pradeep_TN_PDL")
 
 				public void Loan_ReturnPosting_15PerofTotalDue__CheckWriteOff120daystoretdate() throws Exception {
 
@@ -3359,7 +3365,7 @@ public class AA_TN_PDL extends AA_PDL{
 							
 
 
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3386,7 +3392,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-			  ////@Test (priority=69,groups = "pradeep_TN_PDL")
+			  @Test (priority=69,groups = "pradeep_TN_PDL")
 
 				public void Loan_ReturnPosting_NSF15_Void_WO60days_Returndate() throws Exception {
 
@@ -3419,7 +3425,7 @@ public class AA_TN_PDL extends AA_PDL{
 							test = reports.startTest("Loan_ReturnPosting_NSF15_Void_WO60days_Returndate_TestData"+Header, "Loan->Return Posting_NSF Payment 15% of Total Due_Void_WO Check whether Write off is done 60 days from return date.");
 							
 							
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3447,7 +3453,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 				
-			  ////@Test (priority=70,groups = "pradeep_TN_PDL")
+			  @Test (priority=70,groups = "pradeep_TN_PDL")
 
 				public void Loan_ReturnPosting_30PerofTotalDue__CheckWriteOff180daystoretdate() throws Exception {
 
@@ -3481,7 +3487,7 @@ public class AA_TN_PDL extends AA_PDL{
 							
 
 
-							SetCurrentDate.SetCurrentDate(SSN, FileName);
+							//SetCurrentDate.SetCurrentDate(SSN, FileName);
 							Login.Login(UserName,Password,StoreId);
 							
 							RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3508,7 +3514,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=71,groups = "pradeep_TN_PDL")
+				@Test (priority=71,groups = "pradeep_TN_PDL")
 
 				public void NewLoan_RPP_AgeInstwise_PPPayment() throws Exception {
 
@@ -3569,7 +3575,7 @@ public class AA_TN_PDL extends AA_PDL{
 				}
 
 
-				////@Test(priority=72,groups = "pradeep_TN_PDL") //// No Test Data for cenario.cenario
+				@Test(priority=72,groups = "pradeep_TN_PDL") //// No Test Data for cenario.cenario
 
 
 
@@ -3645,7 +3651,7 @@ public class AA_TN_PDL extends AA_PDL{
 
 				}
 
-				////@Test (priority=73,groups = "pradeep_TN_PDL")
+			  @Test (priority=73,groups = "pradeep_TN_PDL")
 
 				public void Loan_Deposit_PrePaymentfull_Return_RefundnotDisplay() throws Exception {
 
@@ -3812,31 +3818,16 @@ public class AA_TN_PDL extends AA_PDL{
 	@BeforeTest(alwaysRun = true)
 	public void setup_Grid() throws IOException, InterruptedException {
 
-		try {
-			BufferedReader reader;
-			reader = new BufferedReader(
-
-					new FileReader("C:/AA_Batch/AA_PDL/src/test/java/pack/Config.properties"));
-
-			prop = new Properties();
-			prop.load(reader);
-			reader.close();
-
-		}
-
-		catch (Exception e) {
-
-			System.out.println("Object proprties file not found");
-		}
+		
 
 		Runtime.getRuntime().exec("taskkill /T /F /IM IEDriverServer.exe");
 		Thread.sleep(5000); // Allow OS to kill the process
 		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+ 		driver = new InternetExplorerDriver();
+ 		driver.manage().window().maximize();
+ 		driver.manage().deleteAllCookies();
+ 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+ 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		/*
 		 * String Node = "http://192.168.2.123:5555/wd/hub"; DesiredCapabilities
 		 * cap = DesiredCapabilities.internetExplorer();

@@ -138,7 +138,8 @@ public class ACHReturnPosting extends AA_PDL{
 			driver.switchTo().defaultContent();
 			driver.switchTo().frame("mainFrame");
 			driver.switchTo().frame("main");
-			driver.findElement(By.name("button")).click();
+			//driver.findElement(By.name("button")).click();
+			driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 			test.log(LogStatus.PASS, "Click on GO Button");
 			for(String winHandle : driver.getWindowHandles()){
 				driver.switchTo().window(winHandle);
@@ -147,7 +148,8 @@ public class ACHReturnPosting extends AA_PDL{
 			driver.switchTo().frame("mainFrame");
 			driver.switchTo().frame("main");
 
-			String LoanNumber = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[2]")).getText();
+			String LoanNumber = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[2]")).getText();
+			                                                 
 															//html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[2]
 			test.log(LogStatus.PASS, "Captured Loan Number"+LoanNumber);
 			

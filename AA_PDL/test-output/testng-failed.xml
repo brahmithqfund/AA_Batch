@@ -1,30 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="pradeep_TN_PDL"/>
+      </run>
+    </groups>
     <classes>
       <class name="pack.AA_TN_PDL">
         <methods>
-          <include name="NewLoanMultipledisbursement_AgestoreVoid"/>
-          <include name="NewLoan_AgeStore_BuyBack"/>
-          <include name="PartialPayment_BuyBackChange_Void"/>
-          <include name="VerifyLoanAmount"/>
-          <include name="PartialPayment_BuyBack_Void"/>
-          <include name="tearDown"/>
-          <include name="Partialpayment_agestorevoid"/>
-          <include name="PartialPayment_BuyBack"/>
-          <include name="NewLoanMultiDisb_Void"/>
-          <include name="Rescind_AgeStore"/>
-          <include name="Prenotedeposit_Verification"/>
+          <include name="PartialPayment_ACH_Deposit"/>
+          <include name="NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit"/>
+          <include name="CheckingPartialPmt_SomeDaysAfterDueDate"/>
+          <include name="ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet"/>
+          <include name="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate"/>
+          <include name="NewLoan_PreNoteDeposit_PreNoteClear"/>
+          <include name="Loan_Deposit_PrePayment_Return"/>
+          <include name="NewLoan_PartialPayment"/>
+          <include name="Loan_AgeStore_ProcessDeposit_Nacha_DepositShouldPost"/>
+          <include name="Nacha_ACHDepositProcess_ACHReturn"/>
+          <include name="LoanwithCheck_ConverttoACH_ACHDepproc_ProcClear"/>
+          <include name="LoanWithCheck_ConvertAch_AchPrePayment_AchClr_Refund"/>
+          <include name="Loan_Agestoreduedate_performdepositPrepayment_agestore_ProcessClear"/>
+          <include name="setup_Grid"/>
+          <include name="Newloan_PartialPayment_Deposit_Clear_Refund"/>
+          <include name="EPP_MissRPPPayment_EOD_Checkbox"/>
+          <include name="Loan_Deposit_PrePaymentfull_Return_RefundnotDisplay"/>
+          <include name="NewLoan_Perform_EPP"/>
+          <include name="Newloan_VoidPrePayment"/>
+          <include name="Loan_Deposit_FullPrePayment_Clear_Refund"/>
+          <include name="NewLoan_ReturnPosting_60days_Writeoff"/>
+          <include name="ConvertCheckToACHNacha_ACHDepositProcess_ACHReturn"/>
+          <include name="NewLoan_DueDate_Holiday_Verification"/>
+          <include name="LoanwithCheck_Deposit_ReturnwithoutR01R09_FutureDepositNotposted"/>
+          <include name="PartialPayment_Agestore_CheckLoanDisplayedEOD"/>
+          <include name="LoanwithCheck__DepConvertACH__Deposit__ACHReturn"/>
+          <include name="Loan_ReturnPosting_30PerofTotalDue__CheckWriteOff180daystoretdate"/>
+          <include name="NewLoan_RPP_AgeInstwise_PPPayment"/>
           <include name="initialize"/>
           <include name="quit"/>
-          <include name="BorrowerNewLoan_Rule"/>
-          <include name="NewLoan_Deposit_Return_Prenotedeposit"/>
-          <include name="Newloan_MultipullDisb"/>
-          <include name="setup_Grid"/>
+          <include name="Loan_Full_PrePayment"/>
+          <include name="PreNoteDepositClear_CustomerInactiveAndActive_EOD"/>
+          <include name="Loan_ReturnPosting_NSF15_Void_WO60days_Returndate"/>
+          <include name="LoanwithACH_NACHA_ACHDepProc_ProcessClear"/>
+          <include name="PartialPayment_MultipleTenderTypes"/>
+          <include name="EPP_MissRPPPayment_EOD_Forcefully"/>
+          <include name="LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD"/>
+          <include name="LoanWithCheck_ConvertACH_Deposit_ACHClear"/>
+          <include name="Loan_ReturnPosting_15PerofTotalDue__CheckWriteOff120daystoretdate"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- pack.AA_TN_PDL -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

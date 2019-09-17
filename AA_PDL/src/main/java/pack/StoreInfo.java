@@ -122,10 +122,11 @@ public class StoreInfo extends AA_PDL{
 				driver.findElement(By.xpath("//*[contains(text(),'Store Setup')]")).click();	
 				test.log(LogStatus.PASS, "Clicked on Store Setup");
 				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 				driver.findElement(By.linkText("Store Config")).click();
 				driver.findElement(By.linkText("Edit Store")).click();
