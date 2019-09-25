@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="12" failed="24" ignored="1" total="37" passed="0">
   <reporter-output>
   </reporter-output>
@@ -88,38 +89,32 @@ Session ID: a671f733-90af-4057-a8a8-0120048e52b4
 =======
 <testng-results skipped="9" failed="2" ignored="78" total="89" passed="0">
 >>>>>>> chary1
+=======
+<testng-results skipped="0" failed="0" ignored="128" total="129" passed="1">
+>>>>>>> charyStable25Sept
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="59828" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:31:43Z">
+  <suite name="Suite" duration-ms="300826" started-at="2019-09-25T06:57:25Z" finished-at="2019-09-25T07:02:26Z">
     <groups>
-      <group name="brahmith_FL_PDL">
-        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_same_transaction()[pri:55, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash()[pri:54, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_same_transaction()[pri:57, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void()[pri:58, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_ACHP_2tender_type_cck_transaction_void()[pri:56, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_ACHP_2tender_type_cck_transaction_void" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_WOR_2tender_type_MO_transaction_Void()[pri:59, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_MO_transaction_Void" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.Deposit_ACR_WOR_2tender_type_same_MO_transaction()[pri:60, instance:pack.AA_FL_PDL@185d8b6]" name="Deposit_ACR_WOR_2tender_type_same_MO_transaction" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund()[pri:49, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_prepayment_clear_refund_check()[pri:50, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_prepayment_clear_refund_check" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_transactions_dropdown" class="pack.AA_FL_PDL"/>
-        <method signature="AA_FL_PDL.NewLoan_validate_RPP()[pri:52, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_validate_RPP" class="pack.AA_FL_PDL"/>
-      </group> <!-- brahmith_FL_PDL -->
+      <group name="brahmith_FL_PDL1">
+        <method signature="AA_FL_PDL.ACH_return_payment()[pri:85, instance:pack.AA_FL_PDL@eec5a4a]" name="ACH_return_payment" class="pack.AA_FL_PDL"/>
+      </group> <!-- brahmith_FL_PDL1 -->
     </groups>
-    <test name="Test" duration-ms="59828" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:31:43Z">
+    <test name="Test" duration-ms="300826" started-at="2019-09-25T06:57:25Z" finished-at="2019-09-25T07:02:26Z">
       <class name="pack.AA_FL_PDL">
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="setup_Grid" is-config="true" duration-ms="6803" started-at="2019-09-17T05:30:44Z" finished-at="2019-09-17T05:30:50Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_FL_PDL@eec5a4a]" name="setup_Grid" is-config="true" duration-ms="6781" started-at="2019-09-25T06:57:25Z" finished-at="2019-09-25T06:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_PDL@6f1fba17]" name="setup_Grid" is-config="true" duration-ms="6375" started-at="2019-09-17T05:30:50Z" finished-at="2019-09-17T05:30:57Z">
+        <test-method status="PASS" signature="setup_Grid()[pri:0, instance:pack.AA_TN_PDL@210366b4]" name="setup_Grid" is-config="true" duration-ms="6132" started-at="2019-09-25T06:57:32Z" finished-at="2019-09-25T06:57:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_Grid -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="initialize" is-config="true" duration-ms="89" started-at="2019-09-17T05:30:57Z" finished-at="2019-09-17T05:30:57Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pack.AA_FL_PDL@eec5a4a]" name="initialize" is-config="true" duration-ms="83" started-at="2019-09-25T06:57:38Z" finished-at="2019-09-25T06:57:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6]" name="NewLoan_Deposit_Clear_transactions_dropdown" duration-ms="40722" started-at="2019-09-17T05:30:57Z" finished-at="2019-09-17T05:31:38Z">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
@@ -209,12 +204,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=NewLoan_Deposit_Clear_transactions_dropdown status=FAILURE method=AA_FL_PDL.NewLoan_Deposit_Clear_transactions_dropdown()[pri:48, instance:pack.AA_FL_PDL@185d8b6] output={null}]]]>
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+        <test-method status="PASS" signature="ACH_return_payment()[pri:85, instance:pack.AA_FL_PDL@eec5a4a]" name="ACH_return_payment" duration-ms="287006" started-at="2019-09-25T06:57:38Z" finished-at="2019-09-25T07:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ACH_return_payment -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:pack.AA_FL_PDL@eec5a4a]" name="getResult" is-config="true" duration-ms="239" started-at="2019-09-25T07:02:25Z" finished-at="2019-09-25T07:02:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ACH_return_payment status=SUCCESS method=AA_FL_PDL.ACH_return_payment()[pri:85, instance:pack.AA_FL_PDL@eec5a4a] output={null}]]]>
+>>>>>>> charyStable25Sept
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="FAIL" signature="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate()[pri:39, instance:pack.AA_TN_PDL@6f1fba17]" name="ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate" duration-ms="56911" started-at="2019-09-11T09:43:58Z" finished-at="2019-09-11T09:44:55Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -3904,6 +3911,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- setup_Grid -->
 =======
         <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_FL_PDL@185d8b6]" name="quit" is-config="true" duration-ms="547" started-at="2019-09-17T05:31:43Z" finished-at="2019-09-17T05:31:43Z">
+=======
+        <test-method status="PASS" signature="quit()[pri:0, instance:pack.AA_FL_PDL@eec5a4a]" name="quit" is-config="true" duration-ms="569" started-at="2019-09-25T07:02:25Z" finished-at="2019-09-25T07:02:26Z">
+>>>>>>> charyStable25Sept
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

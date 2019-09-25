@@ -4,12 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="brahmith"/>
+        <include name="venkat_OH_ILP_Prod2"/>
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP">
+      <class name="pack.AA_OH_ILP_Prod">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="Loan_1stParPmt_1stDep_Ret_"/>
@@ -19,9 +20,16 @@
           <include name="setup_Grid"/>
           <include name="tearDown"/>
           <include name="quit"/>
+=======
+>>>>>>> charyStable25Sept
           <include name="initialize"/>
-          <include name="Due_Date_verification"/>
+          <include name="quit"/>
+          <include name="tearDown"/>
+          <include name="setup_Grid"/>
+          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
+          <include name="getResult"/>
         </methods>
+<<<<<<< HEAD
 =======
 =======
         <include name="kiran_CO_ILP"/>
@@ -109,6 +117,9 @@
 >>>>>>> dcd7f96de8f02d079128ae6384adc579e09de9df
 =======
 >>>>>>> chary1
+=======
+      </class> <!-- pack.AA_OH_ILP_Prod -->
+>>>>>>> charyStable25Sept
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

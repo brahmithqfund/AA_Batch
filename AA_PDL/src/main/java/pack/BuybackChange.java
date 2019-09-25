@@ -102,7 +102,7 @@ public class BuybackChange extends AA_PDL{
 				String ProductID=TestData.getCellData(sheetName,"ProductID",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
@@ -158,7 +158,8 @@ public class BuybackChange extends AA_PDL{
 				driver.switchTo().frame("main");
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					//driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
 				}
 				
 				test.log(LogStatus.PASS, "Click on GO Button");

@@ -157,6 +157,8 @@ public class PrenoteDeposit_6DaysBeforeDuedate extends AA_PDL{
 				if(ProductID.equals("PDL"))
 				{
 					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+
+
 				}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())

@@ -226,7 +226,8 @@ public class Deceased_AfterBANKRUPT extends AA_CO_ILP{
 				driver.switchTo().frame("main");
 
 
-				driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();
+				driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+				//driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[9]/input")).click();
 
 
 				test.log(LogStatus.PASS,"Click on Go button");	

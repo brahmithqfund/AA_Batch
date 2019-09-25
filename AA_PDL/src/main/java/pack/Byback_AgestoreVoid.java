@@ -104,7 +104,7 @@ public class Byback_AgestoreVoid extends AA_PDL{
 				//String Password = TestData.getCellData(sheetName,"Password",row);
 				//String AdminURL=TestData.getCellData(sheetName,"AdminURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 				Login.Login(UserName, Password, StoreId);	
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
@@ -152,7 +152,8 @@ public class Byback_AgestoreVoid extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					//driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
 
 				}
 					
@@ -280,7 +281,8 @@ public class Byback_AgestoreVoid extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					//driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[11]/input[1]")).click();
 				}
 			
 				test.log(LogStatus.PASS, "Click on GO Button"); 

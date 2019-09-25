@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="pradeep_TN_PDL"/>
 =======
 <<<<<<< HEAD
@@ -17,11 +18,15 @@
         <include name="brahmith_FL_PDL"/>
 >>>>>>> chary1
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+        <include name="brahmith_FL_PDL1"/>
+>>>>>>> charyStable25Sept
       </run>
     </groups>
     <classes>
       <class name="pack.AA_FL_PDL">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="PartialPayment_ACH_Deposit"/>
           <include name="NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit"/>
@@ -70,10 +75,12 @@
           <include name="Deposit_ACR_WOR_2tender_type_same_MO_transaction"/>
           <include name="Deposit_ACR_ACHP_2tender_type_MO_transaction_void_with_cash"/>
 >>>>>>> chary1
+=======
+          <include name="ACHpayment"/>
+>>>>>>> charyStable25Sept
           <include name="initialize"/>
-          <include name="Deposit_ACR_ACHP_2tender_type_MO_same_transaction"/>
-          <include name="NewLoan_Deposit_Clear_prepayment_clear_refund"/>
           <include name="quit"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -106,11 +113,10 @@
           <include name="NewLoan_Deposit_Clear_transactions_dropdown"/>
           <include name="NewLoan_Deposit_Clear_prepayment_clear_refund_check"/>
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+>>>>>>> charyStable25Sept
           <include name="getResult"/>
           <include name="setup_Grid"/>
-          <include name="NewLoan_validate_RPP"/>
-          <include name="Deposit_ACR_ACHP_2tender_type_cck_transaction_DrawerDeassign_Midday_Void"/>
-          <include name="Deposit_ACR_ACHP_2tender_type_cck_same_transaction"/>
         </methods>
       </class> <!-- pack.AA_FL_PDL -->
     </classes>

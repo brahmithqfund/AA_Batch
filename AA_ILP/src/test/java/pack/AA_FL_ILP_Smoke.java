@@ -157,11 +157,12 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				EOD_BatchProcess_DueDate_DFLT.EOD_BatchProcess_DueDate_DFLT(SSN, FileName,2,2);   //Added 2 parameters
 				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.35);
 				
-                RCC_Revoke.RCC_Revoke(SSN, FileName);
+               // RCC_Revoke.RCC_Revoke(SSN, FileName);
 				EPP_ILP.EPP_ILP(SSN, FileName);
 				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, 0, 2);
 				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
-				Void.Void(SSN, FileName);
+				//Void.Void(SSN, FileName);
+				Void_PaymentPlanPayment.Void_PaymentPlanPayment(SSN, FileName);
 				EPP_EOD_BatchProcess_DueDate.EPP_EOD_BatchProcess_DueDate(SSN, FileName, 35, 2);
 
 				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.15);
@@ -179,7 +180,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 	}
 
 
-	//@Test (priority=1,groups = "leela_FL_ILP_Smoke")
+	@Test (priority=1,groups = "leela_FL_ILP_Smoke")
 
 
 	public void LOAN_Payment_PBNK_Void_BNK_Dismiss_WOR() throws Exception {
@@ -236,7 +237,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 		
 	}
 
-	 @Test(priority=2,groups = "leela_FL_ILP_Smoke1") 
+	 @Test(priority=2,groups = "leela_FL_ILP_Smoke") 
 
 	public void LonI_1stInstDep_CLR_RTN_Cure_DEF_DFPpartialpymt_PPN_1stInstonduedate_Void_PPNDFLT_DFPfullpymt() throws Exception {
 
@@ -268,7 +269,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				String Header = StateID+ "_" + ProductID;      		        
 				test = reports.startTest(Header+"_S.No:07"+"_"+PayFrequency+"_"+CollateralType,"LONI>1#DEPOSIT>CLR>RTN>CURE>DEF>DFP(partial payment)>PPN>1#payment on due date>void>PPN default>DFP(FULL)");
 				
-				SetCurrentDate.SetCurrentDate(SSN, FileName);
+			SetCurrentDate.SetCurrentDate(SSN, FileName);
 				Login.Login(UserName,Password,StoreId);			        
 				RegistrationPage_NewLoan_ILP.RegistrationPage_NewLoan_ILP(driver, test, AppURL, SSN, FileName);
 				NewLoan_FLILP.NewLoan_FLILP(SSN, FileName,"200");
@@ -286,7 +287,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 10, 2);
 				EOD_BatchProcess_DueDate.EOD_BatchProcess_DueDate(SSN, FileName, 31, 2);
 				Payment_PercentofDFLTAmt.Payment_PercentofDFLTAmt(SSN, FileName, 0.35);	
-				RCC_Revoke.RCC_Revoke(SSN, FileName);
+				//RCC_Revoke.RCC_Revoke(SSN, FileName);
 				EPP_ILP.EPP_ILP(SSN, FileName);				
 				AgeStore_RPP_ILP.AgeStore_RPP_ILP(SSN, FileName, 0, 2);
 				RPP_Payment_ILP.RPP_Payment_ILP(SSN, FileName);
@@ -299,7 +300,7 @@ public class AA_FL_ILP_Smoke extends AA_ILP{
 
 	}
 
-	//@Test (priority=3,groups = "leela_FL_ILP_Smoke1") //15day/05m/2019 // wendensday
+	@Test (priority=3,groups = "leela_FL_ILP_Smoke") //15day/05m/2019 // wendensday
 	public void LOAN_Deposit_CLR_Activemiltary_BNK_DEC_WOR() throws Exception {
 
 		// Start test. Mention test script name

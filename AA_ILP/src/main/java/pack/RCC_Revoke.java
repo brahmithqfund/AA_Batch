@@ -126,7 +126,7 @@ public class RCC_Revoke extends AA_CO_ILP {
 			driver.switchTo().frame("mainFrame");
 			driver.switchTo().frame("main");
 		    test.log(LogStatus.PASS, "Navigated to Customer RCC Authorization Details");
-		    driver.findElement(By.xpath("//input[(@name='bt_BankDetails') and (@value='RCC Revoke')]")).click();
+		    driver.findElement(By.xpath("//input[@name='bt_BankDetails' and @value='RCC Revoke']")).click();
 			//driver.findElement(By.name("bt_BankDetails")).click(); 
 			test.log(LogStatus.PASS, "Clicked on RCC Revoke");
 			for( String winHandle1 : driver.getWindowHandles())

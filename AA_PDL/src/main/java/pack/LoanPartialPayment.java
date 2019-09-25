@@ -113,13 +113,14 @@ public class LoanPartialPayment extends AA_PDL{
 				Thread.sleep(2000);
 				
 				Login.Login(UserName, Password, StoreId);
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();				
 				driver.switchTo().frame("topFrame");
-				Thread.sleep(2000);
-				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Loan Transactions")));	
-				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	
 				
-				Thread.sleep(1000);
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Loan Transactions")));	
+
+				driver.findElement(By.linkText("Loan Transactions")).click();	
+				Thread.sleep(2000);
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
@@ -166,7 +167,7 @@ public class LoanPartialPayment extends AA_PDL{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				driver.findElement(By.name("transactionList")).sendKeys(TxnType);
+				driver.findElement(By.name("transactionList")).sendKeys("Partial Payment");
 				if(ProductID.equals("PDL"))
 				{
 					driver.findElement(By.name("button")).click(); 
@@ -185,7 +186,7 @@ public class LoanPartialPayment extends AA_PDL{
 					driver.findElement(By.name("transactionDataBean.paymentAmt")).sendKeys("20");
 					test.log(LogStatus.PASS, "Payment Amt is entered as 20");
 					Thread.sleep(2000);
-					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys(TenderType);
+					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("CASH");
 					test.log(LogStatus.PASS, "Tender Type is Selected as "+TenderType);	
 					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys("20");
 					test.log(LogStatus.PASS, "Tender Amt is entered as 20");							

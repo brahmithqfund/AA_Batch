@@ -3,6 +3,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="pradeep_TN_PDL" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -40,11 +41,15 @@
 		<item value="_FL_PDL" key="selection"/>
 >>>>>>> chary1
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+		<item value="leela_FL_ILP_Smoke" key="selection"/>
+>>>>>>> charyStable25Sept
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="pradeep_TN_PDL"/>
 			<item value="priority=32"/>
@@ -66,10 +71,27 @@
 			<item value="return"/>
 			<item value="rescind"/>
 			<item value="clear"/>
+=======
+			<item value="leela_FL_ILP_Smoke1"/>
+			<item value="leela_FL_ILP_Smoke"/>
+			<item value="veri"/>
+			<item value="achpaym"/>
+			<item value="deposit"/>
+			<item value="payment"/>
+			<item value="buyback"/>
+			<item value="setc"/>
+>>>>>>> charyStable25Sept
 		</list>
 		<list key="replacehistory">
+			<item value="leela_FL_ILP_Smoke"/>
+			<item value="revathi_FL_PDL"/>
+			<item value="TN_"/>
+			<item value="@Test"/>
+			<item value="venkat_OH_ILP_Prod"/>
+			<item value="venkat_OH_ILP"/>
 			<item value="_FL_PDL"/>
 			<item value="_FL_PDL_"/>
+<<<<<<< HEAD
 			<item value="brahmith_TN_PDL"/>
 			<item value="venkat_OH_ILP_Prod"/>
 			<item value="@Test"/>
@@ -162,12 +184,15 @@
 =======
 >>>>>>> chary1
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+>>>>>>> charyStable25Sept
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="47" key="DIALOG_X_ORIGIN"/>
 		<item value="229" key="DIALOG_Y_ORIGIN"/>
@@ -191,5 +216,9 @@
 		<item value="258" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> chary1
 >>>>>>> 99f7b1da04307c058e2d38ab42d6146b465ed3d1
+=======
+		<item value="912" key="DIALOG_X_ORIGIN"/>
+		<item value="81" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> charyStable25Sept
 	</section>
 </section>

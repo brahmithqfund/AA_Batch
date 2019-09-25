@@ -26,5 +26,7 @@ public class AA_PDL {
 	public static String StoreId;
 	public static ExtentTest test;
 	public static Excel TestData;
+	public static String  Trancode;
+	public static String  VerTranCode;
 	
 }

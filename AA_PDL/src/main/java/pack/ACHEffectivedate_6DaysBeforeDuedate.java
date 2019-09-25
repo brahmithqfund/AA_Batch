@@ -89,7 +89,8 @@ public class ACHEffectivedate_6DaysBeforeDuedate extends AA_PDL{
 	public static void ACHEffectivedate_6DaysBeforeDuedate(String SSN,String FileName,int Days) throws Exception
 	{
 
-		Excel TestData = new Excel("F:/QC_Workspace/AA_Automation/TestData/PDL/"+FileName);  			int lastrow=TestData.getLastRow("NewLoan");
+		//Excel TestData = new Excel("F:/QC_Workspace/AA_Automation/TestData/PDL/"+FileName);  			
+		int lastrow=TestData.getLastRow("NewLoan");
 		System.out.println("NewLoan "+lastrow);
 		String sheetName="NewLoan";		
 		for(int row=2;row<=lastrow;row++)
@@ -152,7 +153,7 @@ public class ACHEffectivedate_6DaysBeforeDuedate extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
@@ -200,7 +201,8 @@ public class ACHEffectivedate_6DaysBeforeDuedate extends AA_PDL{
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("topFrame");
-				driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
+				driver.findElement(By.linkText("Transactions")).click();
+				//driver.findElement(By.xpath("//*[contains(text(),'Transactions')]")).click();	
 				test.log(LogStatus.PASS, "Clicked on Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
