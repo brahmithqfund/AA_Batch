@@ -1,8 +1,0 @@
-package pack;
-
-public class Child2 {
-	int i=4;
-	public void s1();
-	void s2();
-
-}

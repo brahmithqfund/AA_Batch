@@ -100,8 +100,18 @@ public class Void extends AA_CO_ILP{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				if (ProductID.equals("ILP")) {
-
-					driver.findElement(By.name("tenderType")).sendKeys("Cash");
+try {
+	driver.findElement(By.name("tenderType")).sendKeys("Cash");
+} catch (Exception e) {
+	// TODO: handle exception
+}
+try {
+	driver.findElement(By.name("transactionDataBean.disbursementType")).sendKeys("Cash");
+} catch (Exception e) {
+	// TODO: handle exception
+}
+					
+					
 					test.log(LogStatus.PASS, "DisbType Type is entered as Cash");
 					driver.findElement(By.name("requestBean.password")).sendKeys(Password);
 					test.log(LogStatus.PASS, "Password is selected as " + Password);

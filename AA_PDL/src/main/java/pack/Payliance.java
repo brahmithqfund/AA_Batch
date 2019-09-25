@@ -119,7 +119,7 @@ public class Payliance extends AA_FL_PDL{
 
 				System.out.println(ProductID);	
 				//appUrl = AppURL;
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
@@ -156,7 +156,7 @@ public class Payliance extends AA_FL_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				String DueDate=null;
-				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
+				DueDate = driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[6]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[4]")).getText();
 				test.log(LogStatus.PASS, "Capture DueDate"+DueDate);
 				System.out.print(DueDate);	
 				

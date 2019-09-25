@@ -106,19 +106,20 @@ public class LoanPartialPayment extends AA_PDL{
 				//String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				//String UserName = TestData.getCellData(sheetName,"UserName",row);
 				//String Password = TestData.getCellData(sheetName,"Password",row);
-				String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 				String SSN1 = SSN.substring(0, 3);
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				Thread.sleep(2000);
 				
 				Login.Login(UserName, Password, StoreId);
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();				
 				driver.switchTo().frame("topFrame");
-				Thread.sleep(2000);
+				
 				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Loan Transactions")));	
-				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	
-				Thread.sleep(1000);
+				driver.findElement(By.linkText("Loan Transactions")).click();	
+				Thread.sleep(2000);
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
@@ -153,7 +154,7 @@ public class LoanPartialPayment extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 												//html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
 					
 				}
@@ -165,7 +166,7 @@ public class LoanPartialPayment extends AA_PDL{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				driver.findElement(By.name("transactionList")).sendKeys(TxnType);
+				driver.findElement(By.name("transactionList")).sendKeys("Partial Payment");
 				if(ProductID.equals("PDL"))
 				{
 					driver.findElement(By.name("button")).click(); 
@@ -184,7 +185,7 @@ public class LoanPartialPayment extends AA_PDL{
 					driver.findElement(By.name("transactionDataBean.paymentAmt")).sendKeys("20");
 					test.log(LogStatus.PASS, "Payment Amt is entered as 20");
 					Thread.sleep(2000);
-					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys(TenderType);
+					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("CASH");
 					test.log(LogStatus.PASS, "Tender Type is Selected as "+TenderType);	
 					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys("20");
 					test.log(LogStatus.PASS, "Tender Amt is entered as 20");							

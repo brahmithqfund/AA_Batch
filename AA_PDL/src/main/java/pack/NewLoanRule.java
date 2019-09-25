@@ -135,7 +135,7 @@ public class NewLoanRule extends AA_PDL{
 					 Thread.sleep(2000);
 					 driver.switchTo().frame("topFrame");
 					 //driver.findElement(By.name("//*[contains(text(),'Loan Transactions')]")).click();
-					 driver.findElement(By.name("Loan Transactions")).click();
+					 driver.findElement(By.linkText("Loan Transactions")).click();
 					 test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 					 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 					 driver.switchTo().defaultContent();

@@ -149,17 +149,19 @@ public class Void extends AA_PDL{
 
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					//driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
 				}
 				if(ProductID.equals("TLP"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input")).click();
 				}
 
 				Thread.sleep(1000);
 				if(ProductID.equals("LOC"))
 				{
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 				test.log(LogStatus.PASS, "Click on GO Button");
 				for( String winHandle1 : driver.getWindowHandles())
@@ -220,17 +222,25 @@ public class Void extends AA_PDL{
 				}
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys(TenderType);
-					String Pmt= driver.findElement(By.xpath(" /html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[3]/td/table/tbody/tr[3]/td[1]")).getText();						
-					System.out.println(Pmt);
-					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys(Pmt);
-					test.log(LogStatus.PASS, "Tender Amt is entered as "+Pmt);
+					
+					try {
+						driver.findElement(By.name("transactionDataBean.disbursementType")).sendKeys("Cash");
+						String Pmt= driver.findElement(By.xpath(" /html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td[2]/table/tbody/tr[3]/td/table/tbody/tr[3]/td[1]")).getText();						
+						System.out.println(Pmt);
+						driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys(Pmt);
+						test.log(LogStatus.PASS, "Tender Amt is entered as "+Pmt);
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+					
+					
 				}
 				
 				if(ProductID.equals("PDL"))
 				{
 					driver.findElement(By.name("transactionDataBean.password")).sendKeys(Password);
-					driver.findElement(By.name("Submit23")).click();
+					
+				driver.findElement(By.name("Submit22")).click();
 					test.log(LogStatus.PASS, "Password is selected as "+Password);																					
 					test.log(LogStatus.PASS, "Clicked on Finish Void Loan button ");
 				}

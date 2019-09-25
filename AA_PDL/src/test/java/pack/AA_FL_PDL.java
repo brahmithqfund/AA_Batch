@@ -88,1517 +88,1487 @@ import java.io.FileReader;
 public class AA_FL_PDL extends AA_PDL{
 
 	
-	 @Test (priority=0,groups = "revathi_FL_PDL")
+	@Test (priority=0,groups = "revathi_FL_PDL")
 
-		public void BorrowerRegistration_NewLoan() throws Exception 
-		{
-			String FileName= "AA_BorrowerRegistration_NewLoan_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
+			public void BorrowerRegistration_NewLoan() throws Exception 
 			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				String FileName= "AA_BorrowerRegistration_NewLoan_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("BorrowerRegistration_NewLoan_"+Header, "New Loan");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("BorrowerRegistration_NewLoan_"+Header, "New Loan");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+				
+					}
+				}
+			}
 			
+			
+	@Test (priority=1,groups = "revathi_FL_PDL")
+
+			public void BorrowerNewLoan_Rule() throws Exception 
+			{
+				String FileName= "AA_BorrowerRegistration_NewLoanRule_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("BorrowerRegistration_NewLoan_Rule"+Header, "New Loan_Maximum Open Loan");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						NewLoanRule.NewLoanRule(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
 				}
 			}
-		}
+
+	@Test (priority=2,groups = "revathi_FL_PDL")
+
+			public void NewLoan_Biweekly_Duedate() throws Exception 
+			{
+				String FileName= "AA_NewLoan_BiweeklyDue_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoan_Biweekly_Duedate_"+Header, "Biweekly_Duedate");
+						
+
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						Biweekly_duedate.Biweekly_duedate(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=3,groups = "revathi_FL_PDL2")
+
+			public void NewLoan_Monthly_Duedate() throws Exception
+		{
+				String FileName= "AA_NewLoan_MonthlyDue_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoan_Monthly_Duedate_"+Header, "Monthly_Duedate");
+						
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						Monthly_duedate.Monthly_duedate(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+	@Test (priority=4,groups = "revathi_FL_PDL") 
+
+			public void NewLoan_SemiMonthly_Duedate() throws Exception
+		{
+				String FileName= "AA_NewLoan_SemiDue_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoan_SemiMonthly_Duedate_"+Header, "SemiMonthly_Duedate");
+						
+
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						semimonthly_duedate.semimonthly_duedate(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=5,groups = "revathi_FL_PDL")
+			public void NewLoan_Weekly_Duedate() throws Exception 
+			{
+				String FileName= "AA_NewLoan_WeeklyDue_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoan_Weekly_Duedate_"+Header, "Weekly_Duedate");
+						
+
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						Weekly_duedate.Weekly_duedate(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+	@Test (priority=7,groups = "revathi_FL_PDL_no_need")  //Need to change new loan code
+
+			public void Newloan_MultipullDisb() throws Exception
+			{
+				String FileName= "AA_Newloan_MultipullDisb_Types.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_Newloan_MultipullDisb_Type"+Header, "AEA_Newloan_MultipullDisb_Type");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+
+	@Test (priority=8,groups = "revathi_FL_PDL")
+
+			public void Void() throws Exception 
+			{
+				String FileName= "AA_VoidLoan_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_VoidLoan_Txn_"+Header, "AEA_VoidLoan_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						VoidAmt.VoidAmt(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=9,groups = "revathi_FL_PDL")//BLOCKER
+			
+			public void NewLoan_VoidEncryptionKey() throws Exception 
+			{
+				String FileName= "AA_NewLoan_VoidEncryptionKey_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_S.No:12"+"_"+PayFrequency+"_"+CollateralType,"Loan_void on next day with encryption key");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName); 
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,2);
+						EncryptionKey_Void.EncryptionKey_Void(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=10,groups = "revathi_FL_PDL")
+
+			public void Rescind() throws Exception
+			{
+				String FileName= "AA_RescindLoan_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_RescindLoan_Txn_"+Header, "AEA_RescindLoan_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						Rescind.Rescind(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=11,groups = "revathi_FL_PDL2")//BLOCKER
+
+			public void Rescind_AgeStore() throws Exception 
+			{
+				String FileName= "AA_RescindLoan_Agestore_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("RescindLoan_Agestore"+Header, "RescindLoan_Agestore");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);  
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
+						Rescind.Rescind(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=12,groups = "revathi_FL_PDL")
+
+			public void Partialpayment_void() throws Exception
+			 {
+				String FileName= "AA_Partialpayment_void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_Partialpayment_void"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store up to some days before due date_Partial Payment_Void");
+						
+						Login.Login(UserName, Password, StoreId);
+					    
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-4);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName); 
+						Partialpayment_Void.Partialpayment_Void(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=13,groups = "revathi_FL_PDL")
+
+			public void Partialpayment_agestorevoid() throws Exception
+			{
+				String FileName= "AA_Partialpayment_Agestorevoid_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_Partialpayment_Agestorevoid"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store up to some days before due date_Partial Payment_age the store up to 1 day_Void with encryption");
+						
+				 		Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-4);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-1); 
+						PartialPaymentVoidEncryptionKey.PartialPaymentVoidEncryptionKey(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+			
+			
+	@Test (priority=14,groups = "revathi_FL_PDL_no_need")
+
+			public void NewLoanMultiDisb_Void() throws Exception 
+			{
+				String FileName= "AA_NewLoanMultiDIsb_Void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoanMultiDisb_Void_"+Header, "Void New Loan");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
+						VoidAmt.VoidAmt(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+			
+			
+	@Test (priority=15,groups = "revathi_FL_PDL_no_need")
+
+			public void NewLoanMultipledisbursement_AgestoreVoid() throws Exception
+			{
+				String FileName= "AA_NewLoanMultiDIsb_AgestoreVoid_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_S.No:18"+"_"+PayFrequency+"_"+CollateralType,"loan with multiple disbursement (cash& check)_void with cash(Next day with encryption)");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
+						EncryptionKey_Void.EncryptionKey_Void(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+			
+					}
+				}
+			}
+
+			
+	@Test (priority=16,groups = "revathi_FL_PDL")
+
+			public void Newloan_DisbACH_void() throws Exception 
+			{
+				String FileName= "AA_Newloan_disbACH_void.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_Newloan_disbACH_void_"+Header, "AEA_Newloan_disbACH_void");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						VoidAmt.VoidAmt(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+	@Test (priority=17,groups = "revathi_FL_PDL1")
+
+			public void NewLoan_AgeStore_BuyBack() throws Exception {
+
+				String FileName= "AA_NewLoan_Agestore_BuybackLoan_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_NewLoan_Agestore_BuybackLoan_Txn"+Header, "AEA_NewLoan_Agestore_BuybackLoan_Txn");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,0);
+						Buyback.Buyback(SSN, FileName);
+						//Veritec_validate.Veritec_validate_buyback(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+	@Test (priority=18,groups = "revathi_FL_PDL")
+
+			public void BuyBack_Void() throws Exception 
+			{
+
+				String FileName= "AA_BuybackLoan_Void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_BuybackLoan_Void_Txn"+Header, "AEA_BuybackLoan_Void_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,0);
+						Buyback.Buyback(SSN, FileName); 
+						BuybackVoid.BuybackVoid(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=19,groups = "revathi_FL_PDL")
+
+			public void Byback_agestore_void() throws Exception
+			{
+				String FileName= "AA_Byback_Agestore_void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_AA_Byback_Agestore_void"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store_Perform the Buyback_Void on next day");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,0);
+						Buyback.Buyback(SSN, FileName);
+						AgeStore_Buyback_encryptionKeyVoid.AgeStore_Buyback_encryptionKeyVoid(SSN, FileName, 1);
+						Byback_AgestoreVoid.Byback_AgestoreVoid(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=20,groups = "revathi_FL_PDL")
+
+			public void VerifyBuyBack_TotalDue() throws Exception
+			{
+				String FileName= "AA_VerifyBuyBack_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("VerifyBuyBack_"+Header, "VerifyBuyBack");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,0);
+						Buyback.Buyback(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=21,groups = "revathi_FL_PDL")
+
+			public void PartialPayment_BuyBack() throws Exception 
+			{
+				String FileName= "AA_PartialPayment_BuyBack_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AA_PartialPayment_BuyBack_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBack");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-4);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, +4);
+						Buyback.Buyback(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=22,groups = "revathi_FL_PDL")
+
+			public void PartialPayment_BuyBack_Void() throws Exception 
+			{
+
+				String FileName= "AA_PartialPayment_BuyBack_Void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AA_PartialPayment_BuyBack_Void_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBack_Void");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-4);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, +4);
+						Buyback.Buyback(SSN, FileName);
+						Void.Void(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+
+	@Test (priority=23,groups = "revathi_FL_PDL")
+
+			public void PartialPayment_BuyBackChange_Void() throws Exception
+			{
+
+				String FileName= "AA_PartialPayment_BuyBackChange_Void_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AA_PartialPayment_BuyBackChange_Void_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBackChange_Void");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,3);
+						AgeStore.AgeStore(SSN, FileName,-2);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-2);						     
+						BuybackChange.BuybackChange(SSN, FileName);	
+						Void.Void(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=24,groups = "revathi_FL_PDL")
+			
+			public void NewLoan_PreNoteDiposit_6daysBeforeDueDate() throws Exception 
+			{
+				String FileName= "AA_NewLoan_PreNoteDeposit_6DaysBeforeDueDate_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+						String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest(Header+"_S.No:27"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store to six bussiness days before Due date_Process Pre Note Deposit process from Admin Portal_PreNote deposit should post");
+						//
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -6);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+			/*//@Test (priority=25,groups = "revathi_FL_PDL")
+			public void NewLoan_Duedate_Holiday() throws Exception
+			{
+				String FileName= "AA_NewLoan_Duedate_Holiday_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{ 
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("BorrowerRegistration_NewLoan_"+Header, "New Loan");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						Reg.RegistrationPage_NewLoan_FL_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -8);
+						PrenoteDeposit_.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, 0);
+						Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}*/
+			
+	@Test (priority=26,groups = "revathi_FL_PDL")
+
+			public void NewLoan_Prenote_Deposit_Verification_weekly() throws Exception
+			{
+				String FileName= "AA_NewLoan_Prenote_Deposit_Verification_weekly_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{	
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -7);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
+						Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=27,groups = "revathi_FL_PDL")
+
+			public void Prenotedeposit_Verification() throws Exception 
+			{
+				String FileName= "AA_Prenotedeposit_Verification_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -7);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						PrenoteClear_BeforeDuedate.PrenoteClear_BeforeDuedate(SSN, FileName,0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -7);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+			
+			
+	@Test (priority=28,groups = "revathi_FL_PDL")
+
+			public void Prenotedeposit_Verification_within5businessdays() throws Exception 
+			{
+				String FileName= "AA_Prenotedeposit_Verification_within5businessdays_Txn_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
+						
+						Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						AgeStore_ACHEffectiveDate.AgeStore_ACHEffectiveDate(SSN, FileName, -7);
+						ACHEffectivedate_6DaysBeforeDuedate.ACHEffectivedate_6DaysBeforeDuedate(SSN, FileName, 0);
+						Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
+	@Test (priority=29,groups = "revathi_FL_PDL")
+
+			public void NewLoan_Deposit_Return_Prenotedeposit() throws Exception 
+			{
+				String FileName= "AA_NewLoan_Deposit_ReturnPosting_Prenotedeposit_Testdata.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);  
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					if(RunFlag.equals("Y"))
+					{ 
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						String Header = StateID+ "_" + ProductID;
+						test = reports.startTest("NewLoan_Deposit_Return_Prenotedeposit_"+Header, "New Loan");
+						
+						/*Login.Login(UserName, Password, StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);						     
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);*/
+						Payliance_OriginationFile.Payliance_OriginationFile(SSN, FileName, 0,1);
+						ACHReturnPosting.ACHReturnPosting(SSN, FileName);
+						AgeStore_ACHEffectiveDate.AgeStore_ACHEffectiveDate(SSN, FileName, -7);
+						ACHEffectivedate_6DaysBeforeDuedate.ACHEffectivedate_6DaysBeforeDuedate(SSN, FileName, 0);
+						Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
+				}
+			}
+
 		
-		
-		@Test (priority=1,groups = "revathi_FL_PDL")
+		//Pradeep scenarios
+		  
+	@Test (priority=30,groups = "revathi_FL_PDL")
 
-		public void BorrowerNewLoan_Rule() throws Exception 
-		{
-			String FileName= "AA_BorrowerRegistration_NewLoanRule_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("BorrowerRegistration_NewLoan_Rule"+Header, "New Loan_Maximum Open Loan");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					NewLoanRule.NewLoanRule(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
+			public void Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost() throws Exception {
 
-	  @Test (priority=2,groups = "revathi_FL_PDL")
-
-		public void NewLoan_Biweekly_Duedate() throws Exception 
-		{
-			String FileName= "AA_NewLoan_BiweeklyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_revathi/"+FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost.xls";
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoan_Biweekly_Duedate_"+Header, "Biweekly_Duedate");
-					
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("AA_Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost"+Header, "Loan_Perform ACH Opt Out before PreNote date_PreNote deposit should not post.");
+						
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,2);
+						ACHRevoke.ACHRevoke(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						ACHAuthorization.ACHAuthorization(SSN, FileName);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
+						CustomerEOD_PreNoteRecord.CustomerEOD_PreNoteRecord(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
 
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					Biweekly_duedate.Biweekly_duedate(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+					}
 				}
 			}
-		}
+			
+	@Test (priority=31,groups = "revathi_FL_PDL")
+			
+			public void Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep() throws Exception {
 
-	  @Test (priority=3,groups = "revathi_FL_PDL")
-
-		public void NewLoan_Monthly_Duedate() throws Exception
-	{
-			String FileName= "AA_NewLoan_MonthlyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep_Txn_Testdata.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoan_Monthly_Duedate_"+Header, "Monthly_Duedate");
-					
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					Monthly_duedate.Monthly_duedate(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep"+Header, "Loan__PerformACHOptOutbeforePreNotedate__PerformACHOptInonPreNotedate__ProcessPreNoteDepositprocessfromAdminPortal___PreNotedepositshouldpost");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
+						ACHRevoke.ACHRevoke(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -7);
+						ACHAuthorization.ACHAuthorization(SSN, FileName);
+						PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, 0);
+						CustomerEodS_Recoredtatus.CustomerEodS_Recoredtatus(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+					}
 			}
 		}
 
+	@Test (priority=32,groups = "revathi_FL_PDL")
 
-	   @Test (priority=4,groups = "revathi_FL_PDL") 
+			public void NewLoan_PerformDeposit_ThroughEOD() throws Exception {
 
-		public void NewLoan_SemiMonthly_Duedate() throws Exception
-	{
-			String FileName= "AA_NewLoan_SemiDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_NewLoan_PerformDeposit_ThroughEOD_Txn_Testdata.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoan_SemiMonthly_Duedate_"+Header, "SemiMonthly_Duedate");
-					
-
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					semimonthly_duedate.semimonthly_duedate(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("AA_NewLoan_PerformDeposit_ThroughEOD_"+Header, "PerformDeposit_ThroughEOD_Txn");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						//EODProcessing.EODProcessing(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						DepositStatus.DepositStatus(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+				
+					}
 				}
-			}
-		}
+				//Login.Login("CSR353","1234","353");
 
-		@Test (priority=5,groups = "revathi_FL_PDL")
-		public void NewLoan_Weekly_Duedate() throws Exception 
-		{
-			String FileName= "AA_NewLoan_WeeklyDue_Txn_Testdata.xls";
-			Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/FL_PDL_path_revathi"+FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+			}
+
+		@Test (priority=33,groups = "revathi_FL_PDL") // Need more infor on .
+
+			public void ACH_Nacha_AchDepAdmin() throws Exception {
+
+				// Start test. Mention test script name
+				String FileName= "AA_ACH_Nacha_AchDepAdmin_Txn_Testdata.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoan_Weekly_Duedate_"+Header, "Weekly_Duedate");
-					
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("ACH_Nacha_AchDepAdmin_"+Header, "LoanwithACHcolleteraltype_Nacha_ACHdepositprocessinAdmin");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						//   NACHADeposit_EODProcessing.NACHADeposit_EODProcessing(SSN, FileName, 0);
+						StoreInfo.StoreInfo(SSN, FileName);
+						//Safeassign.Safeassign(SSN, FileName);
+						// Drawerassign.Drawerassign(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Customer_CheckStatus.Customer_CheckStatus(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
 
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					Weekly_duedate.Weekly_duedate(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+						//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
+						//wait(100);
+						// RegistrationPage.RegistrationPage(SSN);
+					}
 				}
-			}
+				//Login.Login("CSR353","1234","353");
+
 		}
 
+	@Test (priority=34,groups = "revathi_FL_PDL")
 
-		@Test (priority=6,groups = "revathi_FL_PDL")
+			public void NewLoan_AchRevoke_DepositShouldNotDisplay() throws Exception {
 
-		public void VerifyLoanAmount() throws Exception 
-		{
-			String FileName= "AA_BorrowerRegistration_VerifyLoanAmount_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);	
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_NewLoan_AchRevoke_DepositShouldnotDisplay_TestData.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_S.No:8"+"_"+PayFrequency+"_"+CollateralType,"Login_Home screen_Borrower_Registration_verify whether loan amount is based on Customer Income or not");
-					
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan_CustomerIncome.NewLoan_CustomerIncome(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("AA_NewLoan_AchRevoke_DepositShouldnotDisplayt"+Header, "loan with ACH_ach revoke_deposit should not be shown on due date");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, -6);
+						ACHRevoke.ACHRevoke(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						//EODProcessing.EODProcessing(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						CheckStatus.CheckStatus(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
 
+
+						//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
+						//wait(100);
+						// RegistrationPage.RegistrationPage(SSN);
+					}
 				}
+				//Login.Login("CSR353","1234","353");
+
 			}
 
-		}
 
+	@Test (priority=35,groups = "revathi_FL_PDL")
 
-		@Test (priority=7,groups = "revathi_FL_PDL")
+			public void NewLoan_PartialPayment_throghEOD_CheckDepositdAmount() throws Exception {
 
-		public void Newloan_MultipullDisb() throws Exception
-		{
-			String FileName= "AA_Newloan_MultipullDisb_Types.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_Newloan_MultipullDisb_Type"+Header, "AEA_Newloan_MultipullDisb_Type");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount"+Header, "NewLoan_PartialPayment_throghEOD_CheckDepositdAmount");
+						
+						//SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-5);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						//EODProcessing.EODProcessing(SSN, FileName);
+						StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+						StoreInfo.StoreInfo(SSN, FileName);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						Check_DepositAmount.Check_DepositAmount(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+
+						//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
+						//wait(100);
+						// RegistrationPage.RegistrationPage(SSN);
+					}
 				}
+				//Login.Login("CSR353","1234","353");
+
 			}
-		}
 
+			
+			
+	@Test (priority=36,groups = "revathi_FL_PDL")
 
+			public void LoanWithACH_PartialPayment_Payliance_ACHDepositFromAdmin_checkherethedepositedamount() throws Exception {
 
-		@Test (priority=8,groups = "revathi_FL_PDL")
-		public void Void() throws Exception 
-		{
-			String FileName= "AA_VoidLoan_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
+				// Start test. Mention test script name
+				String FileName= "AA_LoanWithACH_PartialPayment_Nacha_ACHDepositFromAdmin.xls";
+				//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);
+				int lastrow=TestData.getLastRow("NewLoan");
+				String sheetName="NewLoan";
+				//int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
 				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_VoidLoan_Txn_"+Header, "AEA_VoidLoan_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					VoidAmt.VoidAmt(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=9,groups = "revathi_FL_PDL")
-		
-		public void NewLoan_VoidEncryptionKey() throws Exception 
-		{
-			String FileName= "AA_NewLoan_VoidEncryptionKey_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_S.No:12"+"_"+PayFrequency+"_"+CollateralType,"Loan_void on next day with encryption key");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName); 
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,2); 
-					EncryptionKey_Void.EncryptionKey_Void(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=10,groups = "revathi_FL_PDL")
-		public void Rescind() throws Exception
-		{
-			String FileName= "AA_RescindLoan_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_RescindLoan_Txn_"+Header, "AEA_RescindLoan_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					Rescind.Rescind(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=11,groups = "revathi_FL_PDL")
-
-		public void Rescind_AgeStore() throws Exception 
-		{
-			String FileName= "AA_RescindLoan_Agestore_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("RescindLoan_Agestore"+Header, "RescindLoan_Agestore");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);  
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
-					Rescind.Rescind(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		 @Test (priority=12,groups = "revathi_FL_PDL")
-
-		public void Partialpayment_void() throws Exception
-		 {
-			String FileName= "AA_Partialpayment_void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_Partialpayment_void"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store up to some days before due date_Partial Payment_Void");
-					
-					Login.Login(UserName, Password, StoreId);
-				    
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-4);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName); 
-					Partialpayment_Void.Partialpayment_Void(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=13,groups = "revathi_FL_PDL")
-
-		public void Partialpayment_agestorevoid() throws Exception
-		{
-			String FileName= "AA_Partialpayment_Agestorevoid_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_Partialpayment_Agestorevoid"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store up to some days before due date_Partial Payment_age the store up to 1 day_Void with encryption");
-					
-			 		Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-4);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-1); 
-					PartialPaymentVoidEncryptionKey.PartialPaymentVoidEncryptionKey(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-		
-		
-		@Test (priority=14,groups = "revathi_FL_PDL")
-
-		public void NewLoanMultiDisb_Void() throws Exception 
-		{
-			String FileName= "AA_NewLoanMultiDIsb_Void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoanMultiDisb_Void_"+Header, "Void New Loan");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
-					VoidAmt.VoidAmt(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-		
-		
-		@Test (priority=15,groups = "revathi_FL_PDL")
-		public void NewLoanMultipledisbursement_AgestoreVoid() throws Exception
-		{
-			String FileName= "AA_NewLoanMultiDIsb_AgestoreVoid_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_S.No:18"+"_"+PayFrequency+"_"+CollateralType,"loan with multiple disbursement (cash& check)_void with cash(Next day with encryption)");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan_MultipulDisbTypes.NewLoan_MultipulDisbTypes(SSN, FileName);
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
-					EncryptionKey_Void.EncryptionKey_Void(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-		
-				}
-			}
-		}
-
-		
-		@Test (priority=16,groups = "revathi_FL_PDL")
-
-		public void Newloan_DisbACH_void() throws Exception 
-		{
-			String FileName= "AA_Newloan_disbACH_void.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_Newloan_disbACH_void_"+Header, "AEA_Newloan_disbACH_void");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					VoidAmt.VoidAmt(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-
-		 @Test (priority=17,groups = "revathi_FL_PDL")
-
-		public void NewLoan_AgeStore_BuyBack() throws Exception {
-
-			String FileName= "AA_NewLoan_Agestore_BuybackLoan_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_NewLoan_Agestore_BuybackLoan_Txn"+Header, "AEA_NewLoan_Agestore_BuybackLoan_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,0);
-					Buyback.Buyback(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-
-		@Test (priority=18,groups = "revathi_FL_PDL")
-
-		public void BuyBack_Void() throws Exception 
-		{
-
-			String FileName= "AA_BuybackLoan_Void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   	
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_BuybackLoan_Void_Txn"+Header, "AEA_BuybackLoan_Void_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,0);
-					Buyback.Buyback(SSN, FileName); 
-					BuybackVoid.BuybackVoid(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=19,groups = "revathi_FL_PDL")
-
-		public void Byback_agestore_void() throws Exception
-		{
-			String FileName= "AA_Byback_Agestore_void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_AA_Byback_Agestore_void"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store_Perform the Buyback_Void on next day");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,0);
-					Buyback.Buyback(SSN, FileName);
-					AgeStore_Buyback_encryptionKeyVoid.AgeStore_Buyback_encryptionKeyVoid(SSN, FileName, 1);
-					Byback_AgestoreVoid.Byback_AgestoreVoid(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-
-	    @Test (priority=20,groups = "revathi_FL_PDL")
-
-		public void VerifyBuyBack_TotalDue() throws Exception
-		{
-			String FileName= "AA_VerifyBuyBack_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("VerifyBuyBack_"+Header, "VerifyBuyBack");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,0);
-					Buyback.Buyback(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=21,groups = "revathi_FL_PDL")
-
-		public void PartialPayment_BuyBack() throws Exception 
-		{
-			String FileName= "AA_PartialPayment_BuyBack_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AA_PartialPayment_BuyBack_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBack");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-4);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, +4);
-					Buyback.Buyback(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=22,groups = "revathi_FL_PDL")
-
-		public void PartialPayment_BuyBack_Void() throws Exception 
-		{
-
-			String FileName= "AA_PartialPayment_BuyBack_Void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AA_PartialPayment_BuyBack_Void_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBack_Void");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-4);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, +4);
-					Buyback.Buyback(SSN, FileName);
-					Void.Void(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-
-		@Test (priority=23,groups = "revathi_FL_PDL")
-
-		public void PartialPayment_BuyBackChange_Void() throws Exception
-		{
-
-			String FileName= "AA_PartialPayment_BuyBackChange_Void_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AA_PartialPayment_BuyBackChange_Void_"+Header, "NewLoan_AgeStore_PartialPayment_AgeStore_BuyBackChange_Void");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,3);
-					AgeStore.AgeStore(SSN, FileName,-2);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-2);							     
-					BuybackChange.BuybackChange(SSN, FileName);
-					Void.Void(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		@Test (priority=24,groups = "revathi_FL_PDL")
-		
-		public void NewLoan_PreNoteDiposit_6daysBeforeDueDate() throws Exception 
-		{
-			String FileName= "AA_NewLoan_PreNoteDeposit_6DaysBeforeDueDate_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					String PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
-					String CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest(Header+"_S.No:27"+"_"+PayFrequency+"_"+CollateralType,"Loan_Age the store to six bussiness days before Due date_Process Pre Note Deposit process from Admin Portal_PreNote deposit should post");
-					//
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -6);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-		/*////@Test (priority=25,groups = "revathi_FL_PDL")
-		public void NewLoan_Duedate_Holiday() throws Exception
-		{
-			String FileName= "AA_NewLoan_Duedate_Holiday_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);   
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{ 
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row); 
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("BorrowerRegistration_NewLoan_"+Header, "New Loan");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					Reg.RegistrationPage_NewLoan_FL_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -8);
-					PrenoteDeposit_.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, 0);
-					Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}*/
-		
-	     @Test (priority=26,groups = "revathi_FL_PDL")
-		public void NewLoan_Prenote_Deposit_Verification_weekly() throws Exception
-		{
-			String FileName= "AA_NewLoan_Prenote_Deposit_Verification_weekly_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{	
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -7);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
-					Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-	  @Test (priority=27,groups = "revathi_FL_PDL")
-
-		public void Prenotedeposit_Verification() throws Exception 
-		{
-			String FileName= "AA_Prenotedeposit_Verification_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -7);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					PrenoteClear_BeforeDuedate.PrenoteClear_BeforeDuedate(SSN, FileName,0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+					//System.out.println(RunFlag);
+					if(RunFlag.equals("Y"))
+					{	
+						//driver.get(appUrl);
+						//test.log(LogStatus.INFO, "Application is launched");
+						//driver.manage().window().maximize();
+						AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
+						UserName = prop.getProperty("UserName_FL_PDL_revathi");
+						Password = prop.getProperty("Password_FL_PDL_revathi");
+						StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
+						String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+						String StateID = TestData.getCellData(sheetName,"StateID",row);
+						String SSN = TestData.getCellData(sheetName,"SSN",row);	
+						String Header = StateID+ "_" + ProductID;
+						//System.out.println(SSN);
+						test = reports.startTest("AA_LoanWithACH_PartialPayment_Nacha_ACHDepositFromAdmin"+Header, "Loan with ACH_Partial Payment_Nacha_Ach Deposit process from admin_check here the deposited amount");
+						
+						SetCurrentDate.SetCurrentDate(SSN, FileName);
+						Login.Login(UserName,Password,StoreId);
+						
+						//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+						NewLoan.NewLoan(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName,-5);
+						LoanPartialPayment.LoanPartialPayment(SSN, FileName);
+						AgeStore.AgeStore(SSN, FileName, 0);
+						DrawerDeassign.DrawerDeassign(SSN, FileName);
+						//EODProcessing.EODProcessing(SSN, FileName);
 					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -7);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
-					AA_FL_PDL.IETaskKiller();
+						StoreInfo.StoreInfo(SSN, FileName);	
+						//NACHA.NACHA(SSN, FileName, 0);
+						Payliance.Payliance(SSN, FileName, 0);
+						Safeassign.Safeassign(SSN, FileName);
+						Drawerassign.Drawerassign(SSN, FileName);
+						PreACH_Deposit.PreACH_Deposit(SSN, FileName, 0);
+						ACH_Deposit_History.ACH_Deposit_History(SSN, FileName);
+						AA_FL_PDL.IETaskKiller();
+
+					
+					}
 				}
+				//Login.Login("CSR353","1234","353");
+
 			}
-		}
-		
-		
-		@Test (priority=28,groups = "revathi_FL_PDL")
-
-		public void Prenotedeposit_Verification_within5businessdays() throws Exception 
-		{
-			String FileName= "AA_Prenotedeposit_Verification_within5businessdays_Txn_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);    
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("AEA_Newloan_Prenotedeposit_Verification_Txn_"+Header, "AEA_Newloan_Prenotedeposit_Verification_Txn");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					AgeStore_ACHEffectiveDate.AgeStore_ACHEffectiveDate(SSN, FileName, -7);
-					ACHEffectivedate_6DaysBeforeDuedate.ACHEffectivedate_6DaysBeforeDuedate(SSN, FileName, 0);
-					Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-	  @Test (priority=29,groups = "revathi_FL_PDL")
-
-		public void NewLoan_Deposit_Return_Prenotedeposit() throws Exception 
-		{
-			String FileName= "AA_NewLoan_Deposit_ReturnPosting_Prenotedeposit_Testdata.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_revathi") + FileName);  
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				if(RunFlag.equals("Y"))
-				{ 
-					AppURL = prop.getProperty("AppURL_FL_PDL_revathi");
-					UserName = prop.getProperty("UserName_FL_PDL_revathi");
-					Password = prop.getProperty("Password_FL_PDL_revathi");
-					StoreId = prop.getProperty("StoreID_FL_PDL_revathi");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row); 
-					String Header = StateID+ "_" + ProductID;
-					test = reports.startTest("NewLoan_Deposit_Return_Prenotedeposit_"+Header, "New Loan");
-					
-					Login.Login(UserName, Password, StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);						     
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
-					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
-					AgeStore_ACHEffectiveDate.AgeStore_ACHEffectiveDate(SSN, FileName, -7);
-					ACHEffectivedate_6DaysBeforeDuedate.ACHEffectivedate_6DaysBeforeDuedate(SSN, FileName, 0);
-					Prenote_deposit_History.Prenote_deposit_History(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-			}
-		}
-
-	
+			
+			
+			//---------------------------- END-----------------------------
+			//---------------------------- END-----------------------------
+			//---------------------------- END-----------------------------
+			//---------------------------- END-----------------------------
+			//---------------------------- END-----------------------------	
 	//Pradeep scenarios
 	  
-		@Test (priority=30,groups = "pradeep_FL_PDL")
-
-		public void Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost.xls";
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);   
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("AA_Loan__ACHOptOutBeforePrenotedate_PrenoteDepositShouldnotpost"+Header, "Loan_Perform ACH Opt Out before PreNote date_PreNote deposit should not post.");
-					
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,2);
-					ACHRevoke.ACHRevoke(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					ACHAuthorization.ACHAuthorization(SSN, FileName);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, -7);
-					CustomerEOD_PreNoteRecord.CustomerEOD_PreNoteRecord(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-
-				}
-			}
-		}
 		
-		//@Test (priority=31,groups = "pradeep_FL_PDL")
-		
-		public void Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep_Txn_Testdata.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("Loan__ACHOptOutBeforePrenotedate__ACHOptInAfterPrenOteDate__PrenoteDepInAdmin___PreNotedep"+Header, "Loan__PerformACHOptOutbeforePreNotedate__PerformACHOptInonPreNotedate__ProcessPreNoteDepositprocessfromAdminPortal___PreNotedepositshouldpost");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					LoanDate_AgeStore.LoanDate_AgeStore(SSN, FileName,1);
-					ACHRevoke.ACHRevoke(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -7);
-					ACHAuthorization.ACHAuthorization(SSN, FileName);
-					PrenoteDeposit_6DaysBeforeDuedate.PrenoteDeposit_6DaysBeforeDuedate(SSN, FileName, 0);
-					CustomerEodS_Recoredtatus.CustomerEodS_Recoredtatus(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-				}
-		}
-	}
-
-		//@Test (priority=32,groups = "pradeep_FL_PDL")
-
-		public void NewLoan_PerformDeposit_ThroughEOD() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_NewLoan_PerformDeposit_ThroughEOD_Txn_Testdata.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("AA_NewLoan_PerformDeposit_ThroughEOD_"+Header, "PerformDeposit_ThroughEOD_Txn");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					//EODProcessing.EODProcessing(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					DepositStatus.DepositStatus(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-			
-				}
-			}
-			//Login.Login("CSR353","1234","353");
-
-		}
-
-		//@Test (priority=33,groups = "pradeep_FL_PDL") // Need more infor on .
-
-		public void ACH_Nacha_AchDepAdmin() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_ACH_Nacha_AchDepAdmin_Txn_Testdata.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("ACH_Nacha_AchDepAdmin_"+Header, "LoanwithACHcolleteraltype_Nacha_ACHdepositprocessinAdmin");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					//   NACHADeposit_EODProcessing.NACHADeposit_EODProcessing(SSN, FileName, 0);
-					StoreInfo.StoreInfo(SSN, FileName);
-					//Safeassign.Safeassign(SSN, FileName);
-					// Drawerassign.Drawerassign(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Customer_CheckStatus.Customer_CheckStatus(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-
-					//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
-					//wait(100);
-					// RegistrationPage.RegistrationPage(SSN);
-				}
-			}
-			//Login.Login("CSR353","1234","353");
-
-	}
-
-		//@Test (priority=34,groups = "pradeep_FL_PDL")
-
-		public void NewLoan_AchRevoke_DepositShouldNotDisplay() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_NewLoan_AchRevoke_DepositShouldnotDisplay_TestData.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("AA_NewLoan_AchRevoke_DepositShouldnotDisplayt"+Header, "loan with ACH_ach revoke_deposit should not be shown on due date");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, -6);
-					ACHRevoke.ACHRevoke(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					//EODProcessing.EODProcessing(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					CheckStatus.CheckStatus(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-
-
-					//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
-					//wait(100);
-					// RegistrationPage.RegistrationPage(SSN);
-				}
-			}
-			//Login.Login("CSR353","1234","353");
-
-		}
-
-
-		//@Test (priority=35,groups = "pradeep_FL_PDL")
-
-		public void NewLoan_PartialPayment_throghEOD_CheckDepositdAmount() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("AA_NewLoan_PartialPayment_throghEOD_CheckDepositdAmount"+Header, "NewLoan_PartialPayment_throghEOD_CheckDepositdAmount");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-5);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					//EODProcessing.EODProcessing(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					Check_DepositAmount.Check_DepositAmount(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-
-					//WebDriverWait wait = new WebDriverWait(driver, 10);		        		        		        	       
-					//wait(100);
-					// RegistrationPage.RegistrationPage(SSN);
-				}
-			}
-			//Login.Login("CSR353","1234","353");
-
-		}
-
-		//@Test (priority=36,groups = "pradeep_FL_PDL")
-
-		public void LoanWithACH_PartialPayment_Payliance_ACHDepositFromAdmin_checkherethedepositedamount() throws Exception {
-
-			// Start test. Mention test script name
-			String FileName= "AA_LoanWithACH_PartialPayment_Nacha_ACHDepositFromAdmin.xls";
-			//TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_pradeep") + FileName);
-			int lastrow=TestData.getLastRow("NewLoan");
-			String sheetName="NewLoan";
-			//int lastrow=TestData.getLastRow("Borrower");
-			System.out.println(lastrow);
-			for(int row=2;row<=lastrow;row++)
-			{
-				String RunFlag = TestData.getCellData(sheetName,"Run",row);
-				//System.out.println(RunFlag);
-				if(RunFlag.equals("Y"))
-				{	
-					//driver.get(appUrl);
-					//test.log(LogStatus.INFO, "Application is launched");
-					//driver.manage().window().maximize();
-					AppURL = prop.getProperty("AppURL_FL_PDL_pradeep");
-					UserName = prop.getProperty("UserName_FL_PDL_pradeep");
-					Password = prop.getProperty("Password_FL_PDL_pradeep");
-					// System.out.println(Password);
-					StoreId = prop.getProperty("StoreID_FL_PDL_pradeep");
-					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
-					String StateID = TestData.getCellData(sheetName,"StateID",row);
-					String SSN = TestData.getCellData(sheetName,"SSN",row);	
-					String Header = StateID+ "_" + ProductID;
-					//System.out.println(SSN);
-					test = reports.startTest("AA_LoanWithACH_PartialPayment_Nacha_ACHDepositFromAdmin"+Header, "Loan with ACH_Partial Payment_Nacha_Ach Deposit process from admin_check here the deposited amount");
-					
-					SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName,Password,StoreId);
-					
-					//Reg.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
-					NewLoan.NewLoan(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName,-5);
-					LoanPartialPayment.LoanPartialPayment(SSN, FileName);
-					AgeStore.AgeStore(SSN, FileName, 0);
-					DrawerDeassign.DrawerDeassign(SSN, FileName);
-					//EODProcessing.EODProcessing(SSN, FileName);
-					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
-					StoreInfo.StoreInfo(SSN, FileName);
-					//NACHA.NACHA(SSN, FileName, 0);
-					Payliance.Payliance(SSN, FileName, 0);
-					Safeassign.Safeassign(SSN, FileName);
-					Drawerassign.Drawerassign(SSN, FileName);
-					PreACH_Deposit.PreACH_Deposit(SSN, FileName, 0);
-					ACH_Deposit_History.ACH_Deposit_History(SSN, FileName);
-					AA_FL_PDL.IETaskKiller();
-
-				
-				}
-			}
-			//Login.Login("CSR353","1234","353");
-
-		}
-			
-		//@Test (priority=37,groups = "pradeep_FL_PDL")
+		@Test (priority=37,groups = "pradeep_FL_PDL")
 
 		public void PreNotDeposit_PreNoteClear_CustomerInactive_Deposit() throws Exception {
 
@@ -1655,7 +1625,7 @@ public class AA_FL_PDL extends AA_PDL{
 			}
 		}
 		
-		//@Test (priority=38,groups = "pradeep_FL_PDL")
+		@Test (priority=38,groups = "pradeep_FL_PDL")
 
 		public void PreNoteDepositClear_CustomerInactiveAndActive_EOD() throws Exception {
 
@@ -1711,7 +1681,7 @@ public class AA_FL_PDL extends AA_PDL{
 			}
 		}
 
-		//@Test (priority=39,groups = "pradeep_FL_PDL")
+		@Test (priority=39,groups = "pradeep_FL_PDL")
 
 		public void ACHRevokeBeforePreNoteDate_ACHAuthAfterPreNoteDate() throws Exception {
 
@@ -1774,7 +1744,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 
-		//@Test (priority=40,groups = "pradeep_FL_PDL")
+		@Test (priority=40,groups = "pradeep_FL_PDL")
 
 		public void ACHLoan_ACHRev_ACHAuth_ACHDep_CheckDepwithNewBnkDet() throws Exception {
 
@@ -1834,7 +1804,7 @@ public class AA_FL_PDL extends AA_PDL{
 		}
 
 
-		//@Test (priority=41,groups = "pradeep_FL_PDL")
+		@Test (priority=41,groups = "pradeep_FL_PDL")
 
 		public void NewLoan_PartialPayment() throws Exception {
 
@@ -1895,7 +1865,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 
-		//@Test (priority=42,groups = "pradeep_FL_PDL")
+		@Test (priority=42,groups = "pradeep_FL_PDL")
 
 		public void CheckingPartialPmt_SomeDaysAfterDueDate() throws Exception {
 
@@ -1948,7 +1918,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 
-		//@Test (priority=43,groups = "pradeep_FL_PDL")
+		@Test (priority=43,groups = "pradeep_FL_PDL")
 
 		public void PartialPayment_MultipleTenderTypes() throws Exception {
 
@@ -2003,7 +1973,7 @@ public class AA_FL_PDL extends AA_PDL{
 		}
 		
 		
-		//@Test (priority=44,groups = "pradeep_FL_PDL")
+		@Test (priority=44,groups = "pradeep_FL_PDL")
 
 		public void NewLoan_Deposit_CheckPartialPaymentDisplay_AfterDeposit() throws Exception {
 
@@ -2055,7 +2025,7 @@ public class AA_FL_PDL extends AA_PDL{
 			}
 		}
 		
-		//@Test (priority=45,groups = "pradeep_FL_PDL")
+		@Test (priority=45,groups = "pradeep_FL_PDL")
 
 		public void PartialPayment_Agestore_CheckLoanDisplayedEOD() throws Exception {
 
@@ -2108,7 +2078,7 @@ public class AA_FL_PDL extends AA_PDL{
 			}
 		}
 		
-		//@Test (priority=46,groups = "pradeep_FL_PDL")
+		@Test (priority=46,groups = "pradeep_FL_PDL")
 
 		public void Loan_AgeStore_ProcessDeposit_Payliance_DepositShouldPost() throws Exception {
 
@@ -2167,7 +2137,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 		
-		//@Test (priority=47,groups = "pradeep_FL_PDL")
+		@Test (priority=47,groups = "pradeep_FL_PDL")
 
 		public void LoanWithCheck_DepConvertToACH_ACHDep_ProcessEOD() throws Exception {
 
@@ -2235,7 +2205,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 		
-		//@Test (priority=48,groups = "pradeep_FL_PDL")
+		@Test (priority=48,groups = "pradeep_FL_PDL")
 
 		public void LoanWithCheck_ConvertACH_Deposit_ACHClear() throws Exception {
 
@@ -2354,7 +2324,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 		
-		//@Test (priority=50,groups = "pradeep_FL_PDL")
+		@Test (priority=50,groups = "pradeep_FL_PDL")
 
 		public void Loan_Full_PrePayment() throws Exception {
 
@@ -2413,7 +2383,7 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}
 		
-		//@Test (priority=51,groups = "pradeep_FL_PDL")
+		@Test (priority=51,groups = "pradeep_FL_PDL")
 
 		public void Newloan_VoidPrePayment() throws Exception {
 
@@ -3445,10 +3415,10 @@ public class AA_FL_PDL extends AA_PDL{
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
 					// ACH_PartialPrePayment.ACH_PartialPrePayment(SSN, FileName);
-					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
+					/*ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					ACHPayment.ACHPayment(SSN, FileName, 0.15);
 					WriteOff.WriteOff(SSN, FileName, 121);
-					WriteOff_History.WriteOff_History(SSN, FileName);
+					WriteOff_History.WriteOff_History(SSN, FileName);*/
 
 
 
@@ -3770,7 +3740,7 @@ public class AA_FL_PDL extends AA_PDL{
 			
 		}
 
-		@Test(priority = 48, groups = "brahmith_FL_PDL")
+		@Test(priority = 48, groups = "brahmith_FL_PDL3")
 
 		public void NewLoan_Deposit_Clear_transactions_dropdown() throws Exception {
 
@@ -3800,7 +3770,7 @@ public class AA_FL_PDL extends AA_PDL{
 					test = reports.startTest(Header + "_S.No:48" + "_",
 							"Advance (ACH/Check) =>Process Deposit => Based on manual clear days rule value =>Validate Manual Clear transactions is been displayed in transaction drop down => Process Clear");
 
-					 SetCurrentDate.SetCurrentDate(SSN, FileName);
+					SetCurrentDate.SetCurrentDate(SSN, FileName);
 					Login.Login(UserName, Password, StoreId);
 					
 					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -3813,7 +3783,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					AgeStore.AgeStore(SSN, FileName, 2);
 					ACH_Clear.ACH_Clear(SSN, FileName);
 					
@@ -3865,7 +3835,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					
 					ACH_Prepayment_extraamount.ACH_Prepayment_extraamount(SSN, FileName);
 					AgeStore.AgeStore(SSN, FileName, 1);
@@ -3919,7 +3889,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					
 					ACH_Prepayment_extraamount.ACH_Prepayment_extraamount(SSN, FileName);
 					AgeStore.AgeStore(SSN, FileName, 1);
@@ -3957,7 +3927,7 @@ public class AA_FL_PDL extends AA_PDL{
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					String Header = StateID + "_" + ProductID;
 					// System.out.println(SSN);
-					test = reports.startTest(Header + "_S.No:49" + "_", "Loan => validate RPP available after due date.");
+					test = reports.startTest(Header + "_S.No:52" + "_", "Loan => validate RPP available after due date.");
 
 					// SetCurrentDate.SetCurrentDate(SSN, FileName);
 					Login.Login(UserName, Password, StoreId);
@@ -4015,7 +3985,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					// LoanACHPayment_Diff.LoanACHPayment_Diff(SSN, FileName);
 					ACHPP_MO_2tendertypes.ACHPP_MO_2tendertypes_DiffNumbers(SSN, FileName);
@@ -4069,7 +4039,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					// LoanACHPayment_Diff.LoanACHPayment_Diff(SSN, FileName);
 					ACHPP_MO_2tendertypes.ACHPP_MO_2tendertypes_SameNumbers(SSN, FileName);
@@ -4122,7 +4092,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					// LoanACHPayment_Diff.LoanACHPayment_Diff(SSN, FileName);
 					ACHPP_CCK_2tendertypes.ACHPP_CCK_2tendertypes_DiffNumbers(SSN, FileName);
@@ -4176,7 +4146,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					// LoanACHPayment_Diff.LoanACHPayment_Diff(SSN, FileName);
 					ACHPP_CCK_2tendertypes.ACHPP_CCK_2tendertypes_SameNumbers(SSN, FileName);
@@ -4217,9 +4187,9 @@ public class AA_FL_PDL extends AA_PDL{
 							"Advance =>deposit =>ACHR=>ACHP with 2 tender types as CCk with different numbers =>Transaction should be processed =>deassign drawer =>Validate they are available for mid day deposit.Process Mid day deposit =>Void ACHP Only cash should be displayed.");
 
 					// SetCurrentDate.SetCurrentDate(SSN, FileName);
-					Login.Login(UserName, Password, StoreId);
+							Login.Login(UserName, Password, StoreId);
 
-					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+				RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
 					NewLoan_product.NewLoan_product(SSN, FileName);
 					AgeStore.AgeStore(SSN, FileName, 0);
 
@@ -4229,13 +4199,13 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 					// LoanACHPayment_Diff.LoanACHPayment_Diff(SSN, FileName);
 					ACHPP_CCK_2tendertypes.ACHPP_CCK_2tendertypes_DiffNumbers(SSN, FileName);
 					DrawerDeassign.DrawerDeassign(SSN, FileName);
 					MidDayDeposit.MidDayDeposit(SSN, FileName);
-					Void_ACHPP_CCK_2tendertypes.Void_ACHPP_CCK_2tendertypes_Checktender(SSN, FileName);
+					Void_ACHPP_CCK_2tendertypes.Void_ACHPP_CCK_2tendertypes_Cash(SSN, FileName);
 
 				}
 			}
@@ -4285,13 +4255,13 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 
 					writeoff_Process.writeoff_Process(SSN, FileName, 60);
 					WOR_CCK_2tendertypes.WOR_CCK_2tendertypes_DiffNumbers(SSN, FileName);
 
-					Void_ACHPP_CCK_2tendertypes.Void_ACHPP_CCK_2tendertypes_Checktender(SSN, FileName);
+					Void_ACHPP_CCK_2tendertypes.Void_ACHPP_CCK_2tendertypes_Cash(SSN, FileName);
 
 				}
 			}
@@ -4328,7 +4298,7 @@ public class AA_FL_PDL extends AA_PDL{
 					test = reports.startTest(Header + "_S.No:60" + "_",
 							"Advance=>deposit =>ACHR=>WOR with 2 tender types as MO with same numbers =>Transaction should not be processed");
 
-					// SetCurrentDate.SetCurrentDate(SSN, FileName);
+					 SetCurrentDate.SetCurrentDate(SSN, FileName);
 					Login.Login(UserName, Password, StoreId);
 
 					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
@@ -4341,7 +4311,7 @@ public class AA_FL_PDL extends AA_PDL{
 					StoreInfo.StoreInfo(SSN, FileName);
 					Safeassign.Safeassign(SSN, FileName);
 					Drawerassign.Drawerassign(SSN, FileName);
-					NACHA.NACHA(SSN, FileName, 0);
+					Payliance.Payliance(SSN, FileName, 0);
 					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
 
 					writeoff_Process.writeoff_Process(SSN, FileName, 60);
@@ -4352,10 +4322,174 @@ public class AA_FL_PDL extends AA_PDL{
 
 		}	
 
+//Brahmith scenarios
+		@Test(priority=83,groups = "brahmith_FL_PDL") 
 
+		public void NewLoan_Deposit_ACHR_ACHPexcludingNSFFEE_WaiveNSFFEE_Loanshouldbeclosed_VoidWaiveNsfee() throws Exception {
+
+		// Start test. Mention test script name
+		String FileName= "AA_NewLoan_Deposit_ACHR_ACHPexcludingNSFFEE_WaiveNSFFEE_Loanshouldbeclosed.xls";
+		TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_brahmith") + FileName); 	
+		int lastrow=TestData.getLastRow("NewLoan");
+		String sheetName="NewLoan";
+
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+		String RunFlag = TestData.getCellData(sheetName,"Run",row);
+		//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{
+			AppURL = prop.getProperty("AppURL_FL_PDL_brahmith");
+			UserName = prop.getProperty("UserName_FL_PDL_brahmith");
+			Password = prop.getProperty("Password_FL_PDL_brahmith");
+			// System.out.println(Password);
+			StoreId = prop.getProperty("StoreID_FL_PDL_brahmith");
+		String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+		String StateID = TestData.getCellData(sheetName,"StateID",row);
+		String SSN = TestData.getCellData(sheetName,"SSN",row);	
+		String PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
+		String CollateralType = TestData.getCellData(sheetName, "ESign_CollateralType", row);
+		String Header = StateID+ "_" + ProductID;
+		test = reports.startTest(Header + "_S.No:83" + "_" + PayFrequency + "_" + CollateralType,"Advance_Deposit_ACHR_NSFFee_ACHP excluding NSFFEE_Waive NSFFEE_Loan should be closed_Void Waive Nsfee");
+
+		Login.Login(UserName,Password,StoreId);
+
+		RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+		NewLoan_FL.NewLoan_FL(SSN, FileName);
+		AgeStore.AgeStore(SSN, FileName, 0);
+		DrawerDeassign.DrawerDeassign(SSN, FileName);
+		//EODProcessing.EODProcessing(SSN, FileName);
+		StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+		StoreInfo.StoreInfo(SSN, FileName);						     
+		Safeassign.Safeassign(SSN, FileName);
+		Drawerassign.Drawerassign(SSN, FileName);
+		Payliance.Payliance(SSN, FileName, 0);
+		ACHReturnPosting.ACHReturnPosting(SSN, FileName);	
+		ACHPaymet_ExcludeNSFFee.ACHPaymet_ExcludeNSFFee(SSN, FileName);
+		WaiveNSFFEE.WaiveNSFFEE(SSN, FileName);
+		LoanStatus.LoanStatus(SSN, FileName);
+		Void_WaiveNSFFee.Void_WaiveNSFFee(SSN, FileName);
+		LoanStatus.LoanStatus(SSN, FileName);
+		}
+		}
+		}
  
-	 
-	
+		@Test (priority=84,groups = "brahmith_FL_PDL")
+
+		public void ACHpayment() throws Exception {
+
+			// Start test. Mention test script name
+			String FileName= "ACHpayment.xls";
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_brahmith") + FileName);   
+			int lastrow=TestData.getLastRow("NewLoan");
+			String sheetName="NewLoan";
+			//int lastrow=TestData.getLastRow("Borrower");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+				if(RunFlag.equals("Y"))
+				{	
+					//driver.get(appUrl);
+					//test.log(LogStatus.INFO, "Application is launched");
+					//driver.manage().window().maximize();
+					AppURL = prop.getProperty("AppURL_FL_PDL_brahmith");
+					UserName = prop.getProperty("UserName_FL_PDL_brahmith");
+					Password = prop.getProperty("Password_FL_PDL_brahmith");
+					// System.out.println(Password);
+					StoreId = prop.getProperty("StoreID_FL_PDL_brahmith");
+					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+					String StateID = TestData.getCellData(sheetName,"StateID",row);
+					String SSN = TestData.getCellData(sheetName,"SSN",row);	
+					String Header = StateID+ "_" + ProductID;
+					//System.out.println(SSN);
+					test = reports.startTest("Scenario_6"+Header, "ACH Prepayment Veritic verification");
+					
+
+
+					SetCurrentDate.SetCurrentDate(SSN, FileName);
+					Login.Login(UserName,Password,StoreId);
+					
+					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+					NewLoan.NewLoan(SSN, FileName);
+					AgeStore.AgeStore(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					// NewLoan_EODProcessing.NewLoan_EODProcessing(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					Payliance.Payliance(SSN, FileName, 0);
+					// ACH_PartialPrePayment.ACH_PartialPrePayment(SSN, FileName);
+			
+					ACHPayment.ACHPayment(SSN, FileName, 1);
+					Veritec_validate.Veritec_validate_payment(SSN, FileName);
+				
+
+
+				}
+			} 
+		}
+		@Test (priority=85,groups = "brahmith_FL_PDL1")
+
+		public void ACH_return_payment() throws Exception {
+
+			// Start test. Mention test script name
+			String FileName= "ACH_return_payment.xls";
+			TestData = new Excel(System.getProperty("user.dir") + prop.getProperty("AA_Store_Test_data_FL_PDL_path_brahmith") + FileName);   
+			int lastrow=TestData.getLastRow("NewLoan");
+			String sheetName="NewLoan";
+			//int lastrow=TestData.getLastRow("Borrower");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+				if(RunFlag.equals("Y"))
+				{	
+					//driver.get(appUrl);
+					//test.log(LogStatus.INFO, "Application is launched");
+					//driver.manage().window().maximize();
+					AppURL = prop.getProperty("AppURL_FL_PDL_brahmith");
+					UserName = prop.getProperty("UserName_FL_PDL_brahmith");
+					Password = prop.getProperty("Password_FL_PDL_brahmith");
+					// System.out.println(Password);
+					StoreId = prop.getProperty("StoreID_FL_PDL_brahmith");
+					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+					String StateID = TestData.getCellData(sheetName,"StateID",row);
+					String SSN = TestData.getCellData(sheetName,"SSN",row);	
+					String Header = StateID+ "_" + ProductID;
+					//System.out.println(SSN);
+					test = reports.startTest("Scenario_6"+Header, "ACH Prepayment Veritic verification");
+					
+					SetCurrentDate.SetCurrentDate(SSN, FileName);
+					Login.Login(UserName,Password,StoreId);
+					
+					RegistrationPage_NewLoan_PDL.RegistrationPage_NewLoan_PDL(driver, test, AppURL, SSN, FileName);
+					NewLoan.NewLoan(SSN, FileName);
+					AgeStore.AgeStore(SSN, FileName, 0);
+					DrawerDeassign.DrawerDeassign(SSN, FileName);
+					// NewLoan_EODProcessing.NewLoan_EODProcessing(SSN, FileName);
+					StatementGeneration_EODProcessing.StatementGeneration_EODProcessing(SSN, FileName);
+					StoreInfo.StoreInfo(SSN, FileName);
+					
+					Safeassign.Safeassign(SSN, FileName);
+					Drawerassign.Drawerassign(SSN, FileName);
+					Payliance.Payliance(SSN, FileName, 0);
+					// ACH_PartialPrePayment.ACH_PartialPrePayment(SSN, FileName);
+					ACHReturnPosting.ACHReturnPosting(SSN, FileName);
+					Veritec_validate.Veritec_validate_Return(SSN, FileName);
+					ACHPayment.ACHPayment(SSN, FileName, 1);
+					Veritec_validate.Veritec_validate_return_payment(SSN, FileName);
+				
+
+
+				}
+			} 
+		}
 	@AfterMethod(alwaysRun = true)
 
 	public void getResult(ITestResult result) throws Exception {

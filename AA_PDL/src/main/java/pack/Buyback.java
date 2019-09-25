@@ -108,15 +108,19 @@ public class Buyback extends AA_PDL{
 				String SSN3 = SSN.substring(5,9);
 				Thread.sleep(2000);
 				Login.Login(UserName, Password, StoreId);	
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();		
 				driver.switchTo().frame("topFrame");
-				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
+				Thread.sleep(2000);
+				driver.findElement(By.linkText("Loan Transactions")).click();	
+				Thread.sleep(2000);
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				driver.findElement(By.cssSelector("li[id='911101']")).click();			
+				driver.findElement(By.linkText("Transactions")).click();
+				//driver.findElement(By.cssSelector("li[id='911101']")).click();			
 				test.log(LogStatus.PASS, "Clicked on Transactions");		
 				driver.switchTo().frame("main");		
 				driver.findElement(By.name("ssn1")).sendKeys(SSN1);
@@ -144,7 +148,7 @@ public class Buyback extends AA_PDL{
 				driver.switchTo().frame("main");
 				if(ProductID.equals("PDL"))
 				{
-					driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				}
 
 				test.log(LogStatus.PASS, "Click on GO Button");
@@ -156,7 +160,7 @@ public class Buyback extends AA_PDL{
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
 				Thread.sleep(2000);
-				driver.findElement(By.name("transactionList")).sendKeys(TxnType);
+				driver.findElement(By.name("transactionList")).sendKeys("Buyback");
 				test.log(LogStatus.PASS, "Transaction Type is selected as: "+TxnType);	
 				driver.findElement(By.id("go_Button")).click();
 				for( String winHandle1 : driver.getWindowHandles())

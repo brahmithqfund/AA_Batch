@@ -4,20 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="brahmith"/>
+        <include name="venkat_OH_ILP_Prod2"/>
       </run>
     </groups>
     <classes>
-      <class name="pack.AA_OH_ILP">
+      <class name="pack.AA_OH_ILP_Prod">
         <methods>
-          <include name="getResult"/>
-          <include name="setup_Grid"/>
-          <include name="tearDown"/>
-          <include name="quit"/>
           <include name="initialize"/>
-          <include name="Due_Date_verification"/>
+          <include name="quit"/>
+          <include name="tearDown"/>
+          <include name="setup_Grid"/>
+          <include name="Login_Homescreen_Borrower_Registration_NewLoan_SemiMonthly"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- pack.AA_OH_ILP -->
+      </class> <!-- pack.AA_OH_ILP_Prod -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

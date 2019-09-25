@@ -22,5 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/AA_Batch/AA_ILP/ojdbc8.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
